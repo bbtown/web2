@@ -1,1 +1,1 @@
-<?php include_once("test1.html"); ?> //dashboard_2.html, test.html
+<?php include_once("test1.html"); ?> 
