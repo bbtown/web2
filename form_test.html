@@ -389,10 +389,14 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group"><label class="col-sm-2 control-label">Upload Link</label>
+                                    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
+                                    </div>
+                                </div>
                                 <div>
                                         <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
                                     </div>
-
+                                </form>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
@@ -428,11 +432,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                <div class="form-group"><label class="col-sm-2 control-label">Tags</label>
+                                <div class="form-group"><h4>Tags</h4>
                                     <input type="text" placeholder="e.g., schools, mathematics, algebra" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
                                     </div>
                                 </div>
                                 </div>
+                                   </form>
                                 <div class="hr-line-dashed"></div>
 
                                         <div class="form-group"><label class="col-sm-2 control-label">Types of problems<br></label>
@@ -465,7 +470,6 @@
                             </div>
                         </div>
                         </div>
-                        <div class="hr-line-dashed"></div>
                         <div class="row ibox-content">
                      <div class="col-sm-10">
 
@@ -477,27 +481,27 @@
                            <div class="col-lg-7">
                     <div class="ibox float-e-margins">
                         <div class="ibox-content">
-                            <h3>
-                                Input Mask
-                            </h3>
-                            <p>
-                                Input masks allows a user to more easily enter data where you would like them to enter the data in a certain format.
-                            </p>
                             <form class="form-horizontal m-t-md" action="#">
-                                <div class="hr-line-dashed"></div>
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Number of affected people</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" data-mask="9,999,999,999" placeholder="" name="people_num">
-                                        <span class="help-block">6,999,999,999</span>
+                                        <input type="text" class="form-control" data-mask="9,999,999,999" placeholder="" name="people_num"> 
                                     </div>
                                 </div>
-                                <div class="hr-line-dashed"></div>
-                            </form>
                         </div>
                     </div>
                     </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-7">
+                    <div>
+                                 <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
+                            </div>
+                            </form>
+                            </div>
+                            </div>
+                    </div>
+
                                 <!--    <div class="form-group"><p>Check the box below if over 1 billion people are directly affected by this problem.</p>
                                         <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i>Over 1 billion people</label></div>
                                 </div>
@@ -525,7 +529,6 @@
                             </div>
                             </div>-->
                             </div>
-                            <div class="hr-line-dashed"></div>
                             <div class="row">
                                 <div class="col-sm-10">
                                 <p>
@@ -538,7 +541,9 @@
                                 </ul>  
                             </p>
                         </div> 
+                        
                             </div>
+                            
                         </div>
                    
             
@@ -552,7 +557,7 @@
                     
                 </div>
                 <div class="ibox-content">
-            
+               <form method="get" class="form-horizontal">
                                 <div class="form-group">
                 <label class="font-normal">Are specific geographic areas affected?</label>
                 <div class="input-group">
@@ -921,11 +926,14 @@
                      prob_more: {
                          required: false,
                          maxlength: 1500
+                     },url: {
+                         required: false,
+                         url: true
                      },
                      people_num: {
-                         required: true,
+                         required: false,
                          number: true,
-                         maxlength: 7599999999
+                         max: 7599999999
                      }
                      }
                  }
