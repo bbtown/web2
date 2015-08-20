@@ -380,12 +380,12 @@
                             <form method="get" class="form-horizontal">
                                 
                                 <div class="form-group"><label class="col-sm-2 control-label">Problem Summary</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control input-lg"> <span class="help-block m-b-none">Limit 500 characters.</span>
+                                    <div class="col-sm-10"><input type="text" class="form-control input-lg" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
                                 </div>
 
                                 <div class="form-group"><label class="col-sm-2 control-label">Additional Problem Information</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control"> <span class="help-block m-b-none"></span>
+                                    <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
 
@@ -404,29 +404,32 @@
                                         <div class="i-checks"><label> <input type="radio" value="option1" name="a"> <i></i> Environment</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option2" name="a"> <i></i> Society</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option3" name="a"> <i></i> Technology</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option6" name="a"> <i></i> Govenment</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option4" name="a"> <i></i> Health</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option5" name="a"> <i></i> Education</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option6" name="a"> <i></i> Infrastructure </label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option4" name="a"> <i></i> Govenment</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option5" name="a"> <i></i> Health</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option6" name="a"> <i></i> Education</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option7" name="a"> <i></i> Infrastructure </label></div>
                                 </div>
                                 <div class="col-sm-6 col-sm-6">
                                     <div class="form-group"><h4>Select secondary categories (if applicable):</h4></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i> Environment</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option2" name="a"> <i></i> Society</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option3" name="a"> <i></i> Technology</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="option6" name="a"> <i></i> Govenment</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="option4" name="a"> <i></i> Health</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="option5" name="a"> <i></i> Education</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="option6" name="a"> <i></i> Infrastructure </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="option4" name="a"> <i></i> Govenment</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="option5" name="a"> <i></i> Health</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="option6" name="a"> <i></i> Education</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="option7" name="a"> <i></i> Infrastructure </label></div>
                                 </div>
                                 </div> 
+                                <div class="hr-line-dashed"></div>
                                     </div>
                                     <div class="row">
+                                        <div class="col-sm-12">
                                 <div class="form-group"><label class="col-sm-2 control-label">Tags</label>
-                                    <div class="col-sm-10"><input type="text" placeholder="e.g., schools, mathematics, algebra" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+                                    <input type="text" placeholder="e.g., schools, mathematics, algebra" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
                                     </div>
                                 </div>
                                 </div>
+                                <div class="hr-line-dashed"></div>
 
                                         <div class="form-group"><label class="col-sm-2 control-label">Types of problems<br></label>
                                             <div class="col-sm-10">
@@ -434,7 +437,8 @@
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option2"> <i></i>There is too much of...</label></div>
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option3"> <i></i>There is a waste of...</label></div>
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option4"> <i></i>We should improve upon...</label></div>
-
+                                        <!-- problem relationships?-->
+<!-- ___.  This leads to _____.  -->
                                     </div>
                                 </div>
 
@@ -443,95 +447,108 @@
                                     </div>
                                 </div>
                                     </div>
+                                <!-- WHO WHAT WHEN WHERE WHY HOW PAST FUTURE PRESENT-->
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>Who is affected by this problem?</h4>
+                                        <form method="get" class="form-horizontal">
                                 
-                <div class="col-lg-12">
+                                <div class="form-group"><h4>Describe the group of people affected by the problem.</h4>
+                                    <div class="col-sm-10"><input type="text" class="form-control input-lg"> <span class="help-block m-b-none">e.g., school children in Pennsylvania; people with cancer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="row ibox-content">
+                     <div class="col-sm-10">
+
+                            <h3>
+                                How many people are affected?
+                            </h3>
+
+                           <div class="row">
+                           <div class="col-lg-7">
                     <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Range Slider <small>https://github.com/IonDen/ion.rangeSlider</small></h5>
-            
                         <div class="ibox-content">
                             <h3>
-                                Affected population
+                                Input Mask
                             </h3>
                             <p>
-                                Select an estimate of the number of people directly impacted by this problem.  (For some reason if you remove any of these sliders, none of the sliders appear :/)
+                                Input masks allows a user to more easily enter data where you would like them to enter the data in a certain format.
                             </p>
-                            <div class="m-b-sm">
-                                <small ><strong>Example of:</strong> Set diapason from 0 to 5000, Adding postfix "+" to max value, Set slider type to double, Dollar symbol as prefix, Enable grid  </small>
-                            </div>
+                            <form class="form-horizontal m-t-md" action="#">
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Number of affected people</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" data-mask="9,999,999,999" placeholder="" name="people_num">
+                                        <span class="help-block">6,999,999,999</span>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                                <!--    <div class="form-group"><p>Check the box below if over 1 billion people are directly affected by this problem.</p>
+                                        <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i>Over 1 billion people</label></div>
+                                </div>
+                                </div>
+                    <div class="row ibox-content">
+                        <div class="col-sm-9">
+                        
+                            <p>
+                            If fewer than 1 billion people are affected, use the slidebar and dropdown menu to enter an estimate of the number of people directly impacted by this problem.  
+                            </p>
                             <div id="ionrange_1"></div>
-
-                            <div class="m-b-sm m-t">
-                                <small ><strong>Example of:</strong> Set diapason from 0 to 10, Set fractional step value: 0.1, Enable grid  </small>
-                            </div>
-                            <div id="ionrange_2"></div>
-
-                            <div class="m-b-sm m-t">
-                                <small ><strong>Example of:</strong> Set diapason from -50 to +50, Set FROM value to 0, Add degree symbol as postfix  </small>
-                            </div>
-                            <div id="ionrange_3"></div>
-
-                            <div class="m-b-sm m-t">
-                                <small ><strong>Example of:</strong>Change common slider numbers to custom (Month names). Using values array for that. Array can be any length, Slider will change min and max number automaticaly to fit values array length, Step parameter also will be changed to one, to allow to choose items in values array </small>
-                            </div>
-                            <div id="ionrange_4"></div>
-
-                            <div>
-                            <a class="btn btn-white pull-right btn-sm" href="https://github.com/IonDen/ion.rangeSlider" target="_blank">Read about API</a>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Range Slider <small>http://refreshless.com/nouislider/</small></h5>
-                        </div>
-                        <div class="ibox-content">
-                            <h3>
-                                Range Slider
-                            </h3>
-                            <p>
-                                Simple and clean range select slider.
-                            </p>
-                            <div class="row m-b-lg">
-                                <div class="col-lg-12">
-                                    <div id="drag-fixed" class="slider_red"></div>
-                                </div>
-                                </div>
+            
+                            <div class="col-sm-3">
+                            
+                            <div class="form-group"><h4>Select the magnitude</h4>
+                            <label class="font-noraml"></label>
+                            <div class="input-group">
+                            <select data-placeholder="Select the magnitude" class="chosen-select" style="width:150px;" tabindex="2">
+                            <option value="people">people</option>
+                            <option value="thousand people">thousand people</option>
+                            <option value="=million people">million people</option>
+                             </select>
+                            </div>
+                            </div>
+                            </div>-->
+                            </div>
+                            <div class="hr-line-dashed"></div>
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <p class="font-bold">Basic example</p>
-                                    <div id="basic_slider"></div>
-                                </div> 
-                                <div class="col-lg-6">
-                                    <p class="font-bold">Range select example</p>
-                                    <div id="range_slider"></div>
-                                </div>
+                                <div class="col-sm-10">
+                                <p>
+                            <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
+                            
+                                <ul>
+                                    <li><a href="http://www.census.gov/popclock/">World Population Clock</a></li>
+                                    <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
+
+                                </ul>  
+                            </p>
+                        </div> 
                             </div>
-
-
                         </div>
-                    </div>
-                </div>
-
-            </div>
+                   
+            
        <!-- <div class="wrapper wrapper-content"> -->   
             <div class="row">
             <div class="col-lg-12">
 
                 <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Chosen select <small>http://harvesthq.github.io/chosen/</small></h5>
+<!--                    <h5>Chosen select <small>http://harvesthq.github.io/chosen/</small></h5>-->
                     
                 </div>
                 <div class="ibox-content">
             
-
-                            <!-- BEGIN MULTI SELECT -->
                                 <div class="form-group">
                 <label class="font-normal">Are specific geographic areas affected?</label>
                 <div class="input-group">
@@ -641,7 +658,7 @@
                 <option value="Hong Kong">Hong Kong</option>
                 <option value="Hungary">Hungary</option>
                 <option value="Iceland">Iceland</option>
-                <option selected value="India">India</option>
+                <option value="India">India</option>
                 <option value="Indonesia">Indonesia</option>
                 <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
                 <option value="Iraq">Iraq</option>
@@ -712,7 +729,7 @@
                 <option value="Panama">Panama</option>
                 <option value="Papua New Guinea">Papua New Guinea</option>
                 <option value="Paraguay">Paraguay</option>
-                <option selected value="Peru">Peru</option>
+                <option value="Peru">Peru</option>
                 <option value="Philippines">Philippines</option>
                 <option value="Pitcairn">Pitcairn</option>
                 <option value="Poland">Poland</option>
@@ -884,6 +901,33 @@
     <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
 
 
+    <!-- Jquery Validate -->
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+    <script>
+         $(document).ready(function(){
+
+             $("#form").validate({
+                 rules: {
+                     prob_desc: {
+                         required: true,
+                         minlength: 10,
+                         maxlength: 500
+                     },
+                     prob_more: {
+                         required: false,
+                         maxlength: 1500
+                     },
+                     people_num: {
+                         required: true,
+                         number: true,
+                         maxlength: 7599999999
+                     }
+                     }
+                 }
+             });
+        });
+    </script>
    <!-- JSKnob -->
    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
 
@@ -1073,43 +1117,17 @@
             }
 
         $("#ionrange_1").ionRangeSlider({
-            min: 0,
-            max: 5000,
-            type: 'double',
-            prefix: "$",
-            maxPostfix: "+",
-            prettify: false,
-            hasGrid: true
-        });
-
-        $("#ionrange_2").ionRangeSlider({
-            min: 0,
-            max: 10,
+//            values: [
+//                "1", "100", "500", "1,000", "5,000", "10,000", "50,000", "100,000", "250,000", "500,000", "1 million","10 million", "50 million","100 million", "500 million", "Over 1 billion"
+//            ],
+            min: 1,
+            max: 999,
+            step: 10,
             type: 'single',
-            step: 0.1,
-            postfix: " carats",
-            prettify: false,
-            hasGrid: true
-        });
-
-        $("#ionrange_3").ionRangeSlider({
-            min: -50,
-            max: 50,
-            from: 0,
-            ,
-            prettify: false,
-            hasGrid: true
-        });
-
-        $("#ionrange_4").ionRangeSlider({
-            values: [
-                "January", "February", "March",
-                "April", "May", "June",
-                "July", "August", "September",
-                "October", "November", "December"
-            ],
-            type: 'single',
-            hasGrid: true
+            hasGrid: true,
+//            maxPostfix: " people",
+            hideMinMax: false,
+            hideFromTo: false
         });
 
         $("#ionrange_5").ionRangeSlider({
