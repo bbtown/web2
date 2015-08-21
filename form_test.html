@@ -383,9 +383,13 @@
                                     <div class="col-sm-10"><input type="text" class="form-control input-lg" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
                                 </div>
-
                                 <div class="form-group"><label class="col-sm-2 control-label">Additional Problem Information</label>
                                     <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Perspective</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
                                     </div>
                                 </div>
 
@@ -465,29 +469,30 @@
                         <div class="col-sm-12">
                             <h1>Who</h1>
                             <h4>Who is affected by this problem?</h4>
+                         <!--   <div class="row">
+                        <div class="col-lg-7">-->
+                 <p>
+                            <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
+                            
+                                <ul>
+                                    <li><a href="http://www.census.gov/popclock/">World Population Clock</a></li>
+                                    <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
+
+                                </ul>  
+                            </p>
+                        </div> 
+                        </div>
                                         <form method="get" class="form-horizontal">
                                 
                                 <div class="form-group"><h4>Describe the group of people affected by the problem.</h4>
                                     <div class="col-sm-10"><input type="text" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row ibox-content">
+                        <div class="row">
                      <div class="col-sm-10">
-
-                            <h3>
-                                How many people are affected?
-                            </h3>
-                            <div class="ibox-content">
-
-                           <div class="row">
-                    <div class="ibox float-e-margins">
-                        
                             <form class="form-horizontal m-t-md" action="#">
                                 <div class="form-group">
-                                    <h4>Number of affected people</h4>
+                                    <h4>Estimate the number of people directly affected by this problem.</h4>
                                     <div class="col-sm-5">
                                         <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" name="people_num">
@@ -497,22 +502,19 @@
 
                                         <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
 
-
-                                    </div>
-                                </div>
                                 
-
+                            </div>
+                            </div>
                               <!--  <div>
                                  <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
                             </div>-->
                             </form>
-                        </div>
-                    
+                      
+                    </div>
                     </div>
                     <div class="hr-line-dashed"></div>
-                    <div class="row">
-                        <div class="col-lg-7">
-                
+                    
+                                
                             
 
                                 <!--    <div class="form-group"><p>Check the box below if over 1 billion people are directly affected by this problem.</p>
@@ -542,24 +544,22 @@
                             </div>
                             </div>-->
                             
-                                <p>
-                            <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
+                               
+                        
+                        <div class="row">
                             
-                                <ul>
-                                    <li><a href="http://www.census.gov/popclock/">World Population Clock</a></li>
-                                    <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
+                                    <div class="col-sm-8">
+                                        <h4>Add Note</h4>
+                                        <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="" name="people_num">
+                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
+                                        </button></span> 
+                                    </div>
 
-                                </ul>  
-                            </p>
-
-                                
-                        </div> 
-                        </div>
+                                    </div>
+                                </div>
                             </div>
                     </div>
-                            </div>
-                            
-                        </div>
                    
             
        <!-- <div class="wrapper wrapper-content"> -->   
@@ -853,11 +853,25 @@
 
                     <form method="get" class="form-horizontal">
                                 <div class="col-sm-8">
-                                <div class="form-group"><h4>Enter a specific area.</h4>
+                                <div class="form-group"><h4>Enter a specific area</h4>
                                     <input type="text" class="form-control input-sm" placeholder="e.g., Los Angeles, California"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
                   </div>
+                                <div class="row">
+                            
+                                    <div class="col-sm-8">
+                                        <h4>Add Note</h4>
+                                        <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="" name="people_num">
+                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
+                                        </button></span> 
+                                    </div>
+
+                                    </div>
+                                </div>
+
+
                 </div>
 
             </div>
@@ -870,9 +884,13 @@
                <form method="get" class="form-horizontal">
                                 <div class="form-group">
                  <h1>When</h1>                   
-                <label class="font-normal">Are certain geographic areas affected?</label>
+                <label class="font-normal">When did the problem arise?  How has the problem changed throughout time?  What do you anticipate the probelm will be like in the future?</label>
                 <div class="input-group">
-            
+            <p>
+                <ul>
+                    <li></li>
+
+                </ul></p>
                 </div>
                 </div>
 
@@ -888,6 +906,19 @@
                   </div>
                 </div>
                 </div>
+                <div class="row">
+                            
+                                    <div class="col-sm-8">
+                                        <h4>Add Note</h4>
+                                        <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="" name="people_num">
+                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
+                                        </button></span> 
+                                    </div>
+
+                                    </div>
+                                </div>
+
                 </div>
 
                 <div class="ibox-content">
@@ -896,37 +927,41 @@
                <form method="get" class="form-horizontal">
                                 <div class="form-group">
                  <h1>Why</h1>                   
-                <label class="font-normal">Are certain geographic areas affected?</label>
+                
                 <div class="input-group">
             
-                </div>
-                </div>
-                </div>
-                </div>
-
-               <form method="get" class="form-horizontal">
                                 <div class="form-group">
-               <div class="row">
-            <div class="col-lg-12">
-                    <form method="get" class="form-horizontal">
-                                <div class="col-sm-8">
-                                <div class="form-group"><h4>Enter a specific area.</h4>
-                                    <input type="text" class="form-control input-sm" placeholder="e.g., Los Angeles, California"> <span class="help-block m-b-none"></span>
+                                    <label class="font-normal">Enter a list of factors that influence the problem.</label>
+                                    <input type="text" placeholder="e.g., public awareness, funding, level of expertise" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
                                     </div>
                                 </div>
-                  </div>
-                </div>
-
-                </div>
-                </div>
+                                </div>
+                                </div>
+                  
 
             </div>
+            <div class="row">
+                            
+                                    <div class="col-sm-8">
+                                        <h4>Add Note</h4>
+                                        <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="" name="people_num">
+                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
+                                        </button></span> 
+                                    </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
                                 <div class="form-group">
                                     <div class="col-sm-4 col-sm-offset-2">
                                         <button class="btn btn-white" type="submit">Cancel</button>
                                         <button class="btn btn-primary" type="submit">Save changes</button>
                                     </div>
-
+                                </div>
+                                </div>
+</div>
 <input name="code" id="code" type="text" value="" >
 <script type="text/javascript">
     function makeid()
