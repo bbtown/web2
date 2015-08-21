@@ -379,20 +379,45 @@
                         <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
                                 <form class="form-horizontal">
-                                <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
-                                    <div class="col-sm-10"><input type="text" class="form-control input-lg" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
+                               <!-- <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
+                                    <div class="col-sm-10"><input type="text" class="form-control input-sm" rows="5" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
-                                </div>
+                                </div>-->
+
+
+                                 <div class="form-group">
+                                     <label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
+                                        <div class="col-sm-10">
+                                        <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" name="prob_desc" required> </textarea>
+                                        <span class="help-block m-b-none">Limit 500 characters.</span>
+                                        </div>
+                                        </div>
+<!--    
                                 <div class="form-group"><label class="col-sm-2 control-label">Additional Problem Information</label>
                                     <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none"></span>
                                     </div>
-                                </div>
+                                </div>-->
+                                <div class="form-group">
+                                     <label class="col-sm-2 control-label">Additional Problem Information</label>
+                                        <div class="col-sm-10">
+                                        <textarea class="form-control input-sm" rows="5" maxlength="1500" name="prob_more"> </textarea>
+                                        <span class="help-block m-b-none"></span>
+                                        </div>
+                                        </div>
+                                        
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Perspective</label>
+                               <!-- <div class="form-group"><label class="col-sm-2 control-label">Perspective</label>
                                     <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
                                     </div>
-                                </div>
+                                </div>-->
 
+                                <div class="form-group">
+                                     <label class="col-sm-2 control-label">Perspective</label>
+                                        <div class="col-sm-10">
+                                        <textarea class="form-control input-sm" rows="1" maxlength="1500" name="prob_more"> </textarea>
+                                        <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
+                                        </div>
+                                        </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">Upload Link</label>
                                     <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
                                     </div>
@@ -436,13 +461,16 @@
                                 <div class="hr-line-dashed"></div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-10">
+                                       <div class="col-sm-10">
                                 <div class="form-group"><h4>Tags</h4>
-                                    <input type="text" placeholder="e.g., schools, mathematics, algebra" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+                                    <input type="text" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
                                     </div>
                                 </div>
                                 </div>
                                    </form>
+
+
+                                   
                                    <!--
                                 <div class="hr-line-dashed"></div>
 
@@ -1063,13 +1091,18 @@
                          maxlength: 1500
                      },url: {
                          required: false,
-                         url: true
+                         url: true,
+                         maxlength: 500
                      },
                      people_num: {
                          required: false,
                          number: true,
                          digits: true,
                          range: 0-75000000000
+                     },
+                     tags: {
+                         required: false,
+                         maxlength: 500
                      }
                      }
                  }
