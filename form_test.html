@@ -374,12 +374,12 @@
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Describe the problem</h5>
+                            <h1>Describe the problem</h1>
                         </div>
                         <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
                                 <form class="form-horizontal">
-                                <div class="form-group"><label class="col-sm-2 control-label">Problem Summary</label>
+                                <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
                                     <div class="col-sm-10"><input type="text" class="form-control input-lg" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
                                 </div>
@@ -403,6 +403,7 @@
                         <div class="ibox-title">
                         </div>
                         <div class="ibox-content">
+                            <h1>What</h1>
                             <form method="get" class="form-horizontal">
                                 </div>
                                     <div class="container">
@@ -412,7 +413,7 @@
                                         <div class="i-checks"><label> <input type="radio" value="option1" name="a"> <i></i> Environment</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option2" name="a"> <i></i> Society</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option3" name="a"> <i></i> Technology</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option4" name="a"> <i></i> Govenment</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option4" name="a"> <i></i> Government</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option5" name="a"> <i></i> Health</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option6" name="a"> <i></i> Education</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="option7" name="a"> <i></i> Infrastructure </label></div>
@@ -422,7 +423,7 @@
                                         <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i> Environment</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option2" name="a"> <i></i> Society</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option3" name="a"> <i></i> Technology</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="option4" name="a"> <i></i> Govenment</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="option4" name="a"> <i></i> Government</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option5" name="a"> <i></i> Health</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option6" name="a"> <i></i> Education</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option7" name="a"> <i></i> Infrastructure </label></div>
@@ -431,13 +432,14 @@
                                 <div class="hr-line-dashed"></div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-10">
                                 <div class="form-group"><h4>Tags</h4>
                                     <input type="text" placeholder="e.g., schools, mathematics, algebra" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
                                     </div>
                                 </div>
                                 </div>
                                    </form>
+                                   <!--
                                 <div class="hr-line-dashed"></div>
 
                                         <div class="form-group"><label class="col-sm-2 control-label">Types of problems<br></label>
@@ -445,9 +447,10 @@
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option1"> <i></i>There is too little of...</label></div>
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option2"> <i></i>There is too much of...</label></div>
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option3"> <i></i>There is a waste of...</label></div>
-                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option4"> <i></i>We should improve upon...</label></div>
+                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option4"> <i></i>We should improve upon...</label></div>-->
                                         <!-- problem relationships?-->
 <!-- ___.  This leads to _____.  -->
+
                                     </div>
                                 </div>
 
@@ -460,11 +463,12 @@
                 <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
+                            <h1>Who</h1>
                             <h4>Who is affected by this problem?</h4>
                                         <form method="get" class="form-horizontal">
                                 
                                 <div class="form-group"><h4>Describe the group of people affected by the problem.</h4>
-                                    <div class="col-sm-10"><input type="text" class="form-control input-lg"> <span class="help-block m-b-none">e.g., school children in Pennsylvania; people with cancer</span>
+                                    <div class="col-sm-10"><input type="text" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
                             </div>
@@ -476,31 +480,40 @@
                             <h3>
                                 How many people are affected?
                             </h3>
+                            <div class="ibox-content">
 
                            <div class="row">
-                           <div class="col-lg-7">
                     <div class="ibox float-e-margins">
-                        <div class="ibox-content">
+                        
                             <form class="form-horizontal m-t-md" action="#">
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Number of affected people</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" data-mask="9,999,999,999" placeholder="" name="people_num"> 
+                                    <h4>Number of affected people</h4>
+                                    <div class="col-sm-5">
+                                        <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="" name="people_num">
+                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Submit
+                                        </button></span> 
+                                    </div>
+
+                                        <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
+
+
                                     </div>
                                 </div>
+                                
+
+                              <!--  <div>
+                                 <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
+                            </div>-->
+                            </form>
                         </div>
+                    
                     </div>
-                    </div>
-                    </div>
+                    <div class="hr-line-dashed"></div>
                     <div class="row">
                         <div class="col-lg-7">
-                    <div>
-                                 <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
-                            </div>
-                            </form>
-                            </div>
-                            </div>
-                    </div>
+                
+                            
 
                                 <!--    <div class="form-group"><p>Check the box below if over 1 billion people are directly affected by this problem.</p>
                                         <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i>Over 1 billion people</label></div>
@@ -528,9 +541,7 @@
                             </div>
                             </div>
                             </div>-->
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-10">
+                            
                                 <p>
                             <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
                             
@@ -540,8 +551,12 @@
 
                                 </ul>  
                             </p>
+
+                                
                         </div> 
-                        
+                        </div>
+                            </div>
+                    </div>
                             </div>
                             
                         </div>
@@ -551,15 +566,34 @@
             <div class="row">
             <div class="col-lg-12">
 
+
                 <div class="ibox float-e-margins">
-                <div class="ibox-title">
+                 
 <!--                    <h5>Chosen select <small>http://harvesthq.github.io/chosen/</small></h5>-->
                     
                 </div>
                 <div class="ibox-content">
                <form method="get" class="form-horizontal">
                                 <div class="form-group">
-                <label class="font-normal">Are specific geographic areas affected?</label>
+                 <h1>Where</h1>                   
+                <label class="font-normal">Are certain geographic areas affected?</label>
+                <div class="input-group">
+                <select data-placeholder="Choose a continent..." class="chosen-select" multiple style="width:350px;" tabindex="4">
+                <option value="">Select</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="Middle East">Middle East</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Antarctica">Antarctica</option>
+                </select>
+                </div>
+                </div>
+
+               <form method="get" class="form-horizontal">
+                                <div class="form-group">
                 <div class="input-group">
                 <select data-placeholder="Choose a country..." class="chosen-select" multiple style="width:350px;" tabindex="4">
                 <option value="">Select</option>
@@ -816,13 +850,77 @@
                 <option value="Zimbabwe">Zimbabwe</option>
                 </select>
                 </div>
-                </div>
+
+                    <form method="get" class="form-horizontal">
+                                <div class="col-sm-8">
+                                <div class="form-group"><h4>Enter a specific area.</h4>
+                                    <input type="text" class="form-control input-sm" placeholder="e.g., Los Angeles, California"> <span class="help-block m-b-none"></span>
+                                    </div>
+                                </div>
                   </div>
                 </div>
 
             </div>
                         
+   
 
+                <div class="ibox-content">
+                    <div class="row">
+            <div class="col-lg-12">
+               <form method="get" class="form-horizontal">
+                                <div class="form-group">
+                 <h1>When</h1>                   
+                <label class="font-normal">Are certain geographic areas affected?</label>
+                <div class="input-group">
+            
+                </div>
+                </div>
+
+               <form method="get" class="form-horizontal">
+                                <div class="form-group">
+              
+                    <form method="get" class="form-horizontal">
+                                <div class="col-sm-8">
+                                <div class="form-group"><h4>Enter a specific area.</h4>
+                                    <input type="text" class="form-control input-sm" placeholder="e.g., Los Angeles, California"> <span class="help-block m-b-none"></span>
+                                    </div>
+                                </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row">
+            <div class="col-lg-12">
+               <form method="get" class="form-horizontal">
+                                <div class="form-group">
+                 <h1>Why</h1>                   
+                <label class="font-normal">Are certain geographic areas affected?</label>
+                <div class="input-group">
+            
+                </div>
+                </div>
+                </div>
+                </div>
+
+               <form method="get" class="form-horizontal">
+                                <div class="form-group">
+               <div class="row">
+            <div class="col-lg-12">
+                    <form method="get" class="form-horizontal">
+                                <div class="col-sm-8">
+                                <div class="form-group"><h4>Enter a specific area.</h4>
+                                    <input type="text" class="form-control input-sm" placeholder="e.g., Los Angeles, California"> <span class="help-block m-b-none"></span>
+                                    </div>
+                                </div>
+                  </div>
+                </div>
+
+                </div>
+                </div>
+
+            </div>
                                 <div class="form-group">
                                     <div class="col-sm-4 col-sm-offset-2">
                                         <button class="btn btn-white" type="submit">Cancel</button>
@@ -910,6 +1008,8 @@
     <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
 
 
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
     <!-- Jquery Validate -->
     <script src="js/plugins/validate/jquery.validate.min.js"></script>
 
@@ -933,7 +1033,8 @@
                      people_num: {
                          required: false,
                          number: true,
-                         max: 7599999999
+                         digits: true,
+                         range: 0-75000000000
                      }
                      }
                  }
