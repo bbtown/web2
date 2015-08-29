@@ -1,1 +1,5 @@
-require: "danielmewes/php-rql": "dev-master"
+{
+	"require":  {
+    "danielmewes/php-rql": "dev-master"
+  }
+}
