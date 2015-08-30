@@ -29,7 +29,6 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
 </head>
@@ -382,7 +381,16 @@
                               <div class="row"> 
                                     <div class="col-sm-9">
                                     <!-- <div class="col-lg-12"> -->
+                             <?php
 
+                             require_once __DIR__.'/vendor/autoload.php';
+                             $conn = r\connect('52.20.101.105');
+                             $result = r\db("web")->table('problems')->run($conn);
+                             foreach ($result as $doc) {
+                               print_r($doc);
+                             }
+
+                             ?>
                             <h1>Problem Description</h1>
                                     <h4>Category:  Environment</h4>
                                     <h4>Severity Level: Catastrophic</h4>
