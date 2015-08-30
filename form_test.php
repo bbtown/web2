@@ -378,7 +378,8 @@
                         </div>
                         <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
-                                <form class="form-horizontal">
+                                <form class="form-horizontal" action="submit_to_problems.php" method="post">
+<!-- use post because it is more secure. -->
                                <!-- <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
                                     <div class="col-sm-10"><input type="text" class="form-control input-sm" rows="5" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
