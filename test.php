@@ -387,7 +387,7 @@
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
                              foreach ($result as $doc) {
-                               if(isset($doc['ProblemCategory'])) {
+                               if(isset($doc['ProblemDescription'])) {
                                  echo "<h1>Problem Description</h1>";
                                  echo "<h4>Category:</h4> ".$doc['ProblemCategory'];
                                  echo "<h4>Description:</h4> ".$doc['ProblemDescription'];
