@@ -14,14 +14,16 @@
   $perspective = $_POST['perspective'];  
   $url = $_POST['url'];
   $tags = $_POST['tags'];
+  $prob_cat = $_POST['prob_cat'];
   $problemID = $_['id'];
 
   $document = Array('ProblemDescription' => $prob_desc,
                     'MoreDescription' => $prob_more,
                     'Perspective' => $perspective,
                     'URL' => $url,
-		    'Tags' => $tags);
-//		    'id' => $problemID);  
+		    'Tags' => $tags,
+		    'ProblemCategory' => $prob_cat);
+   //		    'id' => $problemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
   echo "inserted data.";

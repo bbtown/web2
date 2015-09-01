@@ -41,6 +41,7 @@
       var perspective = $('#perspective').val();
       var url = $('#url').val();
       var tags = $('#tags').val(); 
+      var prob_cat = $('#prob_cat').val();
 
       var serialData = $('#describe_form').serialize();
 
@@ -242,6 +243,19 @@
 				    <label class="col-sm-2 control-label">Tags</label>
 				    <div class="col-sm-10">
                                     <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+                                            <div class="form-group">
+					      <label class="col-sm-2">Select a primary category:</label>
+					      <div class="col-sm-10">
+					<div class="i-checks"><label> <input type="radio" value="Environment" name="prob_cat"> <i></i> Environment</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="Society" name="prob_cat"> <i></i> Society</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="Technology" name="prob_cat"> <i></i> Technology</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="Government" name="prob_cat"> <i></i> Government</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="Health" name="prob_cat"> <i></i> Health</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="Education" name="prob_cat"> <i></i> Education</label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="Infrastructure" name="prob_cat"> <i></i> Infrastructure </label></div>
+                                </div>
+					      </div>
+
                                 <!---
         
                 Look, it's AJAX!
