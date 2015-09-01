@@ -17,7 +17,8 @@
   $document = Array('ProblemDescription' => $prob_desc,
                     'MoreDescription' => $prob_more,
                     'Perspective' => $perspective,
-                    'URL' => $url);  
+                    'URL' => $url,
+		    'id' => $ProblemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
   echo "inserted data.";
