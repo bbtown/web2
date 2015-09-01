@@ -13,8 +13,9 @@
   $idea_more = $_POST['idea_more']; 
   $perspective = $_POST['perspective'];  
   $url = $_POST['url'];
-
-  $document = Array('IdeaDescription' => $idea_desc,
+  $ideaID = $_['id'];
+ 
+ $document = Array('IdeaDescription' => $idea_desc,
                     'MoreDescription' => $idea_more,
                     'Perspective' => $perspective,
                     'URL' => $url);  
