@@ -13,7 +13,7 @@
   $prob_more = $_POST['prob_more']; 
   $perspective = $_POST['perspective'];  
   $url = $_POST['url'];
-  $tags = $_POST['tags']'
+  $tags = $_POST['tags'];
   $problemID = $_['id'];
 
   $document = Array('ProblemDescription' => $prob_desc,
