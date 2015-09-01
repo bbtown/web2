@@ -40,6 +40,7 @@
       var prob_more = $('#prob_more').val();
       var perspective = $('#perspective').val();
       var url = $('#url').val();
+      var tags = $('#tags').val(); 
 
       var serialData = $('#describe_form').serialize();
 
@@ -238,6 +239,10 @@
                                     </div>
                                 </div>
                                 <div>
+
+				  <div class="form-group"><h4>Tags</h4>
+                                    <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+                                    </div>
                                 <!---
         
                 Look, it's AJAX!

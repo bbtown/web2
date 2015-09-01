@@ -177,8 +177,8 @@
                                  echo "<h1>Problem Description</h1>";
                                  echo "<h4>Category:</h4> ".$doc['ProblemCategory'];
                                  echo "<h4>Description:</h4> ".$doc['ProblemDescription'];
-                                 echo "<h4>Problem ID: </h4> ".$doc['id']."</h4>";
-                               }
+                                 echo "<h4>Tags</h4> ".$doc['Tags'];
+                                 echo "<h4>Problem ID: </h4> ".$doc['id'];                               }
                              }
 
                              ?>

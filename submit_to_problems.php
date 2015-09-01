@@ -13,12 +13,14 @@
   $prob_more = $_POST['prob_more']; 
   $perspective = $_POST['perspective'];  
   $url = $_POST['url'];
+  $tags = $_POST['tags']';
   $problemID = $_['id'];
 
   $document = Array('ProblemDescription' => $prob_desc,
                     'MoreDescription' => $prob_more,
                     'Perspective' => $perspective,
-                    'URL' => $url);
+                    'URL' => $url,
+		    'Tags' => $tags);
 //		    'id' => $problemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
