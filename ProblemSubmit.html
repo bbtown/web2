@@ -42,7 +42,7 @@
       var url = $('#url').val();
       var tags = $('#tags').val(); 
       var prob_cat = $('#prob_cat').val();
-
+      var prob_cat2 = $('#prob_cat2').val();
       var serialData = $('#describe_form').serialize();
 
       $.ajax({
@@ -243,9 +243,8 @@
 				    <label class="col-sm-2 control-label">Tags</label>
 				    <div class="col-sm-10">
                                     <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
-                                            <div class="form-group">
-					      <label class="col-sm-2">Select a primary category:</label>
-					      <div class="col-sm-10">
+                                        <div class="col-sm-6 col-sm-6">
+                                        <div class="form-group"><h4>Select a Primary Category: </h4>
 					<div class="i-checks"><label> <input type="radio" value="Environment" name="prob_cat"> <i></i> Environment</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="Society" name="prob_cat"> <i></i> Society</label></div>
                                         <div class="i-checks"><label> <input type="radio" value="Technology" name="prob_cat"> <i></i> Technology</label></div>
@@ -255,6 +254,18 @@
                                         <div class="i-checks"><label> <input type="radio" value="Infrastructure" name="prob_cat"> <i></i> Infrastructure </label></div>
                                 </div>
 					      </div>
+					      
+					      <div class="col-sm-6 col-sm-6">
+                                    <div class="form-group"><h4>Select secondary categories (if applicable):</h4>
+					<div class="i-checks"><label> <input type="checkbox" value="Environment" name="prob_cat2"> <i></i> Environment</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="Society" name="prob_cat2"> <i></i> Society</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="Technology" name="prob_cat2"> <i></i> Technology</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="Government" name="prob_cat2"> <i></i> Government</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="Health" name="prob_cat2"> <i></i> Health</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="Education" name="prob_cat2"> <i></i> Education</label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="Infrastructure" name="prob_cat2"> <i></i> Infrastructure </label></div>
+                                </div>
+							        </div>
 
                                 <!---
         

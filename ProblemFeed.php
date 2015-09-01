@@ -176,6 +176,7 @@
                                if(isset($doc['ProblemDescription'])) {
                                  echo "<h1>Problem Description</h1>";
                                  echo "<h4>Category:</h4> ".$doc['ProblemCategory'];
+			         echo "<h4>Secondary Problem Categories</h4> ".$doc['ProblemCategory2'];
                                  echo "<h4>Description:</h4> ".$doc['ProblemDescription'];
                                  echo "<h4>Tags</h4> ".$doc['Tags'];
 			         echo "<h4>Problem ID: </h4> ".$doc['id'];                               }
