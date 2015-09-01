@@ -18,8 +18,8 @@
   $document = Array('ProblemDescription' => $prob_desc,
                     'MoreDescription' => $prob_more,
                     'Perspective' => $perspective,
-                    'URL' => $url,
-		    'id' => $problemID);  
+                    'URL' => $url);
+//		    'id' => $problemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
   echo "inserted data.";
