@@ -42,7 +42,10 @@
       var url = $('#url').val();
       var tags = $('#tags').val(); 
       var prob_cat = $('#prob_cat').val();
-      var prob_cat2 = $('#prob_cat2').val();
+      var prob_cat2 = $('#prob_cat2').serialize();
+
+// var value = $(this).attr('id');
+
       var serialData = $('#describe_form').serialize();
 
       $.ajax({
