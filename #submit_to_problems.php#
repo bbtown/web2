@@ -19,7 +19,7 @@
   $affect_num = $_POST['affect_num'];
   $geo_loc = $_POST['geo_loc'];
   $spec_loc = $_POST['spec_loc'];
-  $factors= $_POST['factors'];
+  $factors = $_POST['factors'];
 //  $prob_cat2 = $_POST['prob_cat2'];
   $problemID = $_['id'];
 
@@ -33,7 +33,7 @@
 		    'AffectedNumber' => $affect_num,
 		    'GeographicLocation' => $geo_loc,
 		    'SpecificLocation' => $spec_loc,
-		    'Factors' => $factors);
+		    'Factors' >#fac
 //		    'ProblemCategory2' => $prob_cat2);
    //		    'id' => $problemID);  
 
