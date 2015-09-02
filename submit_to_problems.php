@@ -15,7 +15,7 @@
   $url = $_POST['url'];
   $tags = $_POST['tags'];
   $prob_cat = $_POST['prob_cat'];
-  $prob_cat2 = $_POST['prob_cat2'];
+//  $prob_cat2 = $_POST['prob_cat2'];
   $problemID = $_['id'];
 
   $document = Array('ProblemDescription' => $prob_desc,
@@ -24,7 +24,7 @@
                     'URL' => $url,
 		    'Tags' => $tags,
 		    'ProblemCategory' => $prob_cat);
-		    'ProblemCategory2' => $prob_cat2);
+//		    'ProblemCategory2' => $prob_cat2);
    //		    'id' => $problemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
