@@ -43,7 +43,7 @@
       var tags = $('#tags').val(); 
       var prob_cat = $('#prob_cat').val();
       var affect_desc = $('#affect_desc').val();
-      var affect_num = $('affect_num').val();
+      var affect_num = $('#affect_num').val();
 //      var prob_cat2 = $('#prob_cat2').serialize();
 
 // var value = $(this).attr('id');
@@ -288,16 +288,16 @@
                                 </ul>  
                             </p>
                                 <div class="form-group"><h4>Describe the group of people affected by the problem.</h4>
-                                    <div class="col-sm-10"><input type="text" id="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
+                                    <div class="col-sm-10"><input type="text" id="affect_desc" name="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
                        <!-- <div class="row"> -->
-                     <div class="col-sm-10">
+                     <div class="col-sm-12">
                                 <div class="form-group">
                                     <h4>Estimate the number of people directly affected by this problem.</h4>
                                     <div class="col-sm-5">
                                         <div class="input-group">
-                                        <input type="text" id="affect_num" class="form-control" placeholder="e.g., 7,290,000,000" name="people_num" maxlength="14">
+                                        <input type="text" id="affect_num" class="form-control" placeholder="e.g., 7,290,000,000" name="affect_num" maxlength="14">
                                         <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
 
                                 
