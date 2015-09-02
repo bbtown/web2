@@ -181,6 +181,8 @@
                                  echo "<h4>Tags</h4> ".$doc['Tags'];
 			         echo "<h4>Description of the Affected Population: </h4>".$doc['AffectedDescription'];
 			         echo "<h4>Estimated Number of Affected: </h4>".$doc['AffectedNumber'];
+			         echo "<h4>General Affected Geographic Location: </h4> ".$doc['GeographicLocation'];
+			         echo "<h4>Affected Location (specific): </h4>".$doc['SpecificLocation'];
 			         echo "<h4>Problem ID: </h4> ".$doc['id'];                               }
                              }
 

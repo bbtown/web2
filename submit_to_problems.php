@@ -17,6 +17,8 @@
   $prob_cat = $_POST['prob_cat'];
   $affect_desc = $_POST['affect_desc'];
   $affect_num = $_POST['affect_num'];
+  $geo_loc = $_POST['geo_loc'];
+  $spec_loc = $_POST['spec_loc'];
 //  $prob_cat2 = $_POST['prob_cat2'];
   $problemID = $_['id'];
 
@@ -27,7 +29,9 @@
 		    'Tags' => $tags,
 		    'ProblemCategory' => $prob_cat,
 		    'AffectedDescription' => $affect_desc,
-		    'AffectedNumber' => $affect_num);
+		    'AffectedNumber' => $affect_num,
+		    'GeographicLocation' = $geo_loc,
+		    'SpecificLocation' = $spec_loc);
 //		    'ProblemCategory2' => $prob_cat2);
    //		    'id' => $problemID);  
 
