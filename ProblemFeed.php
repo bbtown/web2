@@ -179,6 +179,8 @@
 			         echo "<h4>Secondary Problem Categories</h4> ".$doc['ProblemCategory2'];
                                  echo "<h4>Description:</h4> ".$doc['ProblemDescription'];
                                  echo "<h4>Tags</h4> ".$doc['Tags'];
+			         echo "<h4>Description of the Affected Population: </h4>".$doc['AffectedDescription'];
+			         echo "<h4>Estimated Number of Affected: </h4>".$doc['AffectedNumber'];
 			         echo "<h4>Problem ID: </h4> ".$doc['id'];                               }
                              }
 

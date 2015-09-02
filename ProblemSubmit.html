@@ -42,6 +42,8 @@
       var url = $('#url').val();
       var tags = $('#tags').val(); 
       var prob_cat = $('#prob_cat').val();
+      var affect_desc = $('#affect_desc').val();
+      var affect_num = $('affect_num').val();
 //      var prob_cat2 = $('#prob_cat2').serialize();
 
 // var value = $(this).attr('id');
@@ -269,6 +271,63 @@
                                         <div class="i-checks"><label> <input type="checkbox" value="Infrastructure" name="prob_cat2"> <i></i> Infrastructure </label></div>
                                 </div>
 							        </div> -->
+               <!-- <div class="ibox-content"> -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Who</h1>
+                            <h4>Who is affected by this problem?</h4>
+                         <!--   <div class="row">
+                        <div class="col-lg-7">-->
+                 <p>
+                            <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
+                            
+                                <ul>
+                                    <li><a href="http://www.census.gov/popclock/">World Population Clock</a></li>
+                                    <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
+
+                                </ul>  
+                            </p>
+                        </div> 
+                        </div>
+                                <div class="form-group"><h4>Describe the group of people affected by the problem.</h4>
+                                    <div class="col-sm-10"><input type="text" id="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
+                                    </div>
+                                </div>
+                        <div class="row">
+                     <div class="col-sm-10">
+                                <div class="form-group">
+                                    <h4>Estimate the number of people directly affected by this problem.</h4>
+                                    <div class="col-sm-5">
+                                        <div class="input-group">
+                                        <input type="text" id="affect_num" class="form-control" placeholder="e.g., 7,290,000,000" name="people_num" maxlength="14">
+                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Submit
+                                        </button></span> 
+                                    </div>
+
+                                        <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
+
+                                
+                            </div>
+                            </div>
+                      
+                    </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                 <!---
         
@@ -290,17 +349,7 @@
                                 </div>
                                     <div class="container">
                                         <div class="row">
-                                          <div class="col-sm-6 col-sm-6">
-                                            <div class="form-group"><h4>Select a primary category:</h4></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option1" name="a"> <i></i> Environment</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option2" name="a"> <i></i> Society</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option3" name="a"> <i></i> Technology</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option4" name="a"> <i></i> Government</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option5" name="a"> <i></i> Health</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option6" name="a"> <i></i> Education</label></div>
-                                        <div class="i-checks"><label> <input type="radio" value="option7" name="a"> <i></i> Infrastructure </label></div>
-                                </div>
-                                <div class="col-sm-6 col-sm-6">
+<!--                                <div class="col-sm-6 col-sm-6">
                                     <div class="form-group"><h4>Select secondary categories (if applicable):</h4></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i> Environment</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option2" name="a"> <i></i> Society</label></div>
@@ -309,21 +358,9 @@
                                         <div class="i-checks"><label> <input type="checkbox" value="option5" name="a"> <i></i> Health</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option6" name="a"> <i></i> Education</label></div>
                                         <div class="i-checks"><label> <input type="checkbox" value="option7" name="a"> <i></i> Infrastructure </label></div>
-                                </div>
+                                </div> -->
                                 </div> 
                                 <div class="hr-line-dashed"></div>
-                                    </div>
-                                    <div class="row">
-                                       <div class="col-sm-10">
-                                <div class="form-group"><h4>Tags</h4>
-                                    <input type="text" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
-                                    </div>
-                                </div>
-                                <button onclick="what_form();" class="btn btn-sm btn-primary m-t-n-xs" type="button"><strong>Submit</strong></button>
-                                </div>
-                                   </form>
-
-
                                    
                                    <!--
                                 <div class="hr-line-dashed"></div>

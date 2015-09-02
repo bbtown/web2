@@ -15,6 +15,8 @@
   $url = $_POST['url'];
   $tags = $_POST['tags'];
   $prob_cat = $_POST['prob_cat'];
+  $affect_desc = $_POST['affect_desc'];
+  $affect_num = $_POST['affect_num'];
 //  $prob_cat2 = $_POST['prob_cat2'];
   $problemID = $_['id'];
 
@@ -23,7 +25,9 @@
                     'Perspective' => $perspective,
                     'URL' => $url,
 		    'Tags' => $tags,
-		    'ProblemCategory' => $prob_cat);
+		    'ProblemCategory' => $prob_cat,
+		    'AffectedDescription' => $affect_desc,
+		    'AffectedNumber' => $affect_num);
 //		    'ProblemCategory2' => $prob_cat2);
    //		    'id' => $problemID);  
 
