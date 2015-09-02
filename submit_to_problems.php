@@ -30,8 +30,8 @@
 		    'ProblemCategory' => $prob_cat,
 		    'AffectedDescription' => $affect_desc,
 		    'AffectedNumber' => $affect_num,
-		    'GeographicLocation' = $geo_loc,
-		    'SpecificLocation' = $spec_loc);
+		    'GeographicLocation' => $geo_loc,
+		    'SpecificLocation' => $spec_loc);
 //		    'ProblemCategory2' => $prob_cat2);
    //		    'id' => $problemID);  
 
