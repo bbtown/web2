@@ -71,8 +71,9 @@ function add_idea() {
 var idea_desc = $('#idea_desc').val();
 
 var serialData = $('#add_idea').serialize();
+
 $.ajax({
-    url:'./submit_to_deas.php',
+    url:'./submit_to_ideas.php',
     type: 'POST',
     data: serialData,
     success: function(data) {
