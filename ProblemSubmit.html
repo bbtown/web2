@@ -66,6 +66,22 @@
 
     }
 
+function add_idea() {
+
+var idea_desc = $('#idea_desc').val();
+
+var serialData = $('#add_idea').serialize();
+$.ajax({
+    url:'./submit_to_deas.php',
+    type: 'POST',
+    data: serialData,
+    success: function(data) {
+      alert(data);
+}
+
+});
+
+} 
        
     </script>
 
@@ -235,8 +251,23 @@
                                     <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
                                     </div>
                                 </div>-->
+<!--add_idea()  idea_desc -->
+<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> 
+
+
 
                                 <div class="form-group">
+				  <label class="col-sm-2 control-label">Do you have any ideas on how to fix this problem?</label>
+				  <div class="col-sm-10">
+				    <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea>
+
+
+<button onclick="add_idea();" class="btn btn-sm btn-primary m-t-n-xs" type="button"><strong>Submit</strong></button>
+                                    </div>
+                                </form>
+
+
+				  <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
                                         <textarea class="form-control input-sm" rows="1" maxlength="1500" name="perspective" id="perspective"> </textarea>
