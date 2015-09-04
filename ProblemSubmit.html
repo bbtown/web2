@@ -266,7 +266,7 @@ $.ajax({
                                     </div>
                                 </form>
 -->
-
+<!--
 				  <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
@@ -281,7 +281,7 @@ $.ajax({
 				  <div class="form-group">
 				    <label class="col-sm-2 control-label">Tags</label>
 				    <div class="col-sm-10">
-                                    <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+                                    <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span> -->
                                         <!-- <div class="col-sm-12"> -->
                                         <div class="form-group"><!-- <label class="col-sm-4 control-label">Select a Primary Category: </label> --> <h4>Select a Primary Category:</h4>
 					<div class="i-checks col-sm-6"><label> <input type="radio" value="Environment" name="prob_cat"> <i></i> Environment</label></div>
@@ -293,7 +293,20 @@ $.ajax({
                                         <div class="i-checks col-sm-6"><label> <input type="radio" value="Infrastructure" name="prob_cat"> <i></i> Infrastructure </label></div>
                                 </div>
 					      </div>
-					     
+<div class="form-group">
+      <label class="col-sm-2 control-label">Tags</label>
+          <div class="col-sm-10">
+                                    <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+                                         <div class="form-group">
+                                     <label class="col-sm-2 control-label">Perspective</label>
+                                        <div class="col-sm-10">
+                                        <textarea class="form-control input-sm" rows="1" maxlength="1500" name="perspective" id="perspective"> </textarea>
+                                        <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
+                                        </div>
+                                        </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Upload Link</label>
+                                    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
+                                    </div>
 
 
 
@@ -310,6 +323,7 @@ $.ajax({
 							        </div> -->
                <!-- <div class="ibox-content"> -->
 <!--                    <div class="row"> -->
+<div class="hr-line-dashed"></div>
                         <div class="col-sm-12">
                             <h1>Who</h1>
                             <h4>Who is affected by this problem?</h4>
@@ -351,7 +365,7 @@ $.ajax({
 
   
             <div class="col-lg-12">
-
+<div class="hr-line-dashed"></div>
 <!--                         <div class="form-group">
                  <h1>Where</h1>                   
                 <label class="font-normal">Are certain geographic areas affected?</label>
@@ -636,7 +650,7 @@ $.ajax({
                                 </div>
                   </div>
 
-
+<div class="hr-line-dashed"></div>
             <div class="col-lg-12">
                  <h1>Why</h1>                   
                 
@@ -661,8 +675,8 @@ $.ajax({
 <form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> 
 
 
-
-                                <div class="form-group">
+<div class="hr-line-dashed"></div>
+                                <div class="form-group"> <h4>Ideas?</h4>
 				    <label class="col-sm-2 control-label">Do you have any ideas on how to fix this problem?</label>
 				      <div class="col-sm-10">
 					    <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea>
