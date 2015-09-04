@@ -31,96 +31,9 @@
 
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-<style>
-.container {
-    padding: 25px;
-    position: fixed;
-    left: 25%;
-}
-li.ui-state-default{
-    background:#fff0;
-    border:none;
-    border-bottom:1px solid #ddd;
-    text-align: left;
-    padding-bottom: 10px;
-}
-
-li.ui-state-default:last-child{
-    border-bottom:none;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Roboto:400);
-body {
-  background-color:#fff;
-  -webkit-font-smoothing: antialiased;
-  font: normal 14px Roboto,arial,sans-serif;
-}
-
-.btn,.form-control,.well {
-    border-radius:1px;
-    box-shadow:0 0 0;
-}
-
-.form-control {
-    border-color:#d7d7d7;
-}
-
-.btn-primary {
-    border-color:transparent;
-}
-
-.btn-primary, .list-group-item.active:focus {
-    background-color:#4285f4;
-} 
-
-.btn-plus {
-    background-color:#ffffff;
-    border-width:1px;
-    border-color:#dddddd;
-    box-shadow:1px 1px 0 #999999;
-    border-radius:3px;color:#666666;
-    text-shadow:0 0 1px #bbbbbb;
-}
-
-.well,.panel {
-    border-color:#d2d2d2;
-    box-shadow:0 1px 0 #cfcfcf;
-    border-radius:3px;
-}
-
-hr {
- border-color:#ececec;
-}
-
-button {
- outline: 0;
-}
-
-.btn span{
- color:#666666;
-}
-
-.list-group-item:first-child,.list-group-item:last-child {
- border-radius:0;
-}
-
-h3 { 
- border:0 solid #efefef; 
- border-bottom-width:1px;
- padding-bottom:10px;
-}
-</style>
     <script>
 
-
-
-function addComment(){
-    var userComment = document.getElementById("userComment").value;
-document.getElementById("ui-state-default").innerHTML = userComment;
-}
-
-
-    function describe_form() {
+   function describe_form() {
 
       var prob_desc = $('#prob_desc').val();
       var prob_more = $('#prob_more').val();
@@ -384,39 +297,6 @@ $.ajax({
 
 
 
-
-<!-- COMMENT BLOCK TEST AREA -->
-
-
-<div class="container">
-    <div class="col-lg-4 col-sm-6 text-center">
-    <div class="well">
-        <h4>What is on your mind?</h4>
-    <div class="input-group">
-        <input type="text" id="userComment" class="form-control input-sm chat-input" placeholder="Write your message here..." />
-	    <span class="input-group-btn" onclick="addComment()">     
-            <a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> Add Comment</a>
-        </span>
-    </div>
-    <hr data-brackets-id="12673">
-    <ul data-brackets-id="12674" id="sortable" class="list-unstyled ui-sortable">
-        <strong class="pull-left primary-font">James</strong>
-        <small class="pull-right text-muted">
-           <span class="glyphicon glyphicon-time"></span>7 mins ago</small>
-        </br>
-        <li class="ui-state-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
-        </br>
-         <strong class="pull-left primary-font">Taylor</strong>
-        <small class="pull-right text-muted">
-           <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
-        </br>
-        <li class="ui-state-default">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-        
-    </ul>
-    </div>
-</div>
-
-<!-- END COMMENT BLOCK  TEST AREA --> 
 					     <!-- <div class="col-sm-6 col-sm-6">
                                     <div class="form-group"><h4>Select secondary categories (if applicable):</h4>
 					<div class="i-checks"><label> <input type="checkbox" value="Environment" name="prob_cat2"> <i></i> Environment</label></div>
