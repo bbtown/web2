@@ -38,5 +38,5 @@
    //		    'id' => $problemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
-  echo "Thank you for submitting your problem!  Problem ID: ".$problemID;
+  echo "Thank you for submitting your problem!  Problem ID: ".$id;
 ?>
