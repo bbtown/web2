@@ -171,6 +171,19 @@ $.ajax({
                                 <div class="form-group">
                   <label class="col-sm-2 control-label">Upload Link</label>
                                     <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the idea?</span>
+
+
+
+
+<br/><br/><br/>
+                                <!---
+        
+                Look, it's AJAX!
+                                -->
+                                        <button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" style="width:75%" type="button"><strong>Submit</strong></button>
+</div>                                    
+                                </form>
+
                                     </div>
  
 
@@ -186,16 +199,6 @@ $.ajax({
                                         <div class="i-checks"><label> <input type="checkbox" value="Infrastructure" name="prob_cat2"> <i></i> Infrastructure </label></div>
                                 </div>
                                     </div> -->
-
-
-<br/><br/><br/>
-                                <!---
-        
-                Look, it's AJAX!
-                                -->
-                                        <button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" type="button"><strong>Submit</strong></button>
-</div>                                    
-                                </form>
                                    
 
 <!--add_idea()  idea_desc -->
@@ -210,7 +213,7 @@ $.ajax({
                       <div class="col-sm-10">
                         <textarea class="form-control input-sm" rows="1" maxlength="500" name="prob_desc" id="prob_desc"></textarea>
 <br/><br/><br/>
-<button onclick="add_problem();" class="btn btn-sm btn-primary m-t-n-xs" type="button"><strong>Submit</strong></button>
+<button onclick="add_problem();" class="btn btn-sm btn-primary m-t-n-xs" style="width:75%" type="button"><strong>Submit</strong></button>
                                     </div>
                                 </form>
                             </div>
