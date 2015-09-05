@@ -197,46 +197,47 @@ $.ajax({
 <div class="hr-line-dashed"></div>
                         <div class="col-sm-12 gray-bg">
                             <h1>Who</h1>
-                              <h3>Who is affected by this problem?</h3>
-                          <div class="row">
-                          <div class="col-sm-8"> 
-                            
+                            <h4>Who is affected by this problem?</h4>
+                         <!--   <div class="row">
+                        <div class="col-lg-7">-->
                  <p>
                             <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
                             
                                 <ul>
+
                                     <li><a href="http://www.census.gov/popclock/">World Population Clock</a></li>
                                     <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
 
                                 </ul>  
                             </p>
-                          </div>
-                        </div>
-
-                              <div class="row"> 
-                                <div class="form-group">
-                                  <label class="col-sm-2 control-label">Describe the group of people affected by the problem.</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" id="affect_desc" name="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
+                                <div class="form-group"><h4>Describe the group of people affected by the problem.</h4>
+                                    <div class="col-sm-10"><input type="text" id="affect_desc" name="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
-                       <!-- <div class="row"> 
-                     <div class="col-sm-12"> -->
+                       <!-- <div class="row"> -->
+                     <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Estimate the number of people directly affected by this problem.</label>
+                                    <h4>Estimate the number of people directly affected by this problem.</h4>
                                     <div class="col-sm-5">
                                         <div class="input-group">
                                         <input type="text" id="affect_num" class="form-control" placeholder="e.g., 7,290,000,000" name="affect_num" maxlength="14">
                                         <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
-                                      </div>
-                                    </div>
-                                </div>
-                  </div>
+
+                                
+                            </div>
+                            </div>
+                      
+                    </div>
+                    </div>
                 </div>
 
 
+
+
+
+
   <div class="hr-line-dashed"></div>
-            <div class="col-sm-12">
+            <div class="col-lg-12">
 
 <!--                         <div class="form-group">
                  <h1>Where</h1>                   
@@ -256,9 +257,9 @@ $.ajax({
                 </div>
                 </div> -->
 
-                 <h1>Where</h1>    
-                 <label class="col-sm-2 control-label">Are specific countries affected?</label>
-                <div class="form-group input-group col-sm-10">
+                 <h1>Where</h1>                   
+                <label class="font-normal">Are specific countries affected?</label>
+                <div class="form-group input-group">
                 <select data-placeholder="Choose a country..." id="geo_loc" name="geo_loc" class="chosen-select" multiple style="width:350px;" tabindex="4">
                 <option value="">Select</option>
                 <option value="United States">United States</option>
@@ -515,9 +516,8 @@ $.ajax({
                 </select>
                 </div>
         
-        
-                                <div class="form-group"><label class="col-sm-2 control-label">Enter a specific area</label>
-                                  <div class="col-sm-10">
+        <div class="col-sm-12">
+                                <div class="form-group"><h4>Enter a specific area</h4>
                                     <input type="text" id="spec_loc" name="spec_loc" class="form-control input-sm" placeholder="e.g., Los Angeles, California" maxlength="250"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
@@ -527,10 +527,10 @@ $.ajax({
             <div class="col-sm-12 gray-bg">
                  <h1>Why</h1>                   
                 
-                <div class="col-sm-12 form-group">
-                  <label class="col-sm-2 control-label">Enter a list of factors that influence the problem.</label>
-                      <div class="input-group col-sm-10">
-                        <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
+                <div class="input-group form-group">
+                                    <label class="font-normal">Enter a list of factors that influence the problem.</label>
+                                    <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
+                                    </div>
 
 <br/><br/><br/>
                                 <!---
@@ -538,13 +538,9 @@ $.ajax({
                 Look, it's AJAX!
                                 -->
                                         <button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Submit</strong></button>
-                                    </div>                                    
-    </form>
-
-                                    </div>
-                                  </div>
+</div>                                    
+                                </form>
                                 </div>
-
 
                                    
 
@@ -577,6 +573,13 @@ $.ajax({
 <!-- ___.  This leads to _____.  -->
 
         </div>
+        </div>
+                                </div>
+
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
                                 <!-- WHO WHAT WHEN WHERE WHY HOW PAST FUTURE PRESENT-->
                     
                                 
