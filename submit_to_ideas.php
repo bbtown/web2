@@ -13,12 +13,16 @@
   $idea_more = $_POST['idea_more']; 
   $perspective = $_POST['perspective'];  
   $url = $_POST['url'];
+  $tags = $_POST['tags'];
+  $idea_cat = $_POST['idea_cat'];
   $ideaID = $_['id'];
  
  $document = Array('IdeaDescription' => $idea_desc,
                     'MoreDescription' => $idea_more,
                     'Perspective' => $perspective,
-                    'URL' => $url);  
+                    'Tags' => $tags,
+		    'IdeaCategory' => $idea_cat,
+		    'URL' => $url);  
 
   $result = r\db("web")->table('ideas')->insert($document)->run($conn);
   echo "inserted data.";
