@@ -15,7 +15,7 @@
   $url = $_POST['url'];
   $tags = $_POST['tags'];
   $idea_cat = $_POST['idea_cat'];
-  $ideaID = $_['id'];
+//  $ideaID = $_['id'];
  
  $document = Array('IdeaDescription' => $idea_desc,
                     'MoreDescription' => $idea_more,
@@ -25,5 +25,5 @@
 		    'URL' => $url);  
 
   $result = r\db("web")->table('ideas')->insert($document)->run($conn);
-  echo "inserted data.";
+  echo "Thank you for submitting your idea!";
 ?>

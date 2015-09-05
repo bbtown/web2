@@ -21,7 +21,7 @@
   $spec_loc = $_POST['spec_loc'];
   $factors= $_POST['factors'];
 //  $prob_cat2 = $_POST['prob_cat2'];
-  $problemID = $_['id'];
+//  $problemID = $_['id'];
 
   $document = Array('ProblemDescription' => $prob_desc,
                     'MoreDescription' => $prob_more,
@@ -38,5 +38,5 @@
    //		    'id' => $problemID);  
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
-  echo "Thank you for submitting your problem!  Problem ID: ".$id;
+  echo "Thank you for submitting your problem!  Problem ID: ";
 ?>
