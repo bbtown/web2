@@ -88,8 +88,20 @@ $.ajax({
 
 
 
-                     echo "<a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a>";
+                     echo "<h4><a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a></h4>";
 
+echo "
+
+<div class=\"form-group\"> 
+                    <label class=\"col-sm-2 control-label\">Do you have any ideas on how to fix this problem?</label>
+                      <div class=\"col-sm-10\">
+                        <textarea class=\"form-control input-sm\" rows=\"1\" maxlength=\"500\" name=\"idea_desc\" id=\"idea_desc\"></textarea>
+<br/><br/><br/>
+<button onclick=\"add_idea();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>
+                                    </div>
+                                </form>
+                            </div>
+";
 
 
 
