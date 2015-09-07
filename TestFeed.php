@@ -75,9 +75,9 @@ $.ajax({
                                if(isset($doc['ProblemDescription'])) {
                                  echo "<h1>Problem Description</h1>";
                                  echo "<h4>Category:</h4> ".$doc['ProblemCategory'];
-//                     echo "<h4>Secondary Problem Categories</h4> ".$doc['ProblemCategory2'];
+//                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
                                  echo "<h4>Description:</h4> ".$doc['ProblemDescription'];
-                                 echo "<h4>Tags</h4> ".$doc['Tags'];
+                                 echo "<h4>Tags: </h4> ".$doc['Tags'];
 //                     echo "<h4>Description of the Affected Population: </h4>".$doc['AffectedDescription'];
 //                     echo "<h4>Estimated Number of Affected: </h4>".$doc['AffectedNumber'];
 //                     echo "<h4>General Affected Geographic Location: </h4> ".$doc['GeographicLocation'];
@@ -89,13 +89,14 @@ $.ajax({
 
 
                      echo "
-                     <script type = 'text/javascript'>
+//                     <script type = 'text/javascript'>
 
 
 <form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_idea.php\"> 
 <button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" type=\"button\"><strong>View Details</strong></button>
 </form>
-</script>";
+//</script>
+";
 
 }
 }
