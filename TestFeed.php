@@ -88,7 +88,7 @@ $.ajax({
 
 
 
-                     echo "<a href="https://vast-oasis-7387.herokuapp.com/ProblemView.php">View Details</a>";
+                     echo "<a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a>";
 
 
 
