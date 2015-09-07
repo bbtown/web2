@@ -7,18 +7,22 @@
 
   $retrieve_id = $_POST['retrieve_id'];
 
-//  $result = r\db("web")->table('ideas')->run($conn);
+  $result = r\db("web")->table('ideas')->run($conn);
 
 
 
-$result = r\db("web")->table('ideas')->get($retrieve_id)->run($conn);
+//$result = r\db("web")->table('ideas')->get($retrieve_id)->run($conn);
 echo "Retrieving information...";
 
                                  
     //print_r($doc[$retrieve_id]);
 
+    foreach ($result as $doc) {
+        if ($doc.['id'] == $retrieve_id) {
+	   print_r($doc);};
+    }
 
-echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
+//echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
   
 // $document = Array('IdeaDescription' => $idea_desc,
 //                    'MoreDescription' => $idea_more,
