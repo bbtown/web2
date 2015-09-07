@@ -34,13 +34,11 @@
     <script>
     function retrieve_id() {
 var retrieve_id = $('#retrieve_id').val();
-var serialData = $('#retrieve_id').serialize();
-
 
 $.ajax({
     url:'./retrieve_idea.php',
     type: 'POST',
-    data: serialData,
+    data: retrieve_id,
     success: function(data) {
       alert(data);
 }
@@ -72,7 +70,7 @@ $.ajax({
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('ideas')->run($conn);
                              foreach ($result as $doc) {
-                               if(isset($doc['ProblemDescription'])) {
+                               if(isset($doc['IdeaDescription'])) {
                                  echo "<h1>Idea Description</h1>";
                                  echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
 //                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
