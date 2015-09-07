@@ -87,11 +87,11 @@ $.ajax({
 
 
                      echo "
-//                     <script type = 'text/javascript'>
+                     <script type \= 'text/javascript'>
 
 
-<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_idea\.php\"> 
-<button onclick=\"retrieve_id\(\)\;\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+<form class\=\"form-horizontal\" method\=\"post\" id=\"retrieve_id\" action\=\"retrieve_idea\.php\"> 
+<button onclick\=\"retrieve_id\(\)\;\" class\=\"btn btn-sm btn-primary m-t-n-xs\" style\=\"width:40%\" type\=\"button\"><strong>View Details</strong></button>
 </form>
 </script>
 ";   
