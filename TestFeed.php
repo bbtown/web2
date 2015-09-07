@@ -202,7 +202,7 @@ $.ajax({
 //                     echo "<h4>General Affected Geographic Location: </h4> ".$doc['GeographicLocation'];
 //                     echo "<h4>Affected Location (specific): </h4>".$doc['SpecificLocation'];
 //                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
-                     echo "<h4>Problem ID: </h4> ".$doc['id']
+                     echo "<h4>Problem ID: </h4> ".$doc['id'];
 
 
                      echo "
