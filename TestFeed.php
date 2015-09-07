@@ -92,8 +92,8 @@ $.ajax({
                      <script type = 'text/javascript'>
 
 
-<form class="form-horizontal" method="post" id="retrieve_id" action="retrieve_idea.php"> 
-<button onclick="retrieve_id();" class="btn btn-sm btn-primary m-t-n-xs" type="button"><strong>View Details</strong></button>
+<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_idea.php\"> 
+<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" type=\"button\"><strong>View Details</strong></button>
 </form>
 </script>";
 
