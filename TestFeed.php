@@ -70,34 +70,34 @@ $.ajax({
 
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('problems')->run($conn);
+                             $result = r\db("web")->table('ideas')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
-                                 echo "<h1>Problem Description</h1>";
-                                 echo "<h4>Category:</h4> ".$doc['ProblemCategory'];
+                                 echo "<h1>Idea Description</h1>";
+                                 echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
 //                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
-                                 echo "<h4>Description:</h4> ".$doc['ProblemDescription'];
+                                 echo "<h4>Description:</h4> ".$doc['IdeaDescription'];
                                  echo "<h4>Tags: </h4> ".$doc['Tags'];
 //                     echo "<h4>Description of the Affected Population: </h4>".$doc['AffectedDescription'];
 //                     echo "<h4>Estimated Number of Affected: </h4>".$doc['AffectedNumber'];
 //                     echo "<h4>General Affected Geographic Location: </h4> ".$doc['GeographicLocation'];
 //                     echo "<h4>Affected Location (specific): </h4>".$doc['SpecificLocation'];
 //                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
-                     echo "<h4>Problem ID: </h4> ".$doc['id'];
+                     echo "<h4>Idea ID: </h4> ".$doc['id'];
 
 
 
 
-                     echo "<h4><a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a></h4>";
+//                     echo "<h4><a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a></h4>";
 
 echo "
 
 <div class=\"form-group\"> 
-                    <label class=\"col-sm-2 control-label\">Do you have any ideas on how to fix this problem?</label>
+                    <label class=\"col-sm-2 control-label\">Please enter the idea ID Number:</label>
                       <div class=\"col-sm-10\">
-                        <textarea class=\"form-control input-sm\" rows=\"1\" maxlength=\"500\" name=\"idea_desc\" id=\"idea_desc\"></textarea>
+                        <textarea class=\"form-control input-sm\" rows=\"1\" maxlength=\"500\" name=\"retrieve_id\" id=\"retrieve_id\"></textarea>
 <br/><br/><br/>
-<button onclick=\"add_idea();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>
+<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>
                                     </div>
                                 </form>
                             </div>
