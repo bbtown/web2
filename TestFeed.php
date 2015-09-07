@@ -34,6 +34,8 @@
     function retrieve_id() {
 var retrieve_id = $('#retrieve_id').val();
 var serialData = $('#retrieve_id').serialize();
+
+
 $.ajax({
     url:'./retrieve_idea.php',
     type: 'POST',
@@ -41,7 +43,9 @@ $.ajax({
     success: function(data) {
       alert(data);
 }
+
 });
+
 } 
     </script>
 

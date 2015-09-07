@@ -27,6 +27,4 @@ echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
 //		    'IdeaCategory' => $idea_cat,
 //		    'URL' => $url);  
 
-  $result = r\db("web")->table('ideas')->insert($document)->run($conn);
-  echo "Retrieving information...";
 ?>
