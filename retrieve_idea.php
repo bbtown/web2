@@ -32,13 +32,15 @@
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
   
- $document = Array('IdeaDescription' => $idea_desc,
-                    'MoreDescription' => $idea_more,
-                    'Perspective' => $perspective,
-                    'Tags' => $tags,
-		    'IdeaCategory' => $idea_cat,
-		    'URL' => $url);  
+// $document = Array('IdeaDescription' => $idea_desc,
+//                    'MoreDescription' => $idea_more,
+//                    'Perspective' => $perspective,
+//                    'Tags' => $tags,
+//		    'IdeaCategory' => $idea_cat,
+//		    'URL' => $url);  
 
+
+$document = Array ('id' => $retrieve_id);
 
   //  foreach ($result as $doc) {
         print_r($doc);
