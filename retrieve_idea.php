@@ -30,7 +30,7 @@
 //    }
 
 
-echo '$doc.[id]'.$doc.[id];
+echo '$doc.[id]'.$doc.['id'];
 
 
 
