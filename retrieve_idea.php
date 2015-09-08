@@ -7,11 +7,11 @@
 
   $retrieve_id = $_POST['retrieve_id'];
 
-  $result = r\db("web")->table('ideas')->run($conn);
+//  $result = r\db("web")->table('ideas')->run($conn);
 
 
 
-//$result = r\db("web")->table('ideas')->get(id)->run($conn);
+$result = r\db("web")->table('ideas')->get(id)->run($conn);
 
 //$result = r\table("tablePhpTest")->count()->run($conn);
 
