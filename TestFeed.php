@@ -87,7 +87,7 @@ $retrieve_id = $doc['id'];
 
 
 
-echo "<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>";
+echo "<br/><div class=\"form-group\"><button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button></form>";
 
 }
 }
