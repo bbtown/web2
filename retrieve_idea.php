@@ -29,8 +29,8 @@
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
-        if ($retrieve_id == '23867ef1-c429-4dc8-97ad-49936d36e757') {
-	    echo "this test worked :D";
+        if ($retrieve_id == $doc.[id]) {
+	    echo "this test worked :D  ".$retrieve_id;
 //	   echo $doc.['IdeaDescription'];
 //};
     } else {echo "this test failed: ".$retrieve_id;}
