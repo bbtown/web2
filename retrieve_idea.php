@@ -15,10 +15,6 @@ $result = r\db("web")->table('ideas')->get(id)->run($conn);
 
 
 
-    foreach ($result as $doc) {
-        print_r($doc);
-    }
-
 
 //echo "Retrieving information...".$retrieve_id;
 //echo "you submitted stuff.";
@@ -36,11 +32,17 @@ $result = r\db("web")->table('ideas')->get(id)->run($conn);
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
   
-// $document = Array('IdeaDescription' => $idea_desc,
-//                    'MoreDescription' => $idea_more,
-//                    'Perspective' => $perspective,
-//                    'Tags' => $tags,
-//		    'IdeaCategory' => $idea_cat,
-//		    'URL' => $url);  
+ $document = Array('IdeaDescription' => $idea_desc,
+                    'MoreDescription' => $idea_more,
+                    'Perspective' => $perspective,
+                    'Tags' => $tags,
+		    'IdeaCategory' => $idea_cat,
+		    'URL' => $url);  
+
+
+    foreach ($result as $doc) {
+        print_r($doc);
+    }
+
 
 ?>
