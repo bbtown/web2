@@ -7,7 +7,7 @@
 
   $retrieve_id = $_POST['retrieve_id'];
 
-//  $result = r\db("web")->table('ideas')->run($conn);
+  $result = r\db("web")->table('ideas')->run($conn);
 
 
 
@@ -15,8 +15,8 @@
 
 //$result = r\table("tablePhpTest")->count()->run($conn);
 
-$result = r\db("web")->table('ideas')->count()->run($conn);
-    echo "Count: $result\n";
+//$result = r\db("web")->table('ideas')->count()->run($conn);
+//    echo "Count: $result\n";
 
 
 
@@ -29,8 +29,8 @@ $result = r\db("web")->table('ideas')->count()->run($conn);
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
-//        if ($doc.['id'] == $retrieve_id) {
-//	   echo $doc.['IdeaDescription'];
+        if ($doc.[id] == $retrieve_id) {
+	   echo $doc.['IdeaDescription'];
 //};
 //    }
 
