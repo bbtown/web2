@@ -16,12 +16,13 @@ $result = r\db("web")->table('ideas')->get(id)->run($conn);
 //echo "you submitted stuff.";
 
 //    echo "$result\n";
-                                 
+echo $retrieve_id;
+                                
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
 //        if ($doc.['id'] == $retrieve_id) {
-	   echo $doc.['IdeaDescription'];
+//	   echo $doc.['IdeaDescription'];
 //};
 //    }
 
