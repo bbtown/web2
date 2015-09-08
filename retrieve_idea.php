@@ -11,7 +11,8 @@
 
 
 
-$result = r\db("web")->table('ideas')->getField(id)->run($conn);
+$result = r\db("web")->table('ideas')->getAll("id", array("test" => "testName"))->run($conn);
+
 
 //$result = r\table("tablePhpTest")->count()->run($conn);
 
@@ -31,7 +32,6 @@ $result = r\db("web")->table('ideas')->getField(id)->run($conn);
 //    foreach ($result as $doc) {
         if ($retrieve_id == $doc.['id']) {
 	    echo "this test worked :D  ".'$retrieve_id: '.$retrieve_id.'$doc.[id]'.$doc.['id'];
-//	   echo $doc.['IdeaDescription'];
 //};
     } else {echo "this test failed: ".$retrieve_id." | ".$doc.['id'];}
 
