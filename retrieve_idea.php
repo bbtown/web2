@@ -12,11 +12,19 @@
 
 
 $result = r\db("web")->table('ideas')->get(id)->run($conn);
+
+
+
+    foreach ($result as $doc) {
+        print_r($doc);
+    }
+
+
 //echo "Retrieving information...".$retrieve_id;
 //echo "you submitted stuff.";
 
 //    echo "$result\n";
-echo $doc.[id];
+//echo $doc.[id];
                                 
     //print_r($doc[$retrieve_id]);
 
