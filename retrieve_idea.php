@@ -13,7 +13,9 @@
 
 //$result = r\db("web")->table('ideas')->get(id)->run($conn);
 
-$result = r\table("tablePhpTest")->count()->run($conn);
+//$result = r\table("tablePhpTest")->count()->run($conn);
+
+$result = r\db("web")->table('ideas')->count()->run($conn);
     echo "Count: $result\n";
 
 
