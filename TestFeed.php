@@ -86,10 +86,13 @@ $.ajax({
 $retrieve_id = $doc['id'];
 
 
-//                     echo "<h4><a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a></h4>";
 
-echo "
+echo "<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>";
 
+}
+}
+?>
+<!--echo 
 <div class=\"form-group\"> 
                     //<label class=\"col-sm-2 control-label\">Please enter the idea ID Number:</label>
                       <div class=\"col-sm-10\">
@@ -105,7 +108,7 @@ echo "
 
 }
 }
-?>
+?> -->
 
         </div>
         </div>
