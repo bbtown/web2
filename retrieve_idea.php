@@ -8,19 +8,22 @@
   $retrieve_id = $_POST['retrieve_id'];
 
   $result = r\db("web")->table('ideas')->run($conn);
+//
 
 
-
-//$result = r\db("web")->table('ideas')->get($retrieve_id)->run($conn);
+$result = r\db("web")->table('ideas')->get($retrieve_id)->run($conn);
 //echo "Retrieving information...".$retrieve_id;
 
+
+    echo "$result\n";
                                  
     //print_r($doc[$retrieve_id]);
 
-    foreach ($result as $doc) {
-        if ($doc.['id'] == $retrieve_id) {
-	   echo $doc.['Tags'];};
-    }
+//    foreach ($result as $doc) {
+//        if ($doc.['id'] == $retrieve_id) {
+//	   echo $doc.['Tags'];
+//};
+//    }
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
   
