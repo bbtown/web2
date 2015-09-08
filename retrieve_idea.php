@@ -11,26 +11,24 @@
 
 
 
-//$result = r\db("web")->table('ideas')->getAll("id", array("test" => "testName"))->run($conn);
+$result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "id"))->run($conn);
 
-
-//$result = r\table("tablePhpTest")->count()->run($conn);
 
 //$result = r\db("web")->table('ideas')->count()->run($conn);
 //    echo "Count: $result\n";
 
 
 
-    $result = r\db("web")->table('ideas')->map(function($x) {
-            return $x('id');
-        })->run($conn);
+//    $result = r\db("web")->table('ideas')->map(function($x) {
+//            return $x('id');
+//        })->run($conn);
 
-//    foreach ($result as $doc) {
-//        print_r($doc);
-//    }
+    foreach ($result as $doc) {
+        print_r($doc);
+    }
 
 
-echo '$doc.[id]'.$doc.['id'];
+//echo '$doc.[id]'.$doc.['id'];
 
 
 
