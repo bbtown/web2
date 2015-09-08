@@ -30,7 +30,8 @@
 
 //    foreach ($result as $doc) {
         if ($doc.[id] == $retrieve_id) {
-	   echo $doc.['IdeaDescription'];
+	    echo "this test worked :D";
+//	   echo $doc.['IdeaDescription'];
 //};
 //    }
 
