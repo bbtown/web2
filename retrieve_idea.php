@@ -33,7 +33,7 @@
 	    echo "this test worked :D";
 //	   echo $doc.['IdeaDescription'];
 //};
-    } else {echo "this test failed";}
+    } else {echo "this test failed: ".$retrieve_id;}
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
   
