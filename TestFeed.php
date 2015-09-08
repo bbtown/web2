@@ -82,7 +82,7 @@ $.ajax({
 //                     echo "<h4>General Affected Geographic Location: </h4> ".$doc['GeographicLocation'];
 //                     echo "<h4>Affected Location (specific): </h4>".$doc['SpecificLocation'];
 //                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
-                     echo "<h4>Idea ID: </h4> ".$retrieve_id;
+                     echo "<h4>Idea ID: </h4> ".'$retrieve_id';
 
 //$retrieve_id = $doc['id'];
 
