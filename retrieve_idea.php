@@ -29,11 +29,11 @@
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
-        if ($retrieve_id == $doc.[id]) {
-	    echo "this test worked :D  ".'$retrieve_id: '.$retrieve_id.'$doc.[id]'.$doc.[id];
+        if ($retrieve_id == $doc.['id']) {
+	    echo "this test worked :D  ".'$retrieve_id: '.$retrieve_id.'$doc.[id]'.$doc.['id'];
 //	   echo $doc.['IdeaDescription'];
 //};
-    } else {echo "this test failed: ".$retrieve_id." | ".$doc.[id];}
+    } else {echo "this test failed: ".$retrieve_id." | ".$doc.['id'];}
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
   
