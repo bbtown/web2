@@ -21,7 +21,7 @@ $result = r\db("web")->table('ideas')->get(id)->run($conn);
 
 //    foreach ($result as $doc) {
 //        if ($doc.['id'] == $retrieve_id) {
-	   echo $doc.['Tags'];
+	   echo $doc.['IdeaDescription'];
 //};
 //    }
 
