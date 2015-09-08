@@ -15,14 +15,14 @@ $result = r\db("web")->table('ideas')->get(id)->run($conn);
 //echo "Retrieving information...".$retrieve_id;
 //echo "you submitted stuff.";
 
-    echo "$result\n";
+//    echo "$result\n";
                                  
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
-//        if ($doc.['id'] == $retrieve_id) {
-//	   echo $doc.['Tags'];
-//};
+        if ($doc.['id'] == $retrieve_id) {
+	   echo $doc.['Tags'];
+};
 //    }
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
