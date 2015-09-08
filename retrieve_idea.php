@@ -13,9 +13,9 @@
 
 $result = r\db("web")->table('ideas')->get($retrieve_id)->run($conn);
 //echo "Retrieving information...".$retrieve_id;
+echo "you submitted stuff.";
 
-
-    echo "$result\n";
+//    echo "$result\n";
                                  
     //print_r($doc[$retrieve_id]);
 
