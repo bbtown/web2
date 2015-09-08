@@ -7,8 +7,8 @@
 
   $retrieve_id = $_POST['retrieve_id'];
 
-  $result = r\db("web")->table('ideas')->run($conn);
-//
+//  $result = r\db("web")->table('ideas')->run($conn);
+
 
 
 $result = r\db("web")->table('ideas')->get($retrieve_id)->run($conn);
