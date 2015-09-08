@@ -83,7 +83,7 @@ $.ajax({
 //                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
                      echo "<h4>Idea ID: </h4> ".$doc['id'];
 
-
+$retrieve_id = $doc['id'];
 
 
 //                     echo "<h4><a href=\"https://vast-oasis-7387.herokuapp.com/ProblemView.php\">View Details</a></h4>";
@@ -91,9 +91,9 @@ $.ajax({
 echo "
 
 <div class=\"form-group\"> 
-                    <label class=\"col-sm-2 control-label\">Please enter the idea ID Number:</label>
+                    //<label class=\"col-sm-2 control-label\">Please enter the idea ID Number:</label>
                       <div class=\"col-sm-10\">
-                        <textarea class=\"form-control input-sm\" rows=\"1\" maxlength=\"500\" name=\"retrieve_id\" id=\"retrieve_id\"></textarea>
+                      //  <textarea class=\"form-control input-sm\" rows=\"1\" maxlength=\"500\" name=\"retrieve_id\" id=\"retrieve_id\"></textarea>
 <br/><br/><br/>
 <button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>
                                     </div>
