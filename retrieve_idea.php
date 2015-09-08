@@ -20,9 +20,9 @@ $result = r\db("web")->table('ideas')->get(id)->run($conn);
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
-        if ($doc.['id'] == $retrieve_id) {
+//        if ($doc.['id'] == $retrieve_id) {
 	   echo $doc.['Tags'];
-};
+//};
 //    }
 
 //echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
