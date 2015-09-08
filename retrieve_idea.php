@@ -29,7 +29,7 @@
     //print_r($doc[$retrieve_id]);
 
 //    foreach ($result as $doc) {
-        if ($doc.[id] == $retrieve_id) {
+        if ($retrieve_id == '23867ef1-c429-4dc8-97ad-49936d36e757') {
 	    echo "this test worked :D";
 //	   echo $doc.['IdeaDescription'];
 //};
