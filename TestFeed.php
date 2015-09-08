@@ -90,12 +90,8 @@ $.ajax({
 
 echo 
 "<div class=\"form-group\"> 
-                    <label class=\"col-sm-2 control-label\">Please enter the idea ID Number:</label>
-                      <div class=\"col-sm-10\">
-                        <textarea class=\"form-control input-sm\" rows=\"1\" maxlength=\"500\" name=\"retrieve_id\" id=\"retrieve_id\"></textarea>
 <br/><br/><br/>
-<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" style=\"width:40%\" type=\"button\"><strong>Submit</strong></button>
-                                    </div>
+<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
                                 </form>
                             </div>
 ";
