@@ -7,12 +7,14 @@
 
   $retrieve_id = $_POST['retrieve_id'];
 
-  $result = r\db("web")->table('ideas')->run($conn);
+//  $result = r\db("web")->table('ideas')->run($conn);
 
 
 
 //$result = r\db("web")->table('ideas')->get(id)->run($conn);
 
+$result = r\table("tablePhpTest")->count()->run($conn);
+    echo "Count: $result\n";
 
 
 
@@ -40,10 +42,10 @@
 //		    'URL' => $url);  
 
 
-$document = Array ('id' => $retrieve_id);
+//$document = Array ('id' => $retrieve_id);
 
   //  foreach ($result as $doc) {
-        print_r($doc);
+//        print_r($doc);
     //}
 
 
