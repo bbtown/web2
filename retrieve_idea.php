@@ -23,9 +23,9 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 //            return $x('id');
 //        })->run($conn);
 
-    foreach ($result as $doc) {
-        print_r($doc);
-    }
+//    foreach ($result as $doc) {
+//        print_r($doc);
+//    }
 
 
 //echo '$doc.[id]'.$doc.['id'];
@@ -44,6 +44,9 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 //    foreach ($result as $doc) {
 //        if ($retrieve_id == $doc.[id]) {
 	    echo "this test worked :D  ".'$retrieve_id: '.$retrieve_id.'$doc.[id]'.$doc.[id];
+
+
+
 //};
 //    } else {echo "this test failed: ".$retrieve_id." | ".$doc.[id];};
 
