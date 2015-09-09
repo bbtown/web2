@@ -11,7 +11,7 @@
 
 
 
-$result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "id"))->run($conn);
+$result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id"))->run($conn);
 
 
 //$result = r\db("web")->table('ideas')->count()->run($conn);
