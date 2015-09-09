@@ -33,8 +33,8 @@
 
     <script>
     function retrieve_id() {
-var retrieve_id = $('#retrieve_id').val();
-var serialData = $('#retrieve_id').serialize();
+var retrieve_id = $('#retrieve').val();
+var serialData = $('#retrieve').serialize();
 $.ajax({
     url:'./retrieve_idea.php',
     type: 'POST',
@@ -84,7 +84,7 @@ function myFunction() {
 //                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
                      echo "<h4>Idea ID: </h4> ".$retrieve_id;
 echo 
-"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_id();\">
+"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_idea.php\">
 <br/><br/><br/>
 <button input type=\"submit\" onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
                                 </form>
