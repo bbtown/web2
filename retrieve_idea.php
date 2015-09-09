@@ -23,9 +23,9 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 //            return $x('id');
 //        })->run($conn);
 
-    foreach ($result as $doc) {
-        print_r($doc);
-    }
+//    foreach ($result as $doc) {
+//        print_r($doc);
+//    }
 
 
 //echo '$doc.[id]'.$doc.['id'];
@@ -52,7 +52,7 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 
 //}
 
-//echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
+echo "<h4>Factors that affect the problem: </h4>".$doc['IdeaDescription'];
   
 // $document = Array('IdeaDescription' => $idea_desc,
 //                    'MoreDescription' => $idea_more,
