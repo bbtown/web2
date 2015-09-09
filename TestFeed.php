@@ -92,13 +92,20 @@ function myFunction() {
 
 
 
-
+<!--
 echo 
 "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_idea.php\">
 <br/><br/><br/>
 <button input type=\"submit\" onclick=\"retrieve_id_function();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
                                 </form>
-";
+";-->
+
+echo 
+"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\">
+<br/><br/><br/>
+<button input type=\"submit\" onclick=\"retrieve_id_function();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+                                </form>
+"; 
 
 
 
