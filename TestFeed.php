@@ -97,7 +97,7 @@ echo
 "<div class=\"form-group\"> 
 <form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_idea.php\">
 <br/><br/><br/>
-<button onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+<button input type=\"submit\" onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
                                 </form>
                             </div>
 ";
