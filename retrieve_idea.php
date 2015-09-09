@@ -43,7 +43,7 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 
 //    foreach ($result as $doc) {
 //        if ($retrieve_id == $doc.[id]) {
-	    echo "this test worked :D  ".'$retrieve_id: '.$retrieve_id.'$doc.[id]'.$doc.[id];
+	    echo "this test worked :D  ".'$retrieve_id: '.$retrieve_id.'$doc.[id]: '.$doc.[id];
 
 
 
