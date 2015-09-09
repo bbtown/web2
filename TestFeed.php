@@ -84,7 +84,7 @@ function myFunction() {
 //                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
                      echo "<h4>Idea ID: </h4> ".$retrieve_id;
 echo 
-"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_idea.php\">
+"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve_id\" action=\"retrieve_id();\">
 <br/><br/><br/>
 <button input type=\"submit\" onclick=\"retrieve_id();\" class=\"btn btn-sm btn-primary m-t-n-xs\" value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
                                 </form>
