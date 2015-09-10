@@ -9,33 +9,23 @@
   //  print_r($doc);
   //}
 
-  $prob_desc = $_POST['prob_desc']; 
-  $prob_more = $_POST['prob_more']; 
-  $perspective = $_POST['perspective'];  
-  $url = $_POST['url'];
-  $tags = $_POST['tags'];
-  $prob_cat = $_POST['prob_cat'];
-  $affect_desc = $_POST['affect_desc'];
-  $affect_num = $_POST['affect_num'];
-  $geo_loc = $_POST['geo_loc'];
-  $spec_loc = $_POST['spec_loc'];
-  $factors= $_POST['factors'];
-//  $prob_cat2 = $_POST['prob_cat2'];
-//  $problemID = $_['id'];
+$comment_txt = $_POST['comment_txt'];
+$comment_idea_id = $_POST['comment_idea_id'];
+$comment_prob_id = $_POST['comment_prob_id'];
+$comment_tags = $_POST['comment_tags'];
+$comment_flag = $_POST['comment_flag'];
+$comment_sentiment = $_POST['comment_sentiment'];
+$comment_ts = $_POST['comment_ts'];
+$comment_user = $_POST['comment_user'];
 
-  $document = Array('ProblemDescription' => $prob_desc,
-                    'MoreDescription' => $prob_more,
-                    'Perspective' => $perspective,
-                    'URL' => $url,
-		    'Tags' => $tags,
-		    'ProblemCategory' => $prob_cat,
-		    'AffectedDescription' => $affect_desc,
-		    'AffectedNumber' => $affect_num,
-		    'GeographicLocation' => $geo_loc,
-		    'SpecificLocation' => $spec_loc,
-		    'Factors' => $factors);
-//		    'ProblemCategory2' => $prob_cat2);
-   //		    'id' => $problemID);  
+  $document = Array('CommentText' => $comment_txt,
+  	   	  'CommentIdeaID' => $comment_idea_id,
+		  'CommentProblemID' => $comment_prob_id,
+		  'CommentTags' => $comment_tags,
+		  'Flagged' => $comment_flag,
+		  'Sentiment' => $comment_sentiment,
+		  'TimeStamp' => $comment_ts,
+		  'UserName' => $comment_user);
 
   $result = r\db("web")->table('problems')->insert($document)->run($conn);
   echo "Thank you for submitting your problem!";
