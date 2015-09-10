@@ -453,7 +453,7 @@
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('comments')->run($conn);
                              foreach ($result as $doc) {
-                               if(isset($doc['Comment'])) {
+                               if(isset($doc['CommentText'])) {
 
 
                                  echo "<div class=\"chat-element\">";
