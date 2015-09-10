@@ -430,11 +430,12 @@
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
                                  echo "</a>";
                                  echo "<div class=\"media-body \">";
-                     echo "<strong>Mike Smith</strong>";
+                                 echo "<small class=\"pull-right text-navy\">1m ago</small>";
+                     echo "<strong>".$doc['UserName']."</strong>";
                      echo "<p class=\"m-b-xs\">";
-                     echo "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been";
+                     echo $doc.['Comment'];
                      echo "</p>";
-                     echo "<small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>";
+                     echo "<small class=\"text-muted\">".$doc['TimeStamp']."</small>";
                      echo "</div></div>";
 
 
