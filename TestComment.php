@@ -428,7 +428,7 @@
                                  echo "<div class=\"chat-element\">";
                                  echo "<a href=\"#\" class=\"pull-left\">";
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
-                                 echo "</a>"
+                                 echo "</a>";
                                  echo "<div class=\"media-body \">";
                      echo "<strong>Mike Smith</strong>";
                      echo "<p class=\"m-b-xs\">";
