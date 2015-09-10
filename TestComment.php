@@ -433,7 +433,6 @@
                                  echo "<small class=\"pull-right text-navy\">1m ago</small>";
                      echo "<strong>".$doc['UserName']."</strong>";
                      echo "<p class=\"m-b-xs\">";
-                     echo $doc.['Comment'];
                      echo "</p>";
                      echo "<small class=\"text-muted\">".$doc['TimeStamp']."</small>";
                      echo "</div></div>";
