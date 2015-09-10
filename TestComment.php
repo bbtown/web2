@@ -434,7 +434,7 @@
                      echo "<p class=\"m-b-xs\">";
                      echo "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been";
                      echo "</p>";
-                     echo "<small class="text-muted">Today 4:21 pm - 12.06.2014</small>";
+                     echo "<small class=\"text-muted\">Today 4:21 pm - 12.06.2014</small>";
                      echo "</div></div>";
 
 
