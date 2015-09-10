@@ -22,11 +22,11 @@ $comment_user = $_POST['comment_user'];
   	   	  'CommentIdeaID' => $comment_idea_id,
 		  'CommentProblemID' => $comment_prob_id,
 		  'CommentTags' => $comment_tags,
-		  'Flagged' => $comment_flag,
-		  'Sentiment' => $comment_sentiment,
-		  'TimeStamp' => $comment_ts,
-		  'UserName' => $comment_user);
+		  'CommentFlag' => $comment_flag,
+		  'CommentSentiment' => $comment_sentiment,
+		  'CommentTS' => $comment_ts,
+		  'CommentUser' => $comment_user);
 
-  $result = r\db("web")->table('problems')->insert($document)->run($conn);
-  echo "Thank you for submitting your problem!";
+  $result = r\db("web")->table('comments')->insert($document)->run($conn);
+  echo "Thank you for posting your comment!";
 ?>
