@@ -1,5 +1,5 @@
 #!/bin/bash
 
 git add .
-git commit -m "Tim change."
+git commit -m "working on comments."
 git push heroku master
