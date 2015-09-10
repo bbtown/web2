@@ -432,7 +432,7 @@
                                  echo "<div class=\"media-body \">";
                                  echo "<small class=\"pull-right text-navy\">1m ago</small>";
                      echo "<strong>".$doc['UserName']."</strong>";
-                     echo "<p class=\"m-b-xs\">";
+                     echo "<p class=\"m-b-xs\">".$doc['Comment'];
                      echo "</p>";
                      echo "<small class=\"text-muted\">".$doc['TimeStamp']."</small>";
                      echo "</div></div>";
