@@ -526,8 +526,8 @@
                 </div> -->
                 </div>
                         <div class="chat-form">
-                            <form role="form">
-                                <div class="form-group" class="form-horizontal" method="post" id="comment_form" name="comment_form" action="submit_problem_comment.php"> 
+                            <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
+                                <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
                                 </div>
                                 <div class="text-right">
