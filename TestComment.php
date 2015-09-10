@@ -30,6 +30,37 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <script>
+    //how are we reading in problem id, username, and timestamp?
+   function add_comment() {
+      var comment_txt = $('#comment_txt').val();
+      var comment_idea_id = $('#comment_idea_id').val();
+      var comment_prob_id = $('#comment_prob_id').val();
+      var comment_tags = $('#comment_tags').val();
+      var comment_flag = $('#comment_flag').val(); 
+      var comment_sentiment = $('#comment_sentiment').val();
+      var comment_ts = $('#comment_ts').val();
+      var comment_user = $('#comment_user').val();
+
+
+//      var prob_cat2 = $('#prob_cat2').serialize();
+// var value = $(this).attr('id');
+      var serialData = $('#comment_form').serialize();
+      $.ajax({
+        url: './submit_problem_comment.php',
+        type: 'POST',
+        data: serialData,
+        success: function(data) {
+          alert(data);
+        }
+  
+      });
+    
+    }
+
+       
+    </script>
+
 
 </head>
 
@@ -408,7 +439,7 @@
 
                                 <!--        BEGIN COMMENT BOX -->
 
- echo" <div class="row m-t-lg">
+    <div class="row m-t-lg">
             <div class="col-lg-6">
                 <div class="ibox float-e-margins">
 
@@ -422,7 +453,7 @@
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('comments')->run($conn);
                              foreach ($result as $doc) {
-                               if(isset($doc['Comment'])) {
+                               if(isset($doc['CommentText'])) {
 
 
                                  echo "<div class=\"chat-element\">";
@@ -431,13 +462,11 @@
                                  echo "</a>";
                                  echo "<div class=\"media-body \">";
                                  echo "<small class=\"pull-right text-navy\">1m ago</small>";
-                     echo "<strong>".$doc['UserName']."</strong>";
-                     echo "<p class=\"m-b-xs\">".$doc['Comment'];
+                     echo "<strong>".$doc['CommentUser']."</strong>";
+                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
                      echo "</p>";
-                     echo "<small class=\"text-muted\">".$doc['TimeStamp']."</small>";
+                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
                      echo "</div></div>";
-
-
 
 
                              }
@@ -498,11 +527,11 @@
                 </div>
                         <div class="chat-form">
                             <form role="form">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                <div class="form-group" class="form-horizontal" method="post" id="comment_form" action="submit_problem_comment.php"> 
+                                    <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
                                 </div>
                                 <div class="text-right">
-                                    <button type="submit" class="btn btn-sm btn-primary m-t-n-xs"><strong>Send message</strong></button>
+                                    <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
                                 </div>
                             </form>
                         </div>
@@ -510,7 +539,26 @@
                 </div>
             </div>  
 
-                                <!--        END COMMENT BOX EXPERIMENT -->                            
+                                <!--        END COMMENT BOX EXPERIMENT -->       
+
+<!-- just an example
+
+                                <div class="ibox-title">
+                            <h1>Ideas?</h1>
+                        </div>
+                        <div class="ibox-content">
+
+<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> 
+                                <div class="form-group"> 
+                    <label class="col-sm-2 control-label">Do you have any ideas on how to fix this problem?</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea>
+<br/><br/><br/>
+<button onclick="add_idea();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Submit</strong></button>
+                                    </div>
+                                </form>
+                            </div>     
+                            -->                
                                
         </div>
         </div>
