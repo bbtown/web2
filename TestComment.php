@@ -39,7 +39,8 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-     var comment_ts = Date.now();
+     var comment_ts = time();
+
 
 
 
