@@ -15,7 +15,7 @@ $comment_prob_id = $_POST['comment_prob_id'];
 $comment_tags = $_POST['comment_tags'];
 $comment_flag = $_POST['comment_flag'];
 $comment_sentiment = $_POST['comment_sentiment'];
-$comment_ts = $_POST['comment_ts'];
+$comment_ts = (gmdate("m-d-Y h-m-s", date()));
 $comment_user = $_POST['comment_user'];
 
   $document = Array('CommentText' => $comment_txt,
