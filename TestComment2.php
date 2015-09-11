@@ -541,11 +541,11 @@
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
  <?php
 $comment_ts=localtime();
-echo (gmdate("Y-m-d h-m-s",$comment_ts);
-echo (gmdate($comment_ts));
+echo (gmdate("Y-m-d",$comment_ts);
+echo (gmdate("Y-m-d",$comment_ts));
 echo($comment_ts . "<br>");
 echo(date("Y-m-d",$comment_ts));
-echo(date("Y-m-d h-m-s",$comment_ts));
+echo(date("Y-m-d",$comment_ts));
 ?> 
 
                                 
