@@ -39,7 +39,16 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-      var comment_ts = $('#comment_ts').val();
+     var comment_ts = Date.now();
+
+
+
+//////use Date.now() to get the UTC timestamp in milliseconds; a notable exception to this is IE8 and earlier (see compatibility table).
+////You can easily make a shim for this, though:
+
+//if (!Date.now) {
+//    Date.now = function() { return new Date().getTime(); }
+//}
       var comment_user = $('#comment_user').val();
 
 
