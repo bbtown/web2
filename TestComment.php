@@ -39,7 +39,7 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-     var comment_ts = time();
+     var comment_ts = gmdate();
 
 
 
@@ -540,7 +540,7 @@
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
  <?php
-$comment_ts=time();
+$comment_ts=gmdate();
 echo($comment_ts . "<br>");
 echo(date("Y-m-d",$comment_ts));
 ?> 
