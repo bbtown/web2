@@ -18,7 +18,7 @@ $comment_sentiment = $_POST['comment_sentiment'];
 $comment_ts = gmdate("l jS \of F Y h:i:s A");
 //$comment_ts = getdate();
 
-$comment_user = $_POST['comment_user'];
+$comment_user = "<-WhoIsThisGuy";
 
   $document = Array('CommentText' => $comment_txt,
   	   	  'CommentIdeaID' => $comment_idea_id,

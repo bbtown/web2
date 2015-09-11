@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Example Problem Page</title>
+    <title>Comment Testing</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -39,22 +39,10 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-     var comment_ts = gmdate();
+     //var comment_ts = $(time());
+//      var comment_user = $('#comment_user').val();
 
 
-
-
-//////use Date.now() to get the UTC timestamp in milliseconds; a notable exception to this is IE8 and earlier (see compatibility table).
-////You can easily make a shim for this, though:
-
-//if (!Date.now) {
-//    Date.now = function() { return new Date().getTime(); }
-//}
-      var comment_user = $('#comment_user').val();
-
-
-//      var prob_cat2 = $('#prob_cat2').serialize();
-// var value = $(this).attr('id');
       var serialData = $('#comment_form').serialize();
       $.ajax({
         url: './submit_problem_comment.php',
@@ -471,7 +459,7 @@
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
                                  echo "</a>";
                                  echo "<div class=\"media-body \">";
-                                 echo "<small class=\"pull-right text-navy\">1m ago</small>";
+                                // echo "<small class=\"pull-right text-navy\">1m ago</small>";
                      echo "<strong>".$doc['CommentUser']."</strong>";
                      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
                      echo "</p>";
@@ -539,15 +527,6 @@
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
- <?php
-$comment_ts=localtime();
-echo (gmdate("Y-m-d h:m:s",$comment_ts);
-echo (gmdate($comment_ts));
-echo($comment_ts . "<br>");
-echo(date("Y-m-d",$comment_ts));
-echo(date("Y-m-d h:m:s",$comment_ts));
-?> 
-
                                 
                                 <div class="text-right">
                                     <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
