@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Example Problem Page</title>
+    <title>Comment Testing</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -39,7 +39,7 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-     var comment_ts = gmdate();
+     var comment_ts = localtime();
 
 
 
@@ -640,7 +640,7 @@ echo(date("Y-m-d h:m:s",$comment_ts));
     <script src="js/plugins/validate/jquery.validate.min.js"></script>
 
     <script>
-        $(document).ready(function(){
+         $(document).ready(function(){
              $("#form").validate({
                  rules: {
                      prob_desc: {
