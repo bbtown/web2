@@ -39,9 +39,7 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-     var comment_ts = $('#comment_ts').val();
-
-
+     var comment_ts = $(time());
 
 
 //////use Date.now() to get the UTC timestamp in milliseconds; a notable exception to this is IE8 and earlier (see compatibility table).
@@ -539,12 +537,6 @@
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
- <?php
-$comment_ts=time();
-echo (gmdate("mm-dd-YYYY hh-mm-ss",$comment_ts));
-
-?> 
-
                                 
                                 <div class="text-right">
                                     <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
