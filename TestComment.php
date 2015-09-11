@@ -529,10 +529,10 @@
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
-                                </div>
+                                
                                 <div class="text-right">
                                     <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
-                                </div>
+                                </div></div>
                             </form>
                         </div>
                 </div>
