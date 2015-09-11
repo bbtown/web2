@@ -346,6 +346,7 @@
                      echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
                      echo "<div class=\"actions\">";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
                      echo "</div></div></div>";
 
