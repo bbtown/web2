@@ -11,7 +11,7 @@
 
 
 
-$result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "id"))->run($conn);
+//$result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "id"))->run($conn);
 
 
 //$result = r\db("web")->table('ideas')->count()->run($conn);
@@ -65,8 +65,9 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 $document = Array ('id' => $retrieve_id);
 
     foreach ($result as $doc) {
-        print_r($doc);
-    }
+if ($retrieve_id == $doc['id]){ 
+      print_r($doc);
+    }}
 
 
 ?>
