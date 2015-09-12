@@ -19,9 +19,9 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 
 
 
-//    $result = r\db("web")->table('ideas')->map(function($x) {
-//            return $x('id');
-//        })->run($conn);
+    $result = r\db("web")->table('ideas')->map(function($x) {
+            return $x('id');
+        })->run($conn);
 
 //    foreach ($result as $doc) {
 //        print_r($doc);
@@ -36,7 +36,7 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 //echo "Retrieving information...".$retrieve_id;
 //echo "you submitted stuff.";
 
-    echo "$result\n";
+//    echo "$result\n";
 //echo $doc.[id];
                                 
     //print_r($doc[$retrieve_id]);
@@ -52,7 +52,7 @@ $result = r\db("web")->table('ideas')->getAll("$retrieve_id", array("index" => "
 
 //}
 
-echo "<h4>Factors that affect the problem: </h4>".$doc['IdeaDescription'];
+//echo "<h4>Factors that affect the problem: </h4>".$doc['IdeaDescription'];
   
 // $document = Array('IdeaDescription' => $idea_desc,
 //                    'MoreDescription' => $idea_more,
@@ -62,11 +62,11 @@ echo "<h4>Factors that affect the problem: </h4>".$doc['IdeaDescription'];
 //		    'URL' => $url);  
 
 
-//$document = Array ('id' => $retrieve_id);
+$document = Array ('id' => $retrieve_id);
 
-  //  foreach ($result as $doc) {
-//        print_r($doc);
-    //}
+    foreach ($result as $doc) {
+        print_r($doc);
+    }
 
 
 ?>
