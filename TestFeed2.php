@@ -132,15 +132,15 @@ function myFunction() {
 
                     echo "<tr class=\"gradeX\">";
                     echo "<td>".$doc['ProblemDescription']."</td>";
-                    echo "<td>."$doc['ProblemCategory']."</td>";
-                    echo "<td>."$doc['Tags']."</td>";
-                    echo "<td>."$doc['URL']."</td>";
-                    echo "<td>."$doc['AffectedDescription']."</td>";
-                    echo "<td>."$doc['AffectedNumber']."</td>";
-                    echo "<td>."$doc['GeographicLocation'].", ".$doc['SpecificLocation']."</td>";
-                    echo "<td>."$doc['Factors']."</td>";
+                    echo "<td>".$doc['ProblemCategory']."</td>";
+                    echo "<td>".$doc['Tags']."</td>";
+                    echo "<td>".$doc['URL']."</td>";
+                    echo "<td>".$doc['AffectedDescription']."</td>";
+                    echo "<td>".$doc['AffectedNumber']."</td>";
+                    echo "<td>".$doc['GeographicLocation'].", ".$doc['SpecificLocation']."</td>";
+                    echo "<td>".$doc['Factors']."</td>";
                     echo "<td>Coming soon</td>";
-                    echo "<td>."$doc['id']."</td>";
+                    echo "<td>".$doc['id']."</td>";
                       //  <td class="center">4</td>
                       //  <td class="center">X</td>
                    echo "</tr>";
