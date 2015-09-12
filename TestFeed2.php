@@ -91,11 +91,11 @@ function myFunction() {
 //";
 //}
 //}
-//?> -->
+//?> 
 
         </div>
         </div>
-        </div>
+        </div>-->
 
 <!-- EXPERIMENTING WITH SORTABLE TALBES -->
 <div class="ibox-content">
@@ -146,7 +146,7 @@ function myFunction() {
                    echo "</tr>";
 
 
-                   
+       }            
 }
 ?>
                     </tbody>
