@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Example Problem Page</title>
+    <title>Problem Feed</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -218,12 +218,6 @@
                              $result = r\db("web")->table('problems')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
-
-                                 echo "<h1>Idea Description</h1>";
-                                 echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
-//                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
-                                 echo "<h4>Description:</h4> ".$doc['IdeaDescription'];
-                                 echo "<h4>Tags: </h4> ".$doc['Tags'];
 
                     echo "<tr class=\"gradeX\">";
                     echo "<td>".$doc['ProblemDescription']."</td>";
