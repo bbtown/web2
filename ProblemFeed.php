@@ -193,6 +193,79 @@
         </div>
         </div>
 
+<div class="ibox-content">
+<h3>Table Format:</h3>
+                        <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                    <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>URL</th>
+                        <th>Affected group</th>
+                        <th># Affected</th>
+                        <th>Location</th>
+                        <th>Factors</th>
+                        <th>Awareness</th>
+                        <th>View</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         <?php
+                             require_once __DIR__.'/vendor/autoload.php';
+                             $conn = r\connect('52.20.101.105');
+                             $result = r\db("web")->table('problems')->run($conn);
+                             foreach ($result as $doc) {
+                               if(isset($doc['ProblemDescription'])) {
+
+                                 echo "<h1>Idea Description</h1>";
+                                 echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
+//                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
+                                 echo "<h4>Description:</h4> ".$doc['IdeaDescription'];
+                                 echo "<h4>Tags: </h4> ".$doc['Tags'];
+
+                    echo "<tr class=\"gradeX\">";
+                    echo "<td>".$doc['ProblemDescription']."</td>";
+                    echo "<td>".$doc['ProblemCategory']."</td>";
+                    echo "<td>".$doc['Tags']."</td>";
+                    echo "<td>".$doc['URL']."</td>";
+                    echo "<td>".$doc['AffectedDescription']."</td>";
+                    echo "<td>".$doc['AffectedNumber']."</td>";
+                    echo "<td>".$doc['GeographicLocation'].", ".$doc['SpecificLocation']."</td>";
+                    echo "<td>".$doc['Factors']."</td>";
+                    echo "<td>Coming soon</td>";
+                    echo "<td>".$doc['id']."</td>";
+                      //  <td class="center">4</td>
+                      //  <td class="center">X</td>
+                   echo "</tr>";
+
+
+       }            
+}
+?>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>URL</th>
+                        <th>Affected group</th>
+                        <th># Affected</th>
+                        <th>Location</th>
+                        <th>Factors</th>
+                        <th>Awareness</th>
+                        <th>View</th>
+                    </tr>
+                    </tfoot>
+                    </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
 
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
