@@ -92,7 +92,7 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
     
 
     foreach ($result[0] as $key => $value) {
-        echo "$key: $value<br>";
+        echo "<span><h2>$key</h2>: $value</span><br>";
     }
 
 
