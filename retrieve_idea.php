@@ -66,23 +66,23 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
 
 //$document = Array ('id' => $retrieve_id);
 
-    $arr_values = array_values($result);
-    $arr_keys = array_keys($result);
+    //$arr_values = array_values($result);
+    //$arr_keys = array_keys($result);
 
-    for ($i=0; $i < count($result); $i++) {
+    //for ($i=0; $i < count($result); $i++) {
 
-      echo $arr_keys[$i].": ".$arr_values[$i];
+    //  echo $arr_keys[$i].": ".$arr_values[$i];
 
-    }
+    //}
 
-    //foreach $result as $doc) {
+    foreach $result as $doc) {
     //   echo $arr_keys[
     //   echo $doc[''];
     //   echo $doc[''];
     //   echo $doc[''];
 //if ($retrieve_id == $doc['id']){ // forgot single quote 11:42 BL 
-      //print_r($doc);
-    //}
+      print_r($doc);
+    }
 
 
 
