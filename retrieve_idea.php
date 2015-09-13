@@ -85,7 +85,7 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
     //   echo $doc[''];
 //if ($retrieve_id == $doc['id']){ // forgot single quote 11:42 BL 
       //print_r($doc);
-    }
+    //}
   //   print_r($result[0]);
 
 
