@@ -43,9 +43,6 @@ $.ajax({
       alert(data);
 }
 });
-function myFunction() {
-    document.getElementById("retrieve_id").value = "$retrieve_id";
-};
 } 
     </script>
 
@@ -124,11 +121,6 @@ function myFunction() {
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
 
-                                 echo "<h1>Idea Description</h1>";
-                                 echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
-//                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
-                                 echo "<h4>Description:</h4> ".$doc['IdeaDescription'];
-                                 echo "<h4>Tags: </h4> ".$doc['Tags'];
 
                     echo "<tr class=\"gradeX\">";
                     echo "<td>".$doc['ProblemDescription']."</td>";
