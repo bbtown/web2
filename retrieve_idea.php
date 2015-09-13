@@ -66,10 +66,13 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
 
 //$document = Array ('id' => $retrieve_id);
 
-    $arr_values = array_values($result);
-    $arr_keys = array_keys($result);
+    $arr_values = array_values($result[0]);
+    $arr_keys = array_keys($result[0]);
 
-    for ($i=1; $i < count($result); $i++) {
+    echo count($result);
+    echo count($result[0]);
+
+    for ($i=1; $i < count($result[0]); $i++) {
 
       echo $arr_keys[$i].": ".$arr_values[$i];
 
