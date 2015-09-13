@@ -65,6 +65,7 @@
 $document = Array ('id' => $retrieve_id);
 
     foreach ($result as $doc) {
+       print_r($doc);
 if ($retrieve_id == $doc['id']){ // forgot single quote 11:42 BL 
       print_r($doc);
     }}
