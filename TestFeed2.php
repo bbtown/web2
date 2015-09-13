@@ -36,7 +36,7 @@
 var retrieve_id = $('#retrieve').val();
 var serialData = $('#retrieve').serialize();
 $.ajax({
-    url:'./retrieve_idea.php',
+    url:'./retrieve_problem.php',
     type: 'POST',
     data: serialData,
     success: function(data) {
@@ -120,6 +120,7 @@ $.ajax({
                              $result = r\db("web")->table('problems')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
+			 $retrieve_id = $doc[id];
 
 
                     echo "<tr class=\"gradeX\">";
@@ -131,11 +132,22 @@ $.ajax({
                     echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation'].", ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
-                    echo "<td>Coming soon</td>";
-                    echo "<td>".$doc['id']."</td>";
+                    echo "<td>Coming soon</td>";>";
                       //  <td class="center">4</td>
                       //  <td class="center">X</td>
-                   echo "</tr>";
+                 
+
+			echo "Problem ID: ".$retrieve_id;
+			echo 
+			"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+			  <br/><br/><br/>
+			  <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+			  </form>
+			";
+			}
+}
+?> 
+            		echo "</tr>";
 
 
        }            
