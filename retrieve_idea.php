@@ -75,7 +75,7 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
 
     //}
 
-    foreach $result as $doc) {
+    foreach ($result as $doc) {
     //   echo $arr_keys[
     //   echo $doc[''];
     //   echo $doc[''];
