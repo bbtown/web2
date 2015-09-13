@@ -78,7 +78,7 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
 
     //}
 
-    foreach ($result as $doc) {
+//    foreach ($result as $doc) {
     //   echo $arr_keys[
     //   echo $doc[''];
     //   echo $doc[''];
@@ -86,13 +86,13 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
 //if ($retrieve_id == $doc['id']){ // forgot single quote 11:42 BL 
       //print_r($doc);
     }
-     print_r($result[0]);
+  //   print_r($result[0]);
 
 
     
 
     foreach ($result[0] as $key => $value) {
-        echo "Key: $key; Value: $value\n";
+        echo "$key: $value<br>";
     }
 
 
