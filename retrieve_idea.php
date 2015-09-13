@@ -66,17 +66,17 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
 
 //$document = Array ('id' => $retrieve_id);
 
-    $arr_values = array_values($result[0]);
-    $arr_keys = array_keys($result[0]);
+    //$arr_values = array_values($result[0]);
+    //$arr_keys = array_keys($result[0]);
 
-    echo count($result);
-    echo count($result[0]);
+    //echo count($result);
+    //echo count($result[0]);
 
-    for ($i=1; $i < count($result[0]); $i++) {
+    //for ($i=1; $i < count($result[0]); $i++) {
 
-      echo $arr_keys[$i].": ".$arr_values[$i];
+    //  echo $arr_keys[$i].": ".$arr_values[$i];
 
-    }
+    //}
 
     foreach ($result as $doc) {
     //   echo $arr_keys[
@@ -87,6 +87,14 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
       //print_r($doc);
     }
      print_r($result[0]);
+
+
+    
+
+    foreach ($result[0] as $key => $value) {
+        echo "Key: $key; Value: $value\n";
+    }
+
 
 
 
