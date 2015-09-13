@@ -69,11 +69,11 @@ $result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id
     $arr_values = array_values($result);
     $arr_keys = array_keys($result);
 
-    //for ($i=0; $i < count($result); $i++) {
+    for ($i=1; $i < count($result); $i++) {
 
-    //  echo $arr_keys[$i].": ".$arr_values[$i];
+      echo $arr_keys[$i].": ".$arr_values[$i];
 
-    //}
+    }
 
     foreach ($result as $doc) {
     //   echo $arr_keys[
