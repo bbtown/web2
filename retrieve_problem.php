@@ -144,7 +144,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 $retrieve_id = $doc[id];
 -->
                           <!--  <form method="get" class="form-horizontal"> -->
-                                <form class="form-horizontal" method="post" id="describe_form" action="submit_to_problems.php">
+                                <form class="form-horizontal" method="post" id="describe_form" action="update_problem.php">
                                <!-- <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
                                     <div class="col-sm-10"><input type="text" class="form-control input-sm" rows="5" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
@@ -157,12 +157,17 @@ $retrieve_id = $doc[id];
 <!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
 </label>
                             <button type="button" class="btn btn-xs btn-white" data-container="body" data-toggle="popover" data-placement="bottom" data-content="this is popover text.
-                                         <div class=\"col-sm-10\">
-                                        <textarea class=\"form-control input-sm\" rows=\"5\" minlength=\"10\" maxlength=\"500\" id=\"prob_desc\" name=\"prob_desc\" required> </textarea>
-                                        <span class=\"help-block m-b-none\">Limit 500 characters.</span>
-                                        </div>
-                                        </div>">
 
+
+ <div class='col-sm-10'>
+                                        <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
+                                        <span class='help-block m-b-none'>Limit 500 characters.</span>
+                                        
+
+
+
+
+                                </div>">
 
 
 <i class=\"fa fa-pencil\"> Popover on bottom
