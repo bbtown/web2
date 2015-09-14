@@ -156,6 +156,8 @@ $retrieve_id = $doc[id];
 
 <!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
 </label>
+
+<!-- BEGIN TEST -->
                             <button type="button" class="btn btn-xs btn-white" data-container="body" data-toggle="popover" data-placement="bottom" data-content="this is popover text.
 
 
@@ -172,7 +174,16 @@ $retrieve_id = $doc[id];
 
 <i class=\"fa fa-pencil\"> Popover on bottom
                             </button>
+<!-- BEGiN TEST -->
+<div class="container">
+    <div class="row" style="padding-top: 240px;">
+        <a href="#" class="btn btn-large btn-primary" rel="popover"
+            data-content="<form><input type="text"/></form>"
+            data-placement="top" data-original-title="Fill in form">Open form</a>
+    </div>
+</div>
 
+<!-- END TEST -->
 
                                 <div class="form-group">
                                      <label class="col-sm-2 control-label">Additional Problem Information</label>
