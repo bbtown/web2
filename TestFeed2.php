@@ -85,7 +85,14 @@ $.ajax({
 
 
                     echo "<tr class=\"gradeX\">";
-                    echo "<td>".$doc['ProblemDescription']."</td>";
+                    echo "<td>".$doc['ProblemDescription']."<br>";
+			echo 
+			"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+			  <br/><br/><br/>
+			  <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+			  </form>
+			";
+
                     echo "<td>".$doc['ProblemCategory']."</td>";
                     echo "<td>".$doc['Tags']."</td>";
                     echo "<td>".$doc['URL']."</td>";
@@ -94,12 +101,8 @@ $.ajax({
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
                     echo "<td>Coming soon</td>";
-			echo 
-			"<td><form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
-			  <br/><br/><br/>
-			  <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
-			  </form>
-			";
+
+
             		echo "</td></tr>";
 
 
