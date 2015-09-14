@@ -77,8 +77,19 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 
 
 
-    foreach ($result[0] as $key => $value) {
-        echo "<span><strong>$key</strong>: $value</span><br>";
+
+//AffectedDescription:
+//AffectedNumber:
+//Factors:
+//GeographicLocation: United States
+//MoreDescription:
+//Perspective:
+//ProblemCategory: Society
+//ProblemDescription:
+
+
+//    foreach ($result[0] as $key => $value) {
+//        echo "<span><strong>$key</strong>: $value</span><br>";
     }
 ?>
 
