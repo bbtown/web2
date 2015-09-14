@@ -70,7 +70,11 @@ $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => 
 foreach ($result as $doc) {
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";                       
 echo "<h4>Severity Level: Catastrophic</h4>";                                    
-echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";                                    
+
+if(isset($doc['AffectedNumber'])) {
+echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
+else {echo "<h4>Impact Type: </h4>";};
+                                    
 echo "<h4>Problem Development: Persistent Build-up</h4>";
 echo "<p>".$doc['ProblemDescription']."</p>";
 echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
