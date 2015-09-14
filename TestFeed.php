@@ -50,18 +50,75 @@ alert(data);
 
 <body>
 
+
+<div class="ibox-content">
+
+                        <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+                    <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>URL</th>
+                        <th>Awareness</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         <?php
+                             require_once __DIR__.'/vendor/autoload.php';
+                             $conn = r\connect('52.20.101.105');
+                             $result = r\db("web")->table('ideas')->run($conn);
+                             foreach ($result as $doc) {
+                               if(isset($doc['IdeaDescription'])) {
+			  $retrieve_id = $doc[id];
+                    echo "<tr class=\"gradeX\">";
+                    echo "<td>".$doc['IdeaDescription']."<br>";
+			  echo 
+			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_idea.php\">
+			      <br/><br/><br/>
+			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='idea_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+				  </form>
+			  ";
+                    echo "<td>".$doc['IdeaCategory']."</td>";
+                    echo "<td>".$doc['Tags']."</td>";
+                    echo "<td>".$doc['URL']."</td>";
+                    echo "<td>Coming soon</td>";
+			echo "</td></tr>";
+       }            
+}
+?>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th>URL</th>
+                        <th>Awareness</th>
+                    </tr>
+                    </tfoot>
+                    </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
 <!--     <div class="row">
 <div class="col-lg-8">
 <div class="ibox float-e-margins">
 <div class="ibox-title">
 <h1>Problem Description</h1>
-</div> -->
+</div> 
 <div class="ibox-content">
-<!--  <form method="get" class="form-horizontal"> -->
-
+<form method="get" class="form-horizontal"> 
 <div class="row"> 
 <div class="col-sm-9">
-<!-- <div class="col-lg-12"> -->
+ <div class="col-lg-12"> 
 <?php
 require_once __DIR__.'/vendor/autoload.php';
 $conn = r\connect('52.20.101.105');
@@ -71,14 +128,8 @@ foreach ($result as $doc) {
 		$retrieve_id = $doc[id];
 		echo "<h1>Idea Description</h1>";
 		echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
-		//                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
 		echo "<h4>Description:</h4> ".$doc['IdeaDescription'];
 		echo "<h4>Tags: </h4> ".$doc['Tags'];
-		//                     echo "<h4>Description of the Affected Population: </h4>".$doc['AffectedDescription'];
-		//                     echo "<h4>Estimated Number of Affected: </h4>".$doc['AffectedNumber'];
-		//                     echo "<h4>General Affected Geographic Location: </h4> ".$doc['GeographicLocation'];
-		//                     echo "<h4>Affected Location (specific): </h4>".$doc['SpecificLocation'];
-		//                     echo "<h4>Factors that affect the problem: </h4>".$doc['Factors'];
 		echo "<h4>Idea ID: </h4> ".$retrieve_id;
 		echo 
 			"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_idea.php\">
@@ -93,7 +144,7 @@ foreach ($result as $doc) {
 </div>
 </div>
 </div>
-</div>
+</div> -->
 
 
 <!-- Mainly scripts -->
