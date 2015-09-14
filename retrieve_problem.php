@@ -40,6 +40,7 @@
 
                               <div class="row"> 
                                     <div class="col-sm-9">
+<h1>Problem Description</h1>
 
 <?php
   // load rethinkdb php library
@@ -49,8 +50,8 @@
 
 //  $result = r\db("web")->table('ideas')->run($conn);
 $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
-//$result = r\db("web")->table('ideas')->count()->run($conn);
-//    echo "Count: $result\n";
+
+
     //$result = r\db("web")->table('ideas')->map(function($x) {
     //        return $x('id');
     //    })->run($conn);
@@ -66,6 +67,16 @@ $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => 
     //}
   //   print_r($result[0]);
     
+
+echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";                       
+echo "<h4>Severity Level: Catastrophic</h4>";                                    
+echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";                                    
+echo "<h4>Problem Development: Persistent Build-up</h4>";
+echo "<p>".$doc['ProblemDescription']."</p>";
+echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
+
+
+
     foreach ($result[0] as $key => $value) {
         echo "<span><strong>$key</strong>: $value</span><br>";
     }
@@ -89,6 +100,131 @@ $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => 
                                     </div>
                                 </div>
                                     </div>
+
+
+                <div class="ibox-content">
+                            <h1>Stakeholders</h1>
+                            <h4>Who is affected by this problem?</h4>
+
+                            
+                        <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
+
+                            <div class="row">
+                        <div class="col-sm-6">
+                        <h5>Stakeholders Identified</h5>
+                        <ul>
+                                    <li>Geographic Locations:  All</li>
+                                    <li>Age Groups:  All</li>
+                                    <li>Genders:  All</li>
+                                    <li>Socio-economic Brackets:  All</li>
+                                    <li>Ethnicities:  All</li>
+                                    <li>Nationalites:  All</li>
+                                    <li>Occupation:  All</li>
+                                    <li>Other Specified Groups:  All</li>
+                                </ul>
+                                </div>
+
+                            <div class="col-sm-6">
+                            <p>
+                            <h5>Stakeholders Reached - Demographics</h5>
+                            
+                                <ul>
+                                    <li>Geographic Locations: <ol><li>USA, Virginia, Chantilly (1)</li></ol></li>
+                                    <li>Age Groups: <ol><li>30 - 35 years (1)</li></ol></li>
+                                    <li>Genders: <ol><li>Female (1)</li></ol></li>
+                                    <li>Social-economic Brackets: <ol><li>Upper-middle class (1)</li></ol></li>
+                                    <li>Ethnicities: <ol><li>Asian American (1)</li></ol></li>
+                                    <li>Occupations: <ol><li>Technology (1)</li><li>Federal Government (1)</li></ol></li>
+                                    <li>World Views: <ol><li>N/A</li></ol></li>
+                                    <li>Other Specified Groups: <ol><li>N/A</li></ol></li>
+
+                                </ul>  
+                            </p> 
+                      
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Factors</h1>
+                            <h4>Which factors contribute to this problem?</h4>
+                         
+                        <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
+
+
+                                <p><ul><li>Amount of Carbon Emissions</li> 
+                                    <li>Energy Usage</li> 
+                                    <li>Population Size</li>
+                                    <li>Advancement of Technology</li>
+                                    <li>Application of Technology</li>
+                                    <li>Resource Availability</li></ul></p>
+
+
+
+                            <h4>Assumptions</h4>
+                            <h4>Constraints</h4>
+                            <p><ul><li>Amount of Carbon Emissions</li> 
+                                    <li>Energy Usage</li> 
+                                    <li>Population Size</li>
+                                <li>Advancement of Technology</li>
+
+                            <li>Resource Availability</li></ul></p>
+
+                            <h4>Measuring and Tracking the Problem</h4>
+                      
+                    </div>
+                    </div>
+
+
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Root Cause Analysis</h1>
+                            <h4>Why does this problem really exist?</h4>
+                            <img src="http://www.mindtools.com/media/Diagrams/Cause-Effect-Diagram-Example-3.jpg">
+                        
+
+                      
+                    </div>
+                    </div>
+                </div><div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Requirements</h1>
+                            <h4>What does the perfect solution include?</h4>
+                        <ol>
+<li>The e-Wash system shall communicate to the user any problems within the e-Wash system that occur during the operational usage of the e-Wash system. </li>
+<li>The e-Wash system shall communicate to the user every process that the e-Wash system performs has occurred incorrectly.  </li>
+<li>The e-Wash system shall not cause damage to its surrounding environment due to e-Wash failure system. </li>
+</ol>
+
+                      
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Top Ranking Solutions</h1>
+                            <h4></h4>
+                         <h4></h4>
+                        
+                        <ol>
+                            <li>Mandate the use of ethanol gasoline derived from corn.</li>
+                            <li>Mandate the use of electric vehicles.</li>
+                            <li>Mandate the use of fuels derived from biological waste.</li>
+                        </ol>
+
+                      
+                    </div>
+                    </div>
+                </div>
+
 
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
