@@ -348,9 +348,9 @@
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pen\"></i> Love</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Love</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-edit\"></i> Love</a>";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-delete\"></i> Delete</a>";
                      echo "</div></div></div>";
 
 
