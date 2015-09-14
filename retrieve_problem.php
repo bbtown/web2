@@ -178,7 +178,7 @@ $retrieve_id = $doc[id];
 <div class="container">
     <div class="row" style="padding-top: 240px;">
         <a href="#" class="btn btn-large btn-primary" rel="popover"
-            data-content="<form><input type="text"/></form>"
+            data-content="<form><input type='text'/></form>"
             data-placement="top" data-original-title="Fill in form">Open form</a>
     </div>
 </div>
