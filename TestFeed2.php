@@ -71,7 +71,6 @@ $.ajax({
                         <th>Location</th>
                         <th>Factors</th>
                         <th>Awareness</th>
-                        <th>View</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -121,7 +120,6 @@ $.ajax({
                         <th>Location</th>
                         <th>Factors</th>
                         <th>Awareness</th>
-                        <th>View</th>
                     </tr>
                     </tfoot>
                     </table>
