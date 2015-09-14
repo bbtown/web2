@@ -156,15 +156,18 @@ $retrieve_id = $doc[id];
 
 <!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
 </label>
-                            <button type="button" class="btn btn-xs btn-white" data-container="body" data-toggle="popover" data-placement="bottom" data-content="this is popover text.">
-                                <i class=\"fa fa-pencil\"> Popover on bottom
+                            <button type="button" class="btn btn-xs btn-white" data-container="body" data-toggle="popover" data-placement="bottom" data-content="this is popover text.
+                                         <div class=\"col-sm-10\">
+                                        <textarea class=\"form-control input-sm\" rows=\"5\" minlength=\"10\" maxlength=\"500\" id=\"prob_desc\" name=\"prob_desc\" required> </textarea>
+                                        <span class=\"help-block m-b-none\">Limit 500 characters.</span>
+                                        </div>
+                                        </div>">
+
+
+
+<i class=\"fa fa-pencil\"> Popover on bottom
                             </button>
 
-                                         <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="prob_desc" name="prob_desc" required> </textarea>
-                                        <span class="help-block m-b-none">Limit 500 characters.</span>
-                                        </div>
-                                        </div>
 
                                 <div class="form-group">
                                      <label class="col-sm-2 control-label">Additional Problem Information</label>
