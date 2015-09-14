@@ -33,7 +33,11 @@
 
 
     <script>
+
+
+
    function describe_form() {
+var retrieve_id = $('#retrieve').val();
       var prob_desc = $('#prob_desc').val();
       var prob_more = $('#prob_more').val();
       var perspective = $('#perspective').val();
@@ -49,7 +53,7 @@
 // var value = $(this).attr('id');
       var serialData = $('#describe_form').serialize();
       $.ajax({
-        url: './submit_to_problems.php',
+        url: './update_problem.php',
         type: 'POST',
         data: serialData,
         success: function(data) {
@@ -134,6 +138,11 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 <!--   BEGiN FORM STUFF -->
 
  <div class="ibox-content">
+
+
+<!-- IS THIS NECESSARY?
+$retrieve_id = $doc[id];
+-->
                           <!--  <form method="get" class="form-horizontal"> -->
                                 <form class="form-horizontal" method="post" id="describe_form" action="submit_to_problems.php">
                                <!-- <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
@@ -146,7 +155,12 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                                      <label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6>
 
 <!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
-</label>                                         <div class="col-sm-10">
+</label>
+                            <button type="button" class="btn btn-xs btn-white" data-container="body" data-toggle="popover" data-placement="bottom" data-content="this is popover text.">
+                                <i class=\"fa fa-pencil\"> Popover on bottom
+                            </button>
+
+                                         <div class="col-sm-10">
                                         <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="prob_desc" name="prob_desc" required> </textarea>
                                         <span class="help-block m-b-none">Limit 500 characters.</span>
                                         </div>
