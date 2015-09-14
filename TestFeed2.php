@@ -136,7 +136,7 @@ $.ajax({
 
 			echo "Problem ID: ".$retrieve_id;
 			echo 
-			"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+			"<td><form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 			  <br/><br/><br/>
 			  <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
 			  </form>
@@ -144,7 +144,7 @@ $.ajax({
 			}
 }
 ?> 
-            		echo "</tr>";
+            		echo "</td></tr>";
 
 
        }            
