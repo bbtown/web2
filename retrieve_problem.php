@@ -2,9 +2,10 @@
   // load rethinkdb php library
   require_once __DIR__.'/vendor/autoload.php';
   $conn = r\connect('52.20.101.105');
-  $retrieve_id = $_POST['idea_identifier'];
+  $retrieve_id = $_POST['problem_identifier'];
+
 //  $result = r\db("web")->table('ideas')->run($conn);
-$result = r\db("web")->table('ideas')->getAll($retrieve_id, array("index" => "id"))->run($conn);
+$result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
 //$result = r\db("web")->table('ideas')->count()->run($conn);
 //    echo "Count: $result\n";
     //$result = r\db("web")->table('ideas')->map(function($x) {
