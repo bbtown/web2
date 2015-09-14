@@ -350,7 +350,6 @@
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-add\"></i> Add</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
 
