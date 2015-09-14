@@ -108,7 +108,7 @@ if(isset($doc['AffectedNumber'])) {
 echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 
 //URL?
-
+}
 ?>
 
 
