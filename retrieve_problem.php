@@ -66,7 +66,6 @@ $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => 
       //print_r($doc);
     //}
   //   print_r($result[0]);
-    
 
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";                       
 echo "<h4>Severity Level: Catastrophic</h4>";                                    
@@ -90,7 +89,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 
 //    foreach ($result[0] as $key => $value) {
 //        echo "<span><strong>$key</strong>: $value</span><br>";
-    }
+//    }
 ?>
 
 
