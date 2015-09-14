@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+77;20103;0c<!DOCTYPE html>
 <html>
 
 <head>
@@ -132,10 +132,7 @@ $.ajax({
                     echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation'].", ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
-                    echo "<td>Coming soon</td>";>";
-                      //  <td class="center">4</td>
-                      //  <td class="center">X</td>
-                 
+                    echo "<td>Coming soon</td>";
 
 			echo "Problem ID: ".$retrieve_id;
 			echo 
