@@ -304,7 +304,7 @@ echo "<p>".$doc['ProblemCategory']."</p>";
 <?php
 
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
-
+?>
 </p>
     </section>    
 
