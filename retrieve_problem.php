@@ -257,14 +257,11 @@ $retrieve_id = $doc[id];
     <input type="checkbox" id="read_more" role="button">
     <label for="read_more" onclick=""><span>Read More</span><span>Hide This Shit!</span></label>     
       
-    <figure>
+<!--    <figure>
         <img src="http://cssdeck.com/uploads/media/items/8/8rDcElm.jpg" alt="I'm an owl" />
-    </figure>
+    </figure> -->
 
     <section>
-    <p>Owls are a group of birds that belong to the order Strigiformes, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g. the Northern Hawk Owl). 
-
-
 
 <?php
 
@@ -279,8 +276,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
 
 <section>
-    <p>Owls hunt mostly small mammals, insects, and other birds, although a few species specialize in hunting fish. They are found in all regions of the Earth except Antarctica, most of Greenland and some remote islands. Though owls are typically solitary, the literary collective noun for a group of owls is a parliament. Owls are characterized by their small beaks and wide faces, and are divided into two families: the typical owls, Strigidae; and the barn-owls, Tytonidae.</p>
-    <p>Owls have large forward-facing eyes and ear-holes; a hawk-like beak; a flat face; and usually a conspicuous circle of feathers, a facial disc, around each eye. The feathers making up this disc can be adjusted in order to sharply focus sounds that come from varying distances onto the owls' asymmetrically placed ear cavities. Most birds of prey sport eyes on the sides of their heads, but the stereoscopic nature of the owl's forward-facing eyes permits the greater sense of depth perception necessary for low-light hunting. Although owls have binocular vision, their large eyes are fixed in sockets their as are those of birds other so they must turn their entire head to change views. Owls can rotate their heads and necks as much as 270 degrees in either direction. As owls are farsighted, they are unable to see clearly anything within a few centimeters of their eyes. Caught prey can be felt by owls with the use filoplumes of like feathers on the beak and feet that act as "feelers". Their far vision, particularly in low light, is exceptionally good.</p>
 
                                  <div class="form-group">
                                      <label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6>
