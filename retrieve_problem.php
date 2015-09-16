@@ -32,44 +32,34 @@
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
     <style>
-
 body:before, body:after {
     content: "";
     display: table;
 }
-
 body:after { clear: both }
-
 p { margin-bottom: 1.3rem }
-
 article {
     margin-bottom: 3rem;
     position: relative;
     *zoom: 1;
 }
-
 article:before, article:after {
     content: "";
     display: table;
 }
-
 article:after { clear: both }
-
 article figure {
     float: left;
     width: 32.5%;
 }
-
 article section:first-of-type {
     float: right;
     width: 62.5%;
 }
-
 article section:last-of-type {
     display: none;
     visibility: hidden;
 }
-
 section {
     -webkit-transition: .125s linear;
     -moz-transition: .125s linear;
@@ -77,7 +67,6 @@ section {
     -o-transition: .125s linear;
     transition: .125s linear;
 }
-
 input[type=checkbox] {
     border: 0;
     clip: rect(0 0 0 0);
@@ -88,7 +77,6 @@ input[type=checkbox] {
     padding: 0;
     position: absolute;
 }
-
 [for="read_more"] {
     position: absolute;
     bottom: -3rem;
@@ -98,30 +86,24 @@ input[type=checkbox] {
     padding: .65rem;
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
 }
-
 [for="read_more"]:hover {
     background: rgba(0,0,0,.5);
     color: rgb(255,255,255);
 }
-
 [for="read_more"] span:last-of-type {
     display: none;
     visibility: hidden;
 }
-
 input[type=checkbox]:checked ~ section {
     display: block;
     visibility: visible;
     width: 100%;
 }
-
 input[type=checkbox]:checked ~ figure { width: 100% }
-
 input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
     display: none;
     visibility: hidden;
 }
-
 input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
     display: block;
     visibility: visible;
@@ -129,9 +111,6 @@ input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
    </style>
 
     <script>
-
-
-
    function describe_form() {
 var retrieve_id = $('#retrieve').val();
       var prob_desc = $('#prob_desc').val();
@@ -177,15 +156,11 @@ var retrieve_id = $('#retrieve').val();
   require_once __DIR__.'/vendor/autoload.php';
   $conn = r\connect('52.20.101.105');
   $retrieve_id = $_POST['problem_identifier'];
-
 //  $result = r\db("web")->table('ideas')->run($conn);
 $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
-
-
     //$result = r\db("web")->table('ideas')->map(function($x) {
     //        return $x('id');
     //    })->run($conn);
-
                                 
 //    foreach ($result as $doc) {
     //   echo $arr_keys[
@@ -196,29 +171,16 @@ $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => 
       //print_r($doc);
     //}
   //   print_r($result[0]);
-
 foreach ($result as $doc) {
-
 echo "<p>".$doc['ProblemDescription']."</p>";
-
-
-
-
-
-
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";                       
 echo "<h4>Severity Level: Catastrophic</h4>";                                    
-
 if(isset($doc['AffectedNumber'])) {
 echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
 else {echo "<h4>Impact Type: </h4>";};
                                     
 echo "<h4>Problem Development: Persistent Build-up</h4>";
 echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
-
-
-
-
 //AffectedDescription:
 //AffectedNumber:
 //Factors:
@@ -227,8 +189,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 //Perspective:
 //ProblemCategory: Society
 //ProblemDescription:
-
-
 //    foreach ($result[0] as $key => $value) {
 //        echo "<span><strong>$key</strong>: $value</span><br>";
     }
@@ -254,8 +214,8 @@ $retrieve_id = $doc[id];
 <article>
     
 
-    <input type="checkbox" id="read_more" role="button">
-    <label for="read_more" onclick=""><span>Read More</span><span>Hide This Shit!</span></label>     
+    <input type="checkbox" id="read_more" role="button" style="width:40%">
+    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
       
 <!--    <figure>
         <img src="http://cssdeck.com/uploads/media/items/8/8rDcElm.jpg" alt="I'm an owl" />
@@ -264,10 +224,7 @@ $retrieve_id = $doc[id];
     <section>
 
 <?php
-
 echo "<p>".$doc['ProblemDescription']."</p>";
-
-
 ?>
 
 </p>
@@ -307,6 +264,24 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                         </div>
                                         </div>
                                         
+
+                                        <article>
+    
+
+    <input type="checkbox" id="read_more" role="button" style="width:40%">
+    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
+
+    <section>
+
+<?php
+echo "<p>".$doc['ProblemCategory']."</p>";
+?>
+
+</p>
+    </section>    
+
+<section>
+
                                         <div class="form-group"><label class="col-sm-2 control-label">Select a Primary Category: </label> 
                       <div class="col-sm-10">
                     <div class="i-checks col-sm-6"><label> <input type="radio" value="Environment" name="prob_cat"> <i></i> Environment</label></div>
@@ -318,15 +293,30 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                         <div class="i-checks col-sm-6"><label> <input type="radio" value="Infrastructure" name="prob_cat"> <i></i> Infrastructure </label></div>
                                 </div>
                       </div>
-                          
+                          </section>
 
+</article>
+    <input type="checkbox" id="read_more" role="button" style="width:40%">
+    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
+
+    <section>
+
+<?php
+
+echo "<h4>Tags: ".$doc['Tags']."</h4>";
+
+</p>
+    </section>    
+
+<section>
                     <div class="form-group">
                       <label class="col-sm-2 control-label">Tags</label>
                       <div class="col-sm-10">
                                     <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
                                          </div>
                       </div>
-
+</section>
+</article>
                     <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
@@ -340,7 +330,21 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                     <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
                                     </div>
                     </div>
+    <input type="checkbox" id="read_more" role="button" style="width:40%">
+    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
 
+    <section>
+
+<?php
+if(isset($doc['AffectedNumber'])) {
+echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
+else {echo "<h4>Impact Type: </h4>";};
+?>
+
+</p>
+    </section>    
+
+<section>
                         <div class="col-sm-12 gray-bg">
                             <h1>Who</h1>
                               <div class="row"> 
@@ -360,6 +364,9 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                       </div>
                                     </div>
                                 </div>
+                                </section>
+
+</article>
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
                           <div class="col-sm-8" style="padding:0px 0px 20px 200px"> 
@@ -671,8 +678,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                 </div>
 
 <!-- END FORM STUFF --->
-
-
                                     <div class="col-sm-3  gray-bg">    
                                 <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
@@ -689,15 +694,11 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                     </div>
                                 </div>
                                     </div>
-
-
                 <div class="ibox-content">
                             <h1>Stakeholders</h1>
                             <h4>Who is affected by this problem?</h4>
-
                             
                         <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
-
                             <div class="row">
                         <div class="col-sm-6">
                         <h5>Stakeholders Identified</h5>
@@ -712,7 +713,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                     <li>Other Specified Groups:  All</li>
                                 </ul>
                                 </div>
-
                             <div class="col-sm-6">
                             <p>
                             <h5>Stakeholders Reached - Demographics</h5>
@@ -726,7 +726,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                     <li>Occupations: <ol><li>Technology (1)</li><li>Federal Government (1)</li></ol></li>
                                     <li>World Views: <ol><li>N/A</li></ol></li>
                                     <li>Other Specified Groups: <ol><li>N/A</li></ol></li>
-
                                 </ul>  
                             </p> 
                       
@@ -735,7 +734,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                     </div>
                     </div>
                 </div>
-
                 <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
@@ -743,32 +741,23 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                             <h4>Which factors contribute to this problem?</h4>
                          
                         <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
-
-
                                 <p><ul><li>Amount of Carbon Emissions</li> 
                                     <li>Energy Usage</li> 
                                     <li>Population Size</li>
                                     <li>Advancement of Technology</li>
                                     <li>Application of Technology</li>
                                     <li>Resource Availability</li></ul></p>
-
-
-
                             <h4>Assumptions</h4>
                             <h4>Constraints</h4>
                             <p><ul><li>Amount of Carbon Emissions</li> 
                                     <li>Energy Usage</li> 
                                     <li>Population Size</li>
                                 <li>Advancement of Technology</li>
-
                             <li>Resource Availability</li></ul></p>
-
                             <h4>Measuring and Tracking the Problem</h4>
                       
                     </div>
                     </div>
-
-
                 <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
@@ -776,7 +765,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                             <h4>Why does this problem really exist?</h4>
                             <img src="http://www.mindtools.com/media/Diagrams/Cause-Effect-Diagram-Example-3.jpg">
                         
-
                       
                     </div>
                     </div>
@@ -790,12 +778,10 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 <li>The e-Wash system shall communicate to the user every process that the e-Wash system performs has occurred incorrectly.  </li>
 <li>The e-Wash system shall not cause damage to its surrounding environment due to e-Wash failure system. </li>
 </ol>
-
                       
                     </div>
                     </div>
                 </div>
-
                  <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
@@ -808,13 +794,10 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                             <li>Mandate the use of electric vehicles.</li>
                             <li>Mandate the use of fuels derived from biological waste.</li>
                         </ol>
-
                       
                     </div>
                     </div>
                 </div>
-
-
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -874,7 +857,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
     <script>
          $(document).ready(function(){
-
              $("#form").validate({
                  rules: {
                      prob_desc: {
@@ -905,7 +887,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
     <script>
         $(document).ready(function(){
-
             var $image = $(".image-crop > img")
             $($image).cropper({
                 aspectRatio: 1.618,
@@ -914,20 +895,16 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                     // Output the result data for cropping image.
                 }
             });
-
             var $inputImage = $("#inputImage");
             if (window.FileReader) {
                 $inputImage.change(function() {
                     var fileReader = new FileReader(),
                             files = this.files,
                             file;
-
                     if (!files.length) {
                         return;
                     }
-
                     file = files[0];
-
                     if (/^image\/\w+$/.test(file.type)) {
                         fileReader.readAsDataURL(file);
                         fileReader.onload = function () {
@@ -941,31 +918,24 @@ echo "<p>".$doc['ProblemDescription']."</p>";
             } else {
                 $inputImage.addClass("hide");
             }
-
             $("#download").click(function() {
                 window.open($image.cropper("getDataURL"));
             });
-
             $("#zoomIn").click(function() {
                 $image.cropper("zoom", 0.1);
             });
-
             $("#zoomOut").click(function() {
                 $image.cropper("zoom", -0.1);
             });
-
             $("#rotateLeft").click(function() {
                 $image.cropper("rotate", 45);
             });
-
             $("#rotateRight").click(function() {
                 $image.cropper("rotate", -45);
             });
-
             $("#setDrag").click(function() {
                 $image.cropper("setDragMode", "crop");
             });
-
             $('#data_1 .input-group.date').datepicker({
                 todayBtn: "linked",
                 keyboardNavigation: false,
@@ -973,7 +943,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 calendarWeeks: true,
                 autoclose: true
             });
-
             $('#data_2 .input-group.date').datepicker({
                 startView: 1,
                 todayBtn: "linked",
@@ -982,7 +951,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 autoclose: true,
                 format: "dd/mm/yyyy"
             });
-
             $('#data_3 .input-group.date').datepicker({
                 startView: 2,
                 todayBtn: "linked",
@@ -990,7 +958,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 forceParse: false,
                 autoclose: true
             });
-
             $('#data_4 .input-group.date').datepicker({
                 minViewMode: 1,
                 keyboardNavigation: false,
@@ -998,42 +965,31 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 autoclose: true,
                 todayHighlight: true
             });
-
             $('#data_5 .input-daterange').datepicker({
                 keyboardNavigation: false,
                 forceParse: false,
                 autoclose: true
             });
-
             var elem = document.querySelector('.js-switch');
             var switchery = new Switchery(elem, { color: '#1AB394' });
-
             var elem_2 = document.querySelector('.js-switch_2');
             var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
-
             var elem_3 = document.querySelector('.js-switch_3');
             var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
-
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green'
             });
-
             $('.demo1').colorpicker();
-
             var divStyle = $('.back-change')[0].style;
             $('#demo_apidemo').colorpicker({
                 color: divStyle.backgroundColor
             }).on('changeColor', function(ev) {
                         divStyle.backgroundColor = ev.color.toHex();
                     });
-
             $('.clockpicker').clockpicker();
-
             $('input[name="daterange"]').daterangepicker();
-
             $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
-
             $('#reportrange').daterangepicker({
                 format: 'MM/DD/YYYY',
                 startDate: moment().subtract(29, 'days'),
@@ -1074,8 +1030,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 console.log(start.toISOString(), end.toISOString(), label);
                 $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
             });
-
-
         });
         var config = {
                 '.chosen-select'           : {},
@@ -1087,7 +1041,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
             for (var selector in config) {
                 $(selector).chosen(config[selector]);
             }
-
         $("#ionrange_1").ionRangeSlider({
 //            values: [
 //                "1", "100", "500", "1,000", "5,000", "10,000", "50,000", "100,000", "250,000", "500,000", "1 million","10 million", "50 million","100 million", "500 million", "Over 1 billion"
@@ -1101,7 +1054,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
             hideMinMax: false,
             hideFromTo: false
         });
-
         $("#ionrange_5").ionRangeSlider({
             min: 10000,
             max: 100000,
@@ -1111,9 +1063,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
             hideMinMax: true,
             hideFromTo: false
         });
-
         $(".dial").knob();
-
         $("#basic_slider").noUiSlider({
             start: 40,
             behaviour: 'tap',
@@ -1123,7 +1073,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 'max':  80
             }
         });
-
         $("#range_slider").noUiSlider({
             start: [ 40, 60 ],
             behaviour: 'drag',
@@ -1133,7 +1082,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 'max':  80
             }
         });
-
         $("#drag-fixed").noUiSlider({
             start: [ 40, 60 ],
             behaviour: 'drag-fixed',
@@ -1143,8 +1091,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                 'max':  80
             }
         });
-
-
     </script>
 
     <!-- iCheck -->
