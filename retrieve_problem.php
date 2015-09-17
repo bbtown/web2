@@ -37,14 +37,14 @@ input#show, input#hide {
     display:none;
 }
 
-span#content {
+div#content {
     display:none;
 }
-input#show:checked ~ span#content {
+input#show:checked ~ div#content {
   display:block;
 }
 
-input#hide:checked ~ span#content {
+input#hide:checked ~ div#content {
     display:none;
 }
 span#content1 {
@@ -205,7 +205,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content">
+<div id="content">
                                  <div class='form-group'>
                                      <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
 
@@ -233,14 +233,14 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                         </div>
                                         </div>
                                         
-</span>
+</div>
               
 
 <?php
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
 ?>
 
-
+<!--
  <label for="show">
     <span>[Show]</span>
 </label>
@@ -249,7 +249,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content1">
+<span id="content1"> -->
 
                                         <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
                       <div class='col-sm-10'>
@@ -262,7 +262,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Infrastructure' name='prob_cat'> <i></i> Infrastructure </label></div>
                                 </div>
                       </div>
-</span>
+<!--</span> -->
 
 
 
@@ -270,6 +270,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
 
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
 ?>
+<!--
  <label for="show">
     <span>[Show]</span>
 </label>
@@ -278,7 +279,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content2">
+<span id="content2"> -->
                     <div class='form-group'>
                       <label class='col-sm-2 control-label'>Tags</label>
                       <div class='col-sm-10'>
@@ -286,7 +287,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                                     <!--<span class='help-block m-b-none'>Separate by commas.</span>-->
                                          </div>
                       </div>
-</span>
+<!--</span> -->
 
                     <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
@@ -314,7 +315,7 @@ if(isset($doc['AffectedNumber'])) {
 echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
 else {echo "<h4>Impact Type: </h4>";};
 ?>
- <label for="show">
+<!-- <label for="show">
     <span>[Show]</span>
 </label>
 <input type=radio id="show" name="group">
@@ -322,7 +323,7 @@ else {echo "<h4>Impact Type: </h4>";};
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content3">
+<span id="content3"> -->
                                 <div class='form-group'>
                                   <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
                                     <div class='col-sm-10'>
@@ -335,11 +336,11 @@ else {echo "<h4>Impact Type: </h4>";};
                                     <div class='col-sm-5'>
                                         <div class='input-group'>
                                         <input type='text' id='affect_num' class='form-control' placeholder='e.g., 7,290,000,000' name='affect_num' maxlength='14'>
-                                       <!-- <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span> -->
+                                       <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span> 
                                       </div>
                                     </div>
                                 </div>
-</span>
+<!--</span> -->
 
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
