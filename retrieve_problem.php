@@ -214,7 +214,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
  <div class='col-sm-10'>
                                         <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
-                                        <span class='help-block m-b-none'>Limit 500 characters.</span>
+                                       <!-- <span class='help-block m-b-none'>Limit 500 characters.</span> -->
                                         
 
 
@@ -230,7 +230,6 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                      <label class='col-sm-2 control-label'>Additional Problem Information</label>
                                         <div class='col-sm-10'>
                                         <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
-                                        <span class='help-block m-b-none'></span>
                                         </div>
                                         </div>
                                         
@@ -283,7 +282,8 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                     <div class='form-group'>
                       <label class='col-sm-2 control-label'>Tags</label>
                       <div class='col-sm-10'>
-                                    <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> <span class='help-block m-b-none'>Separate by commas.</span>
+                                    <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> 
+                                    <!--<span class='help-block m-b-none'>Separate by commas.</span>-->
                                          </div>
                       </div>
 </span>
@@ -326,7 +326,7 @@ else {echo "<h4>Impact Type: </h4>";};
                                 <div class='form-group'>
                                   <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
                                     <div class='col-sm-10'>
-                                      <input type='text' id='affect_desc' name='affect_desc' class='form-control input-lg' placeholder='e.g., children attending public school in Pennsylvania'> <span class='help-block m-b-none'></span>
+                                      <input type='text' id='affect_desc' name='affect_desc' class='form-control input-lg' placeholder='e.g., children attending public school in Pennsylvania'> 
                                     </div>
                                 </div>
 
@@ -335,7 +335,7 @@ else {echo "<h4>Impact Type: </h4>";};
                                     <div class='col-sm-5'>
                                         <div class='input-group'>
                                         <input type='text' id='affect_num' class='form-control' placeholder='e.g., 7,290,000,000' name='affect_num' maxlength='14'>
-                                        <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span>
+                                       <!-- <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span> -->
                                       </div>
                                     </div>
                                 </div>
