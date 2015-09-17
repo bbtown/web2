@@ -629,8 +629,8 @@ $(document).ready(function() {
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js</script>
-    <script>https://code.jquery.com/jquery-1.11.3.min.js</script>
+    <script> src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"</script>
+    <script> src="https://code.jquery.com/jquery-1.11.3.min.js"</script>
         <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
