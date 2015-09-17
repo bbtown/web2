@@ -166,10 +166,10 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 </label>    
 <input type=radio id="hide" name="group">
 <span id="content">
-                                 <div class="form-group">
-                                     <label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6>
+                                 <div class='form-group'>
+                                     <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
 
-<!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
+<!--                                    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
 </label>
 
  <div class='col-sm-10'>
@@ -182,70 +182,72 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
                                 </div>
 
-</span>
+
 
 <!-- END TEST -->
 
-                                <div class="form-group">
-                                     <label class="col-sm-2 control-label">Additional Problem Information</label>
-                                        <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="5" maxlength="1500" name="prob_more" id="prob_more"> </textarea>
-                                        <span class="help-block m-b-none"></span>
+                                <div class='form-group'>
+                                     <label class='col-sm-2 control-label'>Additional Problem Information</label>
+                                        <div class='col-sm-10'>
+                                        <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
+                                        <span class='help-block m-b-none'></span>
                                         </div>
                                         </div>
                                         
-
-                                        <article>
-    
-
-    <input type="checkbox" id="read_more" role="button" style="width:40%">
-    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
-
-    <section>
+</span>
+              
 
 <?php
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
 ?>
 
 
-    </section>    
+ <label for="show">
+    <span>[Show]</span>
+</label>
+<input type=radio id="show" name="group">
+<label for="hide">
+    <span>[Hide]</span> 
+</label>    
+<input type=radio id="hide" name="group">
+<span id="content">
 
-<section>
-
-                                        <div class="form-group"><label class="col-sm-2 control-label">Select a Primary Category: </label> 
-                      <div class="col-sm-10">
-                    <div class="i-checks col-sm-6"><label> <input type="radio" value="Environment" name="prob_cat"> <i></i> Environment</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Society" name="prob_cat"> <i></i> Society</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Technology" name="prob_cat"> <i></i> Technology</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Government" name="prob_cat"> <i></i> Government</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Health" name="prob_cat"> <i></i> Health</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Education" name="prob_cat"> <i></i> Education</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Infrastructure" name="prob_cat"> <i></i> Infrastructure </label></div>
+                                        <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
+                      <div class='col-sm-10'>
+                    <div class='i-checks col-sm-6'><label> <input type='radio' value='Environment' name='prob_cat'> <i></i> Environment</label></div>
+                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Society' name='prob_cat'> <i></i> Society</label></div>
+                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Technology' name='prob_cat'> <i></i> Technology</label></div>
+                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Government' name='prob_cat'> <i></i> Government</label></div>
+                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Health' name='prob_cat'> <i></i> Health</label></div>
+                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Education' name='prob_cat'> <i></i> Education</label></div>
+                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Infrastructure' name='prob_cat'> <i></i> Infrastructure </label></div>
                                 </div>
                       </div>
-                          </section>
+</span>
 
-</article>
-    <input type="checkbox" id="read_more" role="button" style="width:40%">
-    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
 
-    <section>
 
 <?php
 
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
 ?>
-    </section>    
-
-<section>
-                    <div class="form-group">
-                      <label class="col-sm-2 control-label">Tags</label>
-                      <div class="col-sm-10">
-                                    <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span>
+ <label for="show">
+    <span>[Show]</span>
+</label>
+<input type=radio id="show" name="group">
+<label for="hide">
+    <span>[Hide]</span> 
+</label>    
+<input type=radio id="hide" name="group">
+<span id="content">
+                    <div class='form-group'>
+                      <label class='col-sm-2 control-label'>Tags</label>
+                      <div class='col-sm-10'>
+                                    <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> <span class='help-block m-b-none'>Separate by commas.</span>
                                          </div>
                       </div>
-</section>
-</article>
+</span>
+
                     <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
@@ -259,42 +261,46 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                                     <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
                                     </div>
                     </div>
-    <input type="checkbox" id="read_more" role="button" style="width:40%">
-    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
 
-    <section>
+
+
+
+                        <div class="col-sm-12 gray-bg">
+                            <h1>Who</h1>
+                              <div class="row"> 
 
 <?php
 if(isset($doc['AffectedNumber'])) {
 echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
 else {echo "<h4>Impact Type: </h4>";};
 ?>
-
-    </section>    
-
-<section>
-                        <div class="col-sm-12 gray-bg">
-                            <h1>Who</h1>
-                              <div class="row"> 
-                                <div class="form-group">
-                                  <label class="col-sm-2 control-label">Describe the group of people affected by the problem.</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" id="affect_desc" name="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
+ <label for="show">
+    <span>[Show]</span>
+</label>
+<input type=radio id="show" name="group">
+<label for="hide">
+    <span>[Hide]</span> 
+</label>    
+<input type=radio id="hide" name="group">
+<span id="content">
+                                <div class='form-group'>
+                                  <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
+                                    <div class='col-sm-10'>
+                                      <input type='text' id='affect_desc' name='affect_desc' class='form-control input-lg' placeholder='e.g., children attending public school in Pennsylvania'> <span class='help-block m-b-none'></span>
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Estimate the number of people directly affected by this problem.</label>
-                                    <div class="col-sm-5">
-                                        <div class="input-group">
-                                        <input type="text" id="affect_num" class="form-control" placeholder="e.g., 7,290,000,000" name="affect_num" maxlength="14">
-                                        <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
+                                <div class='form-group'>
+                                    <label class='col-sm-2 control-label'>Estimate the number of people directly affected by this problem.</label>
+                                    <div class='col-sm-5'>
+                                        <div class='input-group'>
+                                        <input type='text' id='affect_num' class='form-control' placeholder='e.g., 7,290,000,000' name='affect_num' maxlength='14'>
+                                        <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span>
                                       </div>
                                     </div>
                                 </div>
-                                </section>
+</span>
 
-</article>
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
                           <div class="col-sm-8" style="padding:0px 0px 20px 200px"> 
