@@ -227,7 +227,7 @@ $retrieve_id = $doc[id];
 echo "<p>".$doc['ProblemDescription']."</p>";
 ?>
 
-</p>
+
     </section>    
 
 
@@ -274,10 +274,10 @@ echo "<p>".$doc['ProblemDescription']."</p>";
     <section>
 
 <?php
-echo "<p>".$doc['ProblemCategory']."</p>";
+echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
 ?>
 
-</p>
+
     </section>    
 
 <section>
@@ -305,7 +305,6 @@ echo "<p>".$doc['ProblemCategory']."</p>";
 
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
 ?>
-</p>
     </section>    
 
 <section>
@@ -341,7 +340,6 @@ echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
 else {echo "<h4>Impact Type: </h4>";};
 ?>
 
-</p>
     </section>    
 
 <section>
