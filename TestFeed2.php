@@ -59,14 +59,29 @@ $.ajax({
 <div class="ibox-content">
 
 <!-- BEGIN -->
-<table data-url="data1.json" data-height="299" data-sort-name="name" data-sort-order="desc">
+<table data-height="299" data-sort-name="name" data-sort-order="desc">
     <thead>
         <tr>
             <th data-field="id" data-align="right" data-sortable="true">Item ID</th>
             <th data-field="name" data-align="center" data-sortable="true">Item Name</th>
-            <th data-field="price" data-sortable="true">Item Price</th>
-        </tr>
+            <th data-field="price" data-sortable="true">Item Price</th>     
+	</tr>
     </thead>
+<tr>
+<td>1234</td>
+<td>bacon</td>
+<td>$2.00</td>
+</tr>
+<tr>
+<td>222</td>
+<td>apples</td>
+<td>$1.00</td>
+</tr>
+<tr>
+<td>333</td>
+<td>pears</td>
+<td>$0.05</td>
+</tr>
 </table>
 <!-- END  -->
 
