@@ -108,6 +108,10 @@ input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
     display: block;
     visibility: visible;
 }
+
+          #cont {display: none; }
+          .show:focus + .hide {display: inline; }
+          .show:focus + .hide + #cont {display: block;}
    </style>
 
     <script>
@@ -146,6 +150,11 @@ var retrieve_id = $('#retrieve').val();
 
 <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
+                                 <div>
+            <a href="#show"class="show">[Show]</a>
+            <a href="#hide"class="hide">/ [Hide]</a>
+            <div id="cont">Content</div>
+       </div>
 
                               <div class="row"> 
                                     <div class="col-sm-9">
