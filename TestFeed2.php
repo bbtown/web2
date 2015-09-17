@@ -32,12 +32,26 @@
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+    <link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=3064d2bb2028347de8dbc19f5725ed59">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+    <style type="text/css" class="init">
 
-
+      </style>
+    <script type="text/javascript" src="/media/js/site.js?_=725bb6a607df83d8860319e746e053bb"></script>
+    <script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fadvanced_init%2Fhtml5-data-attributes.html" async=""></script>
     <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+    <script type="text/javascript" class="init">
 
-    <script>
+
+$(document).ready(function() {
+$('#example').DataTable();
+} );
+
+
     function retrieve_id() {
 var retrieve_id = $('#retrieve').val();
 var serialData = $('#retrieve').serialize();
@@ -51,11 +65,6 @@ $.ajax({
 });
 } 
 
-
-
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
     </script>
 
 </head>
