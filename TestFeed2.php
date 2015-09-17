@@ -77,15 +77,11 @@ $.ajax({
                         <div class="ibox-title">
                             <h1>Problem Description</h1>
                         </div> -->
-<div class="ibox-content">
 
 <!-- BEGIN -->
 
-<script>
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-</script>
+<div class="fw-body">
+  <div class="content">
 <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -568,7 +564,10 @@ $(document).ready(function() {
             </tr>
         </tbody>
     </table>
+</div></div>
+
 <!-- END  -->
+<div class="ibox-content">
 
                         <div class="table-responsive">
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
