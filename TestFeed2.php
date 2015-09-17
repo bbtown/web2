@@ -12,7 +12,7 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
     <link href="css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
@@ -31,6 +31,11 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+
+    <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
 
     <script>
     function retrieve_id() {
@@ -66,6 +71,12 @@ $(document).ready(function() {
 <div class="ibox-content">
 
 <!-- BEGIN -->
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
 <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
