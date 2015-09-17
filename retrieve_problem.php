@@ -47,14 +47,14 @@ input#show:checked ~ div#content {
 input#hide:checked ~ div#content {
     display:none;
 }
-span#content1 {
+div#content1 {
     display:none;
 }
-input#show:checked ~ span#content1 {
+input#show:checked ~ div#content1 {
   display:block;
 }
 
-input#hide:checked ~ span#content1 {
+input#hide:checked ~ div#content1 {
     display:none;
 }
 span#content2 {
@@ -240,7 +240,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
 ?>
 
-<!--
+
  <label for="show">
     <span>[Show]</span>
 </label>
@@ -249,7 +249,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content1"> -->
+<div id="content1"> -->
 
                                         <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
                       <div class='col-sm-10'>
@@ -262,7 +262,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Infrastructure' name='prob_cat'> <i></i> Infrastructure </label></div>
                                 </div>
                       </div>
-<!--</span> -->
+</div>
 
 
 
