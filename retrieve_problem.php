@@ -109,9 +109,21 @@ input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
     visibility: visible;
 }
 
-          #cont {display: none; }
-          .show:focus + .hide {display: inline; }
-          .show:focus + .hide + #cont {display: block;}
+
+input#show, input#hide {
+    display:none;
+}
+
+span#content {
+    display:none;
+}
+input#show:checked ~ span#content {
+  display:block;
+}
+
+input#hide:checked ~ span#content {
+    display:none;
+}
    </style>
 
     <script>
@@ -150,12 +162,15 @@ var retrieve_id = $('#retrieve').val();
 
 <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
-                                 <div>
-            <a href="#show"class="show">[Show]</a>
-            <a href="#hide"class="hide">/ [Hide]</a>
-            <div id="cont">Content</div>
-       </div>
-
+<label for="show">
+    <span>[Show]</span>
+</label>
+<input type=radio id="show" name="group">
+<label for="hide">
+    <span>[Hide]</span> 
+</label>    
+<input type=radio id="hide" name="group">
+<span id="content">Content</span>
                               <div class="row"> 
                                     <div class="col-sm-9">
 <h1>Problem Description</h1>
