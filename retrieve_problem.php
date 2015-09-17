@@ -47,6 +47,46 @@ input#show:checked ~ span#content {
 input#hide:checked ~ span#content {
     display:none;
 }
+span#content1 {
+    display:none;
+}
+input#show:checked ~ span#content1 {
+  display:block;
+}
+
+input#hide:checked ~ span#content1 {
+    display:none;
+}
+span#content2 {
+    display:none;
+}
+input#show:checked ~ span#content2 {
+  display:block;
+}
+
+input#hide:checked ~ span#content2 {
+    display:none;
+}
+span#content3 {
+    display:none;
+}
+input#show:checked ~ span#content3 {
+  display:block;
+}
+
+input#hide:checked ~ span#content3 {
+    display:none;
+}
+span#content4 {
+    display:none;
+}
+input#show:checked ~ span#content4 {
+  display:block;
+}
+
+input#hide:checked ~ span#content4 {
+    display:none;
+}
    </style>
 
     <script>
@@ -210,7 +250,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content">
+<span id="content1">
 
                                         <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
                       <div class='col-sm-10'>
@@ -239,7 +279,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content">
+<span id="content2">
                     <div class='form-group'>
                       <label class='col-sm-2 control-label'>Tags</label>
                       <div class='col-sm-10'>
@@ -282,7 +322,7 @@ else {echo "<h4>Impact Type: </h4>";};
     <span>[Hide]</span> 
 </label>    
 <input type=radio id="hide" name="group">
-<span id="content">
+<span id="content3">
                                 <div class='form-group'>
                                   <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
                                     <div class='col-sm-10'>
