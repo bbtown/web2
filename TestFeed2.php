@@ -58,6 +58,18 @@ $.ajax({
                         </div> -->
 <div class="ibox-content">
 
+<!-- BEGIN -->
+<table data-url="data1.json" data-height="299" data-sort-name="name" data-sort-order="desc">
+    <thead>
+        <tr>
+            <th data-field="id" data-align="right" data-sortable="true">Item ID</th>
+            <th data-field="name" data-align="center" data-sortable="true">Item Name</th>
+            <th data-field="price" data-sortable="true">Item Price</th>
+        </tr>
+    </thead>
+</table>
+<!-- END  -->
+
                         <div class="table-responsive">
                     <table class="table table-striped table-bordered table-hover dataTables-example" >
                     <thead>
