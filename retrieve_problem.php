@@ -32,83 +32,6 @@
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
     <style>
-body:before, body:after {
-    content: "";
-    display: table;
-}
-body:after { clear: both }
-p { margin-bottom: 1.3rem }
-article {
-    margin-bottom: 3rem;
-    position: relative;
-    *zoom: 1;
-}
-article:before, article:after {
-    content: "";
-    display: table;
-}
-article:after { clear: both }
-article figure {
-    float: left;
-    width: 32.5%;
-}
-article section:first-of-type {
-    float: right;
-    width: 62.5%;
-}
-article section:last-of-type {
-    display: none;
-    visibility: hidden;
-}
-section {
-    -webkit-transition: .125s linear;
-    -moz-transition: .125s linear;
-    -ms-transition: .125s linear;
-    -o-transition: .125s linear;
-    transition: .125s linear;
-}
-input[type=checkbox] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-}
-[for="read_more"] {
-    position: absolute;
-    bottom: -3rem;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: .65rem;
-    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
-}
-[for="read_more"]:hover {
-    background: rgba(0,0,0,.5);
-    color: rgb(255,255,255);
-}
-[for="read_more"] span:last-of-type {
-    display: none;
-    visibility: hidden;
-}
-input[type=checkbox]:checked ~ section {
-    display: block;
-    visibility: visible;
-    width: 100%;
-}
-input[type=checkbox]:checked ~ figure { width: 100% }
-input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
-    display: none;
-    visibility: hidden;
-}
-input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
-    display: block;
-    visibility: visible;
-}
-
 
 input#show, input#hide {
     display:none;
@@ -162,15 +85,7 @@ var retrieve_id = $('#retrieve').val();
 
 <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
-<label for="show">
-    <span>[Show]</span>
-</label>
-<input type=radio id="show" name="group">
-<label for="hide">
-    <span>[Hide]</span> 
-</label>    
-<input type=radio id="hide" name="group">
-<span id="content">Content</span>
+
                               <div class="row"> 
                                     <div class="col-sm-9">
 <h1>Problem Description</h1>
@@ -235,29 +150,22 @@ $retrieve_id = $doc[id];
                                     </div>
                                 </div>-->
 
-<article>
-    
 
-    <input type="checkbox" id="read_more" role="button" style="width:40%">
-    <label for="read_more" onclick=""><span>Edit</span><span>Hide</span></label>     
-      
-<!--    <figure>
-        <img src="http://cssdeck.com/uploads/media/items/8/8rDcElm.jpg" alt="I'm an owl" />
-    </figure> -->
-
-    <section>
 
 <?php
 echo "<p>".$doc['ProblemDescription']."</p>";
 ?>
 
 
-    </section>    
-
-
-
-<section>
-
+<label for="show">
+    <span>[Show]</span>
+</label>
+<input type=radio id="show" name="group">
+<label for="hide">
+    <span>[Hide]</span> 
+</label>    
+<input type=radio id="hide" name="group">
+<span id="content">
                                  <div class="form-group">
                                      <label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6>
 
@@ -274,9 +182,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
                                 </div>
 
-</section>
-
-</article>
+</span>
 
 <!-- END TEST -->
 
