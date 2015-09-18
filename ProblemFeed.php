@@ -117,7 +117,7 @@ $.ajax({
 ?>
                     </tbody>
                     <tfoot>
-                    <tr>
+<!--                    <tr>
                         <th>Description</th>
                         <th>Category</th>
                         <th>Tags</th>
@@ -128,7 +128,7 @@ $.ajax({
                         <th data-hide="phone,tablet">Factors</th>
                         <th>Awareness</th>
 
-                    </tr> 
+                    </tr> -->
 		    <tr>
                                     <td colspan="5">
                                         <ul class="pagination pull-right"></ul>

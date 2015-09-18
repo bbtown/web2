@@ -79,10 +79,7 @@ $.ajax({
                         <th>Category</th>
                         <th>Tags</th>
                         <th data-hide="phone,tablet">URL</th>
-                        <th data-hide="phone,tablet">Affected group</th>
-                        <th># Affected</th>
                         <th>Location</th>
-                        <th data-hide="phone,tablet">Factors</th>
                         <th>Awareness</th>
                     </tr>
                     </thead>
@@ -106,10 +103,7 @@ $.ajax({
                     echo "<td>".$doc['IdeaCategory']."</td>";
                     echo "<td>".$doc['Tags']."</td>";
                     echo "<td>".$doc['URL']."</td>";
-                    echo "<td>".$doc['AffectedDescription']."</td>";
-                    echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
-                    echo "<td>".$doc['Factors']."</td>";
                     echo "<td>Coming soon</td>";
 			echo "</td></tr>";
        }            
@@ -117,18 +111,14 @@ $.ajax({
 ?>
                     </tbody>
                     <tfoot>
-                    <tr>
+<!--                    <tr>
                         <th>Description</th>
                         <th>Category</th>
                         <th>Tags</th>
                         <th data-hide="phone,tablet">URL</th>
-                        <th data-hide="phone,tablet">Affected group</th>
-                        <th># Affected</th>
-                        <th>Location</th>
-                        <th data-hide="phone,tablet">Factors</th>
                         <th>Awareness</th>
 
-                    </tr> 
+                    </tr> --> 
 		    <tr>
                                     <td colspan="5">
                                         <ul class="pagination pull-right"></ul>
