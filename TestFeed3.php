@@ -73,7 +73,7 @@ $.ajax({
 <input type="text" class="form-control input-sm m-b-xs" id="filter"
                                    placeholder="Search in table">
     <!--                    <div class="table-responsive"> -->
-                    <table class="footable table table-stripped" data-filter=#filter> <!-- table-bordered table-hover" data-page-size="10" data-filter="#filter"> <!-- dataTables-example" > -->
+                    <table class="footable table table-stripped" data-page-size="10" data-filter=#filter> <!-- table-bordered table-hover" data-page-size="10" data-filter="#filter"> <!-- dataTables-example" > -->
                     <thead>
                     <tr>
                         <th>Description</th>
