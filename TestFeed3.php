@@ -118,17 +118,18 @@ $.ajax({
 ?>
                     </tbody>
                     <tfoot>
-                    <tr>
+<!--                    <tr>
                         <th>Description</th>
                         <th>Category</th>
                         <th>Tags</th>
-                        <th>URL</th>
-                        <th>Affected group</th>
+                        <th data-hide="phone,tablet">URL</th>
+                        <th data-hide="phone,tablet">Affected group</th>
                         <th># Affected</th>
                         <th>Location</th>
-                        <th>Factors</th>
+                        <th data-hide="phone,tablet">Factors</th>
                         <th>Awareness</th>
-                    </tr>
+
+                    </tr> -->
 		    <tr>
                                     <td colspan="5">
                                         <ul class="pagination pull-right"></ul>
