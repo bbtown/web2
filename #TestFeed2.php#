@@ -88,7 +88,7 @@ $.ajax({
                 <th>Name</th>
                 <th>Position</th>
                 <th>Office</th>
-                <th data-sortable="true">Age</th>
+                <th>Age</th>
                 <th>Start date</th>
                 <th>Salary</th>
             </tr>
