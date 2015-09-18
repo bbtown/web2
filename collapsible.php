@@ -114,7 +114,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
 
 
 
-div class='form-group'>
+<div class='form-group'>
                                      <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
 
 <!--                                    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
