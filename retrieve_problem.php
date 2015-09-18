@@ -249,6 +249,7 @@ $retrieve_id = $doc[id];
 
 
 <!-- <div class="col-sm-9"> -->
+<div class="row">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -259,9 +260,9 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 <!--                        <h5>Example of <small>initial</small> collapsed panel</h5> -->
                         <div class="ibox-tools">
                             <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
+                                Edit <i class="fa fa-pencil"></i>
                             </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+<!--                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <i class="fa fa-wrench"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-user">
@@ -272,7 +273,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
                             </ul>
                             <a class="close-link">
                                 <i class="fa fa-times"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <div class="ibox-content">
