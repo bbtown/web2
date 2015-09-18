@@ -13,35 +13,85 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+ <script>
+   function describe_form() {
+var retrieve_id = $('#retrieve').val();
+      var prob_desc = $('#prob_desc').val();
+      var prob_more = $('#prob_more').val();
+      var perspective = $('#perspective').val();
+      var url = $('#url').val();
+      var tags = $('#tags').val(); 
+      var prob_cat = $('#prob_cat').val();
+      var affect_desc = $('#affect_desc').val();
+      var affect_num = $('#affect_num').val();
+      var geo_loc = $('#geo_loc').val();
+      var spec_loc = $('#spec_loc').val();
+      var factors = $('#factors').val();
+//      var prob_cat2 = $('#prob_cat2').serialize();
+// var value = $(this).attr('id');
+      var serialData = $('#describe_form').serialize();
+      $.ajax({
+        url: './update_problem.php',
+        type: 'POST',
+        data: serialData,
+        success: function(data) {
+          alert(data);
+        }
+  
+      });
+    
+    }
+
 </head>
 
 <body>
 
-    <div id="wrapper">
+<div class="ibox-content">
+                          <!--  <form method="get" class="form-horizontal"> -->
 
-            <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>Panels</h2>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a>UI Elements</a>
-                        </li>
-                        <li class="active">
-                            <strong>Panels</strong>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-lg-2">
+                              <div class="row"> 
+                                    <div class="col-sm-9">
+<h1>Problem Description</h1>
 
-                </div>
-            </div>
+<?php
+  // load rethinkdb php library
+  require_once __DIR__.'/vendor/autoload.php';
+  $conn = r\connect('52.20.101.105');
+  $retrieve_id = $_POST['problem_identifier'];
+//  $result = r\db("web")->table('ideas')->run($conn);
+$result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
+
+
+
+
+foreach ($result as $doc) {
+echo "<p>".$doc['ProblemDescription']."</p>";
+echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";                       
+echo "<h4>Severity Level: Catastrophic</h4>";                                    
+if(isset($doc['AffectedNumber'])) {
+echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
+else {echo "<h4>Impact Type: </h4>";};
+                                    
+echo "<h4>Problem Development: Persistent Build-up</h4>";
+echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
+
+
+
+    }
+?>
+
+
+                                <form class="form-horizontal" method="post" id="describe_form" action="update_problem.php">
+
             <div class="col-lg-12">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
-                        <h5>Example of <small>initial</small> collapsed panel</h5>
+
+<?php
+echo "<p>".$doc['ProblemDescription']."</p>";
+?>
+
+<!--                        <h5>Example of <small>initial</small> collapsed panel</h5> -->
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -62,11 +112,34 @@
                     </div>
                     <div class="ibox-content">
 
-                        <p>
-                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-                        <p>
-                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                        </p>
+
+
+div class='form-group'>
+                                     <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
+
+<!--                                    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
+</label>
+
+ <div class='col-sm-10'>
+                                        <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
+                                        <span class='help-block m-b-none'>Limit 500 characters.</span> 
+                                        
+
+
+
+
+                                </div>
+
+
+                                <div class='form-group'>
+                                     <label class='col-sm-2 control-label'>Additional Problem Information</label>
+                                        <div class='col-sm-10'>
+                                        <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
+                                        </div>
+                                        </div>
+
+
+
                     </div>
                 </div>
             </div>
