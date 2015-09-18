@@ -197,21 +197,35 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
                                         
 </div></div></div></div>              
 
+
+
+
+
+            <div class="col-lg-12">
+                <div class="ibox collapsed">
+                    <div class="ibox-title">
 <?php
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
 ?>
-
-
- <label for="show">
-    <span>[Show]</span>
-</label>
-<input type=radio id="show" name="group">
-<label for="hide">
-    <span>[Hide]</span> 
-</label>    
-<input type=radio id="hide" name="group">
-<div id="content1"> -->
-
+<div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
                                         <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
                       <div class='col-sm-10'>
                     <div class='i-checks col-sm-6'><label> <input type='radio' value='Environment' name='prob_cat'> <i></i> Environment</label></div>
@@ -223,8 +237,10 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Infrastructure' name='prob_cat'> <i></i> Infrastructure </label></div>
                                 </div>
                       </div>
-</div>
-
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 <?php
