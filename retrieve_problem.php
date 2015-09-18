@@ -117,7 +117,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 //        echo "<span><strong>$key</strong>: $value</span><br>";
     }
 ?>
-</div>
+
 
 
 
@@ -706,18 +706,6 @@ else {echo "<h4>Impact Type: </h4>";};
                                 </div>
 
 <!-- END FORM STUFF -->
-<!--                                    <div class="col-sm-3  gray-bg">    
-                                <h1>Other Problems</h1>
-                                <h4>Sub-problems: </h4>
-                                <p><ul><li>Polar Ice Caps Melting</li> 
-                                    <li>Erratic Weather Patterns</li> 
-                                    <li>Collapse of Ecosystems</li></ul></p>
-                                    
-                                    <h4>Related Problems: </h4>
-                                    <p><ul><li>Lack of Recycling Programs</li>
-                                        <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
-                                </div> -->
-                        
                                 </div>
                                     </div>
                                 </div>
