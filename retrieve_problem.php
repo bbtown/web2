@@ -104,7 +104,7 @@ echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
 else {echo "<h4>Impact Type: </h4>";};
                                     
 echo "<h4>Problem Development: Persistent Build-up</h4>";
-echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
+echo "<h4>Tags: ".$doc['Tags']."</h4>";
 //AffectedDescription:
 //AffectedNumber:
 //Factors:
