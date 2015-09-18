@@ -71,7 +71,7 @@ $.ajax({
                     <div class="ibox-content">
 
                         <div class="table-responsive">
-                    <table class="footable table table-striped table-bordered table-hover" data-page-size="8" data-filter=#filter> <!-- dataTables-example" > -->
+                    <table class="footable table table-stripped table-bordered table-hover" data-page-size="10" data-filter="#filter"> <!-- dataTables-example" > -->
                     <thead>
                     <tr>
                         <th>Description</th>
