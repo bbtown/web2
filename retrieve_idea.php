@@ -142,7 +142,6 @@ foreach ($result as $doc) {
 echo "<p>".$doc['IdeaDescription']."</p>";
 
 echo "<h4>Category: ".$doc['IdeaCategory']."</h4>";                       
-if(isset($doc['AffectedNumber'])) {
 echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 
 //URL?
