@@ -72,8 +72,8 @@ var retrieve_id = $('#retrieve').val();
 <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
 
-                              <div class="row"> 
-                                    <div class="col-sm-9">
+        <div class="row"> 
+       <div class="col-sm-9">
 <h1>Problem Description</h1>
 
 <?php
@@ -248,7 +248,7 @@ $retrieve_id = $doc[id];
 
 
 
- <div class="col-sm-9">
+<!-- <div class="col-sm-9"> -->
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
