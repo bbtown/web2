@@ -67,6 +67,95 @@ var retrieve_id = $('#retrieve').val();
 </head>
 
 <body>
+      <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+<h1>Other Problems</h1>
+                                <h4>Sub-problems: </h4>
+                                <p><ul><li>Polar Ice Caps Melting</li> 
+                                    <li>Erratic Weather Patterns</li> 
+                                    <li>Collapse of Ecosystems</li></ul></p>
+                                    
+                                    <h4>Related Problems: </h4>
+                                    <p><ul><li>Lack of Recycling Programs</li>
+                                        <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
+
+                               </div>
+<!--        BEGIN COMMENT BOX -->
+
+<!--    <div class="row m-t-lg">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+-->
+                    <div class="ibox-content">
+
+                        <div class ="row"> 
+                <div class="chat-activity-list">
+
+                            <?php
+                             require_once __DIR__.'/vendor/autoload.php';
+                             $conn = r\connect('52.20.101.105');
+                             $result = r\db("web")->table('comments')->run($conn);
+                             foreach ($result as $doc) {
+                               if(isset($doc['CommentText'])) {
+                                 echo "<div class=\"chat-element\">";
+                                 echo "<a href=\"#\" class=\"pull-left\">";
+                                echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
+                                 echo "</a>";
+                                 echo "<div class=\"media-body \">";
+                                // echo "<small class=\"pull-right text-navy\">1m ago</small>";
+                     echo "<strong>".$doc['CommentUser']."</strong>";
+                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
+                     echo "</p>";
+                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
+                     echo "<div class=\"actions\">";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
+            echo "</div></div></div>";
+                             }
+                             }
+                             ?>
+</div></div>
+        <div class="row m-t-lg">
+<!--            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div> -->
+               <!-- <div class="chat-activity-list">
+
+                    <div class="chat-element">
+                        <a href="#" class="pull-left">
+                            <img alt="image" class="img-circle" src="img/a2.jpg">
+                        </a>
+                        <div class="media-body ">
+                            <small class="pull-right text-navy">1m ago</small>
+                            <strong>Mike Smith</strong>
+                            <p class="m-b-xs">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            </p>
+                            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                        </div>
+                    </div>
+                </div> -->
+                        <div class="chat-form">
+                            <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
+                                
+                                <div class="text-right">
+                                    <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
+                                </div></div>
+                            </form>
+                        </div>
+                </div>
+                </div>
+             </div>  
+
+                    </nav>
+                  </div>
 
 <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
@@ -120,7 +209,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 
 
 
-
+<!--
                                      <div class="col-sm-3  gray-bg">    
                                 <div class="row">
 				           <h1>Other Problems</h1>
@@ -133,13 +222,14 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
 
-				                           </div>
+				                           </div> -->
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
             <div class="col-lg-6">
                 <div class="ibox float-e-margins">
 -->
+
                     <div class="ibox-content">
 
                         <div class ="row"> 
@@ -164,7 +254,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                      echo "<div class=\"actions\">";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-				      echo "</div></div></div>";
+				      echo "</div></div></div>"; 
                              }
                              }
                              ?>
@@ -190,7 +280,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                         </div>
                     </div>
                 </div> -->
-                        <div class="chat-form">
+<!--                        <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
@@ -203,6 +293,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                 </div>
                 </div>
              </div>  
+-->
 <!--   BEGiN FORM STUFF -->
 
  <div class="ibox-content">
