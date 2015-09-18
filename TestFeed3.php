@@ -129,6 +129,11 @@ $.ajax({
                         <th>Factors</th>
                         <th>Awareness</th>
                     </tr>
+		    <tr>
+                                    <td colspan="5">
+                                        <ul class="pagination pull-right"></ul>
+                                    </td>
+                                </tr>
                     </tfoot>
                     </table>
                         </div>
