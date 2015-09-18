@@ -34,22 +34,16 @@
 
     <script>
    function describe_form() {
-      var prob_desc = $('#prob_desc').val();
-      var prob_more = $('#prob_more').val();
+      var idea_desc = $('#idea_desc').val();
+      var idea_more = $('#idea_more').val();
       var perspective = $('#perspective').val();
+      var tags = $('#tags').val();
+      var idea_cat = $('#idea_cat').val;
       var url = $('#url').val();
-      var tags = $('#tags').val(); 
-      var prob_cat = $('#prob_cat').val();
-      var affect_desc = $('#affect_desc').val();
-      var affect_num = $('#affect_num').val();
-      var geo_loc = $('#geo_loc').val();
-      var spec_loc = $('#spec_loc').val();
-      var factors = $('#factors').val();
-//      var prob_cat2 = $('#prob_cat2').serialize();
-// var value = $(this).attr('id');
       var serialData = $('#describe_form').serialize();
+
       $.ajax({
-        url: './submit_to_problems.php',
+        url: './submit_to_ideas.php',
         type: 'POST',
         data: serialData,
         success: function(data) {
@@ -59,6 +53,21 @@
       });
     
     }
+
+
+function add_problem() {
+var prob_desc = $('#prob_desc').val();
+var serialData = $('#add_problem').serialize();
+$.ajax({
+    url:'./submit_to_problems.php',
+    type: 'POST',
+    data: serialData,
+    success: function(data) {
+      alert(data);
+}
+});
+} 
+
 </script>
 </head>
 
@@ -152,32 +161,34 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 
 
                                  <div class="form-group">
-                                     <label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6>
+                                     <label class="col-sm-2 control-label">Idea Summary<h6>This is the only required field.</h6>
 
 <!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
 </label>                                         <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="prob_desc" name="prob_desc" required> </textarea>
+                                        <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="idea_desc" name="idea_desc" required> </textarea>
                                         <span class="help-block m-b-none">Limit 500 characters.</span>
                                         </div>
                                         </div>
 
                                 <div class="form-group">
-                                     <label class="col-sm-2 control-label">Additional Problem Information</label>
+                                     <label class="col-sm-2 control-label">Additional Idea Information</label>
                                         <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="5" maxlength="1500" name="prob_more" id="prob_more"> </textarea>
+                                        <textarea class="form-control input-sm" rows="5" maxlength="1500" name="idea_more" id="idea_more"> </textarea>
                                         <span class="help-block m-b-none"></span>
                                         </div>
                                         </div>
                                         
                                         <div class="form-group"><label class="col-sm-2 control-label">Select a Primary Category: </label> 
                       <div class="col-sm-10">
-                    <div class="i-checks col-sm-6"><label> <input type="radio" value="Environment" name="prob_cat"> <i></i> Environment</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Society" name="prob_cat"> <i></i> Society</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Technology" name="prob_cat"> <i></i> Technology</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Government" name="prob_cat"> <i></i> Government</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Health" name="prob_cat"> <i></i> Health</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Education" name="prob_cat"> <i></i> Education</label></div>
-                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Infrastructure" name="prob_cat"> <i></i> Infrastructure </label></div>
+
+                    <div class="i-checks col-sm-6"><label> <input type="radio" value="Environment" name="idea_cat"> <i></i> Environment</label></div>
+                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Society" name="idea_cat"> <i></i> Society</label></div>
+                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Technology" name="idea_cat"> <i></i> Technology</label></div>
+                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Government" name="idea_cat"> <i></i> Government</label></div>
+                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Health" name="idea_cat"> <i></i> Health</label></div>
+                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Education" name="idea_cat"> <i></i> Education</label></div>
+					<div class="i-checks col-sm-6"><label> <input type="radio" value="Economy" name="idea_cat"> <i></i> Economy</label></div>
+                                        <div class="i-checks col-sm-6"><label> <input type="radio" value="Science" name="idea_cat"> <i></i>Science</label></div>
                                 </div>
                       </div>
                           
@@ -202,45 +213,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                                     <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
                                     </div>
                     </div>
-
-                        <div class="col-sm-12 gray-bg">
-                            <h1>Who</h1>
-                              <div class="row"> 
-                                <div class="form-group">
-                                  <label class="col-sm-2 control-label">Describe the group of people affected by the problem.</label>
-                                    <div class="col-sm-10">
-                                      <input type="text" id="affect_desc" name="affect_desc" class="form-control input-lg" placeholder="e.g., children attending public school in Pennsylvania"> <span class="help-block m-b-none"></span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Estimate the number of people directly affected by this problem.</label>
-                                    <div class="col-sm-5">
-                                        <div class="input-group">
-                                        <input type="text" id="affect_num" class="form-control" placeholder="e.g., 7,290,000,000" name="affect_num" maxlength="14">
-                                        <span class="help-block m-b-none">Number must be between 1 and 7.5 billion</span>
-                                      </div>
-                                    </div>
-                                </div>
-<div class="hr-line-dashed"></div>                                
-                        <div class="row">
-                          <div class="col-sm-8" style="padding:0px 0px 20px 200px"> 
-                            
-                 <p>
-                            <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
-                            
-                                <ul>
-                                    <li><a href="http://www.census.gov/popclock/">World Population Clock</a></li>
-                                    <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
-
-                                </ul>  
-                            </p>
-                          </div>
-                        </div>
-                  </div>
-                </div>
-
-            <div class="col-sm-12">
 
 
                  <h1>Where</h1>    
@@ -510,14 +482,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                                 </div>
                   </div>
 
-<div class="hr-line-dashed"></div>
-            <div class="col-sm-12 gray-bg">
-                 <h1>Why</h1>                   
-                
-                <div class="col-sm-12 form-group">
-                  <label class="col-sm-2 control-label">Enter a list of factors that influence the problem.</label>
-                      <div class="input-group col-sm-10">
-                        <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
 
 <br/><br/><br/>
                                 <!---
