@@ -94,13 +94,13 @@
 
 <!--        BEGIN COMMENT BOX -->
 
-    <div class="row m-t-lg">
+<!--    <div class="row m-t-lg">
             <div class="col-lg-6">
                 <div class="ibox float-e-margins">
 
                     <div class="ibox-content">
 
-                        <div> 
+                        <div> -->
                 <div class="chat-activity-list">
 
                             <?php
@@ -122,23 +122,18 @@
                      echo "<div class=\"actions\">";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
-                     echo "</div></div></div>";
+				  echo "</div>";
                              }
                              }
                              ?>
 
-        <div class="row m-t-lg">
+<!--        <div class="row m-t-lg">
             <div class="col-lg-6">
                 <div class="ibox float-e-margins">
 
                     <div class="ibox-content">
 
-                        <div> 
+                        <div> -->
                 <div class="chat-activity-list">
 
                     <div class="chat-element">
@@ -199,12 +194,12 @@
 
                                 <!--        END COMMENT BOX EXPERIMENT -->      
 
-                                </div>
+                                <!--</div>
                         
                                 </div>
                                     </div>
                                 </div>
-                                    </div>
+                                    </div> -->
                                 <!-- WHO WHAT WHEN WHERE WHY HOW PAST FUTURE PRESENT-->
 
 
