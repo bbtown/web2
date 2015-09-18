@@ -19,6 +19,9 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- FooTable -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+
 <script>
     function retrieve_id() {
 var retrieve_id = $('#retrieve').val();
@@ -68,17 +71,17 @@ $.ajax({
                     <div class="ibox-content">
 
                         <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover"> <!-- dataTables-example" > -->
+                    <table class="footable table table-striped table-bordered table-hover" data-page-size="8" data-filter=#filter> <!-- dataTables-example" > -->
                     <thead>
                     <tr>
                         <th>Description</th>
                         <th>Category</th>
                         <th>Tags</th>
-                        <th>URL</th>
-                        <th>Affected group</th>
+                        <th data-hide="phone,tablet">URL</th>
+                        <th data-hide="phone,tablet">Affected group</th>
                         <th># Affected</th>
                         <th>Location</th>
-                        <th>Factors</th>
+                        <th data-hide="phone,tablet">Factors</th>
                         <th>Awareness</th>
                     </tr>
                     </thead>
@@ -147,6 +150,21 @@ $.ajax({
     <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
     <script src="js/plugins/dataTables/dataTables.responsive.js"></script>
     <script src="js/plugins/dataTables/dataTables.tableTools.min.js"></script>
+
+    <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+
+
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function() {
+
+            $('.footable').footable();
+            $('.footable2').footable();
+
+        });
+
+    </script>
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
