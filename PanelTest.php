@@ -81,7 +81,8 @@
 <!-- ___.  This leads to _____.  -->
 
                                      <div class="col-sm-3  gray-bg">    
-                                <h1>Other Problems</h1>
+                                <div class="row">
+				       <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
                                 <p><ul><li>Polar Ice Caps Melting</li> 
                                     <li>Erratic Weather Patterns</li> 
@@ -91,7 +92,7 @@
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
 
-
+				    </div>
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
@@ -100,7 +101,7 @@
 -->
                     <div class="ibox-content">
 
-                        <div> 
+                        <div class ="row"> 
                 <div class="chat-activity-list">
 
                             <?php
@@ -126,14 +127,14 @@
                              }
                              }
                              ?>
-
-<!--        <div class="row m-t-lg">
-            <div class="col-lg-6">
+</div></div>
+        <div class="row m-t-lg">
+<!--            <div class="col-lg-6">
                 <div class="ibox float-e-margins">
--->
+
                     <div class="ibox-content">
 
-                        <div> 
+                        <div> -->
                 <div class="chat-activity-list">
 
                     <div class="chat-element">
