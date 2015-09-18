@@ -32,7 +32,6 @@
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
     <style>
-
    </style>
 
     <script>
@@ -118,12 +117,13 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
 //        echo "<span><strong>$key</strong>: $value</span><br>";
     }
 ?>
+</div>
 
 
 
                                      <div class="col-sm-3  gray-bg">    
                                 <div class="row">
-				         <h1>Other Problems</h1>
+				           <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
                                 <p><ul><li>Polar Ice Caps Melting</li> 
                                     <li>Erratic Weather Patterns</li> 
@@ -133,7 +133,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
 
-				        </div>
+				                           </div>
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
@@ -164,7 +164,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                      echo "<div class=\"actions\">";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-				    echo "</div></div></div>";
+				      echo "</div></div></div>";
                              }
                              }
                              ?>
@@ -189,34 +189,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                             <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
                         </div>
                     </div>
-
-                  <!--  <div class="chat-element right">
-                        <a href="#" class="pull-right">
-                            <img alt="image" class="img-circle" src="img/a4.jpg">
-                        </a>
-                        <div class="media-body text-right ">
-                            <small class="pull-left">5m ago</small>
-                            <strong>John Smith</strong>
-                            <p class="m-b-xs">
-                                Lorem Ipsum is simply dummy text of the printing.
-                            </p>
-                            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-                        </div>
-                    </div>
-                    <div class="chat-element ">
-                        <a href="#" class="pull-left">
-                            <img alt="image" class="img-circle" src="img/a2.jpg">
-                        </a>
-                        <div class="media-body ">
-                            <small class="pull-right">2h ago</small>
-                            <strong>Mike Smith</strong>
-                            <p class="m-b-xs">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            </p>
-                            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-                        </div>
-                    </div>
-                </div> -->
                 </div>
                         <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
@@ -230,7 +202,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4></div>";
                         </div>
                 </div>
                 </div>
-            </div>  
+            <!-- </div>  -->
 <!--   BEGiN FORM STUFF -->
 
  <div class="ibox-content">
@@ -262,18 +234,6 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
                             <a class="collapse-link">
                                 Edit <i class="fa fa-pencil"></i>
                             </a>
-<!--                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a> -->
                         </div>
                     </div>
                     <div class="ibox-content">
@@ -320,20 +280,9 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
 ?>
 <div class="ibox-tools">
                             <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
+                                Edit<i class="fa fa-pencil"></i>
                             </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
+                          
                         </div>
                     </div>
                     <div class="ibox-content">
@@ -357,25 +306,12 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
-
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
 ?>
 
 <div class="ibox-tools">
                             <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
+                                Edit<i class="fa fa-pencil"></i>
                             </a>
                         </div>
                     </div>
@@ -430,19 +366,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
 <div class="ibox-tools">
                             <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
+                                Edit<i class="fa fa-pencil"></i>
                             </a>
                         </div>
                     </div>
@@ -781,7 +705,7 @@ else {echo "<h4>Impact Type: </h4>";};
                                   </div>
                                 </div>
 
-<!-- END FORM STUFF --->
+<!-- END FORM STUFF -->
 <!--                                    <div class="col-sm-3  gray-bg">    
                                 <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
