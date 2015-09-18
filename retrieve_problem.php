@@ -138,7 +138,7 @@ $retrieve_id = $doc[id];
 
 
 
- <div class="col-lg-12">
+ <div class="col-sm-9">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -201,7 +201,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
-            <div class="col-lg-12">
+            <div class="col-sm-9">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -242,7 +242,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
             </div>
         </div>
 
-            <div class="col-lg-12">
+            <div class="col-sm-9">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -303,7 +303,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 
 
 
-                        <div class="col-sm-12 gray-bg">
+                        <div class="col-sm-9 gray-bg">
                             <h1>Who</h1>
                               <div class="row"> 
 
@@ -378,7 +378,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
                 </div>
 
-            <div class="col-sm-12">
+            <div class="col-sm-9">
 
 
                  <h1>Where</h1>    
@@ -649,10 +649,10 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
 
 <div class="hr-line-dashed"></div>
-            <div class="col-sm-12 gray-bg">
+            <div class="col-sm-9 gray-bg">
                  <h1>Why</h1>                   
                 
-                <div class="col-sm-12 form-group">
+                <div class="col-sm-9 form-group">
                   <label class="col-sm-2 control-label">Enter a list of factors that influence the problem.</label>
                       <div class="input-group col-sm-10">
                         <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
