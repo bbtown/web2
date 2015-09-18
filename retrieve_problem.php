@@ -174,7 +174,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
                         <div> -->
-                <div class="chat-activity-list">
+               <!-- <div class="chat-activity-list">
 
                     <div class="chat-element">
                         <a href="#" class="pull-left">
@@ -189,7 +189,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                             <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
                         </div>
                     </div>
-                </div>
+                </div> -->
                         <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
@@ -202,7 +202,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                         </div>
                 </div>
                 </div>
-            <!-- </div>  -->
+             </div>  
 <!--   BEGiN FORM STUFF -->
 
  <div class="ibox-content">
@@ -266,7 +266,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
                                         </div>
                                         </div>
                                         
-</div></div></div></div>              
+</div></div></div></div></div>              
 
 
 
