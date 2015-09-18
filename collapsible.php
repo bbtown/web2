@@ -57,9 +57,9 @@ var retrieve_id = $('#retrieve').val();
   // load rethinkdb php library
   require_once __DIR__.'/vendor/autoload.php';
   $conn = r\connect('52.20.101.105');
-  $retrieve_id = $_POST['problem_identifier'];
-//  $result = r\db("web")->table('ideas')->run($conn);
-$result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
+//  $retrieve_id = $_POST['problem_identifier'];
+  $result = r\db("web")->table('probelems)->run($conn);
+//$result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
 
 
 

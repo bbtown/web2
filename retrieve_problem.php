@@ -33,60 +33,6 @@
 
     <style>
 
-input#show, input#hide {
-    display:none;
-}
-
-div#content {
-    display:none;
-}
-input#show:checked ~ div#content {
-  display:block;
-}
-
-input#hide:checked ~ div#content {
-    display:none;
-}
-div#content1 {
-    display:none;
-}
-input#show:checked ~ div#content1 {
-  display:block;
-}
-
-input#hide:checked ~ div#content1 {
-    display:none;
-}
-span#content2 {
-    display:none;
-}
-input#show:checked ~ span#content2 {
-  display:block;
-}
-
-input#hide:checked ~ span#content2 {
-    display:none;
-}
-span#content3 {
-    display:none;
-}
-input#show:checked ~ span#content3 {
-  display:block;
-}
-
-input#hide:checked ~ span#content3 {
-    display:none;
-}
-span#content4 {
-    display:none;
-}
-input#show:checked ~ span#content4 {
-  display:block;
-}
-
-input#hide:checked ~ span#content4 {
-    display:none;
-}
    </style>
 
     <script>
@@ -192,20 +138,36 @@ $retrieve_id = $doc[id];
 
 
 
+ <div class="col-lg-12">
+                <div class="ibox collapsed">
+                    <div class="ibox-title">
 <?php
-echo "<p>".$doc['ProblemDescription']."</p>";
+echo "<p>".$doc['ProblemDescription']. "</p>";
 ?>
 
 
-<label for="show">
-    <span>[Show]</span>
-</label>
-<input type=radio id="show" name="group">
-<label for="hide">
-    <span>[Hide]</span> 
-</label>    
-<input type=radio id="hide" name="group">
-<div id="content">
+<!--                        <h5>Example of <small>initial</small> collapsed panel</h5> -->
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+
                                  <div class='form-group'>
                                      <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
 
@@ -233,8 +195,7 @@ echo "<p>".$doc['ProblemDescription']."</p>";
                                         </div>
                                         </div>
                                         
-</div>
-              
+</div></div></div></div>              
 
 <?php
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
