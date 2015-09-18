@@ -19,6 +19,22 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+<script>
+    function retrieve_id() {
+var retrieve_id = $('#retrieve').val();
+var serialData = $('#retrieve').serialize();
+
+$.ajax({
+    url:'./retrieve_idea.php',
+    type: 'POST',
+    data: serialData,
+    success: function(data) {
+      alert(data);
+}
+});
+
+</script>
+
 </head>
 
 <body>
@@ -87,35 +103,31 @@
                     </tr>
                     </thead>
                     <tbody>
+
                          <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
-
-                                 echo "<h1>Idea Description</h1>";
-                                 echo "<h4>Category:</h4> ".$doc['IdeaCategory'];
-//                     echo "<h4>Secondary Problem Categories: </h4> ".$doc['ProblemCategory2'];
-                                 echo "<h4>Description:</h4> ".$doc['IdeaDescription'];
-                                 echo "<h4>Tags: </h4> ".$doc['Tags'];
-
+			  $retrieve_id = $doc[id];
                     echo "<tr class=\"gradeX\">";
-                    echo "<td>".$doc['ProblemDescription']."</td>";
+                    echo "<td>".$doc['ProblemDescription']."<br>";
+			  echo 
+			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+			      <br/><br/><br/>
+			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View Details</strong></button>
+				  </form>
+			  ";
                     echo "<td>".$doc['ProblemCategory']."</td>";
                     echo "<td>".$doc['Tags']."</td>";
                     echo "<td>".$doc['URL']."</td>";
                     echo "<td>".$doc['AffectedDescription']."</td>";
                     echo "<td>".$doc['AffectedNumber']."</td>";
-                    echo "<td>".$doc['GeographicLocation'].", ".$doc['SpecificLocation']."</td>";
+                    echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
                     echo "<td>Coming soon</td>";
-                    echo "<td>".$doc['id']."</td>";
-                      //  <td class="center">4</td>
-                      //  <td class="center">X</td>
-                   echo "</tr>";
-
-
+			echo "</td></tr>";
        }            
 }
 ?>
