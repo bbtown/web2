@@ -242,30 +242,50 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
             </div>
         </div>
 
-
+            <div class="col-lg-12">
+                <div class="ibox collapsed">
+                    <div class="ibox-title">
 <?php
 
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
 ?>
-<!--
- <label for="show">
-    <span>[Show]</span>
-</label>
-<input type=radio id="show" name="group">
-<label for="hide">
-    <span>[Hide]</span> 
-</label>    
-<input type=radio id="hide" name="group">
-<span id="content2"> -->
-                    <div class='form-group'>
+
+<div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+
+
+                  <div class='form-group'>
                       <label class='col-sm-2 control-label'>Tags</label>
                       <div class='col-sm-10'>
                                     <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> 
                                     <!--<span class='help-block m-b-none'>Separate by commas.</span>-->
                                          </div>
                       </div>
-<!--</span> -->
 
+
+
+ </div>
+                </div>
+            </div>
+        </div>
                     <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
@@ -287,20 +307,37 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                             <h1>Who</h1>
                               <div class="row"> 
 
+
+            <div class="col-lg-12">
+                <div class="ibox collapsed">
+                    <div class="ibox-title">
 <?php
 if(isset($doc['AffectedNumber'])) {
 echo "<h4>Impact Type: ".$doc['AffectedNumber']." affected</h4>";}
 else {echo "<h4>Impact Type: </h4>";};
 ?>
-<!-- <label for="show">
-    <span>[Show]</span>
-</label>
-<input type=radio id="show" name="group">
-<label for="hide">
-    <span>[Hide]</span> 
-</label>    
-<input type=radio id="hide" name="group">
-<span id="content3"> -->
+
+<div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+
                                 <div class='form-group'>
                                   <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
                                     <div class='col-sm-10'>
@@ -316,8 +353,12 @@ else {echo "<h4>Impact Type: </h4>";};
                                        <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span> 
                                       </div>
                                     </div>
-                                </div>
-<!--</span> -->
+
+
+/div>
+                </div>
+            </div>
+        </div>                                </div>
 
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
