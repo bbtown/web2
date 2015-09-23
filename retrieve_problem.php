@@ -67,10 +67,10 @@ var retrieve_id = $('#retrieve').val();
 </head>
 
 <body>
-      <div id="wrapper">
+    <!--  <div id="wrapper"> -->
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div style="position: right overflow: hidden; width: 20%; height: 100%;" class="sidebar-collapse">
+      <div style="position: right overflow: hidden; width: 300px; height: 100%;" class="sidebar-collapse">
             
             
                   <div class="ibox-content">
@@ -157,7 +157,7 @@ var retrieve_id = $('#retrieve').val();
                 </div>
              </div>  
                     </nav>
-                  </div>
+<!--                  </div> -->
 
         <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
