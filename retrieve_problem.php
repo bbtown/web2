@@ -70,10 +70,10 @@ var retrieve_id = $('#retrieve').val();
       <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div style="position: right overflow: hidden; width: auto; height: 100%;" class="sidebar-collapse">
+      <div style="position: right overflow: hidden; width: 250px; height: 100%;" class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
-                    <div class="dropdown profile-element">
+                    <div class="row">
 <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
                                 <p><ul><li>Polar Ice Caps Melting</li> 
@@ -120,8 +120,8 @@ var retrieve_id = $('#retrieve').val();
                              }
                              ?>
 </div></div>
-        <div class="row m-t-lg">
-<!--            <div class="col-lg-6">
+     <!--    <div class="row m-t-lg">
+           <div class="col-lg-6">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
                         <div> -->
@@ -154,7 +154,6 @@ var retrieve_id = $('#retrieve').val();
                 </div>
                 </div>
              </div>  
-</div>
                     </nav>
                   </div>
 
@@ -307,9 +306,9 @@ var retrieve_id = $('#retrieve').val();
 
 <?php
   // load rethinkdb php library
-  require_once __DIR__.'/vendor/autoload.php';
-  $conn = r\connect('52.20.101.105');
-  $retrieve_id = $_POST['problem_identifier'];
+ // require_once __DIR__.'/vendor/autoload.php';
+//  $conn = r\connect('52.20.101.105');
+//  $retrieve_id = $_POST['problem_identifier'];
 //  $result = r\db("web")->table('ideas')->run($conn);
 $result = r\db("web")->table('problems')->getAll($retrieve_id, array("index" => "id"))->run($conn);
     //$result = r\db("web")->table('ideas')->map(function($x) {
@@ -371,7 +370,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                 <div class="ibox float-e-margins">
 -->
 
-</div></div>
+</div></div></div></div>
         <div class="row m-t-lg">
 <!--            <div class="col-lg-6">
                 <div class="ibox float-e-margins">
