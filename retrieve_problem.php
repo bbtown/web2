@@ -98,7 +98,8 @@ var retrieve_id = $('#retrieve').val();
                 <div class="ibox float-e-margins">
 -->
                     <div class="ibox-content">
-<ul>
+<ul class="nav metismenu" id="side-menu">
+ 
                         <div class ="row"> 
                 <div class="chat-activity-list">
                         
