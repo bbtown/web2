@@ -70,13 +70,14 @@ var retrieve_id = $('#retrieve').val();
       <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div style="position: right overflow: hidden; width: 300px; height: 100%;" class="sidebar-collapse">
+      <div style="position: right overflow: hidden; width: 300px; height: 100%;" class="slimScrollDiv">
+     <div class="sidebar-collapse" style="overflow: hidden; width: 300px; height: 100%;">
             
-                  <div class="ibox-content">
-                    <div class="row">
-
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
+
+                  <div class="ibox-content">
+                    <div class="row">
 <h1>Other Problems</h1>
                                
                                 <h4>Sub-problems: </h4>
@@ -87,8 +88,9 @@ var retrieve_id = $('#retrieve').val();
                                     <h4>Related Problems: </h4>
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
-</li></ul>
+
                                </div></div>
+                               </li></ul>
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
@@ -158,6 +160,7 @@ var retrieve_id = $('#retrieve').val();
                 </div>
                 </div>
              </div>  
+             </div>
                     </nav>
                   </div>
 
