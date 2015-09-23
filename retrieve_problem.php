@@ -925,8 +925,8 @@ else {echo "<h4>Impact Type: </h4>";};
 <!-- END FORM STUFF -->
                                 </div>
                                     </div>
-                                </div>
-                                    </div>
+                              <!--  </div>
+                                    </div> -->
                 <div class="ibox-content">
                             <h1>Stakeholders</h1>
                             <h4>Who is affected by this problem?</h4>
