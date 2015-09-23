@@ -157,11 +157,11 @@ var retrieve_id = $('#retrieve').val();
                     </nav>
                   </div>
 
-<div class="ibox-content">
-                          <!--  <form method="get" class="form-horizontal"> -->
-
-        <div class="row"> 
-       <div class="col-sm-9">
+        <div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
 <h1>Problem Description</h1>
 
 <?php
@@ -230,34 +230,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                 <div class="ibox float-e-margins">
 -->
 
-                    <div class="ibox-content">
-
-                        <div class ="row"> 
-                <div class="chat-activity-list">
-
-                            <?php
-                             require_once __DIR__.'/vendor/autoload.php';
-                             $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('comments')->run($conn);
-                             foreach ($result as $doc) {
-                               if(isset($doc['CommentText'])) {
-                                 echo "<div class=\"chat-element\">";
-                                 echo "<a href=\"#\" class=\"pull-left\">";
-                                echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
-                                 echo "</a>";
-                                 echo "<div class=\"media-body \">";
-                                // echo "<small class=\"pull-right text-navy\">1m ago</small>";
-                     echo "<strong>".$doc['CommentUser']."</strong>";
-                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
-                     echo "</p>";
-                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
-                     echo "<div class=\"actions\">";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-				      echo "</div></div></div>"; 
-                             }
-                             }
-                             ?>
 </div></div>
         <div class="row m-t-lg">
 <!--            <div class="col-lg-6">
@@ -903,6 +875,8 @@ else {echo "<h4>Impact Type: </h4>";};
                         </ol>
                       
                     </div>
+                    </div>
+                </div>
                     </div>
                 </div>
     <!-- Mainly scripts -->
