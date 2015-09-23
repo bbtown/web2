@@ -153,7 +153,7 @@ var retrieve_id = $('#retrieve').val();
                 </div>
                 </div>
              </div>  
-
+</div>
                     </nav>
                   </div>
 
