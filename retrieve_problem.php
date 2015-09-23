@@ -70,11 +70,13 @@ var retrieve_id = $('#retrieve').val();
       <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div style="position: right overflow: hidden; width: 15%; height: 100%;" class="sidebar-collapse">
-            <ul class="nav metismenu" id="side-menu">
-                <li class="nav-header">
+      <div style="position: right overflow: hidden; width: 20%; height: 100%;" class="sidebar-collapse">
+            
+            
+                  <div class="ibox-content">
                     <div class="row">
 <h1>Other Problems</h1>
+                               
                                 <h4>Sub-problems: </h4>
                                 <p><ul><li>Polar Ice Caps Melting</li> 
                                     <li>Erratic Weather Patterns</li> 
@@ -84,7 +86,7 @@ var retrieve_id = $('#retrieve').val();
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
 
-                               </div>
+                               </div></div>
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
