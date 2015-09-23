@@ -98,17 +98,17 @@ var retrieve_id = $('#retrieve').val();
                 <div class="ibox float-e-margins">
 -->
                     <div class="ibox-content">
-
+<ul>
                         <div class ="row"> 
                 <div class="chat-activity-list">
-
+                        
                             <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('comments')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['CommentText'])) {
-                                 echo "<div class=\"chat-element\">";
+                                 echo "<li><div class=\"chat-element\">";
                                  echo "<a href=\"#\" class=\"pull-left\">";
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
                                  echo "</a>";
@@ -121,10 +121,11 @@ var retrieve_id = $('#retrieve').val();
                      echo "<div class=\"actions\">";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-            echo "</div></div></div>";
+            echo "</div></div></div></li>";
                              }
                              }
                              ?>
+                           
 </div></div>
      <!--    <div class="row m-t-lg">
            <div class="col-lg-6">
@@ -147,6 +148,7 @@ var retrieve_id = $('#retrieve').val();
                         </div>
                     </div>
                 </div> -->
+                <li>
                         <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
@@ -156,7 +158,8 @@ var retrieve_id = $('#retrieve').val();
                                     <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
                                 </div></div>
                             </form>
-                        </div>
+                        </div></li>
+                        </ul>
                 </div>
                 </div>
              </div>  
