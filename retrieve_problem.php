@@ -70,7 +70,7 @@ var retrieve_id = $('#retrieve').val();
       <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div style="overflow: hidden; width: auto; height: 100%;" class="sidebar-collapse">
+      <div style="position: right overflow: hidden; width: auto; height: 100%;" class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
