@@ -68,6 +68,7 @@ var retrieve_id = $('#retrieve').val();
 
 <body>
     <!--  <div id="wrapper"> -->
+    <!--
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div style="position: right overflow: hidden; width: 300px; height: 100%;" class="sidebar-collapse">
@@ -86,38 +87,38 @@ var retrieve_id = $('#retrieve').val();
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
 
-                               </div></div>
+                               </div></div> -->
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
             <div class="col-lg-6">
                 <div class="ibox float-e-margins">
 -->
-                    <div class="ibox-content">
+<!--                     <div class="ibox-content">
 
                         <div class ="row"> 
                 <div class="chat-activity-list">
 
                             <?php
-                             require_once __DIR__.'/vendor/autoload.php';
-                             $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('comments')->run($conn);
-                             foreach ($result as $doc) {
-                               if(isset($doc['CommentText'])) {
-                                 echo "<div class=\"chat-element\">";
-                                 echo "<a href=\"#\" class=\"pull-left\">";
-                                echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
-                                 echo "</a>";
-                                 echo "<div class=\"media-body \">";
+            //                 require_once __DIR__.'/vendor/autoload.php';
+            //                 $conn = r\connect('52.20.101.105');
+            //                 $result = r\db("web")->table('comments')->run($conn);
+             //                foreach ($result as $doc) {
+             //                  if(isset($doc['CommentText'])) {
+             //                    echo "<div class=\"chat-element\">";
+              //                   echo "<a href=\"#\" class=\"pull-left\">";
+              //                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
+              //                   echo "</a>";
+               //                  echo "<div class=\"media-body \">";
                                 // echo "<small class=\"pull-right text-navy\">1m ago</small>";
-                     echo "<strong>".$doc['CommentUser']."</strong>";
-                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
-                     echo "</p>";
-                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
-                     echo "<div class=\"actions\">";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-            echo "</div></div></div>";
+               //      echo "<strong>".$doc['CommentUser']."</strong>";
+               //      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
+               //      echo "</p>";
+               //      echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
+               //      echo "<div class=\"actions\">";
+              //       echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
+              //       echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
+          //  echo "</div></div></div>";
                              }
                              }
                              ?>
@@ -143,7 +144,7 @@ var retrieve_id = $('#retrieve').val();
                         </div>
                     </div>
                 </div> -->
-                        <div class="chat-form">
+                     <!--   <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
@@ -156,7 +157,7 @@ var retrieve_id = $('#retrieve').val();
                 </div>
                 </div>
              </div>  
-                    </nav>
+                    </nav> -->
 <!--                  </div> -->
 
         <div id="page-wrapper" class="gray-bg">
