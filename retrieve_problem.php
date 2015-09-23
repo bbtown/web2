@@ -70,7 +70,7 @@ var retrieve_id = $('#retrieve').val();
       <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div style="position: right overflow: hidden; width: 250px; height: 100%;" class="sidebar-collapse">
+      <div style="position: right overflow: hidden; width: 15%; height: 100%;" class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="row">
@@ -303,7 +303,7 @@ var retrieve_id = $('#retrieve').val();
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
 <h1>Problem Description</h1>
-
+<div class="ibox-content">
 <?php
   // load rethinkdb php library
  // require_once __DIR__.'/vendor/autoload.php';
@@ -370,7 +370,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                 <div class="ibox float-e-margins">
 -->
 
-</div></div></div></div>
+</div></div></div></div></div>
         <div class="row m-t-lg">
 <!--            <div class="col-lg-6">
                 <div class="ibox float-e-margins">
