@@ -69,7 +69,8 @@ var retrieve_id = $('#retrieve').val();
 <body>
       <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
-        <div class="sidebar-collapse">
+
+      <div style="overflow: hidden; width: auto; height: 100%;" class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
@@ -297,7 +298,7 @@ var retrieve_id = $('#retrieve').val();
 
                 </div>
             </div>
-        <div class="wrapper wrapper-content animated fadeIn">
+        <div class="wrapper wrapper-content">
         <div class="row">
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
