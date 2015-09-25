@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Sign in</h3>
                                 <p>Sign in to participate!</p>
-                                    <form role="form"class="form-horizontal" method="post" id="describe_form" action="submit_to_profiles.php">
+                                    <form role="form"class="form-horizontal" method="post" id="describe_form" action="login_log.php">
                                     <!-- DO WE USE EMAIL OR USERNAME?  
                                     <div class="form-group"><label>Email</label> <input type="email" id="email" name="email" placeholder="Enter email" class="form-control"></div>
                                     <div class="form-group"><label>Password</label> <input type="password" id="password" name="password" placeholder="Password" class="form-control">

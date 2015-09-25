@@ -26,5 +26,5 @@
 		    'UserName' => $username);  
 
   $result = r\db("web")->table('profiles')->insert($document)->run($conn);
-  echo "Thank you for creating a profile!";
+  echo "Your login has been logged!";
 ?>
