@@ -9,20 +9,19 @@
   //  print_r($doc);
   //}
 
-  $username = $_POST['idea_desc']; 
-  $passwordhash = $_POST['idea_more']; 
-  $email = $_POST['perspective'];  
-//  $url = $_POST['url'];
-//  $tags = $_POST['tags'];
+  $username = $_POST['username']; 
+  $password_hash = $_POST['password_hash']; 
+  $email = $_POST['email'];  
+  $friendly_name = $_POST['friendly_name'];
+  $priviledge = $_POST['priviledge'];
 //  $idea_cat = $_POST['idea_cat'];
 //  $ideaID = $_['id'];
  
- $document = Array('IdeaDescription' => $idea_desc,
-                    'MoreDescription' => $idea_more,
-                    'Perspective' => $perspective,
-                    'Tags' => $tags,
-		    'IdeaCategory' => $idea_cat,
-		    'URL' => $url);  
+ $document = Array( 'Priviledge' => $priviledge,
+                    'FriendlyName' => $friendly_name,
+                    'Email' => $email,
+		    'PasswordHash' => $password_hash,
+		    'UserName' => $username);  
 
   $result = r\db("web")->table('profiles')->insert($document)->run($conn);
   echo "Thank you for creating a profile!";

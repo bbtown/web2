@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Login</title>
+    <title>Log in</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 <script>
    function describe_form() {
       var username = $('#username').val();
-      var passwordhash = $('#passwordhash').val();
+      var password_hash = $('#password').val();
       var email = $('#email').val();
       var serialData = $('#describe_form').serialize();
       $.ajax({
@@ -98,7 +98,7 @@
 <script>
 <?php
 
-$valid_passwords = array ("mario" => "carbonell");
+$valid_passwords = array ("mario@com.com" => "carbonell");
 $valid_users = array_keys($valid_passwords);
 
 $username = $_SERVER['PHP_AUTH_USER'];
