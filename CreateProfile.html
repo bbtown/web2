@@ -11,27 +11,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
-    <link href="css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
-    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
-    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
-    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
-    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
-    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
-    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
-    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
-    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
-    <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
-
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-    <script>
+<script>
    
     function describe_form() {
       var idea_desc = $('#idea_desc').val();
@@ -52,7 +36,6 @@
       });
     
     }
-
 function add_problem() {
 var prob_desc = $('#prob_desc').val();
 var serialData = $('#add_problem').serialize();
@@ -71,8 +54,10 @@ $.ajax({
 </head>
 
 <body>
+
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-
+                sm-8">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h1>Create a Profile</h1>
@@ -86,16 +71,61 @@ $.ajax({
                                     </div>
                                 </div>-->
 
+                                <!--- FROM INSPINIA 
+                        <div class="ibox-content">
+                            <div class="text-center">
+                            <a data-toggle="modal" class="btn btn-primary" href="#modal-form">Form in simple modal box</a>
+                            </div>
+                            <div id="modal-form" class="modal fade" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Sign in</h3>
 
-                                 <div class="form-group">
+                                                    <p>Sign in ...</p>
+
+                                                    <form role="form">
+                                                        <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control"></div>
+                                                        <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control"></div>
+                                                        <div>
+                                                            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                                            <label> <input type="checkbox" class="i-checks"> Remember me </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-sm-6"><h4>Not a member?</h4>
+                                                    <p>You can create an account:</p>
+                                                    <p class="text-center">
+                                                        <a href=""><i class="fa fa-sign-in big-icon"></i></a>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+
+
+                                FROM INSPINIA -->
+
+
+ <div class="form-group">
                                      <label class="col-sm-2 control-label">Enter a username<h6></h6>
 
 <!--                                    <a onmouseover="nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');"><img src="img2/help.png"></a> -->
-</label>                                         <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="idea_desc" name="idea_desc" required> </textarea>
-                                        <span class="help-block m-b-none">characters.</span>
+</label>                                    <!--     <div class="col-sm-10">
+                                         <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="idea_desc" name="idea_desc" required> </textarea> -->
+                                       <!--<label class="col-sm-2 control-label">Normal</label> -->
+
+                                    <div class="col-sm-3"><input type="text" class="form-control"></div>
+                                <!--</div>
+                                        <span class="help-block m-b-none">characters.</span> -->
                                         </div>
-                                        </div>
+                                       
 <!--    
                                 <div class="form-group"><label class="col-sm-2 control-label">Additional Problem Information</label>
                                     <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none"></span>
@@ -103,48 +133,43 @@ $.ajax({
                                 </div>-->
                                 <div class="form-group">
                                      <label class="col-sm-2 control-label">Set a password</label>
-                                        <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="5" maxlength="1500" name="idea_more" id="idea_more"> </textarea>
+                                       <!-- <div class="col-sm-10">
+                                        <textarea class="form-control input-sm" rows="5" maxlength="1500" name="idea_more" id="idea_more"> </textarea> -->
+                                        <div class="col-sm-3"><!--<label>Password</label> --> <input type="password" placeholder="Password" class="form-control"></div>
+                                                        <div>
                                         <span class="help-block m-b-none"></span>
                                         </div>
                                         </div>
                                         
 
                                <div class="form-group"><label class="col-sm-2 control-label">Confirm password</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
-                                    </div>
+                                  <!--  <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
+                                    </div> -->  
+                                    <div class="col-sm-3"> <!--<label>Password</label> --> <input type="password" placeholder="Password" class="form-control"></div>
                                 </div>
 
-<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> 
+<!--<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> -->
                                 <div class="form-group">
                   <label class="col-sm-2 control-label">Enter E-mail Address</label>
-                  <div class="col-sm-10">
-                    <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea>
-<button onclick="add_idea();" class="btn btn-sm btn-primary m-t-n-xs" type="button"><strong>Submit</strong></button>
+                  <!--<div class="col-sm-10">
+                    <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea> -->
+
+                    <div class="col-sm-3"> <!--<label>Email</label> --><input type="email" placeholder="Enter email" class="form-control">
+                    </div></div>
+
+<button onclick="add_idea();" class="btn btn-sm btn-primary m-t-n-xs" type="button" style="width:40%"><strong>Submit</strong></button>
                                     </div>
                                 </form>
-<!--
-                  <div class="form-group">
-                                     <label class="col-sm-2 control-label">Perspective</label>
-                                        <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="1" maxlength="1500" name="perspective" id="perspective"> </textarea>
-                                        <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
-                                        </div>
-                                        </div>
-                                <div class="form-group"><label class="col-sm-2 control-label">Upload Link</label>
-                                    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
-                                    </div>
-                                </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Tags</label>
-                    <div class="col-sm-10">
-                                    <input type="text" id="tags" name="tags" placeholder="e.g., schools, mathematics, algebra" maxlength="500" class="form-control"> <span class="help-block m-b-none">Separate by commas.</span> -->
-                                        <!-- <div class="col-sm-12"> -->
-<h2>Preferences:</h2>
+
+
+                        <div class="ibox-content">
+
+                                <h2>Preferences:</h2>
 <p>
 <ul>
 <li>feeds, notifications</li>
 <li>data to hide-- remember that if  you post information it will forever be out there and therefore traceable.  </li>
+<li>choose user avatar</li>
 </ul>
 </p>
                                         <div class="form-group"><label class="col-sm-2 control-label">Select a Primary Category: </label> 
@@ -155,7 +180,7 @@ $.ajax({
                                         <div class="i-checks col-sm-6"><label> <input type="radio" value="Government" name="idea_cat"> <i></i> Government</label></div>
                                         <div class="i-checks col-sm-6"><label> <input type="radio" value="Health" name="idea_cat"> <i></i> Health</label></div>
                                         <div class="i-checks col-sm-6"><label> <input type="radio" value="Education" name="idea_cat"> <i></i> Education</label></div>
-					<div class="i-checks col-sm-6"><label> <input type="radio" value="Economy" name="idea_cat"> <i></i> Economy</label></div>
+                    <div class="i-checks col-sm-6"><label> <input type="radio" value="Economy" name="idea_cat"> <i></i> Economy</label></div>
                                         <div class="i-checks col-sm-6"><label> <input type="radio" value="Science" name="idea_cat"> <i></i>Science</label></div>
                                 </div>
                       </div>
@@ -192,22 +217,8 @@ $.ajax({
 </div>                                    
                                 </form>
 
-                                    </div>
- 
+                                    </div></div>
 
-
-                         <!-- <div class="col-sm-6 col-sm-6">
-                                    <div class="form-group"><h4>Select secondary categories (if applicable):</h4>
-                    <div class="i-checks"><label> <input type="checkbox" value="Environment" name="prob_cat2"> <i></i> Environment</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="Society" name="prob_cat2"> <i></i> Society</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="Technology" name="prob_cat2"> <i></i> Technology</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="Government" name="prob_cat2"> <i></i> Government</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="Health" name="prob_cat2"> <i></i> Health</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="Education" name="prob_cat2"> <i></i> Education</label></div>
-                                        <div class="i-checks"><label> <input type="checkbox" value="Infrastructure" name="prob_cat2"> <i></i> Infrastructure </label></div>
-                                </div>
-                                    </div> -->
-                                   
 
 <!--add_idea()  idea_desc -->
 <div class="ibox-title">
@@ -226,16 +237,6 @@ $.ajax({
                                 </form>
                             </div>
 
-                                   <!--
-                                <div class="hr-line-dashed"></div>
-                                        <div class="form-group"><label class="col-sm-2 control-label">Types of problems<br></label>
-                                            <div class="col-sm-10">
-                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option1"> <i></i>There is too little of...</label></div>
-                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option2"> <i></i>There is too much of...</label></div>
-                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option3"> <i></i>There is a waste of...</label></div>
-                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option4"> <i></i>We should improve upon...</label></div>-->
-                                        <!-- problem relationships?-->
-<!-- ___.  This leads to _____.  -->
 
         </div>
         </div>
@@ -245,474 +246,493 @@ $.ajax({
                                 </div>
                                     </div>
                                 </div>
-                                <!-- WHO WHAT WHEN WHERE WHY HOW PAST FUTURE PRESENT-->
-                    
-                                
-                            
-
-                                <!--    <div class="form-group"><p>Check the box below if over 1 billion people are directly affected by this problem.</p>
-                                        <div class="i-checks"><label> <input type="checkbox" value="option1" name="a"> <i></i>Over 1 billion people</label></div>
-                                </div>
-                                </div>
-                    <div class="row ibox-content">
-                        <div class="col-sm-9">
-                        
-                            <p>
-                            If fewer than 1 billion people are affected, use the slidebar and dropdown menu to enter an estimate of the number of people directly impacted by this problem.  
-                            </p>
-                            <div id="ionrange_1"></div>
+   
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Basic Form</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a>Forms</a>
+                        </li>
+                        <li class="active">
+                            <strong>Basic Form</strong>
+                        </li>
+                    </ol>
                 </div>
-            
-                            <div class="col-sm-3">
-                            
-                            <div class="form-group"><h4>Select the magnitude</h4>
-                            <label class="font-noraml"></label>
-                            <div class="input-group">
-                            <select data-placeholder="Select the magnitude" class="chosen-select" style="width:150px;" tabindex="2">
-                            <option value="people">people</option>
-                            <option value="thousand people">thousand people</option>
-                            <option value="=million people">million people</option>
-                             </select>
-                            </div>
-                            </div>
-                            </div>-->
-                            
-                               
-                        <!--
-                        <div class="row">
-                            
-                                    <div class="col-sm-8">
-                                        <h4>Add Note</h4>
-                                        <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="" name="people_num" maxlength="1500">
-                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
-                                        </button></span> 
-                                    </div>
-                                    </div> -->
-<!--                                </div>
-                            </div>
-                    </div>
-                   
-                                            <div class="row">
-                            
-                                    <div class="col-sm-8">
-                                        <h4>Add Note</h4>
-                                        <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="" name="people_num" maxlength="1500">
-                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
-                                        </button></span> 
-                                    </div>
-                                    </div>
-                                </div>
+                <div class="col-lg-2">
+
                 </div>
             </div>
-                        
-   
-                <div class="ibox-content">
-                    <div class="row">
-            <div class="col-lg-12">
-               <form method="get" class="form-horizontal">
-                                <div class="form-group">
-                 <h1>When</h1>                   
-                <label class="font-normal">When did the problem arise?  How has the problem changed throughout time?  What do you anticipate the probelm will be like in the future?</label>
-                <div class="input-group">
-            <p>
-                <ul>
-                    <li></li>
-                </ul></p>
-                </div>
-                </div>
-               <form method="get" class="form-horizontal">
-                                <div class="form-group">
-              
-                    <form method="get" class="form-horizontal">
-                                <div class="col-sm-8">
-                                <div class="form-group"><h4>Enter a specific area.</h4>
-                                    <input type="text" class="form-control input-sm" placeholder="e.g., Los Angeles, California" maxlength="250"> <span class="help-block m-b-none"></span>
-                                    </div>maxlength="1500"
-                                </div>
-                  </div>
-                </div>
-                </div>
-                <div class="row">
-                            
-                                    <div class="col-sm-8">
-                                        <h4>Add Note</h4>
-                                        <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="" name="people_num" maxlength="1500">
-                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
-                                        </button></span> 
-                                    </div>
-                                    </div>
-                                </div>
-                </div>
-                <div class="ibox-content">
-                    <div class="row">
-            <div class="col-lg-12">
-               <form method="get" class="form-horizontal">
-                                <div class="form-group">
-                 <h1>Why</h1>                   
-                
-                <div class="input-group">
-            
-                                <div class="form-group">
-                                    <label class="font-normal">Enter a list of factors that influence the problem.</label>
-                                    <input type="text" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
-                                    </div>
-                                </div>
-                                </div>
-                                </div>
-                  
-            </div> -->
-
-<!--
+        <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
-                            
-                                    <div class="col-sm-8">
-                                        <h4>Add Note</h4>
-                                        <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="" name="people_num" maxlength="1500">
-                                        <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
-                                        </button></span> 
+            <div class="col-lg-7">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Basic form <small>Simple login form example</small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Sign in</h3>
+                                <p>Sign in today for more experience.</p>
+                                <form role="form">
+                                    <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control"></div>
+                                    <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control"></div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                        <label> <input type="checkbox" class="i-checks"> Remember me </label>
                                     </div>
-                                    </div>
-                                </div> -->
+                                </form>
+                            </div>
+                            <div class="col-sm-6"><h4>Not a member?</h4>
+                                <p>You can create an account:</p>
+                                <p class="text-center">
+                                    <a href=""><i class="fa fa-sign-in big-icon"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-5">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Horizontal form</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form class="form-horizontal">
+                                <p>Sign in today for more experience.</p>
+                                <div class="form-group"><label class="col-lg-2 control-label">Email</label>
 
-          <!--                      <div class="row">
+                                    <div class="col-lg-10"><input type="email" placeholder="Email" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-2 control-label">Password</label>
+
+                                    <div class="col-lg-10"><input type="password" placeholder="Password" class="form-control"></div>
+                                </div>
                                 <div class="form-group">
-                                    <div class="col-sm-4 col-sm-offset-2">
-                                        <button class="btn btn-white" type="submit">Cancel</button>
-                                        <button class="btn btn-primary" type="submit">Save changes</button>
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <div class="i-checks"><label> <input type="checkbox"><i></i> Remember me </label></div>
                                     </div>
                                 </div>
-                                </div>
-</div> -->
-
-<!--<input name="code" id="code" type="text" value="" >
-<script type="text/javascript">
-    function makeid()
-    {
-    var randomnumber=Math.floor(Math.random() * 20)
-}
-</script>
-<input type="button" style="font-size:9pt" value="Generate Code" onclick="document.getElementById('code').value = makeid()">
-</input> 
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button class="btn btn-sm btn-white" type="submit">Sign in</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-      <!--  FOR SOME REASON THIS SHOWS UP AT THE BOTTOM OF THE FIRST PAGE, NOT THE END
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Inline form</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form role="form" class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" class="sr-only">Email address</label>
+                                    <input type="email" placeholder="Enter email" id="exampleInputEmail2"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2" class="sr-only">Password</label>
+                                    <input type="password" placeholder="Password" id="exampleInputPassword2"
+                                           class="form-control">
+                                </div>
+                                <div class="checkbox m-r-xs">
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn btn-white" type="submit">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Modal form <small>Example of login in modal box</small></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="text-center">
+                            <a data-toggle="modal" class="btn btn-primary" href="#modal-form">Form in simple modal box</a>
+                            </div>
+                            <div id="modal-form" class="modal fade" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Sign in</h3>
+
+                                                    <p>Sign in today for more expirience.</p>
+
+                                                    <form role="form">
+                                                        <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control"></div>
+                                                        <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control"></div>
+                                                        <div>
+                                                            <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                                            <label> <input type="checkbox" class="i-checks"> Remember me </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-sm-6"><h4>Not a member?</h4>
+                                                    <p>You can create an account:</p>
+                                                    <p class="text-center">
+                                                        <a href=""><i class="fa fa-sign-in big-icon"></i></a>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>All form elements <small>With custom checbox and radion elements.</small></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form method="get" class="form-horizontal">
+                                <div class="form-group"><label class="col-sm-2 control-label">Normal</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Help text</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control"> <span class="help-block m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Password</label>
+
+                                    <div class="col-sm-10"><input type="password" class="form-control" name="password"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Placeholder</label>
+
+                                    <div class="col-sm-10"><input type="text" placeholder="placeholder" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-lg-2 control-label">Disabled</label>
+
+                                    <div class="col-lg-10"><input type="text" disabled="" placeholder="Disabled input here..." class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-lg-2 control-label">Static control</label>
+
+                                    <div class="col-lg-10"><p class="form-control-static">email@example.com</p></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Checkboxes and radios <br/>
+                                    <small class="text-navy">Normal Bootstrap elements</small></label>
+
+                                    <div class="col-sm-10">
+                                        <div><label> <input type="checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great </label></div>
+                                        <div><label> <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Option one is this and that&mdash;be sure to
+                                            include why it's great </label></div>
+                                        <div><label> <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> Option two can be something else and selecting it will
+                                            deselect option one </label></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Inline checkboxes</label>
+
+                                    <div class="col-sm-10"><label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1"> a </label> <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2" id="inlineCheckbox2"> b </label> <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3" id="inlineCheckbox3"> c </label></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Checkboxes &amp; radios <br/><small class="text-navy">Custom elements</small></label>
+
+                                    <div class="col-sm-10">
+                                        <div class="i-checks"><label> <input type="checkbox" value=""> <i></i> Option one </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="" checked=""> <i></i> Option two checked </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="" disabled="" checked=""> <i></i> Option three checked and disabled </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="" disabled=""> <i></i> Option four disabled </label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option1" name="a"> <i></i> Option one </label></div>
+                                        <div class="i-checks"><label> <input type="radio" checked="" value="option2" name="a"> <i></i> Option two checked </label></div>
+                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option2"> <i></i> Option three checked and disabled </label></div>
+                                        <div class="i-checks"><label> <input type="radio" disabled="" name="a"> <i></i> Option four disabled </label></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Inline checkboxes</label>
+
+                                    <div class="col-sm-10"><label class="checkbox-inline i-checks"> <input type="checkbox" value="option1">a </label>
+                                        <label class="checkbox-inline i-checks"> <input type="checkbox" value="option2"> b </label>
+                                        <label class="checkbox-inline i-checks"> <input type="checkbox" value="option3"> c </label></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Select</label>
+
+                                    <div class="col-sm-10"><select class="form-control m-b" name="account">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select>
+
+                                        <div class="col-lg-4 m-l-n"><select class="form-control" multiple="">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                        </select></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-success"><label class="col-sm-2 control-label">Input with success</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-warning"><label class="col-sm-2 control-label">Input with warning</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-error"><label class="col-sm-2 control-label">Input with error</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Control sizing</label>
+
+                                    <div class="col-sm-10"><input type="text" placeholder=".input-lg" class="form-control input-lg m-b">
+                                        <input type="text" placeholder="Default input" class="form-control m-b"> <input type="text" placeholder=".input-sm" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Column sizing</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-2"><input type="text" placeholder=".col-md-2" class="form-control"></div>
+                                            <div class="col-md-3"><input type="text" placeholder=".col-md-3" class="form-control"></div>
+                                            <div class="col-md-4"><input type="text" placeholder=".col-md-4" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Input groups</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b"><span class="input-group-addon">@</span> <input type="text" placeholder="Username" class="form-control"></div>
+                                        <div class="input-group m-b"><input type="text" class="form-control"> <span class="input-group-addon">.00</span></div>
+                                        <div class="input-group m-b"><span class="input-group-addon">$</span> <input type="text" class="form-control"> <span class="input-group-addon">.00</span></div>
+                                        <div class="input-group m-b"><span class="input-group-addon"> <input type="checkbox"> </span> <input type="text" class="form-control"></div>
+                                        <div class="input-group"><span class="input-group-addon"> <input type="radio"> </span> <input type="text" class="form-control"></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Button addons</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b"><span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">Go!</button> </span> <input type="text" class="form-control">
+                                        </div>
+                                        <input type="text" class="form-control"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">Go!
+                                        </button> </span></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">With dropdowns</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b">
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Action <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                             <input type="text" class="form-control"></div>
+                                        <div class="input-group"><input type="text" class="form-control">
+
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Action <span class="caret"></span></button>
+                                                <ul class="dropdown-menu pull-right">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Segmented</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b">
+                                            <div class="input-group-btn">
+                                                <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <input type="text" class="form-control"></div>
+                                        <div class="input-group"><input type="text" class="form-control">
+
+                                            <div class="input-group-btn">
+                                                <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu pull-right">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-white" type="submit">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Save changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer">
             <div class="pull-right">
-                10GB of <strong>250GB</strong> Free. 
+                10GB of <strong>250GB</strong> Free.
             </div>
             <div>
-                <strong>Copyright</strong> Beebee Lee &copy; 2015
+                <strong>Copyright</strong> Example Company &copy; 2014-2015
             </div>
-        </div> 
-    -->
+        </div>
 
+        </div>
+        </div>
 
 
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-        <!-- Custom and plugin javascript -->
-    <script src="js/inspinia.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Chosen -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
-
-   <!-- Input Mask-->
-    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
-
-   <!-- Data picker -->
-   <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
-
-   <!-- NouSlider -->
-   <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
-
-   <!-- Switchery -->
-   <script src="js/plugins/switchery/switchery.js"></script>
-
-    <!-- IonRangeSlider -->
-    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
-
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
-
-    <!-- MENU -->
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-
-    <!-- Color picker -->
-    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
-
-    <!-- Clock picker -->
-    <script src="js/plugins/clockpicker/clockpicker.js"></script>
-
-    <!-- Image cropper -->
-    <script src="js/plugins/cropper/cropper.min.js"></script>
-
-    <!-- Date range use moment.js same as full calendar plugin -->
-    <script src="js/plugins/fullcalendar/moment.min.js"></script>
-
-    <!-- Date range picker -->
-    <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
-
-
-    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
-
-    <!-- Jquery Validate -->
-    <script src="js/plugins/validate/jquery.validate.min.js"></script>
-
-    <script>
-         $(document).ready(function(){
-             $("#form").validate({
-                 rules: {
-                     prob_desc: {
-                         required: true,
-                         minlength: 10,
-                         maxlength: 500
-                     },
-                     prob_more: {
-                         required: false,
-                         maxlength: 1500
-                     },url: {
-                         required: false,
-                         url: true,
-                         maxlength: 500
-                     },
-                     people_num: {
-                         required: false,
-                         number: true,
-                         digits: true,
-                         range: 0-75000000000
-                     },
-                     tags: {
-                         required: false,
-                         maxlength: 500
-                     }
-                     }
-                 }
-             });
-        });
-    </script>
-   <!-- JSKnob -->
-   <script src="js/plugins/jsKnob/jquery.knob.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            var $image = $(".image-crop > img")
-            $($image).cropper({
-                aspectRatio: 1.618,
-                preview: ".img-preview",
-                done: function(data) {
-                    // Output the result data for cropping image.
-                }
-            });
-            var $inputImage = $("#inputImage");
-            if (window.FileReader) {
-                $inputImage.change(function() {
-                    var fileReader = new FileReader(),
-                            files = this.files,
-                            file;
-                    if (!files.length) {
-                        return;
-                    }
-                    file = files[0];
-                    if (/^image\/\w+$/.test(file.type)) {
-                        fileReader.readAsDataURL(file);
-                        fileReader.onload = function () {
-                            $inputImage.val("");
-                            $image.cropper("reset", true).cropper("replace", this.result);
-                        };
-                    } else {
-                        showMessage("Please choose an image file.");
-                    }
-                });
-            } else {
-                $inputImage.addClass("hide");
-            }
-            $("#download").click(function() {
-                window.open($image.cropper("getDataURL"));
-            });
-            $("#zoomIn").click(function() {
-                $image.cropper("zoom", 0.1);
-            });
-            $("#zoomOut").click(function() {
-                $image.cropper("zoom", -0.1);
-            });
-            $("#rotateLeft").click(function() {
-                $image.cropper("rotate", 45);
-            });
-            $("#rotateRight").click(function() {
-                $image.cropper("rotate", -45);
-            });
-            $("#setDrag").click(function() {
-                $image.cropper("setDragMode", "crop");
-            });
-            $('#data_1 .input-group.date').datepicker({
-                todayBtn: "linked",
-                keyboardNavigation: false,
-                forceParse: false,
-                calendarWeeks: true,
-                autoclose: true
-            });
-            $('#data_2 .input-group.date').datepicker({
-                startView: 1,
-                todayBtn: "linked",
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true,
-                format: "dd/mm/yyyy"
-            });
-            $('#data_3 .input-group.date').datepicker({
-                startView: 2,
-                todayBtn: "linked",
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true
-            });
-            $('#data_4 .input-group.date').datepicker({
-                minViewMode: 1,
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true,
-                todayHighlight: true
-            });
-            $('#data_5 .input-daterange').datepicker({
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true
-            });
-            var elem = document.querySelector('.js-switch');
-            var switchery = new Switchery(elem, { color: '#1AB394' });
-            var elem_2 = document.querySelector('.js-switch_2');
-            var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
-            var elem_3 = document.querySelector('.js-switch_3');
-            var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
-            $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green'
-            });
-            $('.demo1').colorpicker();
-            var divStyle = $('.back-change')[0].style;
-            $('#demo_apidemo').colorpicker({
-                color: divStyle.backgroundColor
-            }).on('changeColor', function(ev) {
-                        divStyle.backgroundColor = ev.color.toHex();
-                    });
-            $('.clockpicker').clockpicker();
-            $('input[name="daterange"]').daterangepicker();
-            $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
-            $('#reportrange').daterangepicker({
-                format: 'MM/DD/YYYY',
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment(),
-                minDate: '01/01/2012',
-                maxDate: '12/31/2015',
-                dateLimit: { days: 60 },
-                showDropdowns: true,
-                showWeekNumbers: true,
-                timePicker: false,
-                timePickerIncrement: 1,
-                timePicker12Hour: true,
-                ranges: {
-                    'Today': [moment(), moment()],
-                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month': [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                opens: 'right',
-                drops: 'down',
-                buttonClasses: ['btn', 'btn-sm'],
-                applyClass: 'btn-primary',
-                cancelClass: 'btn-default',
-                separator: ' to ',
-                locale: {
-                    applyLabel: 'Submit',
-                    cancelLabel: 'Cancel',
-                    fromLabel: 'From',
-                    toLabel: 'To',
-                    customRangeLabel: 'Custom',
-                    daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr','Sa'],
-                    monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                    firstDay: 1
-                }
-            }, function(start, end, label) {
-                console.log(start.toISOString(), end.toISOString(), label);
-                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-            });
-        });
-        var config = {
-                '.chosen-select'           : {},
-                '.chosen-select-deselect'  : {allow_single_deselect:true},
-                '.chosen-select-no-single' : {disable_search_threshold:10},
-                '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-                '.chosen-select-width'     : {width:"95%"}
-                }
-            for (var selector in config) {
-                $(selector).chosen(config[selector]);
-            }
-        $("#ionrange_1").ionRangeSlider({
-//            values: [
-//                "1", "100", "500", "1,000", "5,000", "10,000", "50,000", "100,000", "250,000", "500,000", "1 million","10 million", "50 million","100 million", "500 million", "Over 1 billion"
-//            ],
-            min: 1,
-            max: 999,
-            step: 10,
-            type: 'single',
-            hasGrid: true,
-//            maxPostfix: " people",
-            hideMinMax: false,
-            hideFromTo: false
-        });
-        $("#ionrange_5").ionRangeSlider({
-            min: 10000,
-            max: 100000,
-            step: 100,
-            postfix: " km",
-            from: 55000,
-            hideMinMax: true,
-            hideFromTo: false
-        });
-        $(".dial").knob();
-        $("#basic_slider").noUiSlider({
-            start: 40,
-            behaviour: 'tap',
-            connect: 'upper',
-            range: {
-                'min':  20,
-                'max':  80
-            }
-        });
-        $("#range_slider").noUiSlider({
-            start: [ 40, 60 ],
-            behaviour: 'drag',
-            connect: true,
-            range: {
-                'min':  20,
-                'max':  80
-            }
-        });
-        $("#drag-fixed").noUiSlider({
-            start: [ 40, 60 ],
-            behaviour: 'drag-fixed',
-            connect: true,
-            range: {
-                'min':  20,
-                'max':  80
-            }
-        });
-    </script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
 
     <!-- iCheck -->
     <script src="js/plugins/iCheck/icheck.min.js"></script>
