@@ -95,8 +95,8 @@
                                         <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
                                         <label> <input type="checkbox" class="i-checks"> Remember me </label>
                                     </div>
-                                    
-                                     <?php
+<script>
+<?php
 
 $valid_passwords = array ("mario" => "carbonell");
 $valid_users = array_keys($valid_passwords);
@@ -117,6 +117,7 @@ echo "<p>Welcome $user.</p>";
 echo "<p>Thank you for logging in!</p>";
 
 ?>
+</script>
                                 </form>
                             </div>
                             <div class="col-sm-6"><h4>Not a member?</h4>
