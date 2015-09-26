@@ -25,7 +25,7 @@ $_SESSION['form_token'] = $form_token;
 </p>
 <p>
 <label for="password">Password</label>
-<input type="text" id="password" name="password" value="" maxlength="20" />
+<input type="password" id="password" name="password" value="" maxlength="20" />
 </p>
 <p>
 <input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
