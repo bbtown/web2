@@ -59,6 +59,8 @@ try
 //$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
 $result = r\db("web")->table('profiles')->get('$username', array('index' => 'UserName'))->run($conn);
 
+print_r($result);
+
   unset( $_SESSION['form_token'] );
   echo "Thank you for logging in!";
   
