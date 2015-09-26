@@ -38,60 +38,69 @@ elseif (ctype_alnum($_POST['password']) != true)
 else
 {
     /*** if we are here the data is valid and we can insert it into database ***/
-    $phpro_username = filter_var($_POST['phpro_username'], FILTER_SANITIZE_STRING);
-    $phpro_password = filter_var($_POST['phpro_password'], FILTER_SANITIZE_STRING);
 
-    /*** now we can encrypt the password ***/
-    $phpro_password = sha1( $phpro_password );
-    
-    /*** connect to database ***/
-    /*** mysql hostname ***/
-    $mysql_hostname = 'localhost';
 
-    /*** mysql username ***/
-    $mysql_username = 'mysql_username';
+// load rethinkdb php library
+  require_once __DIR__.'/vendor/autoload.php';
+  $conn = r\connect('52.20.101.105');
+  
+    $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+    $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
+  $password_hash = sha1( $password ); 
+  $email = $_POST['email'];  
+  $friendly_name = $_POST['friendly_name'];
+  $priviledge = $_POST['priviledge'];
+ 
+ $document = Array( 'Priviledge' => $priviledge,
+                    'FriendlyName' => $friendly_name,
+                    'Email' => $email,
+		                'PasswordHash' => $password_hash,
+					           'UserName' => $username);  
+try
+{
+  $result = r\db("web")->table('profiles')->insert($document)->run($conn);
+unset( $_SESSION['form_token'] );
+  echo "Thank you for creating a profile!";
 
-    /*** mysql password ***/
-    $mysql_password = 'mysql_password';
 
-    /*** database name ***/
-    $mysql_dbname = 'phpro_auth';
-
-    try
-    {
-        $dbh = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_dbname", $mysql_username, $mysql_password);
-        /*** $message = a message saying we have connected ***/
-
-        /*** set the error mode to excptions ***/
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+/*** set the error mode to excptions ***/
+  //      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         /*** prepare the select statement ***/
-        $stmt = $dbh->prepare("SELECT phpro_user_id, phpro_username, phpro_password FROM phpro_users 
-                    WHERE phpro_username = :phpro_username AND phpro_password = :phpro_password");
+    //    $stmt = $dbh->prepare("SELECT phpro_user_id, phpro_username, phpro_password FROM phpro_users 
+    //                WHERE phpro_username = :phpro_username AND phpro_password = :phpro_password");
 
         /*** bind the parameters ***/
-        $stmt->bindParam(':phpro_username', $phpro_username, PDO::PARAM_STR);
-        $stmt->bindParam(':phpro_password', $phpro_password, PDO::PARAM_STR, 40);
+//        $stmt->bindParam(':phpro_username', $phpro_username, PDO::PARAM_STR);
+  //      $stmt->bindParam(':phpro_password', $phpro_password, PDO::PARAM_STR, 40);
 
         /*** execute the prepared statement ***/
-        $stmt->execute();
+    //    $stmt->execute();
 
         /*** check for a result ***/
-        $user_id = $stmt->fetchColumn();
+     //   $user_id = $stmt->fetchColumn();
 
         /*** if we have no result then fail boat ***/
-        if($user_id == false)
+       
+
+
+        if($id == false)
         {
                 $message = 'Login Failed';
         }
         /*** if we do have a result, all is well ***/
-        else
+       
+
+
+	 else
         {
                 /*** set the session user_id variable ***/
                 $_SESSION['user_id'] = $user_id;
 
                 /*** tell the user we are logged in ***/
                 $message = 'You are now logged in';
+     
+
         }
 
 

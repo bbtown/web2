@@ -2,6 +2,8 @@
 /*** begin our session ***/
 session_start();
 
+$message = "empty";
+
 /*** first check that both the username, password and form token have been sent ***/
 if(!isset( $_POST['username'], $_POST['password'], $_POST['form_token']))
 {
@@ -47,7 +49,7 @@ else
 
   $password_hash = sha1( $password ); 
   $email = $_POST['email'];  
-  $friendly_name = $_POST['friendly_name'];
+  $friendly_name = "";
   $priviledge = $_POST['priviledge'];
  
  $document = Array( 'Priviledge' => $priviledge,
