@@ -57,8 +57,11 @@ try
   //$result = r\db("web")->table('profiles')->insert($document)->run($conn);
   
 //$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
-$result = r\db("web")->table('profiles')->get($username, array('index' => 'UserName'))->run($conn);
-
+try {
+  $result = r\db("web")->table('profiles')->get($username, array('index' => 'UserName'))->run($conn);
+} catch (Exception $e) {
+  echo $e;
+}
 print_r($result);
 
   unset( $_SESSION['form_token'] );
