@@ -3,6 +3,8 @@
 /*** begin our session ***/
 session_start();
 
+$message = "successfully logged in! :)";
+
 /*** check if the users is already logged in ***/
 if(isset( $_SESSION['id'] ))
 {
@@ -54,7 +56,8 @@ try
 {
   //$result = r\db("web")->table('profiles')->insert($document)->run($conn);
   
-$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
+//$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
+$result = r\db("web")->table('profiles')->get('$username', array('index' => 'UserName'))->run($conn);
 
   unset( $_SESSION['form_token'] );
   echo "Thank you for logging in!";
