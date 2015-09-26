@@ -66,9 +66,9 @@ try
 //} catch (Exception $e) {
 //  echo $e;
 //}
-get_class_methods($result);
+$result = $result->toArray();
 
-print_r($result->toNative());
+print_r($result);
 
   unset( $_SESSION['form_token'] );
   echo "Thank you for logging in!";
