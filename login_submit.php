@@ -54,18 +54,19 @@ else
     $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
   $password_hash = sha1( $password ); 
   $email = $_POST['email'];  
-  $friendly_name = $_POST['friendly_name'];
-  $priviledge = $_POST['priviledge'];
+  //$friendly_name = $_POST['friendly_name'];
+  //$priviledge = $_POST['priviledge'];
 try
 {
   //$result = r\db("web")->table('profiles')->insert($document)->run($conn);
   
 //$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
-try {
-  $result = r\db("web")->table('profiles')->get($username, array('index' => 'UserName'))->run($conn);
-} catch (Exception $e) {
-  echo $e;
-}
+//try {
+  $result = r\db("web")->table('profiles')->getAll($username, array("index" => "UserName"))->run($conn);
+//} catch (Exception $e) {
+//  echo $e;
+//}
+echo $result;
 print_r($result);
 
   unset( $_SESSION['form_token'] );
