@@ -50,18 +50,15 @@ else
   $email = $_POST['email'];  
   $friendly_name = $_POST['friendly_name'];
   $priviledge = $_POST['priviledge'];
- 
- $document = Array( 'Priviledge' => $priviledge,
-                    'FriendlyName' => $friendly_name,
-                    'Email' => $email,
-		                'PasswordHash' => $password_hash,
-					           'UserName' => $username);  
 try
 {
-  $result = r\db("web")->table('profiles')->insert($document)->run($conn);
-unset( $_SESSION['form_token'] );
-  echo "Thank you for creating a profile!";
+  //$result = r\db("web")->table('profiles')->insert($document)->run($conn);
+  
+$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
 
+  unset( $_SESSION['form_token'] );
+  echo "Thank you for logging in!";
+  
 
 /*** set the error mode to excptions ***/
   //      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -84,7 +81,7 @@ unset( $_SESSION['form_token'] );
        
 
 
-        if($id == false)
+        if($password_hash != $result['PasswordHash'])
         {
                 $message = 'Login Failed';
         }
