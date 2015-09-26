@@ -57,7 +57,7 @@ try
   //$result = r\db("web")->table('profiles')->insert($document)->run($conn);
   
 //$result = r\db("web")->table('profiles')->get('$username', {index:'UserName'})->run($conn);
-$result = r\db("web")->table('profiles')->get('$username', array('index' => 'UserName'))->run($conn);
+$result = r\db("web")->table('profiles')->get($username, array('index' => 'UserName'))->run($conn);
 
 print_r($result);
 
