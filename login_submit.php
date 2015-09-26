@@ -66,6 +66,7 @@ try
 //} catch (Exception $e) {
 //  echo $e;
 //}
+$result = $result->toNative();
 echo $result;
 print_r($result);
 
