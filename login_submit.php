@@ -95,7 +95,8 @@ print_r($result);
        
 
 
-        if($password_hash != $result['PasswordHash'])
+        if($password_hash != $result[0]['PasswordHash'])
+
         {
                 $message = 'Login Failed';
         }
