@@ -97,8 +97,8 @@ $_SESSION['form_token'] = $form_token;
                                     <!-- PASSWORD HASH FUNCTION? -->
                                     <div>
                                         <input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
-                                        <input type="submit" value="&rarr; Login" />
-                                       <!--<button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button> -->
+                                        <!--<input type="submit" value="&rarr; Login" /> -->
+                                        <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button> 
                                         <label> <input type="checkbox" class="i-checks"> Remember me </label>
                                     </div>
 
