@@ -16,7 +16,7 @@ $_SESSION['form_token'] = $form_token;
 </head>
 
 <body>
-<h2>Add user</h2>
+<h2>Please log in</h2>
 <form action="login_submit.php" method="post">
 <fieldset>
 <p>

@@ -1,9 +1,5 @@
 <?php
 
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
-error_reporting(-1);
-
 /*** begin our session ***/
 session_start();
 
@@ -66,9 +62,8 @@ try
 //} catch (Exception $e) {
 //  echo $e;
 //}
-$result = $result->toArray();
 
-print_r($result);
+$result = $result->toArray();
 
   unset( $_SESSION['form_token'] );
   echo "Thank you for logging in!";
