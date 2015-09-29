@@ -66,7 +66,7 @@ try
 $result = $result->toArray();
 
   unset( $_SESSION['form_token'] );
-  echo "Thank you for logging in!";
+//  echo "Thank you for logging in!";
   
 
 /*** set the error mode to excptions ***/
@@ -122,7 +122,7 @@ $result = $result->toArray();
 
 <html>
 <head>
-<title>PHPRO Login</title>
+<title>Login</title>
 </head>
 <body>
 <p><?php echo $message; ?>
