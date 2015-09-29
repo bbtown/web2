@@ -68,18 +68,16 @@ var retrieve_id = $('#retrieve').val();
 
 <body>
       <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
 
-<!--    <nav class="navbar-default navbar-static-side" role="navigation"> -->
-<!--<div class="fixed-sidebar"> -->
-<nav class="navbar navbar-fixed-side" role="navigation">
-      <div  class="slimScrollDiv" style="position: right overflow: hidden; width: auto; height: 100%;">
+      <div  class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;">
      <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
             
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
 
-                  <div class="ibox-content" style="margin:0; padding:0"> 
-                    <div class="row" style="margin:0; padding:0">
+                  <div class="ibox-content" style="margin:0"> 
+                    <div class="row">
 <h1>Other Problems</h1>
                                
                                 <h4>Sub-problems: </h4>
