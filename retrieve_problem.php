@@ -169,8 +169,8 @@ var retrieve_id = $('#retrieve').val();
                     <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Other Problems</span><span class="label label-info pull-right">NEW</span></a>
-                    <h3>Sub-problems:</h3>
+                    <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Other Problems</span><span class="label label-info pull-right">NEW</span>
+                    <span><h3>Sub-problems:</h3>
                             <ul><li>Polar Ice Caps Melting</li> 
                                     <li>Erratic Weather Patterns</li> 
                                     <li>Collapse of Ecosystems</li></ul>
@@ -180,11 +180,14 @@ var retrieve_id = $('#retrieve').val();
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul>
 
                                </div></div>
-                               </li></ul>
+                               </li></ul> </span></a>
                     </li>
                     <li>
-<div class="chat-activity-list">
-                        
+
+                    <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Comments</span><span class="label label-info pull-right">NEW</span>
+                    <!--
+<div class="chat-activity-list">-->
+                        <span>
                             <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
@@ -209,7 +212,7 @@ var retrieve_id = $('#retrieve').val();
                              }
                              ?>
                            
-</div></div>
+<!--</div></div> --></span></a>
                     </li>
             </ul>
 
