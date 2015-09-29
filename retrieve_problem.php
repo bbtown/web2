@@ -67,7 +67,7 @@ var retrieve_id = $('#retrieve').val();
 </head>
 
 <body>
-      <div id="wrapper">
+      <div id="wrapper" class="col-sm-3">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div  class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;">
@@ -76,7 +76,7 @@ var retrieve_id = $('#retrieve').val();
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
 
-                  <div class="ibox-content">
+                  <div class="ibox-content" style="margin:0"> 
                     <div class="row">
 <h1>Other Problems</h1>
                                
@@ -162,10 +162,11 @@ var retrieve_id = $('#retrieve').val();
                         </ul>
                 </div>
                 </div>
-                <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
-<div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.9; z-index: 90; right: 1px;" class="slimScrollRail"></div>
              </div>
                     </nav>
+                  
+                <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
+<div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.9; z-index: 90; right: 1px;" class="slimScrollRail"></div>
                   </div>
              </div>  
              
