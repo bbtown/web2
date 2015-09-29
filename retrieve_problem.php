@@ -67,7 +67,7 @@ var retrieve_id = $('#retrieve').val();
 </head>
 
 <body>
-      <div id="wrapper">
+<!--      <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div  class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;">
@@ -77,7 +77,42 @@ var retrieve_id = $('#retrieve').val();
                 <li class="nav-header">
 
                   <div class="ibox-content" style="margin:0"> 
-                    <div class="row">
+                    <div class="row">-->
+
+
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">Dashboard v.1</a></li>
+                        <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                        <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                        <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                    </ul>
+                </li>
+            </ul>
 <h1>Other Problems</h1>
                                
                                 <h4>Sub-problems: </h4>
@@ -171,7 +206,7 @@ var retrieve_id = $('#retrieve').val();
              </div>  
              
 
-<!--        <div id="page-wrapper" class="gray-bg">
+     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -310,7 +345,7 @@ var retrieve_id = $('#retrieve').val();
                 <div class="col-lg-2">
 
                 </div>
-            </div>-->
+            </div>
         <div class="wrapper wrapper-content">
         <div class="row">
             <div class="col-lg-12">
