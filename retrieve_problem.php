@@ -486,7 +486,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
-            <div class="col-sm-9">
+<!--            <div class="col-sm-9"> -->
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -514,9 +514,9 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                     </div>
                 </div>
             </div>
-        </div>
+<!--        </div>
 
-            <div class="col-sm-9">
+            <div class="col-sm-9">-->
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -546,7 +546,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
  </div>
                 </div>
             </div>
-        </div>
+<!--        </div> -->
                     <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
@@ -564,7 +564,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 
 
 
-                        <div class="col-sm-9 gray-bg">
+                        <!-- <div class="col-sm-9 gray-bg"> --><div class="gray-bg">
                             <h1>Who</h1>
                               <div class="row"> 
 
@@ -607,7 +607,7 @@ else {echo "<h4>Impact Type: </h4>";};
 </div>
                 </div>
             </div>
-        </div>                                </div>
+        </div>                             
 
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
@@ -898,7 +898,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
 
 <div class="hr-line-dashed"></div>
-            <div class="col-sm-9 gray-bg">
+<!--            <div class="col-sm-9 gray-bg"> --> <div class="gray-bg">
                  <h1>Why</h1>                   
                 
                 <div class="col-sm-9 form-group">
