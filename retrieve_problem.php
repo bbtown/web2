@@ -134,7 +134,6 @@ var retrieve_id = $('#retrieve').val();
                     <div class="ibox-content">
                         <div> -->
                <!-- <div class="chat-activity-list">
-
                     <div class="chat-element">
                         <a href="#" class="pull-left">
                             <img alt="image" class="img-circle" src="img/a2.jpg">
@@ -366,7 +365,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 <!--
                                      <div class="col-sm-3  gray-bg">    
                                 <div class="row">
-				           <h1>Other Problems</h1>
+                           <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
                                 <p><ul><li>Polar Ice Caps Melting</li> 
                                     <li>Erratic Weather Patterns</li> 
@@ -375,8 +374,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                                     <h4>Related Problems: </h4>
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
-
-				                           </div> -->
+                                           </div> -->
 <!--        BEGIN COMMENT BOX -->
 
 <!--    <div class="row m-t-lg">
@@ -391,7 +389,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                     <div class="ibox-content">
                         <div> -->
                <!-- <div class="chat-activity-list">
-
                     <div class="chat-element">
                         <a href="#" class="pull-left">
                             <img alt="image" class="img-circle" src="img/a2.jpg">
@@ -920,12 +917,13 @@ else {echo "<h4>Impact Type: </h4>";};
 
                                     </div>
                                   </div>
-                                </div>
+                                <!--</
+                                div> -->
 
 <!-- END FORM STUFF -->
-                                </div>
+                                <!--</div>
                                     </div>
-                              <!--  </div>
+                                </div>
                                     </div> -->
                 <div class="ibox-content">
                             <h1>Stakeholders</h1>
@@ -1028,6 +1026,9 @@ else {echo "<h4>Impact Type: </h4>";};
                             <li>Mandate the use of fuels derived from biological waste.</li>
                         </ol>
                       
+                    </div>
+                    </div>
+                </div>
                     </div>
                     </div>
                 </div>
