@@ -81,7 +81,7 @@ var retrieve_id = $('#retrieve').val();
 
 
 
-    <nav class="navbar-default navbar-static-side" role="navigation">
+    <nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
