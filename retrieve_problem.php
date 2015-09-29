@@ -171,7 +171,7 @@ var retrieve_id = $('#retrieve').val();
              </div>  
              
 
-        <div id="page-wrapper" class="gray-bg">
+<!--        <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -310,10 +310,10 @@ var retrieve_id = $('#retrieve').val();
                 <div class="col-lg-2">
 
                 </div>
-            </div>
+            </div>-->
         <div class="wrapper wrapper-content">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-10">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
 <h1>Problem Description</h1>
