@@ -71,7 +71,7 @@ var retrieve_id = $('#retrieve').val();
 
 <!--    <nav class="navbar-default navbar-static-side" role="navigation"> -->
 <!--<div class="fixed-sidebar"> -->
-<nav class="navbar navbar-static-right" role="navigation">
+<nav class="navbar navbar-fixed-side" role="navigation">
       <div  class="slimScrollDiv" style="position: right overflow: hidden; width: auto; height: 100%;">
      <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
             
