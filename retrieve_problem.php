@@ -963,8 +963,6 @@ else {echo "<h4>Impact Type: </h4>";};
                     </div>
                     </div>
                     </div>
-                    </div>
-                </div>
                 <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
@@ -999,7 +997,8 @@ else {echo "<h4>Impact Type: </h4>";};
                       
                     </div>
                     </div>
-                </div><div class="ibox-content">
+                </div>
+                <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
                             <h1>Requirements</h1>
