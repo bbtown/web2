@@ -206,7 +206,7 @@ var retrieve_id = $('#retrieve').val();
              </div>  
              
 
-     <div id="page-wrapper" class="gray-bg">
+     <div id="page-wrapper" class="gray-bg col-lg-9">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -495,7 +495,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 <!--                                    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
 </label>
 
- <div class='col-sm-10'>
+ <div class='col-sm-7'>
                                         <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
                                        <!-- <span class='help-block m-b-none'>Limit 500 characters.</span> -->
                                         
@@ -511,7 +511,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
                                 <div class='form-group'>
                                      <label class='col-sm-2 control-label'>Additional Problem Information</label>
-                                        <div class='col-sm-10'>
+                                        <div class='col-sm-7'>
                                         <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
                                         </div>
                                         </div>
@@ -522,7 +522,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
-            <div class="col-sm-12"> 
+            <div class="col-lg-9"> 
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -537,7 +537,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                     </div>
                     <div class="ibox-content">
                                         <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
-                      <div class='col-sm-10'>
+                      <div class='col-sm-7'>
                     <div class='i-checks col-sm-6'><label> <input type='radio' value='Environment' name='prob_cat'> <i></i> Environment</label></div>
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Society' name='prob_cat'> <i></i> Society</label></div>
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Technology' name='prob_cat'> <i></i> Technology</label></div>
@@ -593,7 +593,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 
                                 <div class="form-group">
                   <label class="col-sm-2 control-label">Upload Link</label>
-                                    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
+                                    <div class="col-sm-7"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
                                     </div>
                     </div>
 
@@ -624,7 +624,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
                                 <div class='form-group'>
                                   <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
-                                    <div class='col-sm-10'>
+                                    <div class='col-sm-7'>
                                       <input type='text' id='affect_desc' name='affect_desc' class='form-control input-lg' placeholder='e.g., children attending public school in Pennsylvania'> 
                                     </div>
                                 </div>
@@ -926,7 +926,7 @@ else {echo "<h4>Impact Type: </h4>";};
         
         
                                 <div class="form-group"><label class="col-sm-2 control-label">Enter a specific area</label>
-                                  <div class="col-sm-10">
+                                  <div class="col-sm-7">
                                     <input type="text" id="spec_loc" name="spec_loc" class="form-control input-sm" placeholder="e.g., Los Angeles, California" maxlength="250"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
@@ -938,7 +938,7 @@ else {echo "<h4>Impact Type: </h4>";};
                 
                 <div class="col-sm-9 form-group">
                   <label class="col-sm-2 control-label">Enter a list of factors that influence the problem.</label>
-                      <div class="input-group col-sm-10">
+                      <div class="input-group col-sm-7">
                         <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
 
 <br/><br/><br/>
@@ -966,7 +966,7 @@ else {echo "<h4>Impact Type: </h4>";};
                             
                         <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
                             <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                         <h5>Stakeholders Identified</h5>
                         <ul>
                                     <li>Geographic Locations:  All</li>
@@ -979,7 +979,7 @@ else {echo "<h4>Impact Type: </h4>";};
                                     <li>Other Specified Groups:  All</li>
                                 </ul>
                                 </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-5">
                             <p>
                             <h5>Stakeholders Reached - Demographics</h5>
                             
