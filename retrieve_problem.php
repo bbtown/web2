@@ -348,7 +348,7 @@ var retrieve_id = $('#retrieve').val();
             </div>
         <div class="wrapper wrapper-content">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-9">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
 <h1>Problem Description</h1>
@@ -552,7 +552,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
             </div>
         </div>
 
-            <div class="col-sm-12">
+            <div class="col-lg-9">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -599,12 +599,12 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 
 
 
-                     <div class="col-sm-12 gray-bg">
+                     <div class="col-lg-9 gray-bg">
                             <h1>Who</h1>
                               <div class="row"> 
 
 
-            <div class="col-lg-12">
+            <div class="col-lg-9">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -662,7 +662,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
                 </div>
 
-            <div class="col-sm-9">
+            <div class="col-lg-9">
 
 
                  <h1>Where</h1>    
@@ -933,7 +933,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
 
 <div class="hr-line-dashed"></div>
-            <div class="col-sm-12 gray-bg"> 
+            <div class="col-lg-9 gray-bg"> 
                  <h1>Why</h1>                   
                 
                 <div class="col-sm-9 form-group">
@@ -1000,7 +1000,7 @@ else {echo "<h4>Impact Type: </h4>";};
                     </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-lg-9">
                             <h1>Factors</h1>
                             <h4>Which factors contribute to this problem?</h4>
                          
@@ -1024,7 +1024,7 @@ else {echo "<h4>Impact Type: </h4>";};
                     </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-lg-9">
                             <h1>Root Cause Analysis</h1>
                             <h4>Why does this problem really exist?</h4>
                             <img src="http://www.mindtools.com/media/Diagrams/Cause-Effect-Diagram-Example-3.jpg">
@@ -1035,7 +1035,7 @@ else {echo "<h4>Impact Type: </h4>";};
                 </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-lg-9">
                             <h1>Requirements</h1>
                             <h4>What does the perfect solution include?</h4>
                         <ol>
@@ -1049,7 +1049,7 @@ else {echo "<h4>Impact Type: </h4>";};
                 </div>
                  <div class="ibox-content">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-lg-9">
                             <h1>Top Ranking Solutions</h1>
                             <h4></h4>
                          <h4></h4>
