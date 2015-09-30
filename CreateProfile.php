@@ -110,6 +110,9 @@ $_SESSION['form_token'] = $form_token;
                     <div class="col-sm-4"> <!--<label>Email</label> --><input type="email" id="email" name="email" placeholder="Enter email" maxlength="40" class="form-control">
                     </div></div>
 
+                    
+<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
+
 <button class="btn btn-sm btn-primary m-t-n-xs" type="submit" style="width:40%"><strong>Submit</strong></button>
        
 </fieldset>
