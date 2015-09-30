@@ -76,7 +76,7 @@ $_SESSION['form_token'] = $form_token;
                                          <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="idea_desc" name="idea_desc" required> </textarea> -->
                                        <!--<label class="col-sm-2 control-label">Normal</label> -->
 
-                                    <div class="col-sm-4"><input type="text" id="username" name="username" placeholder="Username" maxlength="20" class="form-control"></div>
+                                    <div class="col-sm-4"><input type="text" id="username" name="username" placeholder="Username" maxlength="20" class="form-control" value="" ></div>
                                 <!--</div>
                                         <span class="help-block m-b-none">characters.</span> -->
                                         </div>
@@ -90,7 +90,7 @@ $_SESSION['form_token'] = $form_token;
                                      <label class="col-sm-2 control-label">Set a password</label>
                                        <!-- <div class="col-sm-10">
                                         <textarea class="form-control input-sm" rows="5" maxlength="1500" name="idea_more" id="idea_more"> </textarea> -->
-                                        <div class="col-sm-4"><!--<label>Password</label> --> <input type="password" id="password" name="password" placeholder="Password" maxlength="20" class="form-control"></div>
+                                        <div class="col-sm-4"><!--<label>Password</label> --> <input type="password" id="password" name="password" placeholder="Password" maxlength="20" class="form-control" value=""></div>
                                                         <div>
                                         <span class="help-block m-b-none"></span>
                                         </div>
@@ -107,10 +107,10 @@ $_SESSION['form_token'] = $form_token;
                   <!--<div class="col-sm-10">
                     <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea> -->
 
-                    <div class="col-sm-4"> <!--<label>Email</label> --><input type="email" id="email" name="email" placeholder="Enter email" maxlength="40" class="form-control">
+                    <div class="col-sm-4"> <!--<label>Email</label> --><input type="email" id="email" name="email" placeholder="Enter email" maxlength="40" class="form-control" value="" >
                     </div></div>
 
-                    
+
 <input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
 
 <button class="btn btn-sm btn-primary m-t-n-xs" type="submit" style="width:40%"><strong>Submit</strong></button>
