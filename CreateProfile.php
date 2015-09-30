@@ -17,7 +17,7 @@
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 <script>
    
-    function describe_form() {
+ /*   function describe_form() {
       var username = $('#username').val();
       var password = $('#password').val();
       var password_hash = $('#password').val();
@@ -34,16 +34,15 @@
       });
     
     }
-       
+ */      
     </script>
 
 </head>
 
-<body>
+<body class="gray-bg">
 
             <div class="row">
-                <div class="col-
-                sm-8">
+                <div class="col-lg-6 col-lg-offset-3">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h1>Create a Profile</h1>
@@ -51,7 +50,7 @@
                         </div>
                         <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
-                                <form class="form-horizontal" method="post" id="describe_form" action="submit_to_profiles.php">
+                                <form class="form-horizontal" method="post" id="describe_form" action="adduser_submit.php">
                                <!-- <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
                                     <div class="col-sm-10"><input type="text" class="form-control input-sm" rows="5" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
