@@ -67,13 +67,13 @@ var retrieve_id = $('#retrieve').val();
 </head>
 
 <body>
-<!--      <div id="wrapper">
+    <div id="wrapper col-lg-3">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div  class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;">
      <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
             
-            <ul class="nav metismenu" id="side-menu">
+          <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
 
                   <div class="ibox-content" style="margin:0"> 
@@ -81,9 +81,9 @@ var retrieve_id = $('#retrieve').val();
 
 
 
-    <nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
+  <!--  <nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
         <div class="sidebar-collapse">
-            <ul class="nav metismenu" id="side-menu">
+            <ul class="nav metismenu" id="side-menu"> -->
                 <li class="nav-header">
                     <div class="dropdown profile-element"> <span>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
