@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 /*** begin our session ***/
 session_start();
