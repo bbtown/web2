@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<?php
+/*** begin our session ***/
+session_start();
+/*** set a form token ***/
+$form_token = md5( uniqid('auth', true) );
+/*** set the session form token ***/
+$_SESSION['form_token'] = $form_token;
+?>
+
 <html>
 
 <head>
@@ -51,6 +61,7 @@
                         <div class="ibox-content">
                           <!--  <form method="get" class="form-horizontal"> -->
                                 <form class="form-horizontal" method="post" id="describe_form" action="adduser_submit.php">
+                                    <fieldset>
                                <!-- <div class="form-group"><label class="col-sm-2 control-label">Problem Summary<h6>This is the only required field.</h6></label>
                                     <div class="col-sm-10"><input type="text" class="form-control input-sm" rows="5" name="prob_desc" required> <span class="help-block m-b-none">Limit 500 characters.</span>
                                     </div>
@@ -99,10 +110,11 @@
                     <div class="col-sm-4"> <!--<label>Email</label> --><input type="email" id="email" name="email" placeholder="Enter email" maxlength="40" class="form-control">
                     </div></div>
 
-<button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" type="button" style="width:40%"><strong>Submit</strong></button>
-                         
-                                </form>
-
+<button class="btn btn-sm btn-primary m-t-n-xs" type="submit" style="width:40%"><strong>Submit</strong></button>
+       
+</fieldset>
+</form>                  
+       
 
                                   </div>
                                 </div>
