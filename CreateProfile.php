@@ -65,7 +65,7 @@
                                          <textarea class="form-control input-sm" rows="5" minlength="10" maxlength="500" id="idea_desc" name="idea_desc" required> </textarea> -->
                                        <!--<label class="col-sm-2 control-label">Normal</label> -->
 
-                                    <div class="col-sm-3"><input type="text" id="username" name="username" placeholder="Username" maxlength="20" class="form-control"></div>
+                                    <div class="col-sm-4"><input type="text" id="username" name="username" placeholder="Username" maxlength="20" class="form-control"></div>
                                 <!--</div>
                                         <span class="help-block m-b-none">characters.</span> -->
                                         </div>
@@ -79,18 +79,16 @@
                                      <label class="col-sm-2 control-label">Set a password</label>
                                        <!-- <div class="col-sm-10">
                                         <textarea class="form-control input-sm" rows="5" maxlength="1500" name="idea_more" id="idea_more"> </textarea> -->
-                                        <div class="col-sm-3"><!--<label>Password</label> --> <input type="password" id="passworda" name="passworda" placeholder="Password" maxlength="20" class="form-control"></div>
+                                        <div class="col-sm-4"><!--<label>Password</label> --> <input type="password" id="password" name="password" placeholder="Password" maxlength="20" class="form-control"></div>
                                                         <div>
                                         <span class="help-block m-b-none"></span>
                                         </div>
                                         </div>
                                         
 
-                               <div class="form-group"><label class="col-sm-2 control-label">Confirm password</label>
-                                  <!--  <div class="col-sm-10"><input type="text" class="form-control" name="prob_more"> <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
-                                    </div> -->  
-                                    <div class="col-sm-3"> <!--<label>Password</label> --> <input type="password" id="passwordb" name="passwordb" placeholder="Password" maxlength="20" class="form-control"></div>
-                                </div>
+<!--                               <div class="form-group"><label class="col-sm-2 control-label">Confirm password</label>                            
+                                    <div class="col-sm-4">  <input type="password" id="passwordb" name="passwordb" placeholder="Password" maxlength="20" class="form-control"></div>
+                                </div> -->
 
 <!--<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> -->
                                 <div class="form-group">
@@ -98,7 +96,7 @@
                   <!--<div class="col-sm-10">
                     <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea> -->
 
-                    <div class="col-sm-3"> <!--<label>Email</label> --><input type="email" id="email" name="email" placeholder="Enter email" maxlength="40" class="form-control">
+                    <div class="col-sm-4"> <!--<label>Email</label> --><input type="email" id="email" name="email" placeholder="Enter email" maxlength="40" class="form-control">
                     </div></div>
 
 <button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" type="button" style="width:40%"><strong>Submit</strong></button>
