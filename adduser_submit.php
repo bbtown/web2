@@ -7,7 +7,9 @@ $message = "empty";
 /*** first check that both the username, password and form token have been sent ***/
 if(!isset( $_POST['username'], $_POST['password'], $_POST['form_token']))
 {
-    $message = 'Please enter a valid username and password';
+//    $message = 'Please enter a valid username and password';
+$message = $_POST['username']." ".$_POST['password']." ".$_POST['form_token']; 
+
 }
 /*** check the form token is valid ***/
 elseif( $_POST['form_token'] != $_SESSION['form_token'])
