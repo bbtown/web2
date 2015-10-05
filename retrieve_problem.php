@@ -964,7 +964,8 @@ else {echo "<h4>Impact Type: </h4>";};
 
 <!--<nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
         <div class="sidebar-collapse"> -->
-            <ul class="nav metismenu" id="side-menu"> 
+<!--            <ul class="nav metismenu" id="side-menu"> -->
+<ul>
                <!--  <li class="nav-header">
                    <div class="dropdown profile-element"> <span>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
@@ -1014,7 +1015,8 @@ else {echo "<h4>Impact Type: </h4>";};
                 <div class="ibox float-e-margins">
 -->
                     <div class="ibox-content">
-<ul class="nav metismenu" id="side-menu">
+<!--            <ul class="nav metismenu" id="side-menu"> -->
+<ul>
  
                         <div class ="row"> 
                 <div class="chat-activity-list">
