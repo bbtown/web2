@@ -56,6 +56,7 @@
         }
   
       });
+}
     
    function vote_form() {
       var prob_cat = $('#prob_cat').val();
