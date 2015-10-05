@@ -79,7 +79,7 @@
 </head>
 
 <body class="fixed-sidebar">
-    <div id="wrapper col-lg-3">
+    <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
