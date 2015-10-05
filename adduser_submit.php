@@ -38,6 +38,11 @@ elseif (ctype_alnum($_POST['password']) != true)
         /*** if there is no match ***/
         $message = "Password must be alpha numeric";
 }
+/*** check that passwords match ***/
+elseif ($_POST['password'] != $_POST['password2'])
+{
+	$message = "Passwords do not match.";
+}
 else
 {
 

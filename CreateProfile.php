@@ -95,9 +95,9 @@ $_SESSION['form_token'] = $form_token;
                                         </div>
                                         
 
-<!--                               <div class="form-group"><label class="col-sm-2 control-label">Confirm password</label>                            
-                                    <div class="col-sm-4">  <input type="password" id="passwordb" name="passwordb" placeholder="Password" maxlength="20" class="form-control"></div>
-                                </div> -->
+                               <div class="form-group"><label class="col-sm-2 control-label">Confirm password</label>                            
+                                    <div class="col-sm-4">  <input type="password" id="password2" name="password2" placeholder="Password" maxlength="20" class="form-control"></div>
+                                </div> 
 
 <!--<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> -->
                                 <div class="form-group">
