@@ -223,7 +223,7 @@
             </div>
         <div class="wrapper wrapper-content">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
 <h1>Problem Description</h1>
@@ -397,7 +397,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
-            <div class="col-lg-9"> 
+            <div class="col-lg-12"> 
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -427,7 +427,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
             </div>
         </div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -479,7 +479,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                               <div class="row"> 
 
 
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="ibox collapsed">
                     <div class="ibox-title">
 <?php
@@ -537,7 +537,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
                 </div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-12">
 
 
                  <h1>Where</h1>    
@@ -875,7 +875,7 @@ else {echo "<h4>Impact Type: </h4>";};
                     </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <h1>Factors</h1>
                             <h4>Which factors contribute to this problem?</h4>
                          
@@ -899,7 +899,7 @@ else {echo "<h4>Impact Type: </h4>";};
                     </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <h1>Root Cause Analysis</h1>
                             <h4>Why does this problem really exist?</h4>
                             <img src="http://www.mindtools.com/media/Diagrams/Cause-Effect-Diagram-Example-3.jpg">
@@ -910,7 +910,7 @@ else {echo "<h4>Impact Type: </h4>";};
                 </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <h1>Requirements</h1>
                             <h4>What does the perfect solution include?</h4>
                         <ol>
@@ -924,7 +924,7 @@ else {echo "<h4>Impact Type: </h4>";};
                 </div>
                  <div class="ibox-content">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <h1>Top Ranking Solutions</h1>
                             <h4></h4>
                          <h4></h4>
@@ -962,11 +962,11 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-<!--<nav class="navbar-default navbar-static-side col-lg-3" role="navigation"> -->
-        <div class="sidebar-collapse">
-            <ul class="nav metismenu" id="side-menu"> 
-                <li class="nav-header">
-                    <div class="dropdown profile-element"> <span>
+<!--<nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
+        <div class="sidebar-collapse"> -->
+            <ul class="nav metismenu bg-white" id="side-menu"> 
+               <!--  <li class="nav-header">
+                   <div class="dropdown profile-element"> <span>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
                              </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -979,7 +979,7 @@ else {echo "<h4>Impact Type: </h4>";};
                             <li class="divider"></li>
                             <li><a href="login.html">Logout</a></li>
                         </ul>
-                    </div>
+                    </div> 
                     <div class="logo-element">
                         IN+
                     </div>
@@ -993,7 +993,7 @@ else {echo "<h4>Impact Type: </h4>";};
                         <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul>-->
 <h1>Other Problems</h1>
                                
                                 <h4>Sub-problems: </h4>
@@ -1081,8 +1081,8 @@ else {echo "<h4>Impact Type: </h4>";};
                         </div></li>
                         </ul>
                 </div>
-                </div>
-            <!--</div>-->
+               <!-- </div>
+            </div>-->
                     </nav>
                   
                 <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
