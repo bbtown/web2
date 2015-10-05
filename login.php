@@ -110,7 +110,7 @@ $_SESSION['form_token'] = $form_token;
                             <div class="col-sm-6"><h4>Not a member?</h4>
                                 <p>You can create an account:</p>
                                 <p class="text-center">
-                                    <a href="/CreateProfile.html"><i class="fa fa-sign-in big-icon"></i></a>
+                                    <a href="/CreateProfile.php"><i class="fa fa-sign-in big-icon"></i></a>
                                 </p>
                             </div>
                         </div>
