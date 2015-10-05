@@ -1031,7 +1031,7 @@ else {echo "<h4>Impact Type: </h4>";};
                                  echo "<a href=\"#\" class=\"pull-left\">";
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
                                  echo "</a>";
-                                 echo "<div class=\"media-body \">";
+                                 echo "<div class=\"media-body\">";
                                 // echo "<small class=\"pull-right text-navy\">1m ago</small>";
                      echo "<strong>".$doc['CommentUser']."</strong>";
                      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
@@ -1045,7 +1045,7 @@ else {echo "<h4>Impact Type: </h4>";};
                              }
                              ?>
                            
-</div></div>
+</div>
      <!--    <div class="row m-t-lg">
            <div class="col-lg-6">
                 <div class="ibox float-e-margins">
@@ -1082,14 +1082,14 @@ else {echo "<h4>Impact Type: </h4>";};
                             </form>
                         </div></li>
                         </ul>
-                </div>
+                </div></div>
                <!-- </div>
             </div>-->
                     </nav>
-                  
+                  <!--
                 <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
 <div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.9; z-index: 90; right: 1px;" class="slimScrollRail"></div>
-                  </div>
+                  </div> -->
              <!--</div>  -->
              
     <!-- Mainly scripts -->
