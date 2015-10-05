@@ -42,10 +42,8 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
-      var comment_ts = $('#comment_ts').val();
-      var comment_user = $('#comment_user').val();
-//      var prob_cat2 = $('#prob_cat2').serialize();
-// var value = $(this).attr('id');
+     //var comment_ts = $(time());
+//      var comment_user = $('#comment_user').val();
       var serialData = $('#comment_form').serialize();
       $.ajax({
         url: './submit_problem_comment.php',
@@ -56,7 +54,8 @@
         }
   
       });
-}
+    
+    }
     
    function vote_form() {
       var prob_cat = $('#prob_cat').val();
@@ -84,7 +83,7 @@
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
-     <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;"> 
+     <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;">
             
           <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
@@ -195,6 +194,10 @@
                         </div>
                     </div>
                 </div> -->
+
+
+
+
                 <li>
                         <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
