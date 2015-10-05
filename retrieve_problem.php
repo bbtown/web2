@@ -82,8 +82,8 @@
     <div id="wrapper">
     <!--<nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
-     <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;"> -->
+      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;">  -->
+     <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
             
           <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
@@ -211,8 +211,8 @@
                         </div></li>
                         </ul>
                 </div>
-              <!--  </div>
-             </div>
+                </div>
+            <!-- </div>
                     </nav>-->
                   
                 <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
