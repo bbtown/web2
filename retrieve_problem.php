@@ -950,7 +950,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
                  <div id="wrapper">
-    <nav class="navbar-default navbar-static-side rtls" role="navigation">
+    <nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
 
       <div class="slimScrollDiv bg-white" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
      <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;">
@@ -964,8 +964,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
 <!--<nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
         <div class="sidebar-collapse"> -->
-<!--            <ul class="nav metismenu" id="side-menu"> -->
-<ul>
+   <ul class="nav metismenu" id="side-menu"> 
                <!--  <li class="nav-header">
                    <div class="dropdown profile-element"> <span>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
@@ -1015,9 +1014,8 @@ else {echo "<h4>Impact Type: </h4>";};
                 <div class="ibox float-e-margins">
 -->
                     <div class="ibox-content">
-<!--            <ul class="nav metismenu" id="side-menu"> -->
-<ul>
- 
+
+<ul class="nav metismenu" id="side-menu"> 
                         <div class ="row"> 
                 <div class="chat-activity-list">
                         
