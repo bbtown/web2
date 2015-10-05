@@ -83,7 +83,7 @@
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
-     <!--<div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;"> -->
+     <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;"> 
             
           <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
