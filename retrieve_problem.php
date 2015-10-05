@@ -80,10 +80,10 @@
 
 <body class="fixed-nav rtls">
     <div id="wrapper">
-    <nav class="navbar-default navbar-static-side" role="navigation">
+    <nav class="navbar-default navbar-static-side rtls" role="navigation">
 
-      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
-     <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
+      <div class="slimScrollDiv rtls" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
+     <div class="sidebar-collapse rtls" style="overflow: hidden; width: auto; height: 100%;">
             
           <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
