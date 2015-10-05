@@ -35,24 +35,20 @@
    </style>
 
     <script>
-   function describe_form() {
-var retrieve_id = $('#retrieve').val();
-      var prob_desc = $('#prob_desc').val();
-      var prob_more = $('#prob_more').val();
-      var perspective = $('#perspective').val();
-      var url = $('#url').val();
-      var tags = $('#tags').val(); 
-      var prob_cat = $('#prob_cat').val();
-      var affect_desc = $('#affect_desc').val();
-      var affect_num = $('#affect_num').val();
-      var geo_loc = $('#geo_loc').val();
-      var spec_loc = $('#spec_loc').val();
-      var factors = $('#factors').val();
+   function add_comment() {
+      var comment_txt = $('#comment_txt').val();
+      var comment_idea_id = $('#comment_idea_id').val();
+      var comment_prob_id = $('#comment_prob_id').val();
+      var comment_tags = $('#comment_tags').val();
+      var comment_flag = $('#comment_flag').val(); 
+      var comment_sentiment = $('#comment_sentiment').val();
+      var comment_ts = $('#comment_ts').val();
+      var comment_user = $('#comment_user').val();
 //      var prob_cat2 = $('#prob_cat2').serialize();
 // var value = $(this).attr('id');
-      var serialData = $('#describe_form').serialize();
+      var serialData = $('#comment_form').serialize();
       $.ajax({
-        url: './update_problem.php',
+        url: './submit_problem_comment.php',
         type: 'POST',
         data: serialData,
         success: function(data) {
@@ -61,7 +57,23 @@ var retrieve_id = $('#retrieve').val();
   
       });
     
-    }
+   function vote_form() {
+      var prob_cat = $('#prob_cat').val();
+      var affect_desc = $('#affect_desc').val();
+      var upvote_count = 0;
+      var downvote_count = 0;
+//      var prob_cat2 = $('#prob_cat2').serialize();
+// var value = $(this).attr('id');
+      var serialData = $('#describe_form').serialize();
+      $.ajax({
+        url: './submit_to_problems.php',
+        type: 'POST',
+        data: serialData,
+        success: function(data) {
+          alert(data);
+        }
+  
+      });
 </script>
 
 </head>
@@ -70,8 +82,8 @@ var retrieve_id = $('#retrieve').val();
     <div id="wrapper col-lg-3">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
-     <!-- <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> -->
-     <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;">
+      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
+     <!--<div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;"> -->
             
           <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
