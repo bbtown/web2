@@ -82,7 +82,7 @@
 <body class="fixed-nav rtls">
    
 
-     <div id="page-wrapper" class="gray-bg col-lg-9">
+     <div id="page-wrapper" class="gray-bg col-lg-12">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -295,7 +295,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 -->
 
 </div></div></div></div></div>
-        <div class="row m-t-lg">
+        <div class="row">
 <!--            <div class="col-lg-6">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
@@ -371,7 +371,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 <!--                                    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
 </label>
 
- <div class='col-sm-7'>
+ <div class='col-sm-10'>
                                         <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
                                        <!-- <span class='help-block m-b-none'>Limit 500 characters.</span> -->
                                         
@@ -387,7 +387,7 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
                                 <div class='form-group'>
                                      <label class='col-sm-2 control-label'>Additional Problem Information</label>
-                                        <div class='col-sm-7'>
+                                        <div class='col-sm-10'>
                                         <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
                                         </div>
                                         </div>
@@ -413,7 +413,7 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
                     </div>
                     <div class="ibox-content">
                                         <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
-                      <div class='col-sm-7'>
+                      <div class='col-sm-10'>
                     <div class='i-checks col-sm-6'><label> <input type='radio' value='Environment' name='prob_cat'> <i></i> Environment</label></div>
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Society' name='prob_cat'> <i></i> Society</label></div>
                                         <div class='i-checks col-sm-6'><label> <input type='radio' value='Technology' name='prob_cat'> <i></i> Technology</label></div>
@@ -469,13 +469,13 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
 
                                 <div class="form-group">
                   <label class="col-sm-2 control-label">Upload Link</label>
-                                    <div class="col-sm-7"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
+                                    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
                                     </div>
                     </div>
 
 
 
-                     <div class="col-lg-9 gray-bg">
+                     <div class="col-lg-12 gray-bg">
                             <h1>Who</h1>
                               <div class="row"> 
 
@@ -500,7 +500,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
                                 <div class='form-group'>
                                   <label class='col-sm-2 control-label'>Describe the group of people affected by the problem.</label>
-                                    <div class='col-sm-7'>
+                                    <div class='col-sm-10'>
                                       <input type='text' id='affect_desc' name='affect_desc' class='form-control input-lg' placeholder='e.g., children attending public school in Pennsylvania'> 
                                     </div>
                                 </div>
@@ -802,19 +802,19 @@ else {echo "<h4>Impact Type: </h4>";};
         
         
                                 <div class="form-group"><label class="col-sm-2 control-label">Enter a specific area</label>
-                                  <div class="col-sm-7">
+                                  <div class="col-sm-10">
                                     <input type="text" id="spec_loc" name="spec_loc" class="form-control input-sm" placeholder="e.g., Los Angeles, California" maxlength="250"> <span class="help-block m-b-none"></span>
                                     </div>
                                 </div>
                   </div>
 
 <div class="hr-line-dashed"></div>
-            <div class="col-lg-9 gray-bg"> 
+            <div class="col-lg-12 gray-bg"> 
                  <h1>Why</h1>                   
                 
                 <div class="col-sm-9 form-group">
                   <label class="col-sm-2 control-label">Enter a list of factors that influence the problem.</label>
-                      <div class="input-group col-sm-7">
+                      <div class="input-group col-sm-10">
                         <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
 
 <br/><br/><br/>
@@ -950,10 +950,10 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-                 <div id="wrapper">
-    <nav class="navbar-default navbar-static-side col-lg-12" role="navigation">
+                 <div id="wrapper bg-white">
+    <nav class="navbar-default navbar-static-side" role="navigation">
 
-      <div class="slimScrollDiv bg-white" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
+      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
      <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;">
             
           <!--  <ul class="nav metismenu" id="side-menu">
