@@ -78,7 +78,7 @@
 
 </head>
 
-<body class="fixed-nav">
+<body class="fixed-nav rtls">
     <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
