@@ -950,7 +950,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-                 <div id="wrapper bg-white">
+                 <div id="wrapper rtls bg-white">
     <nav class="navbar-default navbar-static-side" role="navigation">
 
       <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
