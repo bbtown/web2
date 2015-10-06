@@ -89,8 +89,8 @@
 
 
 
-      <div class="slimScrollDiv bg-white col-lg-offset-9" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
-     <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
+      <div class="slimScrollDiv bg-white" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
+     <div class="sidebar-collapse bg-white" style="overflow: hidden; width: auto; height: 100%;">
             
           <!--  <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
