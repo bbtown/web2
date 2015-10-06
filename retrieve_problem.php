@@ -81,7 +81,7 @@
 
 <body class="fixed-nav rtls">
    
-                 <div id="wrapper bg-white col-lg-3 col-lg-9">
+                 <div id="wrapper bg-white col-lg-offset-9">
                     <div class="row">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
@@ -224,7 +224,7 @@
                   </div> 
              </div>  
 
-     <div id="page-wrapper" class="gray-bg col-lg-9 col-lg-offset-3">
+     <div id="page-wrapper" class="gray-bg col-lg-9 ">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
