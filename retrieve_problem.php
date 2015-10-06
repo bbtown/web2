@@ -79,13 +79,13 @@
 
 </head>
 
-<body class="fixed-nav rtls">
+<body class="static-nav rtls">
    
                  <div id="wrapper bg-white col-lg-offset-9">
                     <div class="row">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
-<nav class="navbar-default navbar-static-side">
+<nav class="navbar navbar-static-side">
 
 
 
