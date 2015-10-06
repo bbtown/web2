@@ -224,7 +224,7 @@
                   </div> 
              </div>  
 
-     <div id="page-wrapper" class="gray-bg col-lg-9">
+     <div id="page-wrapper" class="gray-bg col-lg-9 col-lg-offset-3">
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
