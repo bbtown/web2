@@ -81,6 +81,150 @@
 
 <body class="fixed-nav rtls">
    
+                 <div id="wrapper rtls bg-white col-lg-3">
+<!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
+
+<nav class="navbar navbar-static-side" role="navigation">
+
+
+
+      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
+     <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
+            
+          <!--  <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                  <div class="ibox-content" style="margin:0"> 
+                    <div class="row">-->
+
+
+
+<!--<nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
+        <div class="sidebar-collapse"> -->
+   <ul class="nav metismenu" id="side-menu"> 
+               <!--  <li class="nav-header">
+                   <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div> 
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">Dashboard v.1</a></li>
+                        <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                        <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                        <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                    </ul>
+                </li>
+            </ul>-->
+<h1>Other Problems</h1>
+                               
+                                <h4>Sub-problems: </h4>
+                                <p><ul><li>Polar Ice Caps Melting</li> 
+                                    <li>Erratic Weather Patterns</li> 
+                                    <li>Collapse of Ecosystems</li></ul></p>
+                                    
+                                    <h4>Related Problems: </h4>
+                                    <p><ul><li>Lack of Recycling Programs</li>
+                                        <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
+
+                               </div></div>
+                               </li></ul>
+<!--        BEGIN COMMENT BOX -->
+
+<!--    <div class="row m-t-lg">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+-->
+                    <div class="ibox-content">
+
+<ul class="nav metismenu" id="side-menu"> 
+                        <div class ="row"> 
+                <div class="chat-activity-list">
+                        
+                            <?php
+                             require_once __DIR__.'/vendor/autoload.php';
+                             $conn = r\connect('52.20.101.105');
+                             $result = r\db("web")->table('comments')->run($conn);
+                             foreach ($result as $doc) {
+                               if(isset($doc['CommentText'])) {
+                                 echo "<li><div class=\"chat-element\">";
+                                 echo "<a href=\"#\" class=\"pull-left\">";
+                                echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
+                                 echo "</a>";
+                                 echo "<div class=\"media-body\">";
+                                // echo "<small class=\"pull-right text-navy\">1m ago</small>";
+                     echo "<strong>".$doc['CommentUser']."</strong>";
+                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
+                     echo "</p>";
+                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
+                     echo "<div class=\"actions\">";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
+                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
+            echo "</div></div></div></li>";
+                             }
+                             }
+                             ?>
+                           
+</div>
+     <!--    <div class="row m-t-lg">
+           <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div> -->
+               <!-- <div class="chat-activity-list">
+                    <div class="chat-element">
+                        <a href="#" class="pull-left">
+                            <img alt="image" class="img-circle" src="img/a2.jpg">
+                        </a>
+                        <div class="media-body ">
+                            <small class="pull-right text-navy">1m ago</small>
+                            <strong>Mike Smith</strong>
+                            <p class="m-b-xs">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            </p>
+                            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+
+                <li>
+                        <div class="chat-form">
+                            <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
+                                
+                                <div class="text-right">
+                                    <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
+                                </div></div>
+                            </form>
+                        </div></li>
+                        </ul>
+                </div></div>
+               <!-- </div>
+            </div>-->
+                    </nav>
+                  <!--
+                <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
+<div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.9; z-index: 90; right: 1px;" class="slimScrollRail"></div>
+                  </div> -->
+             <!--</div>  -->
 
      <div id="page-wrapper" class="gray-bg col-lg-9">
         <div class="row border-bottom">
@@ -950,150 +1094,6 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-                 <div id="wrapper rtls bg-white col-lg-3">
-<!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
-
-<nav class="navbar navbar-static-side" role="navigation">
-
-
-
-      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
-     <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
-            
-          <!--  <ul class="nav metismenu" id="side-menu">
-                <li class="nav-header">
-                  <div class="ibox-content" style="margin:0"> 
-                    <div class="row">-->
-
-
-
-<!--<nav class="navbar-default navbar-static-side col-lg-3" role="navigation">
-        <div class="sidebar-collapse"> -->
-   <ul class="nav metismenu" id="side-menu"> 
-               <!--  <li class="nav-header">
-                   <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
-                             </span>
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
-                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="profile.html">Profile</a></li>
-                            <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="mailbox.html">Mailbox</a></li>
-                            <li class="divider"></li>
-                            <li><a href="login.html">Logout</a></li>
-                        </ul>
-                    </div> 
-                    <div class="logo-element">
-                        IN+
-                    </div>
-                </li>
-                <li>
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
-                        <li><a href="index.html">Dashboard v.1</a></li>
-                        <li><a href="dashboard_2.html">Dashboard v.2</a></li>
-                        <li><a href="dashboard_3.html">Dashboard v.3</a></li>
-                        <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
-                    </ul>
-                </li>
-            </ul>-->
-<h1>Other Problems</h1>
-                               
-                                <h4>Sub-problems: </h4>
-                                <p><ul><li>Polar Ice Caps Melting</li> 
-                                    <li>Erratic Weather Patterns</li> 
-                                    <li>Collapse of Ecosystems</li></ul></p>
-                                    
-                                    <h4>Related Problems: </h4>
-                                    <p><ul><li>Lack of Recycling Programs</li>
-                                        <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
-
-                               </div></div>
-                               </li></ul>
-<!--        BEGIN COMMENT BOX -->
-
-<!--    <div class="row m-t-lg">
-            <div class="col-lg-6">
-                <div class="ibox float-e-margins">
--->
-                    <div class="ibox-content">
-
-<ul class="nav metismenu" id="side-menu"> 
-                        <div class ="row"> 
-                <div class="chat-activity-list">
-                        
-                            <?php
-                             require_once __DIR__.'/vendor/autoload.php';
-                             $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('comments')->run($conn);
-                             foreach ($result as $doc) {
-                               if(isset($doc['CommentText'])) {
-                                 echo "<li><div class=\"chat-element\">";
-                                 echo "<a href=\"#\" class=\"pull-left\">";
-                                echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
-                                 echo "</a>";
-                                 echo "<div class=\"media-body\">";
-                                // echo "<small class=\"pull-right text-navy\">1m ago</small>";
-                     echo "<strong>".$doc['CommentUser']."</strong>";
-                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
-                     echo "</p>";
-                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
-                     echo "<div class=\"actions\">";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-            echo "</div></div></div></li>";
-                             }
-                             }
-                             ?>
-                           
-</div>
-     <!--    <div class="row m-t-lg">
-           <div class="col-lg-6">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-content">
-                        <div> -->
-               <!-- <div class="chat-activity-list">
-                    <div class="chat-element">
-                        <a href="#" class="pull-left">
-                            <img alt="image" class="img-circle" src="img/a2.jpg">
-                        </a>
-                        <div class="media-body ">
-                            <small class="pull-right text-navy">1m ago</small>
-                            <strong>Mike Smith</strong>
-                            <p class="m-b-xs">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            </p>
-                            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-                        </div>
-                    </div>
-                </div> -->
-
-
-
-
-                <li>
-                        <div class="chat-form">
-                            <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
-                                
-                                <div class="text-right">
-                                    <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
-                                </div></div>
-                            </form>
-                        </div></li>
-                        </ul>
-                </div></div>
-               <!-- </div>
-            </div>-->
-                    </nav>
-                  <!--
-                <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
-<div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.9; z-index: 90; right: 1px;" class="slimScrollRail"></div>
-                  </div> -->
-             <!--</div>  -->
              
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
