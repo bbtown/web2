@@ -81,7 +81,7 @@
 
 <body class="static-nav rtls">
    
-                 <div id="wrapper" class="bg-white col-lg-offset-9">
+                 <div id="wrapper" class="col-lg-3 col-lg-offset-9">
                     <div class="row">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
@@ -89,7 +89,7 @@
 
 
 
-      <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
+      <div class="slimScrollDiv bg-white col-lg-offset-9" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
      <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
             
           <!--  <ul class="nav metismenu" id="side-menu">
