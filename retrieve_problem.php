@@ -951,7 +951,11 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
                  <div id="wrapper rtls bg-white">
-    <nav class="navbar-default navbar-static-side" role="navigation">
+<!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
+
+<nav class="navbar navbar-fixed-top" role="navigation">
+
+
 
       <div class="slimScrollDiv" style="position: relative overflow: hidden; width: auto; height: 100%;"> 
      <div class="sidebar-collapse" style="overflow: hidden; width: 100%; height: 100%;">
