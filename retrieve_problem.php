@@ -81,7 +81,7 @@
 
 <body class="fixed-nav rtls">
    
-                 <div id="wrapper bg-white col-lg-3">
+                 <div id="wrapper bg-white col-lg-3 col-lg-9">
                     <div class="row">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
