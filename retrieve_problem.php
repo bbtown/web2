@@ -81,7 +81,7 @@
 
 <body class="fixed-nav rtls">
    
-                 <div id="wrapper rtls bg-white col-lg-3">
+                 <div id="wrapper bg-white col-lg-3">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
 <nav class="navbar navbar-static-side" role="navigation">
@@ -201,9 +201,6 @@
                     </div>
                 </div> -->
 
-
-
-
                 <li>
                         <div class="chat-form">
                             <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
@@ -220,10 +217,10 @@
                <!-- </div>
             </div>-->
                     </nav>
-                  <!--
+                 
                 <div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 78.0259px;" class="slimScrollBar"></div>
 <div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.9; z-index: 90; right: 1px;" class="slimScrollRail"></div>
-                  </div> -->
+                  </div> 
              <!--</div>  -->
 
      <div id="page-wrapper" class="gray-bg col-lg-9">
