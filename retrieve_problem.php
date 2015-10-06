@@ -953,7 +953,7 @@ else {echo "<h4>Impact Type: </h4>";};
                  <div id="wrapper rtls bg-white">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
-<nav class="navbar navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-fixed-side" role="navigation">
 
 
 
