@@ -950,7 +950,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-                 <div id="wrapper rtls bg-white">
+                 <div id="wrapper rtls bg-white col-lg-3">
 <!--    <nav class="navbar-default navbar-static-side rtls" role="navigation"> -->
 
 <nav class="navbar navbar-static-side" role="navigation">
