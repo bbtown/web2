@@ -1,0 +1,56 @@
+<?php
+
+  // load rethinkdb php library
+  require_once __DIR__.'/vendor/autoload.php';
+
+  $conn = r\connect('52.20.101.105');
+  //$result = r\db("web")->table('problems')->run($conn);
+  //foreach ($result as $doc) {
+  //  print_r($doc);
+  //}
+
+//so we want to add fields for idea id's to link..  how do we keep adding new idea id's?  for now i guess we will start with one to link...
+
+// can we update two separate databases in one php file?  perhaps create two different document arrays and insert them via the $result string?
+
+
+
+$idea_link1 = $_POST[''];
+
+  $prob_desc = $_POST['prob_desc']; 
+  $prob_more = $_POST['prob_more']; 
+  $perspective = $_POST['perspective'];  
+  $url = $_POST['url'];
+  $tags = $_POST['tags'];
+  $prob_cat = $_POST['prob_cat'];
+  $affect_desc = $_POST['affect_desc'];
+  $affect_num = $_POST['affect_num'];
+  $geo_loc = $_POST['geo_loc'];
+  $spec_loc = $_POST['spec_loc'];
+  $factors= $_POST['factors'];
+//  $prob_cat2 = $_POST['prob_cat2'];
+//  $problemID = $_['id'];
+
+  $document_problem = Array('ProblemDescription' => $prob_desc,
+                    'MoreDescription' => $prob_more,
+                    'Perspective' => $perspective,
+                    'URL' => $url,
+		    'Tags' => $tags,
+		    'ProblemCategory' => $prob_cat,
+		    'AffectedDescription' => $affect_desc,
+		    'AffectedNumber' => $affect_num,
+		    'GeographicLocation' => $geo_loc,
+		    'SpecificLocation' => $spec_loc,
+		    'Factors' => $factors);
+//		    'ProblemCategory2' => $prob_cat2);
+   //		    'id' => $problemID);  
+
+
+$document_idea = Array ();
+
+  //$result = r\db("web")->table('problems')->insert($document_problem)->run($conn);
+$result_prob = r\db("web")->table('problems')->get("e79bd042-9a05-4df6-91e6-4b8613176870")->update({UserName: 'Beth', TimeStamp: '09-SEP-2015 16:55:31'})->run($conn);
+$result_idea = r\db("web")->table('ideas')->get("e79bd042-9a05-4df6-91e6-4b8613176870")->update({UserName: 'Beth', TimeStamp: '09-SEP-2015 16:55:31'})->run($conn);
+
+  echo "Thank you for submitting your problem!  Problem ID: ";
+?>
