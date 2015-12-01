@@ -296,6 +296,8 @@
             <li><a href="https://infogr.am/">Infogram</a> - real-time and interactive</li>                  
             <li><a href="http://piktochart.com/">Piktochart</a> - has templates</li>
             <li>Product Hunt: <a href="https://www.producthunt.com/search?q=infographic"></a></li>
+            <li>what will my first tester infographics show?  (real infographics can be snagged from the internet; perhaps mine should be on actual site metrics and my own project planning)</li>
+            <li>perhaps now i should work on my own project dashboard</li>
         </ul>
         <h3>Inspiration</h3>
         <ul>
@@ -303,7 +305,8 @@
             <li>These seem more like campaign posters: <a href="http://www.dailyinfographic.com/">Daily Infographic</a></li>
         </ul>
 
-<h2>Making Promotional videos: <a href="https://www.producthunt.com/search?q=video"></a></h2>
+<h2>Making Promotional videos: <a href="https://www.producthunt.com/search?q=video">Product Hunt</a></h2>
+<li>What will my video have?</li>
 
     </div>
 </div>
