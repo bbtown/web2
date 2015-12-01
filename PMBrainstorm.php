@@ -35,10 +35,21 @@
 
 <body>
 
-    <div>
+    <div class="ibox-content">
     
 
+    <h2>Site rules</h2>
+
+        <ul>
+            <li>No hate; only constructive criticisms</li>
+            <li>No solution will cause direct or indirect harm to humans</li>
+            <li>No harassment</li>
+            <li></li>
+        </ul>
+
+
     <h2>Problem Defnition</h2>
+    <p>Note:  These can be introduced with pick-lists with hover descriptions.  Users can add their own.  Upon review they can be added as options.</p>
         <ul>
 
             <li>CATWOE (<a href="https://www.mindtools.com/pages/article/newTMC_83.htm">https://www.mindtools.com/pages/article/newTMC_83.htm</a>)
@@ -78,10 +89,18 @@
 
         <ul>
 
-            <li></li>
+            <li><a href="https://www.mindtools.com/pages/article/newTMC_80.htm">https://www.mindtools.com/pages/article/newTMC_80.htm</a>/li>
+            <li>5 whys: <a href="http://www.isixsigma.com/tools-templates/cause-effect/determine-root-cause-5-whys/">http://www.isixsigma.com/tools-templates/cause-effect/determine-root-cause-5-whys/</a></li>
         </ul>
 
     <h2>Types of Problems</h2>
+<p>Note:  does this depend on perspective?</p>
+        <ul>
+            <li>Lack of...</li>
+            <li>Too much of...</li>
+        </ul>
+
+    <h2>Types of Stakeholders</h2>
 
         <ul>
 
@@ -106,9 +125,39 @@
 
         <ul>
 
+            <li>Logical Fallacies: <a href="http://examples.yourdictionary.com/examples-of-logical-fallacy.html">http://examples.yourdictionary.com/examples-of-logical-fallacy.html</a></li>
+        </ul>
+
+
+    <h2>Types of Assumptions</h2>
+
+        <ul>
+
             <li></li>
         </ul>
+
+    <h2>Types of Risks</h2>
+
+        <ul>
+
+            <li></li>
+        </ul>
+
     </div>
+
+    <h2>Types of Requirements</h2>
+
+        <ul>
+
+            <li></li>
+        </ul>
+
+    <h2>Types of Constraints</h2>
+
+        <ul>
+
+            <li></li>
+        </ul>
 
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
