@@ -157,7 +157,15 @@
             <li>No harassment</li>
             <li></li>
         </ul>
+    <h2>PM Tools</h2>
 
+        <ul>
+            <li>Socrata dashboards with metrics: <a href="https://1j3rac4ejwve1p3y0x1gprgk-wpengine.netdna-ssl.com/wp-content/uploads/datasheet_OpenPerformance_201510.pdf">PDF</a></li>
+            <li>Backlogs: <a href="http://taiga.io">taiga</a></li>
+            <li>Soliciting help with home pages: IdeaScale</li>
+            <li>Discussions: Reddit</li>
+            <li>Where I come in:  Critical thinking component, and marrying all of these together seamlessly</li>
+        </ul>
 
     <h2>Problem Defnition</h2>
     <p>Note:  These can be introduced with pick-lists with hover descriptions.  Users can add their own.  Upon review they can be added as options.</p>
@@ -267,8 +275,37 @@
 
             <li></li>
         </ul>
-</div>
-</div>
+
+    <h2>Types of Data</h2>
+
+        <ul>
+
+            <li></li>
+        </ul></div>
+
+    <h2>Types of Infographics</h2>
+
+        <ul>
+            <li>Rules to determine how different types of data (and relationships) are displayed</li>
+            <li>Charts and things should be interactive so people can play with things to better understand them</li>
+            <li>People say statistics can be manipulated to paint a biased picture.  How do we mitigate this?  Perhaps the same way we mitigate bias; showing different viewpoints</li>      
+            <li>Can be used on a higher level (to broadly illustrate a problem) and a nitty-gritty level</li>
+        </ul>
+        <h3>Tools</h3>
+        <ul>
+            <li><a href="https://infogr.am/">Infogram</a> - real-time and interactive</li>                  
+            <li><a href="http://piktochart.com/">Piktochart</a> - has templates</li>
+            <li>Product Hunt: <a href="https://www.producthunt.com/search?q=infographic"></a></li>
+        </ul>
+        <h3>Inspiration</h3>
+        <ul>
+            <li><a href="http://www.coolinfographics.com/">Cool Infographics blog</a></li>                  
+            <li>These seem more like campaign posters: <a href="http://www.dailyinfographic.com/">Daily Infographic</a></li>
+        </ul>
+
+<h2>Making Promotional videos: <a href="https://www.producthunt.com/search?q=video"></a></h2>
+
+    </div>
 </div>
 </div>
             <div class="col-lg-12">
