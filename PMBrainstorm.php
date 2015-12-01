@@ -35,7 +35,7 @@
 
 <body>
 
-    <div id="wrapper">
+    <div>
     
 
     <h2>Problem Defnition</h2>
@@ -110,8 +110,28 @@
         </ul>
     </div>
 
-    <div>
-        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Problem Details</h5>
+        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
         
        <!--     <div class="row">
                 <div class="col-lg-8">
@@ -127,19 +147,19 @@
                                     <!-- <div class="col-lg-12"> -->
 
 
-                                    <?php
-                                    require_once __DIR__. '/vendor/autoload.php';
-                                    $conn = r\connect('52.20.101.105');
-                                    $result = r\db("web")->table('problems')->run($conn);
-                                    foreach ($result as $doc) {
-                                        if(isset($doc['ProblemDescription'])) {
-                                            echo "<h1>Problem Description</h1>";
-                                            echo "<h4>Category</h4> ".$doc['ProblemCategory'];
-                                            echo "<h4>Description</h4> ".$doc['ProblemDescription'];
-                                        }
-                                    }
+                                   // <?php
+                                    //require_once __DIR__. '/vendor/autoload.php';
+                                    //$conn = r\connect('52.20.101.105');
+                                    //$result = r\db("web")->table('problems')->run($conn);
+                                    //foreach ($result as $doc) {
+                                    //    if(isset($doc['ProblemDescription'])) {
+                                    //        echo "<h1>Problem Description</h1>";
+                                    //        echo "<h4>Category</h4> ".$doc['ProblemCategory'];
+                                    //        echo "<h4>Description</h4> ".$doc['ProblemDescription'];
+                                    //    }
+                                   // }
 
-                                    ?>
+                                    //?>
                                     <h4>Category:  Environment</h4>
                                     <h4>Severity Level: Catastrophic</h4>
                                     <h4>Impact Type: 7.5 billion affected</h4>
@@ -377,9 +397,9 @@
                     </div>
                 </div>
 
-
-        </div>
-        </div>
+                    </div>
+                    </div>
+                </div>
 
 
     <!-- Mainly scripts -->
