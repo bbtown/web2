@@ -26,9 +26,9 @@
     <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
     <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
 
-    <link href="release/side-comments.js" rel="stylesheet">
-    <link href="release/side-comments.css" rel="stylesheet">
-    <link href="release/themes/default-theme.css" rel="stylesheet">
+    <link href="side-comments/release/side-comments.js" rel="stylesheet">
+    <link href="side-comments/release/side-comments.css" rel="stylesheet">
+    <link href="side-comments/release/themes/default-theme.css" rel="stylesheet">
 
 
         <!-- Morris -->
@@ -603,7 +603,7 @@
                     </div>
                 </div>
 
-                
+
   <div id="commentable-container" class="container commentable-container">
     <h1 class="title">
       SideComments.js In Action
@@ -618,9 +618,9 @@
       This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
     </p>
   </div>
-  <script src="support/js/jquery.js"></script>
-  <script src="release/side-comments.js"></script>
-  <script src="support/test_data.js"></script>
+  <script src="side-comments/support/js/jquery.js"></script>
+  <script src="side-comments/release/side-comments.js"></script>
+  <script src="side-comments/support/test_data.js"></script>
   <script>
     $(document).ready(function(){
       var SideComments = require('side-comments');
