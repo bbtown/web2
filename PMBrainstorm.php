@@ -26,6 +26,11 @@
     <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
     <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
 
+    <link href="release/side-comments.js" rel="stylesheet">
+    <link href="release/side-comments.css" rel="stylesheet">
+    <link href="release/themes/default-theme.css" rel="stylesheet">
+
+
         <!-- Morris -->
     <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
@@ -597,6 +602,38 @@
                     </div>
                     </div>
                 </div>
+
+                
+  <div id="commentable-container" class="container commentable-container">
+    <h1 class="title">
+      SideComments.js In Action
+    </h1>
+    <p data-section-id="1" class="commentable-section">
+      Each paragraph tag has the "commentable-section" class, making it a section which can be commented on after you've initialized a new SideComments object and pointed it at the parent element, which is "#commentable-container" for this demo.
+    </p>
+    <p data-section-id="2" class="commentable-section">
+      Clicking on the markers on the right will show the SideComments. Sections without any comments only show their marker on hover.
+    </p>
+    <p data-section-id="3" class="commentable-section">
+      This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
+    </p>
+  </div>
+  <script src="support/js/jquery.js"></script>
+  <script src="release/side-comments.js"></script>
+  <script src="support/test_data.js"></script>
+  <script>
+    $(document).ready(function(){
+      var SideComments = require('side-comments');
+      window.sideComments = new SideComments('#commentable-container', currentUser, existingComments);
+      window.sideComments.on('commentPosted', function( comment ) {
+        comment.id = parseInt(Math.random() * (100000 - 1) + 1);
+        sideComments.insertComment(comment);
+      });
+      window.sideComments.on('commentDeleted', function( comment ) {
+        sideComments.removeComment(comment.sectionId, comment.id);
+      });
+    });
+  </script>
 
                     </div>
                     </div>
