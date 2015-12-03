@@ -30,6 +30,12 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+
+    <link href="side-comments/release/side-comments.js" rel="stylesheet">
+    <link href="side-comments/release/side-comments.css" rel="stylesheet">
+    <link href="side-comments/release/themes/default-theme.css" rel="stylesheet">
+
     <script>
     //how are we reading in problem id, username, and timestamp?
    function add_comment() {
@@ -41,8 +47,6 @@
       var comment_sentiment = $('#comment_sentiment').val();
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
-
-
       var serialData = $('#comment_form').serialize();
       $.ajax({
         url: './submit_problem_comment.php',
@@ -55,7 +59,6 @@
       });
     
     }
-
        
     </script>
 
@@ -332,8 +335,6 @@
                              $result = r\db("web")->table('comments')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['CommentText'])) {
-
-
                                  echo "<div class=\"chat-element\">";
                                  echo "<a href=\"#\" class=\"pull-left\">";
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
@@ -352,10 +353,7 @@
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
-
                      echo "</div></div></div>";
-
-
                              }
                              }
                              ?>
@@ -396,7 +394,6 @@
                             <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
                         </div>
                     </div>
-
                     <div class="chat-element ">
                         <a href="#" class="pull-left">
                             <img alt="image" class="img-circle" src="img/a2.jpg">
@@ -429,12 +426,10 @@
                                 <!--        END COMMENT BOX EXPERIMENT -->       
 
 <!-- just an example
-
                                 <div class="ibox-title">
                             <h1>Ideas?</h1>
                         </div>
                         <div class="ibox-content">
-
 <form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> 
                                 <div class="form-group"> 
                     <label class="col-sm-2 control-label">Do you have any ideas on how to fix this problem?</label>
@@ -452,6 +447,37 @@
         </div>
         </div>
 
+
+  <div id="commentable-container" class="container commentable-container">
+    <h1 class="title">
+      SideComments.js In Action
+    </h1>
+    <p data-section-id="1" class="commentable-section">
+      Each paragraph tag has the "commentable-section" class, making it a section which can be commented on after you've initialized a new SideComments object and pointed it at the parent element, which is "#commentable-container" for this demo.
+    </p>
+    <p data-section-id="2" class="commentable-section">
+      Clicking on the markers on the right will show the SideComments. Sections without any comments only show their marker on hover.
+    </p>
+    <p data-section-id="3" class="commentable-section">
+      This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
+    </p>
+  </div>
+  <script src="side-comments/support/js/jquery.js"></script>
+  <script src="side-comments/release/side-comments.js"></script>
+  <script src="side-comments/support/test_data.js"></script>
+  <script>
+    $(document).ready(function(){
+      var SideComments = require('side-comments');
+      window.sideComments = new SideComments('#commentable-container', currentUser, existingComments);
+      window.sideComments.on('commentPosted', function( comment ) {
+        comment.id = parseInt(Math.random() * (100000 - 1) + 1);
+        sideComments.insertComment(comment);
+      });
+      window.sideComments.on('commentDeleted', function( comment ) {
+        sideComments.removeComment(comment.sectionId, comment.id);
+      });
+    });
+  </script>
 
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
