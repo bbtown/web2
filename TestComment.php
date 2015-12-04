@@ -345,7 +345,7 @@ $data = 'var existingComments = [
         \"authorName\": \"Jon Sno\",
         \"authorId\": 1,
         \"authorUrl\": \"http://en.wikipedia.org/wiki/Kit_Harington\",
-        \"comment\": \"I'm Ned Stark's bastard. Related: I know nothing.\"
+        \"comment\": \"I\'m Ned Stark\'s bastard. Related: I know nothing.\"
       },
       {
         \"id\": 112,
