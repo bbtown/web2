@@ -399,15 +399,12 @@ var currentUser = {
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
                      echo "</div></div></div>";
+                 }
+             }
 
 
                      int file_put_contents ( string $filename , mixed $data);
 
-
-
-
-                             }
-                             }
                              ?>
 
         <div class="row m-t-lg">
