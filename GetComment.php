@@ -333,53 +333,8 @@
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('comments')->run($conn);
-                             $filename = 'side-comments/support/rethink.js';
-
-$data = "var existingComments = [
-  {
-    \"sectionId\": \"1\",
-    \"comments\": [
-      {
-        \"id\": 88,
-        \"authorAvatarUrl\": \"support/images/jon_snow.png\",
-        \"authorName\": \"Jon Sno\",
-        \"authorId\": 1,
-        \"authorUrl\": \"http://en.wikipedia.org/wiki/Kit_Harington\",
-        \"comment\": \"I'm Ned Stark's bastard. Related: I know nothing.\"
-      },
-      {
-        \"id\": 112,
-        \"authorAvatarUrl\": \"support/images/donald_draper.png\",
-        \"authorName\": \"Donald Draper\",
-        \"authorId\": 2,
-        \"comment\": \"I need a scotch.\"
-      }
-    ]
-  },
-  {
-    \"sectionId\": \"3\",
-    \"comments\": [
-      {
-        \"id\": 66,
-        \"authorAvatarUrl\": \"support/images/clay_davis.png\",
-        \"authorName\": \"Senator Clay Davis\",
-        \"authorId\": 3,
-        \"comment\": \"These Side Comments are incredible. Sssshhhiiiiieeeee.\"
-      }
-    ]
-  }
-];
-var currentUser = {
-  \"id\": 4,
-  \"avatarUrl\": \"support/images/user.png\",
-  \"authorUrl\": \"http://google.com/\",
-  \"name\": \"You\"
-};";
-
-
                              foreach ($result as $doc) {
                                if(isset($doc['CommentText'])) {
-
                                  echo "<div class=\"chat-element\">";
                                  echo "<a href=\"#\" class=\"pull-left\">";
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
@@ -399,13 +354,6 @@ var currentUser = {
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
                      echo "</div></div></div>";
-
-
-                     int file_put_contents ( string $filename , mixed $data);
-
-
-
-
                              }
                              }
                              ?>
@@ -516,8 +464,7 @@ var currentUser = {
   </div>
   <script src="side-comments/support/js/jquery.js"></script>
   <script src="side-comments/release/side-comments.js"></script>
-  <script src="side-comments/support/rethink.js"></script>
- <!-- <script src="side-comments/support/test_data.js"></script>  -->
+  <script src="side-comments/support/test_data.js"></script>
   <script>
     $(document).ready(function(){
       var SideComments = require('side-comments');
