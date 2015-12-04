@@ -335,7 +335,7 @@
                              $result = r\db("web")->table('comments')->run($conn);
                              $filename = 'side-comments/support/rethink.js';
 
-$data = "var existingComments = [
+$data = 'var existingComments = [
   {
     \"sectionId\": \"1\",
     \"comments\": [
@@ -374,7 +374,7 @@ var currentUser = {
   \"avatarUrl\": \"support/images/user.png\",
   \"authorUrl\": \"http://google.com/\",
   \"name\": \"You\"
-};";
+};';
 
 
                              foreach ($result as $doc) {
