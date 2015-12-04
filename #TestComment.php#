@@ -375,12 +375,6 @@ var currentUser = {
   \"authorUrl\": \"http://google.com/\",
   \"name\": \"You\"
 };';*/
-//$data = "test1";
-//file_put_contents($filename, $data);
-$fp = fopen('rethinkdb.js', 'w');
-fwrite($fp, '1');
-fwrite($fp, '23');
-fclose($fp);
 
                              foreach ($result as $doc) {
                                if(isset($doc['CommentText'])) {
@@ -405,9 +399,9 @@ fclose($fp);
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
                      echo "</div></div></div>";
 
-                    // $data = "test2";
+                     $data = "test2";
 
-                    // file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
+                     file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
                  }
              }
 
@@ -636,3 +630,4 @@ fclose($fp);
 </body>
 
 </html>
+
