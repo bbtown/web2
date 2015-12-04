@@ -408,8 +408,6 @@ $data = 'test1';
              }
 
 
-                     int file_put_contents ( string $filename , mixed $data);
-
                              ?>
 
         <div class="row m-t-lg">
