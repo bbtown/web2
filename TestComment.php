@@ -335,7 +335,7 @@
                              $result = r\db("web")->table('comments')->run($conn);
                              $filename = 'side-comments/support/rethink.js';
 
-$data = 'var existingComments = [
+/*$data = 'var existingComments = [
   {
     \"sectionId\": \"1\",
     \"comments\": [
@@ -374,7 +374,8 @@ var currentUser = {
   \"avatarUrl\": \"support/images/user.png\",
   \"authorUrl\": \"http://google.com/\",
   \"name\": \"You\"
-};';
+};';*/
+$data = 'test1';
 
 
                              foreach ($result as $doc) {
@@ -399,6 +400,10 @@ var currentUser = {
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
                      echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
                      echo "</div></div></div>";
+
+                     $data ='test2';
+
+                     file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
                  }
              }
 
@@ -513,7 +518,7 @@ var currentUser = {
   </div>
   <script src="side-comments/support/js/jquery.js"></script>
   <script src="side-comments/release/side-comments.js"></script>
-  <script src="side-comments/support/rethink.js"></script>
+  <script src="side-comments/support/test_data.js"></script>
  <!-- <script src="side-comments/support/test_data.js"></script>  -->
   <script>
     $(document).ready(function(){
