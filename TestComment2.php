@@ -311,6 +311,7 @@
 
                    
   <div id="commentable-container" class="container commentable-container">
+    <div class="col-sm-12 col-md-12 col-lg-12">
     <h1 class="title">
       SideComments.js In Action
     </h1>
@@ -324,7 +325,7 @@
       This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
     </p>
   </div>  
-
+</div>
 
                                 
 </html>
