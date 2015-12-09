@@ -209,7 +209,7 @@
                             <!--BEGIN COMMENTS -->
                             
 <div class="col-sm-12 col-md-3 col-lg-3">
-<div class="ibox float-e-margins collapsed">
+<div class="ibox collapsed">
   <!--  <div class="ibox collapsed"> -->
     <div class="ibox-tools">
         <a class="collapse-link">
