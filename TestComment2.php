@@ -86,7 +86,7 @@
       });
     });
   </script>
-  <div class="col-lg-12">
+  <div class="col-md-offset-3 col-lg-offset-3 col-md-3 col-lg-3">
     <div class="ibox collapsed">
         <div class="ibox-title">
             <h5>Example of initial collapsed panel</h5>
@@ -94,26 +94,11 @@
                 <a class="collapse-link">
                     <i class="fa fa-chevron-up"></i>
                 </a>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-wrench"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#">Config option 1</a>
-                    </li>
-                    <li><a href="#">Config option 2</a>
-                    </li>
-                </ul>
-                <a class="close-link">
-                    <i class="fa fa-times"></i>
-                </a>
             </div>
         </div>
         <div class="ibox-content">
-
             <p>
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-            <p>
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                Aenean commodo ligula eget dolor. 
             </p>
         </div>
     </div>
