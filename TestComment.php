@@ -45,6 +45,8 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val(); 
       var comment_sentiment = $('#comment_sentiment').val();
+
+      //comment id?
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
       var serialData = $('#comment_form').serialize();
@@ -77,7 +79,7 @@
                           <!--  <form method="get" class="form-horizontal"> -->
 
                               <div class="row"> 
-                                    <div class="col-sm-9">
+                                    <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
                                     <!-- <div class="col-lg-12"> -->
                             <h1>Problem Description</h1>
                                     <h4>Category:  Environment</h4>
@@ -110,7 +112,7 @@
                                         <!-- problem relationships?-->
 <!-- ___.  This leads to _____.  -->
 
-                                     <div class="col-sm-3  gray-bg">    
+                                     <!--<div class="col-sm-3  gray-bg">    
                                 <h1>Other Problems</h1>
                                 <h4>Sub-problems: </h4>
                                 <p><ul><li>Polar Ice Caps Melting</li> 
@@ -120,7 +122,7 @@
                                     <h4>Related Problems: </h4>
                                     <p><ul><li>Lack of Recycling Programs</li>
                                         <li>Lack of Viable Alternate Fuel Sources</li></ul></p>
-                                </div>
+                                </div> -->
                         
                                 </div>
                                     </div>
@@ -154,7 +156,8 @@
                 </div>
 -->
 
-                <div class="ibox-content">
+                <div class="ibox-content" id="p_stakeholders">
+                    <div class="col-sm-12 col-md-9 col-lg-9">
                             <h1>Stakeholders</h1>
                             <h4>Who is affected by this problem?</h4>
 
@@ -162,7 +165,7 @@
                         <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
 
                             <div class="row">
-                        <div class="col-sm-6">
+                        <!-- <div class="col-sm-6"> -->
                         <h5>Stakeholders Identified</h5>
                         <ul>
                                     <li>Geographic Locations:  All</li>
@@ -199,9 +202,9 @@
                     </div>
                 </div>
 
-                <div class="ibox-content">
+                <div class="ibox-content" id="p_factors">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-9 col-lg-9">
                             <h1>Factors</h1>
                             <h4>Which factors contribute to this problem?</h4>
                          
@@ -240,9 +243,9 @@
                     </div>
 
 
-                <div class="ibox-content">
+                <div class="ibox-content" id="p_rootcause">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-9 col-lg-9">
                             <h1>Root Cause Analysis</h1>
                             <h4>Why does this problem really exist?</h4>
                             <img src="http://www.mindtools.com/media/Diagrams/Cause-Effect-Diagram-Example-3.jpg">
@@ -251,9 +254,9 @@
                       
                     </div>
                     </div>
-                </div><div class="ibox-content">
+                </div><div class="ibox-content" id="p_requirements">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-9 col-lg-9">
                             <h1>Requirements</h1>
                             <h4>What does the perfect solution include?</h4>
                         <ol>
@@ -267,9 +270,9 @@
                     </div>
                 </div>
 
-                 <div class="ibox-content">
+                 <div class="ibox-content" id="p_solutions">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-9 col-lg-9">
                             <h1>Top Ranking Solutions</h1>
                             <h4></h4>
                          <h4></h4>
@@ -296,32 +299,11 @@
                     </div>
                 </div> -->
 
-                <div class="ibox-content">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1>Other stuff</h1>
-                            <h4>...</h4>
-                            <h4>How should comments be addressed?</h4>
-                        
-                        <!-- <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
-                                    <h6>Geographic Locations:  All</h6>
-                                    <h6>Age Groups:  All</h6>
-                                    <h6>Genders:  All</h6>
-                                    <h6>Socio-economic Brackets:  All</h6>
-                                    <h6>Ethnicities:  All</h6>
-                                    <h6>Nationalites:  All</h6>
-                                    <h6>Occupation:  All</h6>
-                                    <h6>Other Specified Groups:  All</h6> -->
-
-                      
-                    </div>
-                    </div>
-                </div>
 
                                 <!--        BEGIN COMMENT BOX -->
-
+<!-- Expand/collapse -->
     <div class="row m-t-lg">
-            <div class="col-lg-6">
+            <div class="col-sm-12 col-md-3 col-lg-3">
                 <div class="ibox float-e-margins">
 
                     <div class="ibox-content">
@@ -333,58 +315,19 @@
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('comments')->run($conn);
-                             $filename = 'rethinkdb.js';
-
-/*$data = 'var existingComments = [
-  {
-    \"sectionId\": \"1\",
-    \"comments\": [
-      {
-        \"id\": 88,
-        \"authorAvatarUrl\": \"support/images/jon_snow.png\",
-        \"authorName\": \"Jon Sno\",
-        \"authorId\": 1,
-        \"authorUrl\": \"http://en.wikipedia.org/wiki/Kit_Harington\",
-        \"comment\": \"I\'m Ned Stark\'s bastard. Related: I know nothing.\"
-      },
-      {
-        \"id\": 112,
-        \"authorAvatarUrl\": \"support/images/donald_draper.png\",
-        \"authorName\": \"Donald Draper\",
-        \"authorId\": 2,
-        \"comment\": \"I need a scotch.\"
-      }
-    ]
-  },
-  {
-    \"sectionId\": \"3\",
-    \"comments\": [
-      {
-        \"id\": 66,
-        \"authorAvatarUrl\": \"support/images/clay_davis.png\",
-        \"authorName\": \"Senator Clay Davis\",
-        \"authorId\": 3,
-        \"comment\": \"These Side Comments are incredible. Sssshhhiiiiieeeee.\"
-      }
-    ]
-  }
-];
-var currentUser = {
-  \"id\": 4,
-  \"avatarUrl\": \"support/images/user.png\",
-  \"authorUrl\": \"http://google.com/\",
-  \"name\": \"You\"
-};';*/
+                            // $filename = 'rethinkdb.js';
 //$data = "test1";
 //file_put_contents($filename, $data);
-$fp = fopen('rethinkdb.js', 'w');
-fwrite($fp, '1');
-fwrite($fp, '23');
-fclose($fp);
+//$fp = fopen('rethinkdb.js', 'w');
+//fwrite($fp, '1');
+//fwrite($fp, '23');
+//fclose($fp);
 
                              foreach ($result as $doc) {
                                if(isset($doc['CommentText'])) {
-
+//all comments for this section; order by timestamp
+                                //replies?
+                                //add to part of problem definition
                                  echo "<div class=\"chat-element\">";
                                  echo "<a href=\"#\" class=\"pull-left\">";
                                 echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
@@ -415,7 +358,7 @@ fclose($fp);
                              ?>
 
         <div class="row m-t-lg">
-            <div class="col-lg-6">
+            <div class="col-sm-12 col-md-3 col-lg-3">
                 <div class="ibox float-e-margins">
 
                     <div class="ibox-content">
