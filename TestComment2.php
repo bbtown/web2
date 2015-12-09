@@ -211,11 +211,12 @@
 <div class="col-sm-12 col-md-3 col-lg-3">
 <div class="ibox collapsed">
   <!--  <div class="ibox collapsed"> -->
+    <div class="ibox-title">
     <div class="ibox-tools">
         <a class="collapse-link">
             View Comments <i class="fa fa-chevron-down"></i>
         </a>
-    </div>
+    </div></div>
 <div class="ibox content">
 <!--<div class="row m-t-lg"> -->
 
