@@ -141,10 +141,10 @@
                               <div class="ibox collapsed">
                                 <!--  <div class="ibox collapsed"> -->
                                   <div class="ibox-title">
-                                    <h4>Your mom </h4>
+                                    <h4>View Comments </h4>
                                   <div class="ibox-tools">
                                       <a class="collapse-link">
-                                        Test <i class="fa fa-chevron-down"></i>
+                                        <i class="fa fa-chevron-up"></i>
                                       </a>
                                   </div>
                                 </div>
@@ -159,16 +159,15 @@
   <div class="ibox collapsed">
     <!--  <div class="ibox collapsed"> -->
       <div class="ibox-title">
+        <h4>View Comments </h4>
       <div class="ibox-tools">
           <a class="collapse-link">
-              View Comments <i class="fa fa-chevron-down"></i>
+              <i class="fa fa-chevron-up"></i>
           </a>
       </div>
-
-
-    <!--</div>
+</div>
   <div class="ibox content">
-  <div class="row m-t-lg"> -->
+<!--  <div class="row m-t-lg"> -->
 
   <!--<div class="chat-activity-list"> -->
 
@@ -256,7 +255,7 @@
                            </div>
                            </div>
                        </div>
-                   
+                   </div>
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
