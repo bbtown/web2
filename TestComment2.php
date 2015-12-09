@@ -99,17 +99,18 @@
                                     <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
                                 </div>
 
+
+
             <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="row">
                     <div class="ibox collapsed">
                         <div class="ibox-tools">
                             <a class="collapse-link">
-                                View Comments <i class="fa fa-pencil"></i>
+                                View Comments <i class="fa fa-chevron-up"></i>
                             </a>
                         </div>
 
 
-                <div class="ibox float-e-margins">
+                <div class="ibox content">
 
                 <div class="chat-activity-list">
 
