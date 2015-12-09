@@ -105,14 +105,15 @@
                     <div class="ibox collapsed">
                         <div class="ibox-tools">
                             <a class="collapse-link">
-                                View Comments <i class="fa fa-chevron-up"></i>
+                                View Comments <i class="fa fa-chevron-down"></i>
                             </a>
                         </div>
 
 
                 <div class="ibox content">
+        <div class="row m-t-lg">
 
-                <div class="chat-activity-list">
+                    <div class="chat-activity-list">
 
                             <?php
                              require_once __DIR__.'/vendor/autoload.php';
