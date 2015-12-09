@@ -206,9 +206,9 @@
                       
                             <!--BEGIN COMMENTS -->
                             
-<div class="ibox float-e-margins">
-  <div class="col-md-offset-3 col-lg-offset-3 col-sm-12 col-md-3 col-lg-3">
-    <div class="ibox collapsed">
+<div class="ibox float-e-margins collapsed">
+  <div class="col-sm-12 col-md-3 col-lg-3">
+  <!--  <div class="ibox collapsed"> -->
     <div class="ibox-tools">
         <a class="collapse-link">
             View Comments <i class="fa fa-chevron-down"></i>
