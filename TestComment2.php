@@ -97,7 +97,7 @@
   <h4>Severity Level: Catastrophic</h4>
   <h4>Impact Type: 7.5 billion affected</h4>
   <h4>Problem Development: Persistent Build-up</h4>
-
+</div>
   <div class="col-md-offset-9 col-lg-offset-9 col-md-3 col-lg-3">
     <div class="ibox collapsed">
         <div class="ibox-title">
@@ -114,7 +114,6 @@
             </p>
         </div>
     </div>
-</div>
 </div>
 </div>
 </div>
@@ -136,17 +135,19 @@
                                           Climate change or global warming has been set into motion since the Industrial Revolution.  Right now we are on a path to disaster, despite current meager attempts to reduce our carbon footprints.  Although the US, Europe, and Japan may be more environmentally conscious, developing nations such as China and India are not changing their ways.  Climate change not only brings extreme erratic behavior, but leads to the certain collpase of ecosystems all over the planet.  It will be impossible to sustain the current and growing population.  Starvation and water shortages will be prevalent.
                                       </p>
                                       <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
-                                <!--  </div>
-                               </div> -->
+                                  </div>
+                               <!--</div> -->
                               <div class="col-sm-12 col-md-3 col-lg-3">
                               <div class="ibox collapsed">
                                 <!--  <div class="ibox collapsed"> -->
                                   <div class="ibox-title">
+                                    <h4>Your mom </h4>
                                   <div class="ibox-tools">
                                       <a class="collapse-link">
                                         Test <i class="fa fa-chevron-down"></i>
                                       </a>
                                   </div>  
+                                </div>
                                   <div class="ibox content">
                                     this is a test...
                                   </div>
@@ -256,9 +257,7 @@
                            </div>
                            </div>
                        </div>
-                     </div>
-                   </div>
-                 </div>
+                   
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
