@@ -190,7 +190,7 @@
                           <!--  <form method="get" class="form-horizontal"> -->
 
                                     <div class="col-sm-12 col-md-12 col-lg-12">
-                                      <!--<div class="row"> -->
+                                      <div class="row"> 
                                       <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
                                     <!-- <div class="col-lg-12"> -->
                             <h1>Problem Description</h1>
@@ -204,7 +204,7 @@
                                     </p>
                                     <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
                                 </div>
-                            <!--  </div> -->
+                            <</div> 
                       
                             <!--BEGIN COMMENTS -->
                             
