@@ -100,8 +100,6 @@
                                 </div>
 
             <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="row">
-                    <div class="ibox collapsed">
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 View Comments <i class="fa fa-pencil"></i>
@@ -109,8 +107,12 @@
                         </div>
 
 
+                    <div class="ibox-content">
+    <div class="row m-t-lg">
                 <div class="ibox float-e-margins">
 
+
+                        <div>
                 <div class="chat-activity-list">
 
                             <?php
@@ -316,7 +318,7 @@
                          required: true,
                          minlength: 10,
                          maxlength: 500
-                     },
+v                     },
                      prob_more: {
                          required: false,
                          maxlength: 1500
