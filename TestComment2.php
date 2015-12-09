@@ -216,11 +216,14 @@
         <a class="collapse-link">
             View Comments <i class="fa fa-chevron-down"></i>
         </a>
-    </div></div>
-<div class="ibox content">
-<!--<div class="row m-t-lg"> -->
+    </div>
 
-<div class="chat-activity-list">
+
+  <!--</div>
+<div class="ibox content">
+<div class="row m-t-lg"> -->
+
+<!--<div class="chat-activity-list"> -->
 
         <?php
          require_once __DIR__.'/vendor/autoload.php';
@@ -307,24 +310,6 @@
                          </div>
                      </div>
                    </div>
-</div>
-                   
-  <div id="commentable-container" class="container commentable-container">
-    <div class="col-sm-12 col-md-12 col-lg-12">
-    <h1 class="title">
-      SideComments.js In Action
-    </h1>
-    <p data-section-id="1" class="commentable-section">
-      Each paragraph tag has the "commentable-section" class, making it a section which can be commented on after you've initialized a new SideComments object and pointed it at the parent element, which is "#commentable-container" for this demo.
-    </p>
-    <p data-section-id="2" class="commentable-section">
-      Clicking on the markers on the right will show the SideComments. Sections without any comments only show their marker on hover.
-    </p>
-    <p data-section-id="3" class="commentable-section">
-      This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
-    </p>
-  </div>  
-</div>
-
+                 </div>
                                 
 </html>
