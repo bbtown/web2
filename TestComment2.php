@@ -43,7 +43,7 @@
       var comment_idea_id = $('#comment_idea_id').val();
       var comment_prob_id = $('#comment_prob_id').val();
       var comment_tags = $('#comment_tags').val();
-      var comment_flag = $('#comment_flag').val(); 
+      var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
 
       //comment id?
@@ -57,11 +57,11 @@
         success: function(data) {
           alert(data);
         }
-  
+
       });
-    
+
     }
-       
+
     </script>
 
 
@@ -69,173 +69,6 @@
 
 <body>
 
-       <!--     <div class="row">
-                <div class="col-lg-8">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h1>Problem Description</h1>
-                        </div> -->
-                        <div class="ibox-content">
-                          <!--  <form method="get" class="form-horizontal"> -->
-
-                              <div class="row"> 
-                                    <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
-                                    <!-- <div class="col-lg-12"> -->
-                            <h1>Problem Description</h1>
-                                    <h4>Category:  Environment</h4>
-                                    <h4>Severity Level: Catastrophic</h4>
-                                    <h4>Impact Type: 7.5 billion affected</h4>
-                                    <h4>Problem Development: Persistent Build-up</h4>
-
-                               <!-- </div>
-            
-                            </div>
-                                <div 
-                                class="row">
-                                     <div class="col-sm-8 col-sm-4"> -->
-                                    <p>
-                                        Climate change or global warming has been set into motion since the Industrial Revolution.  Right now we are on a path to disaster, despite current meager attempts to reduce our carbon footprints.  Although the US, Europe, and Japan may be more environmentally conscious, developing nations such as China and India are not changing their ways.  Climate change not only brings extreme erratic behavior, but leads to the certain collpase of ecosystems all over the planet.  It will be impossible to sustain the current and growing population.  Starvation and water shortages will be prevalent.
-                                    </p>
-                                    <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
-                                </div>
-
-                    <div class="ibox collapsed">
-
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                View Comments <i class="fa fa-chevron-down"></i>
-                            </a>
-                        </div>
-
-
-                <div class="ibox content">
-        <div class="row m-t-lg">
-
-                    <div class="chat-activity-list">
-
-                            <?php
-                             require_once __DIR__.'/vendor/autoload.php';
-                             $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('comments')->run($conn);
-                            // $filename = 'rethinkdb.js';
-//$data = "test1";
-//file_put_contents($filename, $data);
-//$fp = fopen('rethinkdb.js', 'w');
-//fwrite($fp, '1');
-//fwrite($fp, '23');
-//fclose($fp);
-
-                             foreach ($result as $doc) {
-                               if(isset($doc['CommentText'])) {
-//all comments for this section; order by timestamp
-                                //replies?
-                                //add to part of problem definition
-                                 echo "<div class=\"chat-element\">";
-                                 echo "<a href=\"#\" class=\"pull-left\">";
-                                echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
-                                 echo "</a>";
-                                 echo "<div class=\"media-body \">";
-                                // echo "<small class=\"pull-right text-navy\">1m ago</small>";
-                     echo "<strong>".$doc['CommentUser']."</strong>";
-                     echo "<p class=\"m-b-xs\">".$doc['CommentText'];
-                     echo "</p>";
-                     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
-                     echo "<div class=\"actions\">";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
-                     echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
-                     echo "</div></div></div>";
-
-                    // $data = "test2";
-
-                    // file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
-                 }
-             }
-
-
-                             ?>
-
-        <div class="row m-t-lg">
-<!--            <div class="col-sm-12 col-md-3 col-lg-3"> 
-                <div class="ibox float-e-margins">
-
-                    <div class="ibox-content">
-
-                        <div>-->
-                <div class="chat-activity-list">
-
-                    <div class="chat-element">
-                        <a href="#" class="pull-left">
-                            <img alt="image" class="img-circle" src="img/a2.jpg">
-                        </a>
-                        <div class="media-body ">
-                            <small class="pull-right text-navy">1m ago</small>
-                            <strong>Mike Smith</strong>
-                            <p class="m-b-xs">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            </p>
-                            <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-                        </div>
-                    </div>
-
-                </div>
-                        <div class="chat-form">
-                            <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
-                                
-                                <div class="text-right">
-                                    <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
-                                </div></div>
-                            </form>
-                        </div>
-                </div>
-                </div>
-            </div>  
-
-                                <!--        END COMMENT BOX EXPERIMENT -->       
-
-<!-- just an example
-                                <div class="ibox-title">
-                            <h1>Ideas?</h1>
-                        </div>
-                        <div class="ibox-content">
-<form class="form-horizontal" method="post" id="add_idea" action="submit_to_ideas.php"> 
-                                <div class="form-group"> 
-                    <label class="col-sm-2 control-label">Do you have any ideas on how to fix this problem?</label>
-                      <div class="col-sm-10">
-                        <textarea class="form-control input-sm" rows="1" maxlength="500" name="idea_desc" id="idea_desc"></textarea>
-<br/><br/><br/>
-<button onclick="add_idea();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Submit</strong></button>
-                                    </div>
-                                </form>
-                            </div>     
-                            -->                
-                               
-        </div>
-    </div>
-        </div>
-
-
-  <div id="commentable-container" class="container commentable-container">
-    <h1 class="title">
-      SideComments.js In Action
-    </h1>
-    <p data-section-id="1" class="commentable-section">
-      Each paragraph tag has the "commentable-section" class, making it a section which can be commented on after you've initialized a new SideComments object and pointed it at the parent element, which is "#commentable-container" for this demo.
-    </p>
-    <p data-section-id="2" class="commentable-section">
-      Clicking on the markers on the right will show the SideComments. Sections without any comments only show their marker on hover.
-    </p>
-    <p data-section-id="3" class="commentable-section">
-      This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
-    </p>
-  </div>
   <script src="side-comments/support/js/jquery.js"></script>
   <script src="side-comments/release/side-comments.js"></script>
   <script src="side-comments/support/test_data.js"></script>
@@ -353,4 +186,145 @@
         </script>
 </body>
 
+                        <div class="ibox-content">
+                          <!--  <form method="get" class="form-horizontal"> -->
+
+                              <div class="row">
+                                    <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
+                                    <!-- <div class="col-lg-12"> -->
+                            <h1>Problem Description</h1>
+                                    <h4>Category:  Environment</h4>
+                                    <h4>Severity Level: Catastrophic</h4>
+                                    <h4>Impact Type: 7.5 billion affected</h4>
+                                    <h4>Problem Development: Persistent Build-up</h4>
+
+                                    <p>
+                                        Climate change or global warming has been set into motion since the Industrial Revolution.  Right now we are on a path to disaster, despite current meager attempts to reduce our carbon footprints.  Although the US, Europe, and Japan may be more environmentally conscious, developing nations such as China and India are not changing their ways.  Climate change not only brings extreme erratic behavior, but leads to the certain collpase of ecosystems all over the planet.  It will be impossible to sustain the current and growing population.  Starvation and water shortages will be prevalent.
+                                    </p>
+                                    <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <!--BEGIN COMMENTS -->
+                            <div class="ibox collapsed">
+
+<div class="col-sm-12 col-md-3 col-lg-3">
+    <div class="ibox-tools">
+        <a class="collapse-link">
+            View Comments <i class="fa fa-chevron-down"></i>
+        </a>
+    </div>
+
+
+<div class="ibox content">
+<div class="row m-t-lg">
+
+<div class="chat-activity-list">
+
+        <?php
+         require_once __DIR__.'/vendor/autoload.php';
+         $conn = r\connect('52.20.101.105');
+         $result = r\db("web")->table('comments')->run($conn);
+        // $filename = 'rethinkdb.js';
+//$data = "test1";
+//file_put_contents($filename, $data);
+//$fp = fopen('rethinkdb.js', 'w');
+//fwrite($fp, '1');
+//fwrite($fp, '23');
+//fclose($fp);
+
+         foreach ($result as $doc) {
+           if(isset($doc['CommentText'])) {
+//all comments for this section; order by timestamp
+            //replies?
+            //add to part of problem definition
+             echo "<div class=\"chat-element\">";
+             echo "<a href=\"#\" class=\"pull-left\">";
+            echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
+             echo "</a>";
+             echo "<div class=\"media-body \">";
+            // echo "<small class=\"pull-right text-navy\">1m ago</small>";
+ echo "<strong>".$doc['CommentUser']."</strong>";
+ echo "<p class=\"m-b-xs\">".$doc['CommentText'];
+ echo "</p>";
+ echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
+ echo "<div class=\"actions\">";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
+ echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
+ echo "</div></div></div>";
+
+// $data = "test2";
+
+// file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
+}
+}
+
+
+         ?>
+
+         
+              <!--   <div class="row m-t-lg">
+                     <div class="col-sm-12 col-md-3 col-lg-3"> 
+                         <div class="ibox float-e-margins">
+         
+                             <div class="ibox-content">
+         
+                                 <div>
+                         <div class="chat-activity-list"> -->
+         
+                             <div class="chat-element">
+                                 <a href="#" class="pull-left">
+                                     <img alt="image" class="img-circle" src="img/a2.jpg">
+                                 </a>
+                                 <div class="media-body ">
+                                     <small class="pull-right text-navy">1m ago</small>
+                                     <strong>Mike Smith</strong>
+                                     <p class="m-b-xs">
+                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                     </p>
+                                     <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                 </div>
+                             </div>
+         
+                         </div>
+                                 <div class="chat-form">
+                                     <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
+                                         <div class="form-group">
+                                             <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
+                                         
+                                         <div class="text-right">
+                                             <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
+                                         </div></div>
+                                     </form>
+                                 </div>
+                         </div>
+                         </div>
+                     </div>
+                   </div>
+
+                   
+  <div id="commentable-container" class="container commentable-container">
+    <h1 class="title">
+      SideComments.js In Action
+    </h1>
+    <p data-section-id="1" class="commentable-section">
+      Each paragraph tag has the "commentable-section" class, making it a section which can be commented on after you've initialized a new SideComments object and pointed it at the parent element, which is "#commentable-container" for this demo.
+    </p>
+    <p data-section-id="2" class="commentable-section">
+      Clicking on the markers on the right will show the SideComments. Sections without any comments only show their marker on hover.
+    </p>
+    <p data-section-id="3" class="commentable-section">
+      This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
+    </p>
+  </div>  
+
+
+                                
 </html>
