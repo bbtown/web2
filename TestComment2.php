@@ -203,10 +203,7 @@
                                     </p>
                                     <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
                                 </div>
-                              </div>
-                            </div>
-
-
+                      
                             <!--BEGIN COMMENTS -->
                             
 <div class="ibox float-e-margins">
@@ -307,7 +304,7 @@
                          </div>
                      </div>
                    </div>
-
+</div>
                    
   <div id="commentable-container" class="container commentable-container">
     <div class="col-sm-12 col-md-12 col-lg-12">
