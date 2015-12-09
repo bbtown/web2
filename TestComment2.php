@@ -112,6 +112,32 @@
             <p>
                 Aenean commodo ligula eget dolor.
             </p>
+
+            <div class="chat-element">
+                <a href="#" class="pull-left">
+                    <img alt="image" class="img-circle" src="img/a2.jpg">
+                </a>
+                <div class="media-body ">
+                    <small class="pull-right text-navy">1m ago</small>
+                    <strong>Mike Smith</strong>
+                    <p class="m-b-xs">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    </p>
+                    <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                </div>
+            </div>
+
+        </div>
+                <div class="chat-form">
+                    <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
+
+                        <div class="text-right">
+                            <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
+                        </div></div>
+                    </form>
+                </div>
         </div>
     </div>
 </div>
