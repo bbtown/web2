@@ -162,12 +162,12 @@
                              ?>
 
         <div class="row m-t-lg">
-            <div class="col-sm-12 col-md-3 col-lg-3">
+<!--            <div class="col-sm-12 col-md-3 col-lg-3"> 
                 <div class="ibox float-e-margins">
 
                     <div class="ibox-content">
 
-                        <div>
+                        <div>-->
                 <div class="chat-activity-list">
 
                     <div class="chat-element">
@@ -219,6 +219,7 @@
                             -->                
                                
         </div>
+    </div>
         </div>
         </div>
         </div>
