@@ -113,23 +113,6 @@
                                       <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
                                   </div>
                                 </div>
-                               <!--</div> -->
-                              <div class="col-sm-12 col-md-3 col-lg-3">
-                              <div class="ibox collapsed">
-                                <!--  <div class="ibox collapsed"> -->
-                                  <div class="ibox-title">
-                                    <h4>View Comments </h4>
-                                  <div class="ibox-tools">
-                                      <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                      </a>
-                                  </div>
-                                </div>
-                                  <div class="ibox-content">
-                                  <p>  this is a test... </p>
-                                  </div>
-                                </div>
-                              </div>
                               <!--BEGIN COMMENTS -->
 
   <div class="col-sm-12 col-md-3 col-lg-3">
