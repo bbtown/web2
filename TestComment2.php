@@ -86,9 +86,9 @@
       });
     });
   </script>
-
+<div class="container">
+<div class="col-sm-12 col-md-12 col-lg-12">
 <div class="ibox-content">
-  <div class="col-sm-12 col-md-12 col-lg-12">
     <!--<div class="row"> -->
     <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
   <!-- <div class="col-lg-12"> -->
@@ -97,6 +97,10 @@
   <h4>Severity Level: Catastrophic</h4>
   <h4>Impact Type: 7.5 billion affected</h4>
   <h4>Problem Development: Persistent Build-up</h4>
+
+  <p>Climate change or global warming has been set into motion since the Industrial Revolution.  Right now we are on a path to disaster, despite current meager attempts to reduce our carbon footprints.  Although the US, Europe, and Japan may be more environmentally conscious, developing nations such as China and India are not changing their ways.  Climate change not only brings extreme erratic behavior, but leads to the certain collpase of ecosystems all over the planet.  It will be impossible to sustain the current and growing population.  Starvation and water shortages will be prevalent.
+  </p>
+  <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
 </div>
   <div class="col-md-offset-9 col-lg-offset-9 col-md-3 col-lg-3">
     <div class="ibox collapsed">
@@ -137,14 +141,16 @@
                         </div></div>
                     </form>
                 </div>
-                
+
                         </div>
         </div>
     </div>
 </div>
 </div>
 </div>
+</div>
 
+<div class="container">
                           <div class="ibox-content">
                             <!--  <form method="get" class="form-horizontal"> -->
 
@@ -283,6 +289,7 @@
                            </div>
                        </div>
                    </div>
+               </div>
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
