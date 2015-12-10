@@ -89,7 +89,7 @@
   <body>
 
 <div>
-<div class="col-sm-12 col-md-12 col-lg-12">
+<div id="wrapper" class="col-sm-12 col-md-12 col-lg-12">
 <div class="ibox-content">
     <!--<div class="row"> -->
     <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
@@ -116,10 +116,56 @@
             </div>
         </div>
         <div class="ibox-content">
-            <p>
-                Aenean commodo ligula eget dolor.
-            </p>
-
+          <div class="ibox content">
+        <!--  <div class="row m-t-lg"> -->
+        
+          <!--<div class="chat-activity-list"> -->
+        
+                  <?php
+                   require_once __DIR__.'/vendor/autoload.php';
+                   $conn = r\connect('52.20.101.105');
+                   $result = r\db("web")->table('comments')->run($conn);
+                  // $filename = 'rethinkdb.js';
+          //$data = "test1";
+          //file_put_contents($filename, $data);
+          //$fp = fopen('rethinkdb.js', 'w');
+          //fwrite($fp, '1');
+          //fwrite($fp, '23');
+          //fclose($fp);
+        
+                   foreach ($result as $doc) {
+                     if(isset($doc['CommentText'])) {
+          //all comments for this section; order by timestamp
+                      //replies?
+                      //add to part of problem definition
+                       echo "<div class=\"chat-element\">";
+                       echo "<a href=\"#\" class=\"pull-left\">";
+                      echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
+                       echo "</a>";
+                       echo "<div class=\"media-body\">";
+                      // echo "<small class=\"pull-right text-navy\">1m ago</small>";
+           echo "<strong>".$doc['CommentUser']."</strong>";
+           echo "<p class=\"m-b-xs\">".$doc['CommentText'];
+           echo "</p>";
+           echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
+           echo "<div class=\"actions\">";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
+           echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
+           echo "</div></div></div>";
+        
+          // $data = "test2";
+        
+          // file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
+          }
+          }
+        
+        
+                   ?>
             <div class="chat-element">
                 <a href="#" class="pull-left">
                     <img alt="image" class="img-circle" src="img/a2.jpg">
