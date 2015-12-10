@@ -65,10 +65,6 @@
     </script>
 
 
-</head>
-
-<body>
-
   <script src="side-comments/support/js/jquery.js"></script>
   <script src="side-comments/release/side-comments.js"></script>
   <script src="side-comments/support/test_data.js"></script>
@@ -86,7 +82,13 @@
       });
     });
   </script>
-<div class="container">
+
+  
+  </head>
+  
+  <body>
+
+<div>
 <div class="col-sm-12 col-md-12 col-lg-12">
 <div class="ibox-content">
     <!--<div class="row"> -->
@@ -101,6 +103,7 @@
   <p>Climate change or global warming has been set into motion since the Industrial Revolution.  Right now we are on a path to disaster, despite current meager attempts to reduce our carbon footprints.  Although the US, Europe, and Japan may be more environmentally conscious, developing nations such as China and India are not changing their ways.  Climate change not only brings extreme erratic behavior, but leads to the certain collpase of ecosystems all over the planet.  It will be impossible to sustain the current and growing population.  Starvation and water shortages will be prevalent.
   </p>
   <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
+</div>
 </div>
   <div class="col-md-offset-9 col-lg-offset-9 col-md-3 col-lg-3">
     <div class="ibox collapsed">
@@ -147,16 +150,15 @@
     </div>
 </div>
 </div>
-</div>
-</div>
 
-<div class="container">
-                          <div class="ibox-content">
+<div>
+                                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        
                             <!--  <form method="get" class="form-horizontal"> -->
 
-                                      <div class="col-sm-12 col-md-12 col-lg-12">
                                         <!--<div class="row"> -->
-                                        <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
+                                        <div class="col-sm-12 col-md-9 col-lg-9">
+                                            <div class="ibox-content">
                                       <!-- <div class="col-lg-12"> -->
                               <h1>Problem Description</h1>
                                       <h4>Category:  Environment</h4>
@@ -169,6 +171,7 @@
                                       </p>
                                       <h4>Tags: </h4><p>environment, sustainability, climate change, global warming, carbon, emissions, pollution</p>
                                   </div>
+                                </div>
                                <!--</div> -->
                               <div class="col-sm-12 col-md-3 col-lg-3">
                               <div class="ibox collapsed">
@@ -289,7 +292,7 @@
                            </div>
                        </div>
                    </div>
-               </div>
+                   
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
