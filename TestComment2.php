@@ -127,7 +127,6 @@
                 </div>
             </div>
 
-        </div>
                 <div class="chat-form">
                     <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                         <div class="form-group">
@@ -138,6 +137,8 @@
                         </div></div>
                     </form>
                 </div>
+                
+                        </div>
         </div>
     </div>
 </div>
@@ -218,7 +219,7 @@
                echo "<a href=\"#\" class=\"pull-left\">";
               echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
                echo "</a>";
-               echo "<div class=\"media-body \">";
+               echo "<div class=\"media-body\">";
               // echo "<small class=\"pull-right text-navy\">1m ago</small>";
    echo "<strong>".$doc['CommentUser']."</strong>";
    echo "<p class=\"m-b-xs\">".$doc['CommentText'];
@@ -267,7 +268,6 @@
                                    </div>
                                </div>
 
-                           </div>
                                    <div class="chat-form">
                                        <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
                                            <div class="form-group">
@@ -278,6 +278,7 @@
                                            </div></div>
                                        </form>
                                    </div>
+                                  </div>
                            </div>
                            </div>
                        </div>
