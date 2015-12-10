@@ -83,16 +83,16 @@
     });
   </script>
 
-  
+
   </head>
-  
+
   <body>
 
 <div>
 <div id="wrapper" class="col-sm-12 col-md-12 col-lg-12">
 <div class="ibox-content">
     <!--<div class="row"> -->
-    <div class="col-sm-12 col-md-9 col-lg-9" id ="p_description">
+    <div class="col-sm-12 col-md-9 col-lg-9">
   <!-- <div class="col-lg-12"> -->
 <h1>Problem Description</h1>
   <h4>Category:  Environment</h4>
@@ -116,11 +116,10 @@
             </div>
         </div>
         <div class="ibox-content">
-          <div class="ibox content">
         <!--  <div class="row m-t-lg"> -->
-        
+
           <!--<div class="chat-activity-list"> -->
-        
+
                   <?php
                    require_once __DIR__.'/vendor/autoload.php';
                    $conn = r\connect('52.20.101.105');
@@ -132,7 +131,7 @@
           //fwrite($fp, '1');
           //fwrite($fp, '23');
           //fclose($fp);
-        
+
                    foreach ($result as $doc) {
                      if(isset($doc['CommentText'])) {
           //all comments for this section; order by timestamp
@@ -157,14 +156,14 @@
            echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
            echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
            echo "</div></div></div>";
-        
+
           // $data = "test2";
-        
+
           // file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
           }
           }
-        
-        
+
+
                    ?>
             <div class="chat-element">
                 <a href="#" class="pull-left">
@@ -199,7 +198,7 @@
 
 <div>
                                       <div class="col-sm-12 col-md-12 col-lg-12">
-                        
+
                             <!--  <form method="get" class="form-horizontal"> -->
 
                                         <!--<div class="row"> -->
@@ -230,7 +229,7 @@
                                       </a>
                                   </div>
                                 </div>
-                                  <div class="ibox content">
+                                  <div class="ibox-content">
                                   <p>  this is a test... </p>
                                   </div>
                                 </div>
@@ -248,7 +247,7 @@
           </a>
       </div>
 </div>
-  <div class="ibox content">
+  <div class="ibox-content">
 <!--  <div class="row m-t-lg"> -->
 
   <!--<div class="chat-activity-list"> -->
@@ -338,7 +337,7 @@
                            </div>
                        </div>
                    </div>
-                   
+
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
