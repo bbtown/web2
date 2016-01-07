@@ -63,12 +63,11 @@
     function upvote() {
 //       var comment_txt = $('#comment_txt').val();
 
-       var item_id = "80085";
-       var item_type = "Comments";
+       var item_id = '80085';
+       var item_type = 'Comments';
        var vote_down = false;
-       var vote_type = "Up";
+       var vote_type = 'Up';
        var vote_up = true;
-       var vote_user = "Beth"; 
        //comment id?
       //var comment_ts = $(time());
  //      var comment_user = $('#comment_user').val();

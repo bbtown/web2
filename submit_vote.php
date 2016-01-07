@@ -15,7 +15,7 @@ $vote_down = $_POST['vote_down'];
 $vote_type = $_POST['vote_type'];
 $vote_up = $_POST['vote_up'];
 $vote_user = $_POST['vote_user']; 
-
+$vote_ts = gmdate("l jS \of F Y h:i:s A");
 
 
 
@@ -26,7 +26,8 @@ $vote_user = $_POST['vote_user'];
 		     'VoteDown' => $vote_down,
 		     'VoteType' => $vote_type,
 		     'VoteUp' => $vote_up,
-		     'VoteUser' => $vote_user);
+		     'VoteUser' => $vote_user,
+		     'VoteTS' => $vote_ts);
 
   $result = r\db("web")->table('votes')->insert($document)->run($conn);
   echo "Thank you for voting!";
