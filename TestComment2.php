@@ -183,17 +183,6 @@
 echo $doc[VoteUpCount]." Upvotes ";
 echo $doc[VoteDownCount]." Downvotes";
 
-
-<div class="chat-form">
-        <div class="form-group">
-            <textarea class="form-control" placeholder="Comment" maxlength="500" name="comment_txt" id="comment_txt"></textarea>
-
-        <div class="text-right">
-            <button onclick="add_comment();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Post Comment</strong></button>
-        </div></div>
-    </form>
-</div>
-
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
 
