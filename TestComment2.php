@@ -45,7 +45,6 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
-
       //comment id?
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
@@ -57,11 +56,35 @@
         success: function(data) {
           alert(data);
         }
-
       });
-
     }
 
+
+    function vote() {
+//       var comment_txt = $('#comment_txt').val();
+
+       var item_id = "80085";
+       var item_type = "Comments";
+       var vote_down: false;
+       var vote_type = "Up";
+       var vote_up = true;
+       var vote_user = "Beth";
+
+
+       
+       //comment id?
+      //var comment_ts = $(time());
+ //      var comment_user = $('#comment_user').val();
+       var serialData = $('#comment_form').serialize();
+       $.ajax({
+         url: './submit_vote.php',
+         type: 'POST',
+         data: serialData,
+         success: function(data) {
+           alert(data);
+         }
+       });
+     }
     </script>
 
 
@@ -142,7 +165,6 @@
   //fwrite($fp, '1');
   //fwrite($fp, '23');
   //fclose($fp);
-
            foreach ($result as $doc) {
              if(isset($doc['CommentText'])) {
   //all comments for this section; order by timestamp
@@ -161,29 +183,26 @@
    echo "<div class=\"actions\">";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
+echo $doc[VoteUpCount]." Upvotes";
+echo $doc[VoteDownCount]." Downvotes";
+
+<!--   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
-   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
+   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>"; -->
    echo "</div></div></div>";
-
   // $data = "test2";
-
   // file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
   }
   }
-
-
            ?>
 
 
                 <!--   <div class="row m-t-lg">
                        <div class="col-sm-12 col-md-3 col-lg-3">
                            <div class="ibox float-e-margins">
-
                                <div class="ibox-content">
-
                                    <div>
                            <div class="chat-activity-list"> -->
 
