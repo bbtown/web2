@@ -59,7 +59,7 @@
       });
     }
 
-
+/*
     function vote() {
 //       var comment_txt = $('#comment_txt').val();
 
@@ -84,7 +84,7 @@
            alert(data);
          }
        });
-     }
+     }*/
     </script>
 
 
