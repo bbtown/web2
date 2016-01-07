@@ -63,11 +63,11 @@
     function upvote() {
 //       var comment_txt = $('#comment_txt').val();
 
-       var item_id = '80085';
-       var item_type = 'Comments';
-       var vote_down = false;
-       var vote_type = 'Up';
-       var vote_up = true;
+       var item_id = $('#item_id').val();
+       var item_type = $('#item_type').val();
+       var vote_down = $('#vote_down').val();
+       var vote_type = $('#vote_type').val();
+       var vote_up = $('#vote_up').val();
        //comment id?
       //var comment_ts = $(time());
  //      var comment_user = $('#comment_user').val();
@@ -186,7 +186,11 @@ echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
 
 
-
+      $doc['ItemID'] = '80085';
+      $doc['ItemType'] = 'Comments';
+      $doc['VoteDown'] = false;
+      $doc['VoteType'] = 'Up';
+      $doc['VoteUp'] = true;
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onClick=\"upvote();\"></i> Love</a>";
 
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
