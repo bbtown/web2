@@ -45,7 +45,12 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
-      //comment id?
+    var flag_count = 5;
+    var vote_up_count = 27;
+    var vote_down_count = 32'
+
+
+    //comment id?
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
       var serialData = $('#comment_form').serialize();
