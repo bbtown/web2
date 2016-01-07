@@ -45,12 +45,7 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
-    var flag_count = 5;
-    var vote_up_count = 27;
-    var vote_down_count = 32'
-
-
-    //comment id?
+      //comment id?
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
       var serialData = $('#comment_form').serialize();
@@ -191,11 +186,11 @@
 echo $doc[VoteUpCount]." Upvotes";
 echo $doc[VoteDownCount]." Downvotes";
 
-<!--   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
+   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\"></i> Love</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
-   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>"; -->
+   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>"; 
    echo "</div></div></div>";
   // $data = "test2";
   // file_put_contents($filename, $data, FILE_APPEND | LOCK_EX);
