@@ -186,11 +186,17 @@ echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
 
 
-      $doc['ItemID'] = '80085';
-      $doc['ItemType'] = 'Comments';
-      $doc['VoteDown'] = false;
-      $doc['VoteType'] = 'Up';
-      $doc['VoteUp'] = true;
+//      $doc['ItemID'] = '80085';
+      
+          echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"item_id\"></textarea>";
+          echo "<textarea class=\"form-control\" placeholder=\"Comments\" maxlength=\"500\" name=\"item_type\" id=\"item_type\"></textarea>";          
+          echo "<textarea class=\"form-control\" placeholder=\"Up\" maxlength=\"500\" name=\"comment_txt\" id=\"vote_type\"></textarea>";            
+          echo "<textarea class=\"form-control\" placeholder=\"false\" maxlength=\"500\" name=\"comment_txt\" id=\"vote_down\"></textarea>";              
+          echo "<textarea class=\"form-control\" placeholder=\"true\" maxlength=\"500\" name=\"comment_txt\" id=\"true\"></textarea>";
+    //  $doc['ItemType'] = 'Comments';
+    //  $doc['VoteDown'] = false;
+    //  $doc['VoteType'] = 'Up';
+    //  $doc['VoteUp'] = true;
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onClick=\"upvote();\"></i> Love</a>";
 
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
