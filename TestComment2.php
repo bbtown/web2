@@ -194,6 +194,7 @@ echo "
 
 
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onClick=\"upvote();\"></i> Love</a>";
+echo "<\form>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
