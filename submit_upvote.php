@@ -12,7 +12,7 @@
 $item_id = $_POST['item_id'];
 $item_type = $_POST['item_type'];
 $vote_down = false;
-$vote_type = "up";
+$vote_type = 'up';
 $vote_up = true;
 $vote_user = $_POST['vote_user']; 
 $vote_ts = gmdate("l jS \of F Y h:i:s A");
