@@ -65,15 +65,13 @@
 
        var item_id = $('#item_id').val();
        var item_type = $('#item_type').val();
-       var vote_down = $('#vote_down').val();
-       var vote_type = $('#vote_type').val();
-       var vote_up = $('#vote_up').val();
+       var vote_user = $('#vote_user').val();
        //comment id?
       //var comment_ts = $(time());
  //      var comment_user = $('#comment_user').val();
        var serialData = $('#vote_button').serialize();
        $.ajax({
-         url: './submit_vote.php',
+         url: './submit_upvote.php',
          type: 'POST',
          data: serialData,
          success: function(data) {
@@ -183,16 +181,14 @@ echo $doc[VoteUpCount]." Upvotes ";
 echo $doc[VoteDownCount]." Downvotes";
 
 echo "
-    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
-
+    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_upvote.php\">";
+//make separate php files for upvoting or downvoting.  the only thing is that it will need to get the item id and item type and up the vote count
 
 //      $doc['ItemID'] = '80085';
       
           echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"item_id\">test</textarea>";
-          echo "<textarea class=\"form-control\" placeholder=\"Comments\" maxlength=\"500\" name=\"item_type\" id=\"item_type\"></textarea>";          
-          echo "<textarea class=\"form-control\" placeholder=\"Up\" maxlength=\"500\" name=\"vote_type\" id=\"vote_type\"></textarea>";            
-          echo "<textarea class=\"form-control\" placeholder=\"false\" maxlength=\"500\" name=\"vote_down\" id=\"vote_down\"></textarea>";              
-          echo "<textarea class=\"form-control\" placeholder=\"true\" maxlength=\"500\" name=\"vote_up\" id=\"vote_up\"></textarea>";
+          echo "<textarea class=\"form-control\" placeholder=\"Comments\" maxlength=\"500\" name=\"item_type\" id=\"item_type\"></textarea>";
+          echo "<textarea class=\"form-control\" placeholder=\"Beth\" maxlength=\"500\" name=\"vote_user\" id=\"vote_user\"></textarea>";
     //  $doc['ItemType'] = 'Comments';
     //  $doc['VoteDown'] = false;
     //  $doc['VoteType'] = 'Up';
