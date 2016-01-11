@@ -58,20 +58,19 @@
         }
       });
     }
-
-
     function upvote() {
 //       var comment_txt = $('#comment_txt').val();
-
        var item_id = $('#item_id').val();
        var item_type = $('#item_type').val();
-       var vote_user = $('#vote_user').val();
+       var vote_down = $('#vote_down').val();
+       var vote_type = $('#vote_type').val();
+       var vote_up = $('#vote_up').val();
        //comment id?
       //var comment_ts = $(time());
  //      var comment_user = $('#comment_user').val();
        var serialData = $('#vote_button').serialize();
        $.ajax({
-         url: './submit_upvote.php',
+         url: './submit_vote.php',
          type: 'POST',
          data: serialData,
          success: function(data) {
@@ -179,22 +178,14 @@
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
 echo $doc[VoteUpCount]." Upvotes ";
 echo $doc[VoteDownCount]." Downvotes";
-
 echo "
-    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_upvote.php\">";
-
-//      $doc['ItemID'] = '80085';
-      
-          echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"item_id\">test</textarea>";
-          echo "<textarea class=\"form-control\" placeholder=\"Comments\" maxlength=\"500\" name=\"item_type\" id=\"item_type\"></textarea>";
-          echo "<textarea class=\"form-control\" placeholder=\"Beth\" maxlength=\"500\" name=\"vote_user\" id=\"vote_user\"></textarea>";
-    //  $doc['ItemType'] = 'Comments';
-    //  $doc['VoteDown'] = false;
-    //  $doc['VoteType'] = 'Up';
-    //  $doc['VoteUp'] = true;
+    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
+      $doc['ItemID'] = '80085';
+      $doc['ItemType'] = 'Comments';
+      $doc['VoteDown'] = false;
+      $doc['VoteType'] = 'Up';
+      $doc['VoteUp'] = true;
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onClick=\"upvote();\"></i> Love</a>";
-</form>
-
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
