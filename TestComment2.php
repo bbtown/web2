@@ -182,7 +182,6 @@ echo $doc[VoteDownCount]." Downvotes";
 
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_upvote.php\">";
-//make separate php files for upvoting or downvoting.  the only thing is that it will need to get the item id and item type and up the vote count
 
 //      $doc['ItemID'] = '80085';
       
