@@ -3,7 +3,4 @@
     "danielmewes/php-rql": "dev-master"
   }
 
-"require": {
-
-"heroku/heroku-buildpack-php":"dev-master"}
 }
