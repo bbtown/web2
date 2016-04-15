@@ -26,9 +26,9 @@
     <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
     <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
 
-    <link href="release/side-comments.js" rel="stylesheet">
-    <link href="release/side-comments.css" rel="stylesheet">
-    <link href="release/themes/default-theme.css" rel="stylesheet">
+    <link href="side-comments/release/side-comments.js" rel="stylesheet">
+    <link href="side-comments/release/side-comments.css" rel="stylesheet">
+    <link href="side-comments/release/themes/default-theme.css" rel="stylesheet">
 
 
         <!-- Morris -->
@@ -170,6 +170,7 @@
             <li>Soliciting help with home pages: IdeaScale</li>
             <li>Discussions: Reddit</li>
             <li>Where I come in:  Critical thinking component, and marrying all of these together seamlessly</li>
+<li>casetext is similar to my vision, but just a community for law</li>
         </ul>
 
     <h2>Problem Defnition</h2>
@@ -298,6 +299,12 @@
         </ul>
         <h3>Tools</h3>
         <ul>
+            <li>tableau</li>
+            <li>ushahidi/crowdmap/crisisnet</li>
+            <li>socrata</li>
+            <li>opengov?</li>
+            <li>anaconda/jupyter notebook thingy</li>
+            <li></li>
             <li><a href="https://infogr.am/">Infogram</a> - real-time and interactive</li>                  
             <li><a href="http://piktochart.com/">Piktochart</a> - has templates</li>
             <li>Product Hunt: <a href="https://www.producthunt.com/search?q=infographic"></a></li>
@@ -603,7 +610,7 @@
                     </div>
                 </div>
 
-                
+
   <div id="commentable-container" class="container commentable-container">
     <h1 class="title">
       SideComments.js In Action
@@ -618,9 +625,9 @@
       This is the default theme that comes with SideComments.js. You can easily theme SideComments to your liking by not including "default-theme.css" and just styling it all yourself.
     </p>
   </div>
-  <script src="support/js/jquery.js"></script>
-  <script src="release/side-comments.js"></script>
-  <script src="support/test_data.js"></script>
+  <script src="side-comments/support/js/jquery.js"></script>
+  <script src="side-comments/release/side-comments.js"></script>
+  <script src="side-comments/support/test_data.js"></script>
   <script>
     $(document).ready(function(){
       var SideComments = require('side-comments');
