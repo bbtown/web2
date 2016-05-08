@@ -573,6 +573,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 .btn-primary.btn-outline {
   color: #1ab394;
+  background: transparent;
 }
 .btn-success.btn-outline {
   color: #1c84c6;
