@@ -65,7 +65,7 @@
        var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
 
-       alert($(this).name);
+       alert($(this).attr('name'));
 
        $.ajax({
          url: './submit_upvote.php',
