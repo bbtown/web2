@@ -189,7 +189,7 @@ echo "
 //      $doc['VoteUp'] = true;
 
 
-          echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"text_id\"></textarea>";
+          echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"text_id\" id=\"text_id\"></textarea>";
 
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"upvote(this.name);\"><i class=\"fa fa-heart\"></i> Love</a>";
 echo "</form>";
