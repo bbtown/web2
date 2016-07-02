@@ -187,7 +187,7 @@ echo "
 
           echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"item_id\"></textarea>";
 
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"upvote()\"><i class=\"fa fa-heart\"></i> Love</a>";
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"upvote(this)\"><i class=\"fa fa-heart\"></i> Love</a>";
 echo "</form>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
