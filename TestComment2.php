@@ -58,18 +58,16 @@
         }
       });
     }
-    function upvote(e) {
+    function upvote(el) {
 
-       e = e || window.event;
-       var src = e.target || e.srcElement;
 
        var item_id = $('#item_id').val();
        var item_type = $('#item_type').val();
        var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
   
-       alert(src);
-       alert(src.attr('name'));
+       alert(el);
+       alert(el.attr('name'));
 
        $.ajax({
          url: './submit_upvote.php',
