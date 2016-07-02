@@ -295,7 +295,7 @@ echo "</form>";
     <script src="js/plugins/validate/jquery.validate.min.js"></script>
 
     <script>
-         $(document).ready(function(){
+         $(document).ready(function() {
              $("#form").validate({
                  rules: {
                      prob_desc: {
@@ -317,9 +317,9 @@ echo "</form>";
                          range: 0-75000000000
                      }
                      }
-                 }
+                 });
              });
-        });
+        
     </script>
    <!-- JSKnob -->
    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
