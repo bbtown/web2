@@ -59,17 +59,14 @@
       });
     }
     function upvote() {
-//       var comment_txt = $('#comment_txt').val();
+
        var item_id = $('#item_id').val();
        var item_type = $('#item_type').val();
-//       var vote_down = $('#vote_down').val();
-//       var vote_type = $('#vote_type').val();
-//       var vote_up = $('#vote_up').val();
-    var vote_user = $('#vote_user').val();
-       //comment id?
-      //var comment_ts = $(time());
- //      var comment_user = $('#comment_user').val();
+       var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
+
+       // alert($(this).
+
        $.ajax({
          url: './submit_upvote.php',
          type: 'POST',
@@ -189,11 +186,8 @@ echo "
 
 
           echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"item_id\"></textarea>";
-          echo "<textarea class=\"form-control\" placeholder=\"Comments\" maxlength=\"500\" name=\"item_type\" id=\"item_type\"></textarea>";
-          echo "<textarea class=\"form-control\" placeholder=\"Beth\" maxlength=\"500\" name=\"vote_user\" id=\"vote_user\"></textarea>";
 
-
-   echo "<a class=\"btn btn-xs btn-white\" onclick=\"upvote()\"><i class=\"fa fa-heart\"></i> Love</a>";
+   echo "<a class=\"btn btn-xs btn-white\ name=".$doc['id']." onclick=\"upvote()\"><i class=\"fa fa-heart\"></i> Love</a>";
 echo "</form>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
