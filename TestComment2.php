@@ -66,7 +66,9 @@
        var item_type = $('#item_type').val();
        var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
-  
+ 
+       alert(comment_id);
+ 
        //alert(el);
        //alert(el.attr('name'));
 
