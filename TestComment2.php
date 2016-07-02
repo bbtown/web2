@@ -61,13 +61,12 @@
     function upvote(comment_id) {
 
 
-       //var item_id = $('#item_id').val();
        var item_id = comment_id;
        var item_type = $('#item_type').val();
        var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
  
-       alert(comment_id);
+       alert(item_id);
  
        //alert(el);
        //alert(el.attr('name'));
@@ -190,7 +189,7 @@ echo "
 //      $doc['VoteUp'] = true;
 
 
-          echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"item_id\"></textarea>";
+          echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"item_id\" id=\"text_id\"></textarea>";
 
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"upvote(this.name);\"><i class=\"fa fa-heart\"></i> Love</a>";
 echo "</form>";
