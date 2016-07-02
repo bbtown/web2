@@ -193,7 +193,8 @@ echo "
           echo "<textarea class=\"form-control\" placeholder=\"Beth\" maxlength=\"500\" name=\"vote_user\" id=\"vote_user\"></textarea>";
 
 
-   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onclick=\"upvote();\"></i> Love</a>";
+   //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onclick=\"upvote();\"></i> Love</a>";
+   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-heart\" onclick=\"alert('test')\"></i> Love</a>";
 echo "</form>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
