@@ -71,11 +71,13 @@
        //alert(el);
        //alert(el.attr('name'));
 
+       comment_data = { item_id: comment_id }
+
        $.ajax({
          url: './submit_upvote.php',
          type: 'POST',
-         data: serialData,
-         success: function(data) {
+         data: comment_data,
+         success: function(comment_data) {
            alert(data);
          }
        });
