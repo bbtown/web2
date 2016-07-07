@@ -176,9 +176,9 @@
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
 
-$doc[VoteDownCount] = r\db("web")->table('votes')('ItemID')->count($doc[id]);
-echo $doc[VoteDownCount]." Upvotes ";
-echo $doc[VoteDownCount]." Downvotes";
+$VoteUpCount = r\db("web")->table('votes')('ItemID')->count($doc[id]);
+echo $VoteUpCount." Upvotes ";
+echo $VoteDownCount." Downvotes";
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
 //      $doc['ItemID'] = '80085';
