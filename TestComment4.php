@@ -178,11 +178,12 @@
 
 //$VoteUpCount = r\db("web")->table('votes')->filter({ItemID: $doc[id], VoteType:"up"})->count()->run($conn);
 
-$VoteUpCount = r\db("web")->table('votes')('ItemID')->count("4a3d028b-ed60-44be-ac32-c047bb7d7236")->run($conn);
+
+//$VoteUpCount = r\db("web")->table('votes')('ItemID')->count("4a3d028b-ed60-44be-ac32-c047bb7d7236")->run($conn);
 echo $VoteUpCount." Upvotes ";
 
 
-$VoteDownCount = r\db("web")->table('votes')('ItemID')->count($doc[id])->run($conn);
+$VoteDownCount = r\db("web")->table('votes')->count({ItemID: $doc[id], VoteType:"up"})->run($conn);
 //$VoteDownCount = r\db("web")->table('votes')->filter({ItemID:"4a3d028b-ed60-44be-ac32-c047bb7d7236", VoteType:"up"})->count()->run($conn);
 echo $VoteDownCount." Downvotes";
 echo "
