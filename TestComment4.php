@@ -176,8 +176,11 @@
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
 
-$VoteUpCount = r\db("web")->table('votes')('ItemID')->count($doc[id])->run($conn);
+$VoteUpCount = r\db("web")->table('votes')->filter({ItemID: $doc[id], VoteType:"up"})->count()->run($conn);
+
 echo $VoteUpCount." Upvotes ";
+
+$VoteDownCount = r\db("web")->table('votes')->filter({ItemID:"4a3d028b-ed60-44be-ac32-c047bb7d7236", VoteType:"up"})->count()->run($conn);
 echo $VoteDownCount." Downvotes";
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
