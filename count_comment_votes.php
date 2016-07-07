@@ -18,13 +18,7 @@ $comment_sentiment = $_POST['comment_sentiment'];
 $comment_ts = gmdate("l jS \of F Y h:i:s A");
 $flag_count = $_POST['flag_count'];
 $vote_down_count = $_POST['vote_down_count'];
-//$vote_up_count = $_POST['vote_up_count'];
-
-
-//$vote_down_count = 
-$vote_up_count = r\db("web")->table('votes')('ItemID')->count("4a3d028b-ed60-44be-ac32-c047bb7d7236");
-
-
+$vote_up_count = $_POST['vote_up_count'];
 //$comment_ts = getdate();
 
 $comment_user = "<-WhoIsThisGuy";
