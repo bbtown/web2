@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -46,6 +45,8 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
+//      var vote_up_count = 0;
+//      var vote_down_count = 0;
       //comment id?
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
@@ -174,7 +175,9 @@
    echo "<div class=\"actions\">";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-echo $doc[VoteUpCount]." Upvotes ";
+
+$doc[VoteDownCount] = r\db("web")->table('votes')('ItemID')->count($doc[id]);
+echo $doc[VoteDownCount]." Upvotes ";
 echo $doc[VoteDownCount]." Downvotes";
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
