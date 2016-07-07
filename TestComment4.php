@@ -176,7 +176,7 @@
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
 
-$VoteUpCount = r\db("web")->table('votes')('ItemID')->count($doc[id]);
+$VoteUpCount = r\db("web")->table('votes')('ItemID')->count($doc[id])->run($conn);
 echo $VoteUpCount." Upvotes ";
 echo $VoteDownCount." Downvotes";
 echo "
