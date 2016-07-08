@@ -77,12 +77,12 @@
        });
      }
 
-     function delete(comment_id, status) {
+     function delete(comment_id, status, AuthenticatedUser) {
        var comment_id = comment_id;
        var comment_status = status;
-       var deleted_by = $AuthenticatedUser;
+       var deleted_by = AuthenticatedUser;
        var serialData = $('#delete_button').serialize();
-       comment_data = { comment_id: comment_id, comment_status: status, deleted_by: $AuthenticatedUser}
+       comment_data = { comment_id: comment_id, comment_status: status, deleted_by: AuthenticatedUser}
        $.ajax({
          url: './delete_comment.php',
          type: 'POST',
@@ -195,7 +195,7 @@
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
 //r\db("web")->table('votes')->get($doc[id])->update('VoteUpCount' => $VoteUpCount)->run($conn);
 //echo $doc[VoteUpCount]." Upvotes ";
-echo $VoteUpCount." Upvotes";
+echo $VoteUpCount." Upvotes ";
 
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
 echo $VoteDownCount." Downvotes";
@@ -209,10 +209,15 @@ echo "
           // echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"text_id\" id=\"text_id\"></textarea>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'up');\"><i class=\"fa fa-heart\"></i> Upvote</a>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'down');\"><i class=\"fa fa-thumbs-down\"></i> Downvote</a>";
+   
+echo "</form>";
+
+echo "
+    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
 
 $AuthenticatedUser = "<-WhoIsThisGuy";
              if($AuthenticatedUser==$doc['CommentUser']) {
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name, 'delete');\"><i class=\"fa fa-trash\"></i> Delete</a>";
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name, 'delete', $AuthenticatedUser);\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 }
    
