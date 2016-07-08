@@ -43,7 +43,7 @@
       var comment_idea_id = $('#comment_idea_id').val();
       var comment_prob_id = $('#comment_prob_id').val();
       var comment_tags = $('#comment_tags').val();
-      var comment_flag = $('#comment_flag').val();
+  //    var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
 //      var vote_up_count = 0;
 //      var vote_down_count = 0;
@@ -158,7 +158,7 @@
   //fwrite($fp, '23');
   //fclose($fp);
            foreach ($result as $doc) {
-             if(isset($doc['CommentText'])) {
+             if((isset($doc['CommentText']))&&($doc['CommentStatus']=="show")) {
   //all comments for this section; order by timestamp
               //replies?
               //add to part of problem definition
@@ -176,17 +176,13 @@
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
 
-//$VoteUpCount = r\db("web")->table('votes')->filter({ItemID: $doc[id], VoteType:"up"})->count()->run($conn);
-
 
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
-//$VoteUpCount = r\db("web")->table('votes')('ItemID')->count("4a3d028b-ed60-44be-ac32-c047bb7d7236")->run($conn);
+
 echo $VoteUpCount." Upvotes ";
 
 
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
-//$VoteDownCount = r\db("web")->table('votes')->filter({ItemID:"4a3d028b-ed60-44be-ac32-c047bb7d7236", VoteType:"up"})->count()->run($conn);
-//$VoteDownCount = r\db("web")->table('votes')->filter({ItemID:"4a3d028b-ed60-44be-ac32-c047bb7d7236", VoteType:"up"})->count()->run($conn);
 echo $VoteDownCount." Downvotes";
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
