@@ -45,6 +45,8 @@
       var comment_tags = $('#comment_tags').val();
       var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
+//      var vote_up_count = 0;
+//      var vote_down_count = 0;
       //comment id?
      //var comment_ts = $(time());
 //      var comment_user = $('#comment_user').val();
@@ -64,7 +66,7 @@
        var vote_type = type;
        var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
-       comment_data = { item_id: comment_id, item_type: type }
+       comment_data = { item_id: comment_id, vote_type: type }
        $.ajax({
          url: './submit_vote.php',
          type: 'POST',
@@ -74,6 +76,7 @@
          }
        });
      }
+
     </script>
 
 
@@ -172,21 +175,27 @@
    echo "<div class=\"actions\">";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-echo $doc[VoteUpCount]." Upvotes ";
-echo $doc[VoteDownCount]." Downvotes";
+
+
+
+$VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run(\
+echo $VoteUpCount." Upvotes ";
+
+
+$VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
+echo $VoteDownCount." Downvotes";
 echo "
-    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_upvote.php\">";
+    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"vote_button\" id=\"vote_button\" action=\"submit_vote.php\">";
 //      $doc['ItemID'] = '80085';
 //      $doc['ItemType'] = 'Comments';
 //      $doc['VoteDown'] = false;
 //      $doc['VoteType'] = 'Up';
 //      $doc['VoteUp'] = true;
-
-
           // echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"text_id\" id=\"text_id\"></textarea>";
-
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'up');\"><i class=\"fa fa-heart\"></i> Upvote</a>";
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'down');\"><i class=\"fa fa-heart\"></i> Downvote</a>";
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'down');\"><i class=\"fa fa-thumbs-down\"></i> Downvote</a>";
+
+   
 echo "</form>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
