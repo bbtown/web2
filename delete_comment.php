@@ -9,6 +9,7 @@
   //  print_r($doc);
   //}
 
+$comment_id = comment_id;
 $comment_status = comment_status;
 $deleted_ts = gmdate("l jS \of F Y h:i:s A");
 $deleted_by = deleted_by;
