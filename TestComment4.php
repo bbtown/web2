@@ -77,6 +77,21 @@
        });
      }
 
+    function delete(comment_id, status) {
+       var comment_id = comment_id;
+       var comment_status = status;
+       var comment_user = $('#comment_user').val();
+       var serialData = $('#delete_button').serialize();
+       comment_data = { item_id: comment_id, vote_type: type }
+       $.ajax({
+         url: './delete_comment.php',
+         type: 'POST',
+         data: comment_data,
+         success: function(comment_data) {
+           alert(comment_data);
+         }
+       });
+     }
     </script>
 
 
@@ -178,8 +193,8 @@
 
 
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
-
-echo $VoteUpCount." Upvotes ";
+r\db("web")->table('votes')->get($doc[id])->update('VoteUpCount' => $VoteUpCount)->run($conn);
+echo $doc[VoteUpCount]." Upvotes ";
 
 
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
@@ -194,11 +209,13 @@ echo "
           // echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"text_id\" id=\"text_id\"></textarea>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'up');\"><i class=\"fa fa-heart\"></i> Upvote</a>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'down');\"><i class=\"fa fa-thumbs-down\"></i> Downvote</a>";
+//   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name, 'delete');\"><i class=\"fa fa-trash\"></i> Delete</a>";
 
    
 echo "</form>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
-   //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
+
+   echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
    echo "</div></div></div>";
