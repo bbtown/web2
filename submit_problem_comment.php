@@ -16,7 +16,7 @@ $comment_tags = $_POST['comment_tags'];
 $comment_status = "show";
 $comment_sentiment = $_POST['comment_sentiment'];
 $comment_ts = gmdate("l jS \of F Y h:i:s A");
-$flag_count = $_POST['flag_count'];
+$flag_count = 0;
 //$vote_down_count = $_POST['vote_down_count'];
 //$vote_up_count = $_POST['vote_up_count'];
 

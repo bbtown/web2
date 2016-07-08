@@ -77,21 +77,21 @@
        });
      }
 
-    function delete(comment_id, status) {
-       var comment_id = comment_id;
-       var comment_status = status;
-       var comment_user = $('#comment_user').val();
-       var serialData = $('#delete_button').serialize();
-       comment_data = { item_id: comment_id, vote_type: type }
-       $.ajax({
-         url: './delete_comment.php',
-         type: 'POST',
-         data: comment_data,
-         success: function(comment_data) {
-           alert(comment_data);
-         }
-       });
-     }
+    // function delete(comment_id, status) {
+    //   var comment_id = comment_id;
+    //   var comment_status = status;
+    //   var comment_user = $('#comment_user').val();
+    //   var serialData = $('#delete_button').serialize();
+    //   comment_data = { comment_id: comment_id, comment_status: status }
+    //   $.ajax({
+    //     url: './delete_comment.php',
+    //     type: 'POST',
+    //     data: comment_data,
+    //     success: function(comment_data) {
+    //       alert(comment_data);
+    //     }
+    //   });
+    // }
     </script>
 
 
@@ -193,9 +193,9 @@
 
 
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
-r\db("web")->table('votes')->get($doc[id])->update('VoteUpCount' => $VoteUpCount)->run($conn);
-echo $doc[VoteUpCount]." Upvotes ";
-
+//r\db("web")->table('votes')->get($doc[id])->update('VoteUpCount' => $VoteUpCount)->run($conn);
+//echo $doc[VoteUpCount]." Upvotes ";
+echo $VoteUpCount." Upvotes";
 
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
 echo $VoteDownCount." Downvotes";
