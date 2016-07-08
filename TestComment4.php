@@ -66,7 +66,7 @@
        var vote_type = type;
        var vote_user = $('#vote_user').val();
        var serialData = $('#vote_button').serialize();
-       comment_data = { item_id: comment_id, item_type: type }
+       comment_data = { item_id: comment_id, vote_type: type }
        $.ajax({
          url: './submit_vote.php',
          type: 'POST',
