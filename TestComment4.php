@@ -77,10 +77,10 @@
        });
      }
 
-      function delete(comment_id) {
-       var comment_id2 = comment_id;
+      function delete(id) {
+       var comment_id2 = id;
        //var serialData = $('#delete_button').serialize();
-       comment_data2 = { comment_id2: comment_id}
+       comment_data2 = { comment_id2: id}
        $.ajax({
          url: './delete_comment.php',
          type: 'POST',

@@ -9,7 +9,7 @@
   //  print_r($doc);
   //}
 
-//$comment_id2 = comment_id2;
+$comment_id2 = comment_id2;
 //$comment_status = comment_status;
 //$deleted_ts = gmdate("l jS \of F Y h:i:s A");
 //$deleted_by = deleted_by;
@@ -18,6 +18,6 @@
 //		  'DeletedTS' => $deleted_ts,
 //		  'DeletedbBy' => $deleted_by);
 
-  $result = r\db("web")->table('comments')->get($comment_id2)->update('CommentStatus' => "deleted")->run($conn);
+  $result = r\db("web")->table('comments')->get(comment_id2)->update('CommentStatus' => "deleted")->run($conn);
   echo "You have deleted your comment!";
 ?>
