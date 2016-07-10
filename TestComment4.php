@@ -194,7 +194,7 @@ $authenticateduser = "<-WhoIsThisGuy";
 
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"getElementById('demo').innerHTML=Date()\"><i class=\"fa fa-trash\"></i> Delete</a>";
 
-echo "<p id="\demo\"></p>";
+echo "<p id=\"demo\"></p>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 
 
