@@ -77,19 +77,6 @@
        });
      }
 
-      function delete(id) {
-       var comment_id2 = id;
-       //var serialData = $('#delete_button').serialize();
-       comment_data2 = { comment_id2: id}
-       $.ajax({
-         url: './delete_comment.php',
-         type: 'POST',
-         data: comment_data2,
-         success: function(comment_data2) {
-           alert(comment_data2);
-         }
-       });
-     }
     </script>
 
 
@@ -188,8 +175,13 @@
    echo "<div class=\"actions\">";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
+
+
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
+
 echo $VoteUpCount." Upvotes ";
+
+
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
 echo $VoteDownCount." Downvotes";
 echo "
@@ -202,16 +194,8 @@ echo "
           // echo "<textarea class=\"form-control\" placeholder=\"80085\" maxlength=\"500\" name=\"text_id\" id=\"text_id\"></textarea>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'up');\"><i class=\"fa fa-heart\"></i> Upvote</a>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'down');\"><i class=\"fa fa-thumbs-down\"></i> Downvote</a>";
+
    
-
-$authenticateduser = "<-WhoIsThisGuy";
-             if($authenticateduser==$doc['CommentUser']) {
-
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name);\"><i class=\"fa fa-trash\"></i> Delete</a>";
-   //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
-
-
-}
 echo "</form>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
