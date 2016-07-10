@@ -9,7 +9,7 @@
   //  print_r($doc);
   //}
 
-$delete_id = $_['delete_id'];
+$delete_id = $_POST['delete_id'];
 //$comment_status = comment_status;
 //$deleted_ts = gmdate("l jS \of F Y h:i:s A");
 //$deleted_by = deleted_by;
