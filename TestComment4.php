@@ -76,7 +76,6 @@
          }
        });
      }
-
     </script>
 
 
@@ -175,13 +174,8 @@
    echo "<div class=\"actions\">";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-
-
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
-
 echo $VoteUpCount." Upvotes ";
-
-
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
 echo $VoteDownCount." Downvotes";
 echo "
@@ -195,6 +189,16 @@ echo "
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'up');\"><i class=\"fa fa-heart\"></i> Upvote</a>";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"vote(this.name, 'down');\"><i class=\"fa fa-thumbs-down\"></i> Downvote</a>";
 
+$authenticateduser = "<-WhoIsThisGuy";
+             if($authenticateduser==$doc['CommentUser']) {
+
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"getElementById('demo').innerHTML=Date()\"><i class=\"fa fa-trash\"></i> Delete</a>";
+
+echo "<p id="\demo\"></p>";
+   //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
+
+
+}
    
 echo "</form>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
