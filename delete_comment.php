@@ -18,6 +18,6 @@ $comment_id2 = comment_id2;
 //		  'DeletedTS' => $deleted_ts,
 //		  'DeletedbBy' => $deleted_by);
 
-  $result = r\db("web")->table('comments')->get(comment_id2)->update('CommentStatus' => "deleted")->run($conn);
+  $result = r\db("web")->table('comments')->filter(array('id'=>(comment_id2))->update('CommentStatus' => "deleted")->run($conn);
   echo "You have deleted your comment!";
 ?>
