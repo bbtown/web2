@@ -76,6 +76,20 @@
          }
        });
      }
+
+    function delete(id) {
+       var comment_id2 = id;
+       //var serialData = $('#delete_button').serialize();
+       comment_data2 = { comment_id2: id}
+       $.ajax({
+         url: './delete_comment.php',
+         type: 'POST',
+         data: comment_data2,
+         success: function(comment_data2) {
+           alert(comment_data2);
+         }
+       });
+     }
     </script>
 
 
