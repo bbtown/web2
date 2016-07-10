@@ -77,10 +77,8 @@
        });
      }
 
-      function delete(comment_id, status) {
+      function delete(comment_id) {
        var comment_id2 = comment_id;
-       var comment_status = status;
-       var deleted_by = 'test';
        //var serialData = $('#delete_button').serialize();
        comment_data2 = { comment_id2: comment_id, comment_status: status}
        $.ajax({
@@ -210,7 +208,7 @@ echo "</form>";
 $authenticateduser = "<-WhoIsThisGuy";
              if($authenticateduser==$doc['CommentUser']) {
 
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc[id]."\" onclick=\" r\db(\"web\")->table(\'comments\')->get($doc[\'id\'])-> update(\'CommentStatus\'=>\"deleted\")->run($conn);
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name);\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 
 
