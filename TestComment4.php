@@ -210,7 +210,7 @@ echo "</form>";
 $authenticateduser = "<-WhoIsThisGuy";
              if($authenticateduser==$doc['CommentUser']) {
 
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\" r\db(\"web\")->table(\'comments\')->get($doc[\'id\'])-> update(\'CommentStatus\'=>\"deleted\")->run($conn);
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc[id]."\" onclick=\" r\db(\"web\")->table(\'comments\')->get($doc[\'id\'])-> update(\'CommentStatus\'=>\"deleted\")->run($conn);
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 
 
