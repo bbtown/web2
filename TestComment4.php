@@ -43,7 +43,7 @@
       var comment_idea_id = $('#comment_idea_id').val();
       var comment_prob_id = $('#comment_prob_id').val();
       var comment_tags = $('#comment_tags').val();
-  //    var comment_flag = $('#comment_flag').val();
+      var comment_flag = $('#comment_flag').val();
       var comment_sentiment = $('#comment_sentiment').val();
 //      var vote_up_count = 0;
 //      var vote_down_count = 0;
@@ -77,11 +77,11 @@
        });
      }
 
-     function delete(comment_id, status) {
+      function delete(comment_id, status) {
        var comment_id2 = comment_id;
        var comment_status = status;
        var deleted_by = 'test';
-       var serialData = $('#delete_button').serialize();
+       //var serialData = $('#delete_button').serialize();
        comment_data2 = { comment_id2: comment_id, comment_status: status}
        $.ajax({
          url: './delete_comment.php',
@@ -173,7 +173,7 @@
   //fwrite($fp, '23');
   //fclose($fp);
            foreach ($result as $doc) {
-             if((isset($doc['CommentText']))&&($doc['CommentStatus']=="show")) {
+             if(isset($doc['CommentText'])) {
   //all comments for this section; order by timestamp
               //replies?
               //add to part of problem definition
@@ -190,13 +190,8 @@
    echo "<div class=\"actions\">";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
-
-
 $VoteUpCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "up"))->count()->run($conn);
-//r\db("web")->table('votes')->get($doc[id])->update('VoteUpCount' => $VoteUpCount)->run($conn);
-//echo $doc[VoteUpCount]." Upvotes ";
 echo $VoteUpCount." Upvotes ";
-
 $VoteDownCount = r\db("web")->table('votes')->filter(array('ItemID' => $doc[id], 'VoteType' => "down"))->count()->run($conn);
 echo $VoteDownCount." Downvotes";
 echo "
@@ -212,20 +207,15 @@ echo "
    
 echo "</form>";
 
-
-
 $authenticateduser = "<-WhoIsThisGuy";
              if($authenticateduser==$doc['CommentUser']) {
 
-echo "
-    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
    echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name, 'delete');\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 
-echo "</form>";
 
 }
-   
+   //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-plus\"></i> Plus</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-minus\"></i> Minus</a>";
