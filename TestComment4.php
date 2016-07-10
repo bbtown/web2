@@ -77,19 +77,6 @@
        });
      }
 
-    function delete(comment_id) {
-       var comment_id2 = comment_id;
-       var serialData = $('#delete_button').serialize();
-       comment_data2 = { comment_id2: comment_id }
-       $.ajax({
-         url: './delete_comment.php',
-         type: 'POST',
-         data: comment_data2,
-         success: function(comment_data2) {
-           alert(comment_data2);
-         }
-       });
-     }
     </script>
 
 
@@ -210,11 +197,10 @@ $authenticateduser = "<-WhoIsThisGuy";
 
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
-//   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"getElementById('demo').innerHTML=Date()\"><i class=\"fa fa-trash\"></i> Delete</a>";
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"getElementById('demo').innerHTML=Date()\"><i class=\"fa fa-trash\"></i> Delete</a>";
+    echo "<p id=\"demo\"></p>";
 
-//echo "<p id=\"demo\"></p>";
-
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name);\"><i class=\"fa fa-trash\"></i> Delete</a>";
+ //  echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name);\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 
 
