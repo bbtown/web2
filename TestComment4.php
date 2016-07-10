@@ -75,11 +75,11 @@
              alert(comment_data);
            }
          });
-       }
+       };
 
       function delete_comment(comment_id) {
          var delete_id = comment_id;
-          var serialData = $('#delete_button').serialize();
+        var serialData = $('#delete_button').serialize();
          delete_data = { delete_id: comment_id }
          $.ajax({
            url: './delete_comment.php',
@@ -208,8 +208,8 @@
                if($authenticateduser==$doc['CommentUser']) {
 
 
-  echo "
-      <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
+  //echo "
+  //    <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
     // echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"getElementById('demo').innerHTML=Date()\"><i class=\"fa fa-trash\"></i> Delete</a>";
       //echo "<p id=\"demo\"></p>";
 
@@ -217,7 +217,7 @@
      //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 
 
-  echo "</form>";
+//  echo "</form>";
   }
      
      //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
