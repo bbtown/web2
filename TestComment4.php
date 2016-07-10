@@ -80,7 +80,7 @@
      function delete(comment_id, status, authenticateduser) {
        var comment_id = comment_id;
        var comment_status = status;
-       var deleted_by = authenticateduser;
+       var deleted_by = 'test';
        var serialData = $('#delete_button').serialize();
        comment_data = { comment_id: comment_id, comment_status: status, deleted_by: authenticateduser}
        $.ajax({
