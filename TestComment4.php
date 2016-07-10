@@ -80,7 +80,7 @@
     function test(comment_id) {
        var test_id = comment_id;
        var item_type = type;
-       var serialData = $('#vote_button').serialize();
+       var serialData = $('#delete_button').serialize();
        comment_data = { test_id: comment_id }
        $.ajax({
          url: './delete_comment.php',
