@@ -77,12 +77,12 @@
        });
      }
 
-     function delete(comment_id, status, AuthenticatedUser) {
+     function delete(comment_id, status, authenticateduser) {
        var comment_id = comment_id;
        var comment_status = status;
-       var deleted_by = AuthenticatedUser;
+       var deleted_by = authenticateduser;
        var serialData = $('#delete_button').serialize();
-       comment_data = { comment_id: comment_id, comment_status: status, deleted_by: AuthenticatedUser}
+       comment_data = { comment_id: comment_id, comment_status: status, deleted_by: authenticateduser}
        $.ajax({
          url: './delete_comment.php',
          type: 'POST',
@@ -215,9 +215,9 @@ echo "</form>";
 echo "
     <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
 
-$AuthenticatedUser = "<-WhoIsThisGuy";
-             if($AuthenticatedUser==$doc['CommentUser']) {
-   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name, 'delete', $AuthenticatedUser);\"><i class=\"fa fa-trash\"></i> Delete</a>";
+$authenticateduser = "<-WhoIsThisGuy";
+             if($authenticateduser==$doc['CommentUser']) {
+   echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"delete(this.name, 'delete', $authenticateduser);\"><i class=\"fa fa-trash\"></i> Delete</a>";
    //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-pencil\"></i> Edit</a>";
 }
    

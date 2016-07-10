@@ -18,6 +18,6 @@ $deleted_by = deleted_by;
 		  'DeletedTS' => $deleted_ts,
 		  'DeletedbBy' => $deleted_by);
 
-  $result = r\db("web")->table('comments')->get($comment_id)->update($document)->run($conn);
+  $result = r\db("web")->table('comments')->get($comment_id)->insert(array('DeletedTS' => $deleted_ts, 'DeletedBy' => $deleted_by))->run($conn);
   echo "You have deleted your comment!";
 ?>
