@@ -80,7 +80,7 @@
       function delete(comment_id) {
        var comment_id2 = comment_id;
        //var serialData = $('#delete_button').serialize();
-       comment_data2 = { comment_id2: comment_id, comment_status: status}
+       comment_data2 = { comment_id2: comment_id}
        $.ajax({
          url: './delete_comment.php',
          type: 'POST',
