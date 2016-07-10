@@ -59,7 +59,7 @@
             alert(data);
           }
         });
-      }
+      };
       function vote(comment_id, type) {
          var item_id = comment_id;
          var item_type = type;
@@ -75,7 +75,7 @@
              alert(comment_data);
            }
          });
-       }
+       };
 
       function delete(comment_id) {
          var delete_id = comment_id;
@@ -84,12 +84,12 @@
          $.ajax({
            url: './delete_comment.php',
            type: 'POST',
-           data: comment_data,
+           data: delete_data,
            success: function(delete_data) {
              alert(delete_data);
            }
          });
-       }
+       };
       </script>
 
 
