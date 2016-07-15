@@ -34,6 +34,7 @@ $.ajax({
       alert(data);
 }
 });
+}
 </script>
 </head>
 <body>
@@ -95,7 +96,7 @@ $.ajax({
 												        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='petition_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 														      		        </form>
 																	    ";
-                    echo "<td>".$doc['issues'.'name']."</td>";
+                    echo "<td>".$doc['issues'['name']]."</td>";
                     //echo "<td>".$doc['Tags']."</td>";
                     echo "<td>...</td>";
                     echo "<td>".$doc['url']."</td>";
