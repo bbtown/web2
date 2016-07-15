@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Problem Feed</title>
+    <title>Petition Feed</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -95,7 +95,7 @@ $.ajax({
 												        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='petition_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 														      		        </form>
 																	    ";
-                    echo "<td>".$doc['name']."</td>";
+                    echo "<td>".$doc['issues'.'name']."</td>";
                     //echo "<td>".$doc['Tags']."</td>";
                     echo "<td>...</td>";
                     echo "<td>".$doc['url']."</td>";
