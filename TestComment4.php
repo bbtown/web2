@@ -179,7 +179,11 @@
                  echo "<a href=\"#\" class=\"pull-left\">";
                  echo "<img alt=\"image\" class=\"img-circle\" src=\"img/a2.jpg\">";
                  echo "</a>";
-                 echo "<div class=\"media-body\">";
+                 if ($doc['CommentStatus'] == "deleted") {
+                     echo "<div style='opacity:0.3' class=\"media-body\">";
+                 } else {
+                     echo "<div class=\"media-body\">";
+                 }
                 // echo "<small class=\"pull-right text-navy\">1m ago</small>";
      echo "<strong>".$doc['CommentUser']."</strong>";
      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
