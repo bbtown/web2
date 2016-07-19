@@ -99,7 +99,7 @@ $.ajax({
                     //echo "<td>Array</td>";
                     //echo "<td>".$doc['Tags']."</td>";
                     echo "<td>...</td>";
-                    echo "<td>".$doc['url']."</td>";
+                    echo "<td><a href=".$doc['url'].">".$doc['ur']."</a></td>";
                     echo "<td>...</td>";
                     echo "<td>...</td>";
                     echo "<td>...</td>";
