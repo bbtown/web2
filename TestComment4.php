@@ -36,6 +36,7 @@
       <link href="side-comments/release/side-comments.css" rel="stylesheet">
       <link href="side-comments/release/themes/default-theme.css" rel="stylesheet">
 
+      <script src="js/moment.min.js"></script>
       <script>
       //how are we reading in problem id, username, and timestamp?
      function add_comment() {
@@ -363,7 +364,6 @@
               });
           });
       </script>
-      <script src="js/moment.min.js"></script>
           
   </body>
   </html>
