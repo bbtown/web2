@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "00d6b507ea4208fe0e9168083475bed1",
-    "content-hash": "95d33a7fe8eeaa12017c75c6fd795eda",
+    "hash": "db699aad0353ae30aa338f61efc9aeac",
+    "content-hash": "c0f78e9d8a747980596a568a477db707",
     "packages": [
         {
             "name": "danielmewes/php-rql",
-            "version": "dev-master",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielmewes/php-rql.git",
-                "reference": "393a49ab5c3ce2cb7f3fc5c985e612b77ce472cd"
+                "reference": "16ac6f45aade7654057d6ad409737891d83d24e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielmewes/php-rql/zipball/393a49ab5c3ce2cb7f3fc5c985e612b77ce472cd",
-                "reference": "393a49ab5c3ce2cb7f3fc5c985e612b77ce472cd",
+                "url": "https://api.github.com/repos/danielmewes/php-rql/zipball/16ac6f45aade7654057d6ad409737891d83d24e4",
+                "reference": "16ac6f45aade7654057d6ad409737891d83d24e4",
                 "shasum": ""
             },
             "require": {
@@ -26,8 +26,7 @@
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "dev-master",
-                "phpunit/phpunit": "~4.8",
-                "squizlabs/php_codesniffer": "~2.5"
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
             "autoload": {
@@ -59,7 +58,7 @@
                 "reql",
                 "rethinkdb"
             ],
-            "time": "2016-05-31 01:55:32"
+            "time": "2015-12-05 04:32:52"
         },
         {
             "name": "fightbulc/moment",
@@ -128,9 +127,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "danielmewes/php-rql": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
