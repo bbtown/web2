@@ -185,7 +185,7 @@
      echo "<strong>".$doc['CommentUser']."</strong>";
      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
      echo "</p>";
-     $time = moment($doc['CommentTS'] * 1000);
+     $time = momenti.unix($doc['CommentTS'] * 1000);
      echo $time;
      echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
      //echo "<small class=\"text-muted\">".$time.format()."</small>";

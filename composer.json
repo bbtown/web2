@@ -1,6 +1,8 @@
 {
 	"require":  {
-    "danielmewes/php-rql": "dev-master"
-  }
+            "danielmewes/php-rql": "dev-master",
+            "fightbulc/moment": "*"
+        }
+        
 
 }

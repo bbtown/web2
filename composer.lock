@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f8b7db92a24bc3517e13bf9a0ed04660",
+    "hash": "00d6b507ea4208fe0e9168083475bed1",
+    "content-hash": "95d33a7fe8eeaa12017c75c6fd795eda",
     "packages": [
         {
             "name": "danielmewes/php-rql",
@@ -12,27 +13,33 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielmewes/php-rql.git",
-                "reference": "1badce8c17d861bb01aae407e436885bfd7fd54e"
+                "reference": "393a49ab5c3ce2cb7f3fc5c985e612b77ce472cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielmewes/php-rql/zipball/1badce8c17d861bb01aae407e436885bfd7fd54e",
-                "reference": "1badce8c17d861bb01aae407e436885bfd7fd54e",
+                "url": "https://api.github.com/repos/danielmewes/php-rql/zipball/393a49ab5c3ce2cb7f3fc5c985e612b77ce472cd",
+                "reference": "393a49ab5c3ce2cb7f3fc5c985e612b77ce472cd",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "dev-master",
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
             "type": "library",
             "autoload": {
                 "files": [
-                    "src/rdb/rdb.php"
-                ]
+                    "rdb/rdb.php"
+                ],
+                "psr-4": {
+                    "r\\": "rdb/",
+                    "r\\Tests\\": "tests/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "src/"
-            ],
             "license": [
                 "Apache-2.0"
             ],
@@ -52,7 +59,70 @@
                 "reql",
                 "rethinkdb"
             ],
-            "time": "2015-08-04 07:33:46"
+            "time": "2016-05-31 01:55:32"
+        },
+        {
+            "name": "fightbulc/moment",
+            "version": "1.20.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/moment.php.git",
+                "reference": "f7c1967401fdc43e823ca31ddb9b71570670dfb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/f7c1967401fdc43e823ca31ddb9b71570670dfb6",
+                "reference": "f7c1967401fdc43e823ca31ddb9b71570670dfb6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Moment\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ashish Tilara",
+                    "email": "ashish@itcutives.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Jaroslaw Kozak",
+                    "email": "jaroslaw.kozak68@gmail.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
+            "keywords": [
+                "date",
+                "display",
+                "format",
+                "i18n",
+                "locale",
+                "manipulate",
+                "moment",
+                "parse",
+                "time",
+                "translation",
+                "validate"
+            ],
+            "time": "2016-06-29 10:33:08"
         }
     ],
     "packages-dev": [],
