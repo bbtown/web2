@@ -213,7 +213,8 @@
 
 
   echo "
-      <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
+      <form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"".$doc['id']."\" id=\"delete_button\" action=\"delete_comment.php\">";
+      //<form role=\"form\" class=\"form-horizontal\" method=\"post\" name=\"delete_button\" id=\"delete_button\" action=\"delete_comment.php\">";
     // echo "<a class=\"btn btn-xs btn-white\" name=\"".$doc['id']."\" onclick=\"getElementById('demo').innerHTML=Date()\"><i class=\"fa fa-trash\"></i> Delete</a>";
       //echo "<p id=\"demo\"></p>";
 
