@@ -84,7 +84,7 @@ $.ajax({
                          <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
-                             $result = r\db("test")->table('petitions')->run($conn);
+                             $result = r\db("test")->table('petitions')->limit(10)->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['body'])) {
 							  $retrieve_id = $doc[id];
