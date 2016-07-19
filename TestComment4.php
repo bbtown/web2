@@ -163,7 +163,7 @@
             <?php
              require_once __DIR__.'/vendor/autoload.php';
              $conn = r\connect('52.20.101.105');
-             $result = r\db("web")->table('comments')->run($conn);
+             $result = r\db("web")->table('comments')->orderBy(array('index' => CommentTS))->run($conn);
             // $filename = 'rethinkdb.js';
     //$data = "test1";
     //file_put_contents($filename, $data);
