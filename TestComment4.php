@@ -354,13 +354,15 @@
 
       <!-- iCheck -->
       <script src="js/plugins/iCheck/icheck.min.js"></script>
-          <script>
-              $(document).ready(function () {
-                  $('.i-checks').iCheck({
-                      checkboxClass: 'icheckbox_square-green',
-                      radioClass: 'iradio_square-green',
-                  });
+      <script>
+          $(document).ready(function () {
+              $('.i-checks').iCheck({
+                  checkboxClass: 'icheckbox_square-green',
+                  radioClass: 'iradio_square-green',
               });
-          </script>
+          });
+      </script>
+      <script src="js/moment.min.js"></script>
+          
   </body>
   </html>
