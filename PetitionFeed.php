@@ -96,7 +96,7 @@ $.ajax({
 												        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='petition_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 														      		        </form>
 																	    ";
-                    echo "<td>".(string)$doc['issues'][1]."</td>";
+                    echo "<td>".print_r($doc['issues'][1])."</td>";
                     //echo "<td>".$doc['Tags']."</td>";
                     echo "<td>...</td>";
                     echo "<td>".$doc['url']."</td>";
