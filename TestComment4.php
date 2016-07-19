@@ -32,7 +32,7 @@
       <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
 
-      <link href="side-comments/release/side-comments.js" rel="stylesheet">
+      <script src="side-comments/release/side-comments.js"></script>
       <link href="side-comments/release/side-comments.css" rel="stylesheet">
       <link href="side-comments/release/themes/default-theme.css" rel="stylesheet">
 
@@ -184,9 +184,9 @@
      echo "<strong>".$doc['CommentUser']."</strong>";
      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
      echo "</p>";
-     $time = moment($doc['CommentTS'] * 1000);
-     //echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
-     echo "<small class=\"text-muted\">".$time.format()."</small>";
+     //$time = moment($doc['CommentTS'] * 1000);
+     echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
+     //echo "<small class=\"text-muted\">".$time.format()."</small>";
      echo "<div class=\"actions\">";
      //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>";
      //echo "<a class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-down\"></i> Dislike </a>";
