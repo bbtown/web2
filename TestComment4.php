@@ -243,19 +243,6 @@
                                      <div>
                              <div class="chat-activity-list"> -->
 
-                                 <div class="chat-element">
-                                     <a href="#" class="pull-left">
-                                         <img alt="image" class="img-circle" src="img/a2.jpg">
-                                     </a>
-                                     <div class="media-body ">
-                                         <small class="pull-right text-navy">1m ago</small>
-                                         <strong>Mike Smith</strong>
-                                         <p class="m-b-xs">
-                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                         </p>
-                                         <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
-                                     </div>
-                                 </div>
 
                                      <div class="chat-form">
                                          <form role="form" class="form-horizontal" method="post" name="comment_form" id="comment_form" action="submit_problem_comment.php">
