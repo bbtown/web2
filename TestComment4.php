@@ -184,7 +184,8 @@
      echo "<strong>".$doc['CommentUser']."</strong>";
      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
      echo "</p>";
-     //$time = moment($doc['CommentTS'] * 1000);
+     $time = moment($doc['CommentTS'] * 1000);
+     echo $time;
      echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
      //echo "<small class=\"text-muted\">".$time.format()."</small>";
      echo "<div class=\"actions\">";
@@ -312,8 +313,6 @@
       <!-- Image cropper -->
       <script src="js/plugins/cropper/cropper.min.js"></script>
 
-      <!-- Date range use moment.js same as full calendar plugin -->
-      <script src="js/plugins/fullcalendar/moment.min.js"></script>
       <!-- Date range picker -->
       <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
       <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
