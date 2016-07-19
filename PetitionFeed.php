@@ -87,15 +87,15 @@ $.ajax({
                              $result = r\db("test")->table('petitions')->limit(10)->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['body'])) {
-							  $retrieve_id = $doc[id];
+				$retrieve_id = $doc[id];
                     echo "<tr class=\"gradeX\">";
                     echo "<td>".$doc['body']."<br>";
-				  echo 
-					  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_petition.php\">
+	            echo "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_petition.php\">
 					  	 			         <br/><br/><br/>
 												        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='petition_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 														      		        </form>
 																	    ";
+                    echo "<td></td>";
                     echo "<td>".print($doc['issues'][0]['name'])."</td>";
                     //echo "<td>".$doc['Tags']."</td>";
                     echo "<td>...</td>";
