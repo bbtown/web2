@@ -186,7 +186,7 @@
      echo "<p class=\"m-b-xs\">".$doc['CommentText'];
      echo "</p>";
      $time = new \Moment\Moment('@'.$doc['CommentTS'], 'UTC');
-     echo $time;
+     echo $time->format();
      echo "<small class=\"text-muted\">".$doc['CommentTS']."</small>";
      //echo "<small class=\"text-muted\">".$time.format()."</small>";
      echo "<div class=\"actions\">";
