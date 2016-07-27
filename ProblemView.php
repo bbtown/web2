@@ -31,8 +31,6 @@
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
-    <!-- Peity -->
-    <script src="js/plugins/peity/jquery.peity.min.js"></script>
 
 </head>
 
@@ -628,6 +626,11 @@
 
     <!-- Jquery Validate -->
     <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+
 
     <script>
          $(document).ready(function(){
