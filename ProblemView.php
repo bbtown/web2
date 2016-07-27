@@ -286,7 +286,26 @@
                       
                     </div>
 <div class="col-sm-4">
-<span class="pie-colours-1">4,7,6,5</span></div>
+<span class="pie-colours-1">4,7,6,5</span>
+
+
+
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Pie </h5>
+
+                            <div ibox-tools></div>
+                        </div>
+                        <div class="ibox-content">
+                            <div>
+                                <canvas id="doughnutChart" height="140"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+</div>
                     </div>
                     </div>
                     </div>
@@ -631,6 +650,11 @@
     <!-- Peity -->
     <script src="js/plugins/peity/jquery.peity.min.js"></script>
 
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
 
     <script>
          $(document).ready(function(){
