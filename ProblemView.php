@@ -660,9 +660,10 @@
     <!-- ChartJS-->
     <script src="js/plugins/chartJs/Chart.min.js"></script>
     <script src="js/demo/chartjs-demo.js"></script>
+    <!-- JSKnob-->
+    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
 
-
-    <script>
+<!--    <script>
          $(document).ready(function(){
 
              $("#form").validate({
@@ -690,8 +691,6 @@
              });
         });
     </script>
-   <!-- JSKnob -->
-   <script src="js/plugins/jsKnob/jquery.knob.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -936,9 +935,6 @@
 
 
     </script>
-
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
         <script>
             $(document).ready(function () {
                 $('.i-checks').iCheck({
@@ -946,7 +942,7 @@
                     radioClass: 'iradio_square-green',
                 });
             });
-        </script>
+        </script> -->
 </body>
 
 </html>
