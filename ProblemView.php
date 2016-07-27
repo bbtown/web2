@@ -358,7 +358,7 @@
                         <p>Summary: All groups are likely to be impacted at varying degrees, even if isolated from extreme weather, shortages, and society.  Scarcity in daily staples will still impact availability, costs, and technology.</p>
 
                             <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-lg-3">
                         <h5>Stakeholders Identified</h5>
                         <ul>
                                     <li>Geographic Locations:  All</li>
@@ -372,7 +372,7 @@
                                 </ul>
                                 </div>
 
-                            <div class="col-sm-4">
+                            <div class="col-lg-3">
                             <p>
                             <h5>Stakeholders Reached - Demographics</h5>
                             
@@ -391,7 +391,7 @@
                       
                     </div>
 
-                <div class="col-sm-4">
+                <div class="col-lg-6">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h5>Pie </h5>
