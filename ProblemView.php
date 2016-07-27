@@ -406,6 +406,27 @@
                     </div>
                 </div>
 
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+
+
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Pie </h5>
+
+                            <div ibox-tools></div>
+                        </div>
+                        <div class="ibox-content">
+                            <div>
+                                <canvas id="doughnutChart" height="140"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+</div>
+
 </div>
                     </div>
                     </div>
