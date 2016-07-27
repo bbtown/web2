@@ -170,7 +170,7 @@
 
 
 <!-- TESTING ZONE-->
-        <div class="row wrapper border-bottom white-bg page-heading">
+     <!--   <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
                 <h2>Chart.js</h2>
                 <ol class="breadcrumb">
@@ -188,7 +188,7 @@
             <div class="col-lg-2">
 
             </div>
-        </div>
+        </div> -->
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-6">
@@ -284,7 +284,6 @@
                                <!-- </div>
             
                             </div>
-
                                 <div 
                                 class="row">
                                      <div class="col-sm-8 col-sm-4"> -->
@@ -298,7 +297,6 @@
 
                                    <!--
                                 <div class="hr-line-dashed"></div>
-
                                         <div class="form-group"><label class="col-sm-2 control-label">Types of problems<br></label>
                                             <div class="col-sm-10">
                                         <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option1"> <i></i>There is too little of...</label></div>
@@ -392,12 +390,8 @@
                             </p> 
                       
                     </div>
-<div class="col-sm-4">
-<span class="pie-colours-1">4,7,6,5</span>
 
-
-
-                <div class="col-lg-6">
+                <div class="col-sm-4">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
                             <h5>Pie </h5>
@@ -510,7 +504,6 @@
                             <h1>Risk Identification & Mitigation</h1>
                             <h4>Risk Identification</h4>
                             <h4>Risk Mitigation</h4>
-
                       
                     </div>
                     </div>
@@ -580,7 +573,6 @@
                                         <span class="input-group-btn"> <button type="submit" class="btn btn-primary">Add
                                         </button></span> 
                                     </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -589,8 +581,6 @@
             
             <div class="row">
             <div class="col-lg-12">
-
-
                 <div class="ibox float-e-margins">
                  
                     
@@ -600,13 +590,10 @@
                                 <div class="form-group">
                  <h1>Where</h1>                   
                 <label class="font-normal">Are certain geographic areas affected?</label>
-
                 </div>
-
             </div>
                         
    
-
                 <div class="ibox-content">
                     <div class="row">
             <div class="col-lg-12">
@@ -618,11 +605,9 @@
             <p>
                 <ul>
                     <li></li>
-
                 </ul></p>
                 </div>
                 </div>
-
                <form method="get" class="form-horizontal">
                                 <div class="form-group">
               
@@ -648,14 +633,11 @@
                                 </div>
                                 </div>
                   
-
             </div>
             <div class="row">
                             
-
                                     </div>
                                 </div>
-
                                 <div class="row">
                                 <div class="form-group">
                                     <div class="col-sm-4 col-sm-offset-2">
@@ -674,8 +656,6 @@
 </script>
 <input type="button" style="font-size:9pt" value="Generate Code" onclick="document.getElementById('code').value = makeid()">
 </input>
-
-
                                 </div>
                             </form>
                         </div>
@@ -772,7 +752,6 @@
 
 <!--    <script>
          $(document).ready(function(){
-
              $("#form").validate({
                  rules: {
                      prob_desc: {
@@ -798,10 +777,8 @@
              });
         });
     </script>
-
     <script>
         $(document).ready(function(){
-
             var $image = $(".image-crop > img")
             $($image).cropper({
                 aspectRatio: 1.618,
@@ -810,20 +787,16 @@
                     // Output the result data for cropping image.
                 }
             });
-
             var $inputImage = $("#inputImage");
             if (window.FileReader) {
                 $inputImage.change(function() {
                     var fileReader = new FileReader(),
                             files = this.files,
                             file;
-
                     if (!files.length) {
                         return;
                     }
-
                     file = files[0];
-
                     if (/^image\/\w+$/.test(file.type)) {
                         fileReader.readAsDataURL(file);
                         fileReader.onload = function () {
@@ -837,31 +810,24 @@
             } else {
                 $inputImage.addClass("hide");
             }
-
             $("#download").click(function() {
                 window.open($image.cropper("getDataURL"));
             });
-
             $("#zoomIn").click(function() {
                 $image.cropper("zoom", 0.1);
             });
-
             $("#zoomOut").click(function() {
                 $image.cropper("zoom", -0.1);
             });
-
             $("#rotateLeft").click(function() {
                 $image.cropper("rotate", 45);
             });
-
             $("#rotateRight").click(function() {
                 $image.cropper("rotate", -45);
             });
-
             $("#setDrag").click(function() {
                 $image.cropper("setDragMode", "crop");
             });
-
             $('#data_1 .input-group.date').datepicker({
                 todayBtn: "linked",
                 keyboardNavigation: false,
@@ -869,7 +835,6 @@
                 calendarWeeks: true,
                 autoclose: true
             });
-
             $('#data_2 .input-group.date').datepicker({
                 startView: 1,
                 todayBtn: "linked",
@@ -878,7 +843,6 @@
                 autoclose: true,
                 format: "dd/mm/yyyy"
             });
-
             $('#data_3 .input-group.date').datepicker({
                 startView: 2,
                 todayBtn: "linked",
@@ -886,7 +850,6 @@
                 forceParse: false,
                 autoclose: true
             });
-
             $('#data_4 .input-group.date').datepicker({
                 minViewMode: 1,
                 keyboardNavigation: false,
@@ -894,42 +857,31 @@
                 autoclose: true,
                 todayHighlight: true
             });
-
             $('#data_5 .input-daterange').datepicker({
                 keyboardNavigation: false,
                 forceParse: false,
                 autoclose: true
             });
-
             var elem = document.querySelector('.js-switch');
             var switchery = new Switchery(elem, { color: '#1AB394' });
-
             var elem_2 = document.querySelector('.js-switch_2');
             var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
-
             var elem_3 = document.querySelector('.js-switch_3');
             var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
-
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green'
             });
-
             $('.demo1').colorpicker();
-
             var divStyle = $('.back-change')[0].style;
             $('#demo_apidemo').colorpicker({
                 color: divStyle.backgroundColor
             }).on('changeColor', function(ev) {
                         divStyle.backgroundColor = ev.color.toHex();
                     });
-
             $('.clockpicker').clockpicker();
-
             $('input[name="daterange"]').daterangepicker();
-
             $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
-
             $('#reportrange').daterangepicker({
                 format: 'MM/DD/YYYY',
                 startDate: moment().subtract(29, 'days'),
@@ -970,8 +922,6 @@
                 console.log(start.toISOString(), end.toISOString(), label);
                 $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
             });
-
-
         });
         var config = {
                 '.chosen-select'           : {},
@@ -983,7 +933,6 @@
             for (var selector in config) {
                 $(selector).chosen(config[selector]);
             }
-
         $("#ionrange_1").ionRangeSlider({
 //            values: [
 //                "1", "100", "500", "1,000", "5,000", "10,000", "50,000", "100,000", "250,000", "500,000", "1 million","10 million", "50 million","100 million", "500 million", "Over 1 billion"
@@ -997,7 +946,6 @@
             hideMinMax: false,
             hideFromTo: false
         });
-
         $("#ionrange_5").ionRangeSlider({
             min: 10000,
             max: 100000,
@@ -1007,9 +955,7 @@
             hideMinMax: true,
             hideFromTo: false
         });
-
         $(".dial").knob();
-
         $("#basic_slider").noUiSlider({
             start: 40,
             behaviour: 'tap',
@@ -1019,7 +965,6 @@
                 'max':  80
             }
         });
-
         $("#range_slider").noUiSlider({
             start: [ 40, 60 ],
             behaviour: 'drag',
@@ -1029,7 +974,6 @@
                 'max':  80
             }
         });
-
         $("#drag-fixed").noUiSlider({
             start: [ 40, 60 ],
             behaviour: 'drag-fixed',
@@ -1039,8 +983,6 @@
                 'max':  80
             }
         });
-
-
     </script>
         <script>
             $(document).ready(function () {
