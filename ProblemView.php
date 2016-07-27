@@ -224,20 +224,6 @@
                 <div class="col-lg-6">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>Polar Area</h5>
-
-                            <div ibox-tools></div>
-                        </div>
-                        <div class="ibox-content">
-                            <div class="text-center">
-                                <canvas id="polarChart" height="140"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
                             <h5>Pie </h5>
 
                             <div ibox-tools></div>
@@ -249,6 +235,38 @@
                         </div>
                     </div>
                 </div>
+                        <div class="col-lg-3">
+                        <h5>Stakeholders Identified</h5>
+                        <ul>
+                                    <li>Geographic Locations:  All</li>
+                                    <li>Age Groups:  All</li>
+                                    <li>Genders:  All</li>
+                                    <li>Socio-economic Brackets:  All</li>
+                                    <li>Ethnicities:  All</li>
+                                    <li>Nationalites:  All</li>
+                                    <li>Occupation:  All</li>
+                                    <li>Other Specified Groups:  All</li>
+                                </ul>
+                                </div>
+
+                            <div class="col-lg-3">
+                            <p>
+                            <h5>Stakeholders Reached - Demographics</h5>
+                            
+                                <ul>
+                                    <li>Geographic Locations: <ol><li>USA, Virginia, Chantilly (1)</li></ol></li>
+                                    <li>Age Groups: <ol><li>30 - 35 years (1)</li></ol></li>
+                                    <li>Genders: <ol><li>Female (1)</li></ol></li>
+                                    <li>Social-economic Brackets: <ol><li>Upper-middle class (1)</li></ol></li>
+                                    <li>Ethnicities: <ol><li>Asian American (1)</li></ol></li>
+                                    <li>Occupations: <ol><li>Technology (1)</li><li>Federal Government (1)</li></ol></li>
+                                    <li>World Views: <ol><li>N/A</li></ol></li>
+                                    <li>Other Specified Groups: <ol><li>N/A</li></ol></li>
+
+                                </ul>  
+                            </p> 
+                      
+                    </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
