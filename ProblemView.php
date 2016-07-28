@@ -81,9 +81,9 @@ var myChart = new Chart(ctx, {
 <body>
 <!-- TESTING ZONE-->
 
-
+<div>
 <canvas id="myChart" width="400" height="400"></canvas>
-
+</div>
 
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
