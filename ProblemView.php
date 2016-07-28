@@ -138,8 +138,8 @@ var myChart = new Chart(ctx, {
 
 
     <!-- ChartJS-->
-    <script src="js/plugins/chartJs/Chart.min.js"></script>
- <!--   <script src="js/demo/chartjs-demo.js"></script>-->
+  <!--    <script src="js/plugins/chartJs/Chart.min.js"></script>
+  <script src="js/demo/chartjs-demo.js"></script>-->
 
 
 
