@@ -463,7 +463,7 @@ var myChart = new Chart(ctx, {
                 </div>
 
 
-        <div class="wrapper wrapper-content animated fadeInRight">
+  <!--      <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="ibox float-e-margins">
@@ -494,7 +494,7 @@ var myChart = new Chart(ctx, {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
                 <div class="ibox-content">
                     <div class="row">
                         <div class="col-sm-12">
@@ -829,7 +829,7 @@ var myChart = new Chart(ctx, {
 
     <!-- ChartJS-->
     <script src="js/plugins/chartJs/Chart.min.js"></script>
-    <script src="js/demo/chartjs-demo.js"></script>
+ <!--   <script src="js/demo/chartjs-demo.js"></script>-->
     <!-- JSKnob-->
     <script src="js/plugins/jsKnob/jquery.knob.js"></script>
 
