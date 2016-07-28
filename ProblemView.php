@@ -778,6 +778,8 @@
     <!-- Jquery Validate -->
     <script src="js/plugins/validate/jquery.validate.min.js"></script>
 
+    <!-- JSKnob-->
+    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
 
     <!-- Peity -->
     <script src="js/plugins/peity/jquery.peity.min.js"></script>
@@ -792,8 +794,13 @@
     <!-- ChartJS-->
     <script src="js/plugins/chartJs/Chart.min.js"></script>
  <!--   <script src="js/demo/chartjs-demo.js"></script>-->
-    <!-- JSKnob-->
-    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
+
+
+<script src="Chart.js"></script>
+<script>
+    var myChart = new Chart({...})
+</script>
+
 
 <script>
 var ctx = document.getElementById("myChart");
