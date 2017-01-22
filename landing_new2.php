@@ -226,6 +226,15 @@ $.ajax({
               $retrieve_id = $doc[id];
           
                 echo"<div class=\"col-md-4\">";
+
+			  echo 
+			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+			      <br/><br/><br/>
+			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
+				  </form>
+			  ";
+
+
                 echo"</div>";
                 }  ?>
                 <div class="col-md-4">
