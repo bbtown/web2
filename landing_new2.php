@@ -33,6 +33,20 @@
       ga('send', 'pageview');
     </script>
 
+<script>
+    function retrieve_id() {
+var retrieve_id = $('#retrieve').val();
+var serialData = $('#retrieve').serialize();
+$.ajax({
+    url:'./retrieve_problem.php',
+    type: 'POST',
+    data: serialData,
+    success: function(data) {
+      alert(data);
+}
+});
+</script>
+
     </head>
     <body id="page-top">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -70,67 +84,112 @@
         </div>
     </div>
 
-<section id="about" class="container services">
+<section id="blurb" class="container services">
     <div class="container">
-            <div class="row">
+                        
                 <div class="col-lg-12 text-center">
+                    <div class="row">
                   <div class="navy-line"></div> 
                     <h1>SolveSpark is the world's first centralized "crowd-solving" platform</h1>
                     <p>Join in and share your ideas, insights, struggles, and dreams.  Your input will help create traction and build positive change in your community and around the world. </p>
+                    <div class="navy-line"></div>
                 </div>
-            </div>
-
-            <div class="row">
-                <!--<div class="col-lg-5 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-users big-icon pull-left"></i>
-                    <h2>Inclusion</h2>
-                    <p>SolveSpark encourages everyone to participate.  This means all ages, genders, races, classes...everyone around the world!  Everyone has perspectives and ideas that are important!</p>
+                   </div></div>
+               </section>
+<section id="icons" class="container services">
+    <div class="container">
+                        
+                <div class="col-lg-12 text-center">
+                    <div class="row">
+                <div class="col-md-1">
+                    <div class="row">
+                    <i class="fa fa-users big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Inclusion</h4>
+                    </div> 
                 </div>
-                <!--<div class="col-lg-5 col-lg-offset-1 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-bolt big-icon pull-left"></i>
-                    <h2>Empowerment</h2>
-                    <p>SolveSpark seeks the voices of the entire world, so that together, we can confront world's toughest challenges.  We are challenging the status quo by giving everyone, not only the privileged, a platform to carve out a better future.  Every human has an unbelievable amount of potential.  Let's not let it go to waste.</p>
+                
+                <div class="col-md-2">
+                    <div class="row">
+                    <i class="fa fa-bolt big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Empowerment</h4>
+                    </div> 
                 </div>
-                <!--<div class="col-lg-5 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-eye big-icon pull-left"></i>
-                    <h2>Clarity</h2>
-                    <p>How do we make sense of all of the world's wonderful insights and turn it into something as powerful as the cure for cancer, the best solutions for climate change, and the end to hunger?  With the world's absolute best data analytics.  SolveSpark will constantly push to be a game-changer in natural language processing and data analytics.</p>
+                
+                <div class="col-md-1">
+                    <div class="row">
+                    <i class="fa fa-eye big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Clarity</h4>
+                    </div> 
+                </div>                
+                <div class="col-md-2">
+                    <div class="row">
+                    <i class="fa fa-sun-o big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Transparency</h4>
+                    </div> 
                 </div>
-            </div>
-            <div class="row">
-                <!--<div class="col-lg-5 col-lg-offset-1 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-sun-o big-icon pull-left"></i>
-                    <h2>Transparency</h2>
-                    <p>Making facts, figures, and collaboration available to the world will bring legitimacy to the problem-solving process.  Showing the world how things should be versus how they really are has the power to fight corruption.</p>
+               
+                <div class="col-md-2">
+                    <div class="row">
+                    <i class="fa fa-cogs big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Critical Thinking</h4>
+                    </div> 
                 </div>
-               <!-- <div class="col-lg-5 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-cogs big-icon pull-left"></i>
-                    <h2>Critical Thinking</h2>
-                    <p>SolveSpark will help users think hard to come up with the best solutions.  Tools paired with data analytics will encourage users to think outside the box and will even alert users of biases and other logic flaws.</p>
+                
+                <div class="col-md-2">
+                    <div class="row">
+                    <i class="fa fa-puzzle-piece big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Best solutions</h4>
+                    </div> 
                 </div>
-                <!--<div class="col-lg-5 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-puzzle-piece big-icon pull-left"></i>
-                    <h2>Best solutions</h2>
-                    <p>SolveSpark will help us craft the best solutions by comparing all of the alternatives and judging them based on criteria.  This will make for more effective crowdfunding campaigns.</p>
-                </div>
-                <!--<div class="col-lg-5 features-text">-->
-                <div class="col-lg-12 features-text">
-                    <i class="fa fa-heart big-icon pull-left"></i>
-                    <h2>Positivity</h2>
-                    <p>SolveSpark is focused on creating a positive future for all.  While constructive criticism is encouraged, outright hatred or harassment will not be tolerated.  Solutions that result in the short term or long term harm of any people are not legitimate solutions.  SolveSpark will do its best to enforce these rules.</p>
+                
+                <div class="col-md-1">
+                    <div class="row">
+                    <i class="fa fa-heart big-icon"></i>
+                    </div> 
+                    <div class="row">
+                    <h4>Positivity</h4>
+                    </div> 
                 </div>
             </div>
         </div>
+</div>
 </section>
+
+<section id="submit" class="container services">
+    <div class="container">
+
+    <div class="wrapper wrapper-content">
+          <div class="col-lg-8 text-center">
+    <div class="row"> 
+        <h1>Submit a Problem</h1>
+<div class="input-group"><input type="text" class="form-control"> <span class="input-group-btn"> <button type="button" class="btn btn-primary" style=
+    "background-color: #4CAF50">Submit
+                                        </button> </span>
+                                        </div>
+                                        </div>
+                                        </div></div>
+                                        </div>
+</section>
+
+
 <section id="trending">
+    <div class="wrapper wrapper-content">
+          <div class="col-lg-12">
     <div class="row">
-                <div class="col-md-3">
+        <h1>Trending issues</h1>
+                <div class="col-md-4">
                     <div class="ibox">
                         <div class="ibox-content product-box">
 
@@ -157,10 +216,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="ibox">
-                        <div class="ibox-content product-box">
 
+         <?php
+          require_once __DIR__.'/vendor/autoload.php';
+          $conn = r\connect('52.20.101.105');
+          $result = r\db("web")->table('problems')->run($conn);
+          foreach ($result as $doc) {
+            if(isset($doc['ProblemDescription'])) {
+              $retrieve_id = $doc[id];
+          
+                echo"<div class=\"col-md-4\">";
+                echo"</div>";
+                }  ?>
+                <div class="col-md-4">
+                    <div class="ibox">
+                        <div class="ibox-content product-box">dd
                             <div class="product-imitation">
                                 [ INFO ]
                             </div>
@@ -184,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="ibox">
                         <div class="ibox-content product-box active">
 
@@ -211,7 +281,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                
+
+
+</div>
+                 <div class="row">
+                <div class="col-md-4">
                     <div class="ibox">
                         <div class="ibox-content product-box">
 
@@ -238,9 +313,116 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="ibox">
+                        <div class="ibox-content product-box">
+
+                            <div class="product-imitation">
+                                [ INFO ]
+                            </div>
+                            <div class="product-desc">
+                                <span class="product-price">
+                                    $10
+                                </span>
+                                <small class="text-muted">Category</small>
+                                <a href="#" class="product-name"> Product</a>
+
+
+
+                                <div class="small m-t-xs">
+                                    Many desktop publishing packages and web page editors now.
+                                </div>
+                                <div class="m-t text-righ">
+
+                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ibox">
+                        <div class="ibox-content product-box">
+
+                            <div class="product-imitation">
+                                [ INFO ]
+                            </div>
+                            <div class="product-desc">
+                                <span class="product-price">
+                                    $10
+                                </span>
+                                <small class="text-muted">Category</small>
+                                <a href="#" class="product-name"> Product</a>
+
+
+
+                                <div class="small m-t-xs">
+                                    Many desktop publishing packages and web page editors now.
+                                </div>
+                                <div class="m-t text-righ">
+
+                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="timeline" class="timeline gray-section">
+<!--<section id="about" class="container services">
+            <div class="row">
+                
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-users big-icon"></i>
+                    <h2>Inclusion</h2>
+                    <p>SolveSpark encourages everyone to participate.  This means all ages, genders, races, classes...everyone around the world!  Everyone has perspectives and ideas that are important!</p>
+                </div>
+                
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-bolt big-icon"></i>
+                    <h2>Empowerment</h2>
+                    <p>SolveSpark seeks the voices of the entire world, so that together, we can confront world's toughest challenges.  We are challenging the status quo by giving everyone, not only the privileged, a platform to carve out a better future.  Every human has an unbelievable amount of potential.  Let's not let it go to waste.</p>
+                </div>
+                
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-eye big-icon"></i>
+                    <h2>Clarity</h2>
+                    <p>How do we make sense of all of the world's wonderful insights and turn it into something as powerful as the cure for cancer, the best solutions for climate change, and the end to hunger?  With the world's absolute best data analytics.  SolveSpark will constantly push to be a game-changer in natural language processing and data analytics.</p>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-sun-o big-icon"></i>
+                    <h2>Transparency</h2>
+                    <p>Making facts, figures, and collaboration available to the world will bring legitimacy to the problem-solving process.  Showing the world how things should be versus how they really are has the power to fight corruption.</p>
+                </div>
+               
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-cogs big-icon"></i>
+                    <h2>Critical Thinking</h2>
+                    <p>SolveSpark will help users think hard to come up with the best solutions.  Tools paired with data analytics will encourage users to think outside the box and will even alert users of biases and other logic flaws.</p>
+                </div>
+                
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-puzzle-piece big-icon"></i>
+                    <h2>Best solutions</h2>
+                    <p>SolveSpark will help us craft the best solutions by comparing all of the alternatives and judging them based on criteria.  This will make for more effective crowdfunding campaigns.</p>
+                </div>
+                
+                <div class="col-lg-12 features-text">
+                    <i class="fa fa-heart big-icon"></i>
+                    <h2>Positivity</h2>
+                    <p>SolveSpark is focused on creating a positive future for all.  While constructive criticism is encouraged, outright hatred or harassment will not be tolerated.  Solutions that result in the short term or long term harm of any people are not legitimate solutions.  SolveSpark will do its best to enforce these rules.</p>
+                </div>
+            </div>
+        </div>
+</section>-->
+
+<!--<section id="timeline" class="timeline gray-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -260,7 +442,7 @@
                         <div class="vertical-timeline-content">
                           <h2>Outreach</h2>
                             <p>Reach out to potential interested parties and establish key relationships</p>
-                          <!--  <a href="#" class="btn btn-xs btn-primary"> More info</a>-->
+                          
                             <span class="vertical-date">Weeks 1 - 12 <br/> <small>Saturday, December 31st</small> </span>
                         </div>
                     </div>
@@ -275,7 +457,7 @@
                             <h2>Prototype</h2>
                             <p>Complete the prototype that would allow users to log in, submit information, receive alerts, and view basic analytics.
                             </p>
-                            <!--<a href="#" class="btn btn-xs btn-primary"> More info</a>-->
+                            
                             <span class="vertical-date"> Weeks 1 - 7<br/> <small>Monday, November 28th</small> </span>
                         </div>
                     </div>
@@ -287,7 +469,7 @@
                             <h2>Solicit Feedback</h2>
                             <p>Deploy website to a small group of users to begin populating database and gathering feedback to drive requirements and continuous development.
                             </p>
-                            <!--<a href="#" class="btn btn-xs btn-primary"> More info</a>-->
+                            
                             <span class="vertical-date">Weeks 7 - 12<br/> <small>Saturday, December 31st</small> </span>
                         </div>
                         </div>
@@ -306,7 +488,7 @@
         </div>
     </div>
 
-</section>
+</section>-->
 <section id="contact" class="gray-section contact">
         <div class="container">
             <div class="row m-b-lg">
@@ -322,7 +504,7 @@
                         <a href="mailto:beth-lee@solvespark.com">beth-lee@solvespark.com</a>
                     </address>
 
-                </div> </div></div>
+                </div> </div>
              <!-- <div class="col-lg-4">
             
             </div> -->
@@ -345,7 +527,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
                     <p>&copy; 2016 Beth Lee <br/></p>
                 </div>
-            </div>
+            </div></div>
 
     </section>
 
