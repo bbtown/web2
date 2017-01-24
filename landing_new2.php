@@ -214,7 +214,7 @@ $.ajax({
                         </div>
                     </div>
                 </div>
-
+</div>
 <div class="ibox-content">
 <input type="text" class="form-control input-sm m-b-xs" id="filter"
                                    placeholder="Search in table">
@@ -258,7 +258,7 @@ $.ajax({
                         echo "</div></div></div>";
        }
 }
-</div>
+?>
                 <div class="col-md-4">
                     <div class="ibox">
                         <div class="ibox-content product-box">
