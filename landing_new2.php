@@ -198,7 +198,7 @@ $.ajax({
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
                           $retrieve_id = $doc[id];
-                    echo "<div class=\"col-md-4\">";
+                    echo "<div class=\"col-md-4\" style=\"max-height: 10;overflow-y: scroll;\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
                     echo "<div class=\"product-desc\">";
