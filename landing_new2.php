@@ -205,7 +205,7 @@ $.ajax({
                     echo "<div class=\"col-md-4\" style=\"max-height: 5;\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
-                    echo "<div class=\"product-desc\">";
+                    echo "<div class=\"product-desc\" style=\"max-height:2\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
                     echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
