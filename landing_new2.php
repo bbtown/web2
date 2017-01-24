@@ -192,11 +192,11 @@ $.ajax({
                         
 <div class="row">
 <?php
-                             require_once __DIR__.'/vendor/autoload.php';
+                             $counter=0;
+			     require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
                              $count=0;
-			     $counter=0;
                              while ($counter < 13){
 			     foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
@@ -212,10 +212,11 @@ $.ajax({
                     echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
 		    echo "<div class=\"small m-t-xs\">390 Likes</div>";
 		    echo "<div class=\"small m-t xs\">".$doc['Factors']."</div>";
+		    echo "</div></div>";
                     echo "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
                               <br/><br/><br/>
                                 <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; float:none; vertical-align: bottom;\" type=\"button\"><strong>View</strong></button> </form>";
-                        echo "</div></div></div>";
+                        echo "</div>";
 		    if($count==3){
 			echo"</div><div class=\"row\">";
 			$count=0;
