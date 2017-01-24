@@ -232,7 +232,7 @@ $.ajax({
                         <th>Awareness</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody> </tbody></table>
                          <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
@@ -240,46 +240,25 @@ $.ajax({
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
 			  $retrieve_id = $doc[id];
-                    echo "<tr class=\"gradeX\">";
-                    echo "<td>".$doc['ProblemDescription']."<br>";
+                    echo "<div class=\"col-md-4\">";
+                    echo "<div>".$doc['ProblemDescription']."</div>";
 			  echo 
 			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 			      <br/><br/><br/>
 			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 				  </form>
 			  ";
-                    echo "<td>".$doc['ProblemCategory']."</td>";
-                    echo "<td>".$doc['Tags']."</td>";
-                    echo "<td>".$doc['URL']."</td>";
-                    echo "<td>".$doc['AffectedDescription']."</td>";
-                    echo "<td>".$doc['AffectedNumber']."</td>";
-                    echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
-                    echo "<td>".$doc['Factors']."</td>";
-                    echo "<td>Coming soon</td>";
-			echo "</td></tr>";
+                    echo "<div>".$doc['ProblemCategory']."</div>";
+                    echo "<div>".$doc['Tags']."</div>";
+                    echo "<div>".$doc['URL']."</div>";
+                    echo "<div>".$doc['AffectedDescription']."</div>";
+                    echo "<div>".$doc['AffectedNumber']."</div>";
+                    echo "<div>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</div>";
+                    echo "<div>".$doc['Factors']."</div>";
+			echo "</div>";
        }            
 }
 ?>
-                    </tbody>
-                    <tfoot>
-<!--                    <tr>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>Tags</th>
-                        <th data-hide="phone,tablet">URL</th>
-                        <th data-hide="phone,tablet">Affected group</th>
-                        <th># Affected</th>
-                        <th>Location</th>
-                        <th data-hide="phone,tablet">Factors</th>
-                        <th>Awareness</th>
-                    </tr> -->
-		    <tr>
-                                    <td colspan="5">
-                                        <ul class="pagination pull-right"></ul>
-                                    </td>
-                                </tr>
-                    </tfoot>
-                    </table>
                         </div>
                 <div class="col-md-4">
                     <div class="ibox">
