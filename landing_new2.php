@@ -209,10 +209,10 @@ $.ajax({
                     echo "<div class=\"product-desc\" style=\"height:3;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
-                    echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
+                    echo $doc['ProblemDescription']."<br/>";
                     echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
-		    echo "<div class=\"small m-t-xs\">390 Likes</div>";
-		    echo "<div class=\"small m-t xs\">".$doc['Factors']."</div>";
+		    echo "390 Likes<br/>";
+		    echo $doc['Factors']."<br/>";
                     echo "<div style=\"vertical-align:bottom;\"><form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
                                 <button input type=\"submit\" class=\"btn btn-primary\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; vertical-align:bottom;\" type=\"button\"><strong>View</strong></button> </form></div>";
                         echo "</div></div></div>";
