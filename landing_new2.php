@@ -190,20 +190,22 @@ $.ajax({
 </div>
 <div class="ibox-content">
                         
-
+<div class="row">
 <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
-                             foreach ($result as $doc) {
+                             $count=0;
+			     foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
                           $retrieve_id = $doc[id];
-                    echo "<div class=\"col-md-4\" style=\"max-height: 10;overflow-y: scroll;\">";
+			  $count++;
+                    echo "<div class=\"col-md-4\" style=\"max-height: 7;\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
                     echo "<div class=\"product-desc\">";
                           
-                    if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";}
+                    if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
                     echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
                     echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
 		    echo "<div class=\"small m-t-xs\">390 Likes".$doc['Factors']."</div>";
@@ -211,6 +213,10 @@ $.ajax({
                               <br/><br/><br/>
                                 <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View</strong></button> </form>";
                         echo "</div></div></div>";
+		    if(count=3){
+			echo"</div><div class=\"row\">";
+			count=0;
+			};
        }
 }
 ?>
