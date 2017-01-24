@@ -203,14 +203,13 @@ $.ajax({
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
                     echo "<div class=\"product-desc\">";
                           
-                    echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";
-                    echo "<small class=\"text-muted\">".$doc['Tags']."</div>";
+                    if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";}
                     echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
-                    echo "<div class=\"small m-t-xs\">390 Likes".$doc['Factors']."</div>";
+                    echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
+		    echo "<div class=\"small m-t-xs\">390 Likes".$doc['Factors']."</div>";
                     echo "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
                               <br/><br/><br/>
-                                <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
-                                  </form>";
+                                <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View</strong></button> </form>";
                         echo "</div></div></div>";
        }
 }
