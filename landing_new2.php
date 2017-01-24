@@ -233,33 +233,35 @@ $.ajax({
                     </tr>
                     </thead>
                     <tbody> </tbody></table>
-                         <?php
+                        
+
+<?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
-			  $retrieve_id = $doc[id];
+                          $retrieve_id = $doc[id];
                     echo "<div class=\"col-md-4\">";
-                    echo "<div>".$doc['ProblemDescription']."</div>";
-			  echo 
-			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
-			      <br/><br/><br/>
-			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
-				  </form>
-			  ";
-                    echo "<div>".$doc['ProblemCategory']."</div>";
-                    echo "<div>".$doc['Tags']."</div>";
-                    echo "<div>".$doc['URL']."</div>";
-                    echo "<div>".$doc['AffectedDescription']."</div>";
-                    echo "<div>".$doc['AffectedNumber']."</div>";
-                    echo "<div>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</div>";
-                    echo "<div>".$doc['Factors']."</div>";
-			echo "</div>";
-       }            
+                    echo "<div class=\"ibox\">";
+                    echo "<div class=\"ibox-content product-box\">";
+                    echo "<div class=\"product-imitation\">PICTURE</div>";
+                    echo "<div class=\"product-desc\">";
+                          
+                    echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";
+                    echo "<small class=\"text-muted\">".$doc['Tags']."</div>";
+                    echo "<a href=\"#\" class=\"product-name\">".$doc['ProblemDescription']."</a>";
+                    echo "<div class=\"small m-t-xs\">3,390 Likes".$doc['Factors']."</div>";
+                    echo 
+                          "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+                              <br/><br/><br/>
+                                <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
+                                  </form>
+                          ";
+                        echo "</div></div>";
+       }
 }
-?>
-                        </div>
+</div>
                 <div class="col-md-4">
                     <div class="ibox">
                         <div class="ibox-content product-box">
