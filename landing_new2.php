@@ -31,9 +31,7 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-69947100-1', 'auto');
       ga('send', 'pageview');
-    </script>
 
-<script>
     function retrieve_id() {
 var retrieve_id = $('#retrieve').val();
 var serialData = $('#retrieve').serialize();
@@ -217,23 +215,72 @@ $.ajax({
                     </div>
                 </div>
 
-         <?php
-          require_once __DIR__.'/vendor/autoload.php';
-          $conn = r\connect('52.20.101.105');
-          $result = r\db("web")->table('problems')->run($conn);
-          foreach ($result as $doc) {
-            if(isset($doc['ProblemDescription'])) {
-              $retrieve_id = $doc[id];
-          
-                echo"<div class=\"col-md-4\">";
-echo"<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+<div class="ibox-content">
+<input type="text" class="form-control input-sm m-b-xs" id="filter"
+                                   placeholder="Search in table">
+                    <table class="footable table table-stripped" data-page-size="10" data-filter=#filter> 
+                    <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th data-hide="phone,tablet">URL</th>
+                        <th data-hide="phone,tablet">Affected group</th>
+                        <th># Affected</th>
+                        <th>Location</th>
+                        <th data-hide="phone,tablet">Factors</th>
+                        <th>Awareness</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         <?php
+                             require_once __DIR__.'/vendor/autoload.php';
+                             $conn = r\connect('52.20.101.105');
+                             $result = r\db("web")->table('problems')->run($conn);
+                             foreach ($result as $doc) {
+                               if(isset($doc['ProblemDescription'])) {
+			  $retrieve_id = $doc[id];
+                    echo "<tr class=\"gradeX\">";
+                    echo "<td>".$doc['ProblemDescription']."<br>";
+			  echo 
+			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 			      <br/><br/><br/>
 			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
-				  </form>";
-
-
-                echo"</div>";
-                }  ?>
+				  </form>
+			  ";
+                    echo "<td>".$doc['ProblemCategory']."</td>";
+                    echo "<td>".$doc['Tags']."</td>";
+                    echo "<td>".$doc['URL']."</td>";
+                    echo "<td>".$doc['AffectedDescription']."</td>";
+                    echo "<td>".$doc['AffectedNumber']."</td>";
+                    echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
+                    echo "<td>".$doc['Factors']."</td>";
+                    echo "<td>Coming soon</td>";
+			echo "</td></tr>";
+       }            
+}
+?>
+                    </tbody>
+                    <tfoot>
+<!--                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                        <th data-hide="phone,tablet">URL</th>
+                        <th data-hide="phone,tablet">Affected group</th>
+                        <th># Affected</th>
+                        <th>Location</th>
+                        <th data-hide="phone,tablet">Factors</th>
+                        <th>Awareness</th>
+                    </tr> -->
+		    <tr>
+                                    <td colspan="5">
+                                        <ul class="pagination pull-right"></ul>
+                                    </td>
+                                </tr>
+                    </tfoot>
+                    </table>
+                        </div>
                 <div class="col-md-4">
                     <div class="ibox">
                         <div class="ibox-content product-box">
