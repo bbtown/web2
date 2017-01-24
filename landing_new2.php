@@ -187,52 +187,8 @@ $.ajax({
           <div class="col-lg-12">
     <div class="row">
         <h1>Trending issues</h1>
-                <div class="col-md-4">
-                    <div class="ibox">
-                        <div class="ibox-content product-box">
-
-                            <div class="product-imitation">
-                                [ INFO ]
-                            </div>
-                            <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                                <small class="text-muted">Category</small>
-                                <a href="#" class="product-name"> Product</a>
-
-
-
-                                <div class="small m-t-xs">
-                                    Many desktop publishing packages and web page editors now.
-                                </div>
-                                <div class="m-t text-righ">
-
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 </div>
 <div class="ibox-content">
-<input type="text" class="form-control input-sm m-b-xs" id="filter"
-                                   placeholder="Search in table">
-                    <table class="footable table table-stripped" data-page-size="10" data-filter=#filter> 
-                    <thead>
-                    <tr>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>Tags</th>
-                        <th data-hide="phone,tablet">URL</th>
-                        <th data-hide="phone,tablet">Affected group</th>
-                        <th># Affected</th>
-                        <th>Location</th>
-                        <th data-hide="phone,tablet">Factors</th>
-                        <th>Awareness</th>
-                    </tr>
-                    </thead>
-                    <tbody> </tbody></table>
                         
 
 <?php
@@ -244,7 +200,7 @@ $.ajax({
                           $retrieve_id = $doc[id];
                     echo "<div class=\"col-md-4\">";
                     echo "<div class=\"ibox-content product-box\">";
-                    echo "<div class=\"product-imitation\">PICTURE</div>";
+                    echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
                     echo "<div class=\"product-desc\">";
                           
                     echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";
@@ -259,146 +215,6 @@ $.ajax({
        }
 }
 ?>
-                <div class="col-md-4">
-                    <div class="ibox">
-                        <div class="ibox-content product-box">
-                            <div class="product-imitation">
-                                [ INFO ]
-                            </div>
-                            <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                                <small class="text-muted">Category</small>
-                                <a href="#" class="product-name"> Product</a>
-
-
-
-                                <div class="small m-t-xs">
-                                    Many desktop publishing packages and web page editors now.
-                                </div>
-                                <div class="m-t text-righ">
-
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="ibox">
-                        <div class="ibox-content product-box active">
-
-                            <div class="product-imitation">
-                                [ INFO ]
-                            </div>
-                            <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                                <small class="text-muted">Category</small>
-                                <a href="#" class="product-name"> Product</a>
-
-
-
-                                <div class="small m-t-xs">
-                                    Many desktop publishing packages and web page editors now.
-                                </div>
-                                <div class="m-t text-righ">
-
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-
-</div>
-                 <div class="row">
-                <div class="col-md-4">
-                    <div class="ibox">
-                        <div class="ibox-content product-box">
-
-                            <div class="product-imitation">
-                                [ INFO ]
-                            </div>
-                            <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                                <small class="text-muted">Category</small>
-                                <a href="#" class="product-name"> Product</a>
-
-
-
-                                <div class="small m-t-xs">
-                                    Many desktop publishing packages and web page editors now.
-                                </div>
-                                <div class="m-t text-righ">
-
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="ibox">
-                        <div class="ibox-content product-box">
-
-                            <div class="product-imitation">
-                                [ INFO ]
-                            </div>
-                            <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                                <small class="text-muted">Category</small>
-                                <a href="#" class="product-name"> Product</a>
-
-
-
-                                <div class="small m-t-xs">
-                                    Many desktop publishing packages and web page editors now.
-                                </div>
-                                <div class="m-t text-righ">
-
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="ibox">
-                        <div class="ibox-content product-box">
-
-                            <div class="product-imitation">
-                                [ INFO ]
-                            </div>
-                            <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                                <small class="text-muted">Category</small>
-                                <a href="#" class="product-name"> Product</a>
-
-
-
-                                <div class="small m-t-xs">
-                                    Many desktop publishing packages and web page editors now.
-                                </div>
-                                <div class="m-t text-righ">
-
-                                    <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
