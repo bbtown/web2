@@ -192,20 +192,21 @@ $.ajax({
                         
 <div class="row">
 <?php
-                             $counter=0;
 			     require_once __DIR__.'/vendor/autoload.php';
-                             $conn = r\connect('52.20.101.105');
+			     $counter=0;	
+			     $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
                              $count=0;
-                             while ($counter < 13){
 			     foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
                           $retrieve_id = $doc[id];
 			  $count++;
-                    echo "<div class=\"col-md-4\" style=\"max-height: 5;\">";
+			  $counter++;
+                    if($counter <13){
+		    echo "<div class=\"col-md-4\" style=\"max-height: 5;\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
-                    echo "<div class=\"product-desc\" style=\"max-height:2\">";
+                    echo "<div class=\"product-desc\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
                     echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
@@ -220,8 +221,7 @@ $.ajax({
 			echo"</div><div class=\"row\">";
 			$count=0;
 			};
-       };
-$counter++;
+};
 };
 }
 ?>
