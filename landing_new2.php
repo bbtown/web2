@@ -184,7 +184,7 @@ $.ajax({
 
 <section id="trending">
     <div class="wrapper wrapper-content">
-          <div class="col-lg-12">
+          <div class="col-lg-9">
     <div class="row">
         <h1>Trending issues</h1>
 </div>
@@ -196,11 +196,13 @@ $.ajax({
                              $conn = r\connect('52.20.101.105');
                              $result = r\db("web")->table('problems')->run($conn);
                              $count=0;
+			     $counter=0;
+                             while ($counter < 13){
 			     foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
                           $retrieve_id = $doc[id];
 			  $count++;
-                    echo "<div class=\"col-md-4\" style=\"max-height: 7;\">";
+                    echo "<div class=\"col-md-3\" style=\"max-height: 5;\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
                     echo "<div class=\"product-desc\">";
@@ -208,16 +210,20 @@ $.ajax({
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
                     echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
                     echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
-		    echo "<div class=\"small m-t-xs\">390 Likes".$doc['Factors']."</div>";
+		    echo "<div class=\"small m-t-xs\">390 Likes</div>";
+		    echo "<div class=\"small m-t xs\">".$doc['Factors']."</div>";
                     echo "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
                               <br/><br/><br/>
-                                <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View</strong></button> </form>";
+                                <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; position:absolute; bottom:0;\" type=\"button\"><strong>View</strong></button> </form>";
                         echo "</div></div></div>";
 		    if($count==3){
 			echo"</div><div class=\"row\">";
 			$count=0;
 			};
-       }
+			$counter++;
+
+       };
+};
 }
 ?>
         </div>
