@@ -243,20 +243,19 @@ $.ajax({
                                if(isset($doc['ProblemDescription'])) {
                           $retrieve_id = $doc[id];
                     echo "<div class=\"col-md-4\">";
-                    echo "<div class=\"ibox\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\">PICTURE</div>";
                     echo "<div class=\"product-desc\">";
                           
                     echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";
                     echo "<small class=\"text-muted\">".$doc['Tags']."</div>";
-                    echo "<div=\"#\" class=\"product-name\">".$doc['ProblemDescription']."</div>";
+                    echo "<div class=\"product-name\">".$doc['ProblemDescription']."</div>";
                     echo "<div class=\"small m-t-xs\">390 Likes".$doc['Factors']."</div>";
                     echo "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
                               <br/><br/><br/>
                                 <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
                                   </form>";
-                        echo "</div></div></div></div>";
+                        echo "</div></div></div>";
        }
 }
 </div>
