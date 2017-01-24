@@ -258,7 +258,7 @@ $.ajax({
                                 <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
                                   </form>
                           ";
-                        echo "</div></div>";
+                        echo "</div></div></div></div>";
        }
 }
 </div>
