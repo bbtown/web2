@@ -213,7 +213,7 @@ $.ajax({
                               <br/><br/><br/>
                                 <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View</strong></button> </form>";
                         echo "</div></div></div>";
-		    if(count=3){
+		    if(count==3){
 			echo"</div><div class=\"row\">";
 			count=0;
 			};
