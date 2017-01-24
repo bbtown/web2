@@ -213,10 +213,9 @@ $.ajax({
                     echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
 		    echo "<div class=\"small m-t-xs\">390 Likes</div>";
 		    echo "<div class=\"small m-t xs\">".$doc['Factors']."</div>";
-		    echo "</div></div>";
-                    echo "<div style=\"float:none; vertical-align:bottom;\"><form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+                    echo "<div style=\"vertical-align:bottom;\"><form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
                                 <button input type=\"submit\" class=\"btn btn-primary\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; vertical-align:bottom;\" type=\"button\"><strong>View</strong></button> </form></div>";
-                        echo "</div>";
+                        echo "</div></div></div>";
 		    if($count==3){
 			echo"</div><div class=\"row\">";
 			$count=0;
