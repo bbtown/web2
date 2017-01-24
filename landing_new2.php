@@ -203,7 +203,7 @@ $.ajax({
 			  $count++;
 			  $counter++;
                     if($counter <13){
-		    echo "<div class=\"col-md-4\" style=\"max-height: 5;\">";
+		    echo "<div class=\"col-md-4\" style=\"min-height: 5; max-height: 5;\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
                     echo "<div class=\"product-desc\">";
