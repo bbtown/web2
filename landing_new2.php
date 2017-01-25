@@ -206,11 +206,11 @@ $.ajax({
 		    echo "<div class=\"col-md-4\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
-                    echo "<div class=\"product-desc\" style=\"height:3;\">";
+                    echo "<div class=\"product-desc\" style=\"height=200px;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
-                    echo $doc['ProblemDescription']."<br/>";
-                    echo "<small class=\"text-muted\">".$doc['Tags']."</small>";
+                    echo "<strong>".$doc['ProblemDescription']."</strong><br/>";
+                    echo "<small class=\"text-muted\">".$doc['Tags']."</small><br/>";
 		    echo "390 Likes<br/>";
 		    echo $doc['Factors']."<br/>";
                     echo "<div style=\"vertical-align:bottom;\"><form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
