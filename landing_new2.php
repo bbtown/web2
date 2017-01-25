@@ -206,14 +206,14 @@ $.ajax({
 		    echo "<div class=\"col-md-4\" style=\"height:500px\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
-                    echo "<div class=\"product-desc\" style=\"height:200px;\">";
+                    echo "<div class=\"product-desc\" style=\"height:220px;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
 			    echo "<div style=\"height:80px;\"><strong>".$doc['ProblemDescription']."</strong></div>";
-			    echo "<div style=\"height:50px;\"><small class=\"text-muted\">Tags: ".$doc['Tags']."</small><br/>";
+			    echo "<div style=\"height:60px;\"><small class=\"text-muted\">Tags: ".$doc['Tags']."</small><br/>";
 			    echo "Influencing Factors: ".$doc['Factors']."<br/>";
 			    echo "390 Likes<br/></div>";
-			    echo "<div style=\"height:40px;\"> <form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
+			    echo "<div style=\"height:30px;\"> <form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 					<button input type=\"submit\" class=\"btn btn-primary\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; vertical-align:bottom;\" type=\"button\"><strong>View</strong></button> </form></div>";
 				echo "</div></div></div>";
 			    if($count==3){
