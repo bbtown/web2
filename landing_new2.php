@@ -206,7 +206,7 @@ $.ajax({
 		    echo "<div class=\"col-md-3\" style=\"height:500px\">";
                     echo "<div class=\"ibox-content product-box\">";
 if ($doc['ProblemCategory'] == 'Environment') {
-echo "<div class=\"product-imitation\"><i class=\"fa fa-tree big-icon\"></i></div>";
+echo "<div class=\"product-imitation\"><i class=\"fa fa-tree\"></i></div>";
 } elseif ($doc['ProblemCategory'] == 'Technology') {
 echo "<div class=\"product-imitation\"><i class=\"fa fa-rocket big-icon\"></i></div>";
 } elseif ($doc['ProblemCategory'] == 'Health') {
