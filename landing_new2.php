@@ -204,7 +204,7 @@ $.ajax({
 			  $counter++;
                     if($counter <13){
 		    echo "<div class=\"col-md-3\" style=\"height:540px\">";
-                    echo "<div class=\"ibox-content product-box\"> style=\"height:210px\">";
+                    echo "<div class=\"ibox-content product-box\" style=\"height:210px\">";
 if ($doc['ProblemCategory'] == 'Environment') {
 echo "<div class=\"product-imitation\"><i class=\"fa fa-tree big-icon\" style=\"color: #bebec3;\"></i></div>";
 } elseif ($doc['ProblemCategory'] == 'Technology') {
