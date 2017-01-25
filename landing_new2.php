@@ -205,7 +205,28 @@ $.ajax({
                     if($counter <13){
 		    echo "<div class=\"col-md-4\" style=\"height:500px\">";
                     echo "<div class=\"ibox-content product-box\">";
-                    echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
+if ($doc['ProblemCategory'] == 'Environment') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-tree big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] == 'Technology') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-rocket big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] == 'Health') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] == 'Economy') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-money big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] =='Infrastructure') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-train big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] == 'Society') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-users big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] == 'Government') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-institution big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] == 'Education') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-graduation-cap big-icon\"></i></div>";
+} elseif ($doc['ProblemCategory'] =='Science') {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-flask big-icon\"></i></div>";
+} else {
+echo "<div class=\"product-imitation\"><i class=\"fa fa-globe big-icon\"></i></div>";
+};
+
                     echo "<div class=\"product-desc\" style=\"height:220px;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
