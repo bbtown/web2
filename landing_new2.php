@@ -203,7 +203,7 @@ $.ajax({
 			  $count++;
 			  $counter++;
                     if($counter <13){
-		    echo "<div class=\"col-md-4\" style=\"height:500px\">";
+		    echo "<div class=\"col-md-3\" style=\"height:500px\">";
                     echo "<div class=\"ibox-content product-box\">";
 if ($doc['ProblemCategory'] == 'Environment') {
 echo "<div class=\"product-imitation\"><i class=\"fa fa-tree big-icon\"></i></div>";
@@ -237,7 +237,7 @@ echo "<div class=\"product-imitation\"><i class=\"fa fa-globe big-icon\"></i></d
 			    echo "<div style=\"height:30px;\"> <form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 					<button input type=\"submit\" class=\"btn btn-primary\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; vertical-align:bottom;\" type=\"button\"><strong>View</strong></button> </form></div>";
 				echo "</div></div></div>";
-			    if($count==3){
+			    if($count==4){
 				echo"</div><div class=\"row\">";
 				$count=0;
 				};
