@@ -227,11 +227,11 @@ echo "<div class=\"product-imitation\"><i class=\"fa fa-flask big-icon\"></i></d
 echo "<div class=\"product-imitation\"><i class=\"fa fa-globe big-icon\"></i></div>";
 };
 
-                    echo "<div class=\"product-desc\" style=\"height:220px;\">";
+                    echo "<div class=\"product-desc\" style=\"height:320px;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
-			    echo "<div style=\"height:80px;\"><strong>".$doc['ProblemDescription']."</strong></div>";
-			    echo "<div style=\"height:60px;\"><small class=\"text-muted\">Tags: ".$doc['Tags']."</small><br/>";
+			    echo "<div style=\"height:200px;\"><strong>".$doc['ProblemDescription']."</strong></div>";
+			    echo "<div style=\"height:90px;\"><small class=\"text-muted\">Tags: ".$doc['Tags']."</small><br/>";
 			    echo "Influencing Factors: ".$doc['Factors']."<br/>";
 			    echo "390 Likes<br/></div>";
 			    echo "<div style=\"height:30px;\"> <form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
