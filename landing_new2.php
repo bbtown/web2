@@ -169,7 +169,7 @@ $.ajax({
     <div class="container">
 
     <div class="wrapper wrapper-content">
-          <div class="col-lg-12" align="center">
+          <div class="col-md-8" align="center">
     <div class="row" align="center"> 
         <h1>Submit a Problem</h1>
 <div class="input-group"><input type="text" class="form-control"> <span class="input-group-btn"> <button type="button" class="btn btn-primary" style=
