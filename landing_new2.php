@@ -203,10 +203,10 @@ $.ajax({
 			  $count++;
 			  $counter++;
                     if($counter <13){
-		    echo "<div class=\"col-md-4\">";
+		    echo "<div class=\"col-md-4\" style=\"height:500px\">";
                     echo "<div class=\"ibox-content product-box\">";
                     echo "<div class=\"product-imitation\"><i class=\"fa fa-heart big-icon\"></i></div>";
-                    echo "<div class=\"product-desc\" style=\"height=200px;\">";
+                    echo "<div class=\"product-desc\" style=\"height:250px;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
                     echo "<strong>".$doc['ProblemDescription']."</strong><br/>";
