@@ -209,12 +209,12 @@ $.ajax({
                     echo "<div class=\"product-desc\" style=\"height:250px;\">";
                           
                     if(isset($doc['ProblemCategory'])){echo "<span class=\"product-price\">".$doc['ProblemCategory']."</span>";};
-                    echo "<strong>".$doc['ProblemDescription']."</strong><br/>";
-                    echo "<small class=\"text-muted\">".$doc['Tags']."</small><br/>";
+                    echo "<div style=\"height:150px;\"><strong>".$doc['ProblemDescription']."</strong></div";
+                    echo "<div style=\"height:100px;\"><small class=\"text-muted\">".$doc['Tags']."</small><br/>";
 		    echo "390 Likes<br/>";
 		    echo $doc['Factors']."<br/>";
                     echo "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
-                                <button input type=\"submit\" class=\"btn btn-primary\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; vertical-align:bottom;\" type=\"button\"><strong>View</strong></button> </form>";
+                                <button input type=\"submit\" class=\"btn btn-primary\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%; vertical-align:bottom;\" type=\"button\"><strong>View</strong></button> </form></div>";
                         echo "</div></div></div>";
 		    if($count==3){
 			echo"</div><div class=\"row\">";
