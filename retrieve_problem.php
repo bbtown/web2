@@ -371,6 +371,29 @@
             <div class="col-lg-9">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
+
+<table><tbody>
+<tr>         
+                        <td>Wysihtml5 (now support bootstrap 3 !!!). <a href="#" id="pencil"><i class="icon-pencil" style="padding-right: 5px"></i>[edit]</a></td>
+                        <td>
+                          <div id="note" data-pk="1" data-type="wysihtml5" data-toggle="manual" data-title="Enter notes" data-placement="top">
+                            <h3>WYSIWYG</h3>
+                            WYSIWYG means <i>What You See Is What You Get</i>.<br>
+                            But may also refer to:
+                              <ul>
+                                <li>WYSIWYG (album), a 2000 album by Chumbawamba</li>
+                                <li>"Whatcha See is Whatcha Get", a 1971 song by The Dramatics</li>
+                                <li>WYSIWYG Film Festival, an annual Christian film festival</li>
+                              </ul>
+                              <i>Source:</i> <a href="http://en.wikipedia.org/wiki/WYSIWYG_%28disambiguation%29">wikipedia.org</a> 
+                            
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
 <h1>Problem Description</h1>
 <div class="ibox-content">
 <?php
