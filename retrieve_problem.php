@@ -30,9 +30,11 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-
+<link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
     <style>
    </style>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
 
     <script>
    function add_comment() {
@@ -1081,6 +1083,34 @@ else {echo "<h4>Impact Type: </h4>";};
                     </div>
                     </div>
                 </div>
+
+<div clas="ibox-content">
+
+<table>
+<tbody>
+<tr>         
+                        <td>Wysihtml5 (now support bootstrap 3 !!!). <a href="#" id="pencil"><i class="icon-pencil" style="padding-right: 5px"></i>[edit]</a></td>
+                        <td>
+                          <div id="note" data-pk="1" data-type="wysihtml5" data-toggle="manual" data-title="Enter notes" data-placement="top">
+                            <h3>WYSIWYG</h3>
+                            WYSIWYG means <i>What You See Is What You Get</i>.<br>
+                            But may also refer to:
+                              <ul>
+                                <li>WYSIWYG (album), a 2000 album by Chumbawamba</li>
+                                <li>"Whatcha See is Whatcha Get", a 1971 song by The Dramatics</li>
+                                <li>WYSIWYG Film Festival, an annual Christian film festival</li>
+                              </ul>
+                              <i>Source:</i> <a href="http://en.wikipedia.org/wiki/WYSIWYG_%28disambiguation%29">wikipedia.org</a> 
+                            
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+</div>
+
                     </div>
                     </div>
                 </div>
