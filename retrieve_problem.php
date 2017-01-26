@@ -1202,7 +1202,25 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-
+	<!--bootstrap 3 -->
+        <link href="bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap.css" rel="stylesheet">
+        <script src="bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap.js"></script>
+    
+        
+        <!-- x-editable (bootstrap 3) -->
+        <link href="bootstrap3-editable-1.5.1/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+        <script src="bootstrap3-editable-1.5.1/bootstrap3-editable/js/bootstrap-editable.js"></script>
+       
+        <!-- typeaheadjs -->
+        <link href="bootstrap3-editable-1.5.1/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css" rel="stylesheet">
+        <script src="bootstrap3-editable-1.5.1/inputs-ext/typeaheadjs/lib/typeahead.js"></script>         
+        <script src="bootstrap3-editable-1.5.1/inputs-ext/typeaheadjs/typeaheadjs.js"></script>         
+        
+        <!-- wysihtml5 -->
+        <link href="bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.3/bootstrap-wysihtml5-0.0.3.css" rel="stylesheet">  
+        <script src="bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.3/wysihtml5-0.3.0.min.js"></script>  
+        <script src="bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.3/bootstrap-wysihtml5-0.0.3.min.js"></script>
+        <script src="bootstrap3-editable-1.5.1/inputs-ext/wysihtml5/wysihtml5-0.0.3.js"></script>
     <script>
          $(document).ready(function(){
              $("#form").validate({
