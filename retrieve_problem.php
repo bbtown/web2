@@ -372,6 +372,30 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
 
+
+<a href="#" id="username">superuser</a>
+    $('#username').editable({
+                               type:  'text',
+                               pk:    1,
+                               name:  'username',
+                               url:   'post.php',  
+                               title: 'Enter username'
+                            });
+
+
+<a href="#" id="username" data-type="text" data-pk="1" data-name="username" data-url="post.php" data-original-title="Enter username">superuser</a>
+$('#username').editable();
+
+<a href="#" id="comments">awesome<br>user!</a>
+    $('#comments').editable({
+                               type:  'textarea',
+                               pk:    1,
+                               name:  'comments',
+                               url:   'post.php',  
+                               title: 'Enter comments'
+                            });
+
+
 <table><tbody>
 <tr>         
                         <td>Wysihtml5 (now support bootstrap 3 !!!). <a href="#" id="pencil"><i class="icon-pencil" style="padding-right: 5px"></i>[edit]</a></td>
