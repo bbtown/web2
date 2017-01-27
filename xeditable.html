@@ -258,6 +258,19 @@ user!</a></td>
             }
         }
     });</script>
+
+
+    <a href="#" id="comments">awesome<br>user!</a>
+<script>
+
+    $('#comments').editable({
+                               type:  'textarea',
+                               pk:    1,
+                               name:  'comments',
+                               url:   'post.php',  
+                               title: 'Enter comments'
+                            });
+</script>
 		<ul>
                     <li><a href="http://jsfiddle.net/xBB5x/38" target="_blank">Submit data via PUT method</a></li>
                     <li><a href="http://jsfiddle.net/xBB5x/39" target="_blank">Autotext option for select</a></li>
