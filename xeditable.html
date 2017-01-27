@@ -242,7 +242,7 @@ user!</a></td>
                 <h3>More examples and tricks <small>(jsFiddle)</small></h3> 
                 
 
-    $('#username, #fullname').editable('submit', {
+<script>   $('#username, #fullname').editable('submit', {
         url: 'new.php',              
         data: {custom: 'text'},     
         success: function(data) {
@@ -257,7 +257,7 @@ user!</a></td>
                 msg = data.responseText; 
             }
         }
-    });
+    });</script>
 		<ul>
                     <li><a href="http://jsfiddle.net/xBB5x/38" target="_blank">Submit data via PUT method</a></li>
                     <li><a href="http://jsfiddle.net/xBB5x/39" target="_blank">Autotext option for select</a></li>
