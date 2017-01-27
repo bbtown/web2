@@ -240,7 +240,25 @@ user!</a></td>
            
             <div style="float: left">             
                 <h3>More examples and tricks <small>(jsFiddle)</small></h3> 
-                <ul>
+                
+
+    $('#username, #fullname').editable('submit', {
+        url: 'new.php',              
+        data: {custom: 'text'},     
+        success: function(data) {
+            /* actions on success */
+        },
+        error: function(data) {
+            /* actions on validation error (or ajax error) */
+            var msg = '';
+            if(data.errors) {              //validation error
+                $.each(data.errors, function(k, v) { msg += k+": "+v+"<br>"; });  
+            } else if(data.responseText) {   //ajax error
+                msg = data.responseText; 
+            }
+        }
+    });
+		<ul>
                     <li><a href="http://jsfiddle.net/xBB5x/38" target="_blank">Submit data via PUT method</a></li>
                     <li><a href="http://jsfiddle.net/xBB5x/39" target="_blank">Autotext option for select</a></li>
                     <li><a href="http://jsfiddle.net/xBB5x/40" target="_blank">Display checklist as &lt;UL&gt;</a></li>
