@@ -25,7 +25,7 @@
                     'Tags' => $tags,
 		    'IdeaCategory' => $idea_cat,
 		    'URL' => $url, 
-		    'IdeaTS' -> $idea_ts);
+		    'IdeaTS' => $idea_ts);
 
   $result = r\db("web")->table('ideas')->insert($document)->run($conn);
   echo "Thank you for submitting your idea!";
