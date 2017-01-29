@@ -15,7 +15,7 @@
   $url = $_POST['url'];
   $tags = $_POST['tags'];
   $idea_cat = $_POST['idea_cat'];
- $idea_ts = time());
+ $idea_ts = time();
   //$idea_ts = gmdate("l jS \of F Y h:i:s A");
 
 //  $ideaID = $_['id'];
