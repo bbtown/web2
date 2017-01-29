@@ -34,8 +34,8 @@
 		    'AffectedNumber' => $affect_num,
 		    'GeographicLocation' => $geo_loc,
 		    'SpecificLocation' => $spec_loc,
-		    'Factors' => $factors),
-		    'ProblemTS' => $problem_ts;
+		    'Factors' => $factors,
+		    'ProblemTS' => $problem_ts);
    //		    'ProblemCategory2' => $prob_cat2);
    //		    'id' => $problemID);  
 
