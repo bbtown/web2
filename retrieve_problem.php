@@ -132,27 +132,25 @@
       <!--  <div class="row border-bottom">
       
         </div> -->
-            <div class="row wrapper border-bottom white-bg page-heading">
+           <!--  <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-7">
-                  <h4>Category</h4>
+                    <h2>Panels</h2>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">
-                              <?php echo "<strong>".$doc['ProblemCategory']."</strong>"; ?>
-                               </a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            ...
+                            <a>UI Elements</a>
                         </li>
                         <li class="active">
-                            <strong>...</strong>
+                            <strong>Panels</strong>
                         </li>
                     </ol>
                 </div>
                 <div class="col-lg-2">
 
                 </div>
-            </div>
+            </div>-->
         <div class="wrapper wrapper-content">
         <div class="row">
             <div class="col-lg-9">
