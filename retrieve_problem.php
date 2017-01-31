@@ -483,7 +483,6 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
   <div class="col-lg-9 gray-bg">
       <h1>Who</h1>
       <div class="row"> 
-      <div class="col-lg-9">
         <div class="ibox collapsed">
           <div class="ibox-title">
 <?php
@@ -521,13 +520,12 @@ else {echo "<h4>Impact Type: </h4>";};
         </div>
       </div>
   </div>
-  </div>                             
+                           
 
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
                           <div class="col-sm-8" style="padding:0px 0px 20px 200px"> 
-                            
-                 <p>
+                    
                             <h5>There are over 7 billion people in the world.  For information on the world's population check out the following:</h5>
                             
                                 <ul>
@@ -535,7 +533,6 @@ else {echo "<h4>Impact Type: </h4>";};
                                     <li><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a></li>
 
                                 </ul>  
-                            </p>
                           </div>
                         </div>
                   </div>
