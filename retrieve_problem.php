@@ -207,31 +207,6 @@
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
 
-
-<a href="#" id="username">superuser</a>
-    $('#username').editable({
-                               type:  'text',
-                               pk:    1,
-                               name:  'username',
-                               url:   'post.php',  
-                               title: 'Enter username'
-                            });
-
-
-<a href="#" id="username" data-type="text" data-pk="1" data-name="username" data-url="post.php" data-original-title="Enter username">superuser</a>
-$('#username').editable();
-
-<a href="#" id="comments">awesome<br>user!</a>
-    $('#comments').editable({
-                               type:  'textarea',
-                               pk:    1,
-                               name:  'comments',
-                               url:   'post.php',  
-                               title: 'Enter comments'
-                            });
-
-
-
 <h1>Problem Description</h1>
 <div class="ibox-content">
 <?php
@@ -361,41 +336,34 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 <!--                        <h5>Example of <small>initial</small> collapsed panel</h5> -->
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                Edit <i class="fa fa-pencil"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ibox-content">
-
-
-                                 <div class='form-group'>
-                                     <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
-
-<!--                                    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
-</label>
+        <div class="ibox-tools">
+          <a class="collapse-link">
+            Edit <i class="fa fa-pencil"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="ibox-content">
+        <div class='form-group'>
+          <label class='col-sm-2 control-label'>Problem Summary<h6>This is the only required field.</h6>
+<!--    <a onmouseover='nhpup.popup('Hint: Try to write as clearly as possible in order to maximize understanding across the widest possible audience.');'><img src='img2/help.png'></a> -->
+          </label>
 
  <div class='col-sm-10'>
-                                        <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
-                                       <!-- <span class='help-block m-b-none'>Limit 500 characters.</span> -->
-                                        
-
-
-
-
-                                </div>
+  <textarea class='form-control input-sm' rows='5' minlength='10' maxlength='500' id='prob_desc' name='prob_desc' required> </textarea>
+  <!-- <span class='help-block m-b-none'>Limit 500 characters.</span> -->                                        
+</div>
 
 
 
 <!-- END TEST -->
 
-                                <div class='form-group'>
-                                     <label class='col-sm-2 control-label'>Additional Problem Information</label>
-                                        <div class='col-sm-10'>
-                                        <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
-                                        </div>
-                                        </div>
+  <div class='form-group'>
+    <label class='col-sm-2 control-label'>Additional Problem Information</label>
+      <div class='col-sm-10'>
+        <textarea class='form-control input-sm' rows='5' maxlength='1500' name='prob_more' id='prob_more'> </textarea>
+      </div>
+  </div>
                                         
 </div></div></div></div></div>              
 
@@ -403,7 +371,8 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
-  <div class="col-lg-9"> 
+ <!-- <div class="col-lg-9"> -->
+ <div class="row">
   <div class="ibox collapsed">
   <div class="ibox-title">
 <?php
@@ -429,8 +398,8 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
     </div>
   </div>
   </div>
-  </div>
-  </div>
+</div>
+  <!--</div> -->
 
   <div class="col-lg-9">
   <div class="ibox collapsed">
@@ -447,7 +416,8 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
   </div>
   
   <div class="ibox-content">
-    <div class='form-group'>
+    <div class="row">
+      <div class='form-group'>
       <label class='col-sm-2 control-label'>Tags</label>
       <div class='col-sm-10'>
         <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> 
@@ -458,19 +428,20 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
   </div>
   </div>
   </div> 
-                    <div class="form-group">
-                                     <label class="col-sm-2 control-label">Perspective</label>
-                                        <div class="col-sm-10">
-                                        <textarea class="form-control input-sm" rows="1" maxlength="1500" name="perspective" id="perspective"> </textarea>
-                                        <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
-                                        </div>
-                                        </div>
+                    
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Perspective</label>
+    <div class="col-sm-10">
+      <textarea class="form-control input-sm" rows="1" maxlength="1500" name="perspective" id="perspective"> </textarea>
+      <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
+    </div>
+  </div>
 
-                                <div class="form-group">
-                  <label class="col-sm-2 control-label">Upload Link</label>
-                                    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
-                                    </div>
-                    </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Upload Link</label>
+    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
+    </div>
+  </div>
 
 
 
@@ -514,7 +485,8 @@ else {echo "<h4>Impact Type: </h4>";};
         </div>
       </div>
   </div>
-                           
+</div>       
+</div>                    
 
 <div class="hr-line-dashed"></div>                                
                         <div class="row">
