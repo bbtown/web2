@@ -501,21 +501,23 @@ else {echo "<h4>Impact Type: </h4>";};
       <div class="ibox-content">
          <div class='form-group'>
           <div class="row">
-            <div class=col-sm-2><label class='control-label'>Describe the group of people affected by the problem.</label></div>
-              <div class='col-sm-7'>
+            <div class="col-sm-3"><label class='control-label'>Describe the group of people affected by the problem.</label></div>
+              <div class="col-sm-6">
                 <input type='text' id='affect_desc' name='affect_desc' class='form-control input-lg' placeholder='e.g., children attending public school in Pennsylvania'> 
               </div>
             </div>
         </div>
 
         <div class='form-group'>
-          <label class='col-sm-2 control-label'>Estimate the number of people directly affected by this problem.</label>
-            <div class='col-sm-5'>
+          <div class="row">
+          <label class='col-sm-3 control-label'>Estimate the number of people directly affected by this problem.</label>
+            <div class='col-sm-6'>
               <div class='input-group'>
                   <input type='text' id='affect_num' class='form-control' placeholder='e.g., 7,290,000,000' name='affect_num' maxlength='14'>
                   <span class='help-block m-b-none'>Number must be between 1 and 7.5 billion</span> 
               </div>
             </div>
+          </div>
         </div>
       </div>
   </div>
@@ -540,7 +542,7 @@ else {echo "<h4>Impact Type: </h4>";};
                 </div>
 
             <div class="col-lg-9">
-
+                <div class="row">
 
                  <h1>Where</h1>    
                  <label class="col-sm-2 control-label">Are specific countries affected?</label>
@@ -800,35 +802,40 @@ else {echo "<h4>Impact Type: </h4>";};
                 <option value="Zimbabwe">Zimbabwe</option>
                 </select>
                 </div>
+                </div>
         
-        
-                                <div class="form-group"><label class="col-sm-2 control-label">Enter a specific area</label>
-                                  <div class="col-sm-10">
-                                    <input type="text" id="spec_loc" name="spec_loc" class="form-control input-sm" placeholder="e.g., Los Angeles, California" maxlength="250"> <span class="help-block m-b-none"></span>
-                                    </div>
-                                </div>
-                  </div>
+  <div class="form-group">
+    <div class="row">
+      <label class="col-sm-3 control-label">Enter a specific area</label>
+      <div class="col-sm-6">
+        <input type="text" id="spec_loc" name="spec_loc" class="form-control input-sm" placeholder="e.g., Los Angeles, California" maxlength="250"> <span class="help-block m-b-none"></span>
+      </div>
+    </div>
+  </div>
+  </div>
 
-<div class="hr-line-dashed"></div>
-            <div class="col-lg-9 gray-bg"> 
-                 <h1>Why</h1>                   
+  <div class="hr-line-dashed"></div>
+    <div class="col-lg-9 gray-bg"> 
+      <h1>Why</h1>                   
                 
-                <div class="col-sm-9 form-group">
-                  <label class="col-sm-2 control-label">Enter a list of factors that influence the problem.</label>
-                      <div class="input-group col-sm-10">
-                        <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
+        <div class="col-sm-9 form-group">
+          <div class="row">
+            <label class="col-sm-3 control-label">Enter a list of factors that influence the problem.</label>
+            <div class="input-group col-sm-6">
+              <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
+            </div>
 
 <br/><br/><br/>
                                 <!---
         
                 Look, it's AJAX!
                                 -->
-                                        <button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Submit</strong></button>
-                                    </div>                                    
+            <button onclick="describe_form();" class="btn btn-sm btn-primary m-t-n-xs" style="width:40%" type="button"><strong>Submit</strong></button>
+          </div>                                    
     </form>
 
-                                    </div>
-                                  </div>
+        </div>
+    </div>
                                 <!--</
                                 div> -->
 
