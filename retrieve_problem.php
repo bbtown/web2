@@ -371,8 +371,8 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
- <!-- <div class="col-lg-9"> -->
- <div class="row">
+ <div class="col-lg-9">
+ <div class="ibox-content">
   <div class="ibox collapsed">
   <div class="ibox-title">
 <?php
@@ -399,9 +399,10 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
   </div>
   </div>
 </div>
-  <!--</div> -->
+</div> 
 
   <div class="col-lg-9">
+    <div class="ibox-content">
   <div class="ibox collapsed">
   <div class="ibox-title">
 <?php
@@ -418,8 +419,8 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
   <div class="ibox-content">
     <div class="row">
       <div class='form-group'>
-      <label class='col-sm-2 control-label'>Tags</label>
-      <div class='col-sm-10'>
+      <label class='col-sm-3 control-label'>Tags</label>
+      <div class='col-sm-6'>
         <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> 
           <!--<span class='help-block m-b-none'>Separate by commas.</span>-->
       </div>
@@ -427,22 +428,25 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
   </div>
   </div>
   </div>
+  </div>
   </div> 
-                    
+
+<div class="row">                    
   <div class="form-group">
-    <label class="col-sm-2 control-label">Perspective</label>
-    <div class="col-sm-10">
+    <label class="col-sm-3 control-label">Perspective</label>
+    <div class="col-sm-6">
       <textarea class="form-control input-sm" rows="1" maxlength="1500" name="perspective" id="perspective"> </textarea>
       <span class="help-block m-b-none">Provide a little background about yourself, how you came to know about this problem, and what your standpoint is.</span>
     </div>
   </div>
-
+</div>
+<div class="row">
   <div class="form-group">
-    <label class="col-sm-2 control-label">Upload Link</label>
-    <div class="col-sm-10"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
+    <label class="col-sm-3 control-label">Upload Link</label>
+    <div class="col-sm-6"><input type="url" placeholder="http://" class="form-control" name="url" id="url"> <span class="help-block m-b-none">Have an image, video, or article that helps describe the problem?</span>
     </div>
   </div>
-
+</div>
 
 
   <div class="col-lg-9 gray-bg">
