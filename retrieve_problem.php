@@ -371,8 +371,8 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
- <div class="col-lg-9">
  <div class="ibox-content">
+ <div class="row">
   <div class="ibox collapsed">
   <div class="ibox-title">
 <?php
@@ -401,8 +401,8 @@ echo "<h4>Category: ".$doc['ProblemCategory']."</h4>";
 </div>
 </div> 
 
-  <div class="col-lg-9">
-    <div class="ibox-content">
+  <div class="ibox-content">
+    <div class="row">
   <div class="ibox collapsed">
   <div class="ibox-title">
 <?php
@@ -431,6 +431,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
   </div>
   </div> 
 
+<div class="ibox-content">
 <div class="row">                    
   <div class="form-group">
     <label class="col-sm-3 control-label">Perspective</label>
@@ -447,9 +448,9 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
     </div>
   </div>
 </div>
+</div>
 
-
-  <div class="col-lg-9 gray-bg">
+  <div class="ibox-content gray-bg">
       <h1>Who</h1>
       <div class="row"> 
         <div class="ibox collapsed">
@@ -508,7 +509,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
                 </div>
 
-            <div class="col-lg-9">
+            <div class="ibox-content">
                 <div class="row">
 
                  <h1>Where</h1>    
