@@ -538,12 +538,12 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
                 </div>
 
-            <div class="col-lg-9">
+     <!--       <div class="col-lg-9"> -->
                 <div class="row">
 
                  <h1>Where</h1>    
-                 <label class="col-sm-2 control-label">Are specific countries affected?</label>
-                <div class="form-group input-group col-sm-10">
+                 <label class="col-sm-3 control-label">Are specific countries affected?</label>
+                <div class="form-group input-group col-sm-6">
                 <select data-placeholder="Choose a country..." id="geo_loc" name="geo_loc" class="chosen-select" multiple style="width:350px;" tabindex="4">
                 <option value="">Select</option>
                 <option value="United States">United States</option>
@@ -809,15 +809,14 @@ else {echo "<h4>Impact Type: </h4>";};
       </div>
     </div>
   </div>
-  </div>
+  
 
   <div class="hr-line-dashed"></div>
-    <div class="col-lg-9 gray-bg"> 
-      <h1>Why</h1>                   
+    <h1>Why</h1>                   
                 
-        <div class="col-sm-9 form-group">
-          <div class="row">
-            <label class="col-sm-3 control-label">Enter a list of factors that influence the problem.</label>
+      <div class="col-sm-9 form-group">
+        <div class="row">
+          <label class="col-sm-3 control-label">Enter a list of factors that influence the problem.</label>
             <div class="input-group col-sm-6">
               <input type="text" id="factors" name="factors" placeholder="e.g., public awareness, funding, level of expertise" class="form-control" maxlength="1200"> <span class="help-block m-b-none">Separate by commas.</span>
             </div>
