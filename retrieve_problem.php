@@ -1,4 +1,4 @@
-CTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -403,67 +403,61 @@ echo "<p>".$doc['ProblemDescription']. "</p>";
 
 
 
-            <div class="col-lg-9"> 
-                <div class="ibox collapsed">
-                    <div class="ibox-title">
+  <div class="col-lg-9"> 
+  <div class="ibox collapsed">
+  <div class="ibox-title">
 <?php
 echo "<h4>Category: ".$doc['ProblemCategory']."</h4>"; 
 ?>
-<div class="ibox-tools">
-                            <a class="collapse-link">
-                                Edit<i class="fa fa-pencil"></i>
-                            </a>
-                          
-                        </div>
-                    </div>
-                    <div class="ibox-content">
-                                        <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
-                      <div class='col-sm-10'>
-                    <div class='i-checks col-sm-6'><label> <input type='radio' value='Environment' name='prob_cat'> <i></i> Environment</label></div>
-                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Society' name='prob_cat'> <i></i> Society</label></div>
-                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Technology' name='prob_cat'> <i></i> Technology</label></div>
-                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Government' name='prob_cat'> <i></i> Government</label></div>
-                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Health' name='prob_cat'> <i></i> Health</label></div>
-                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Education' name='prob_cat'> <i></i> Education</label></div>
-                                        <div class='i-checks col-sm-6'><label> <input type='radio' value='Infrastructure' name='prob_cat'> <i></i> Infrastructure </label></div>
-                                </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="ibox-tools">
+      <a class="collapse-link">
+        Edit<i class="fa fa-pencil"></i>
+      </a>                      
+    </div>
+  </div>
+  <div class="ibox-content">
+    <div class='form-group'><label class='col-sm-2 control-label'>Select a Primary Category: </label> 
+      <div class='col-sm-10'>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Environment' name='prob_cat'> <i></i> Environment</label></div>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Society' name='prob_cat'> <i></i> Society</label></div>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Technology' name='prob_cat'> <i></i> Technology</label></div>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Government' name='prob_cat'> <i></i> Government</label></div>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Health' name='prob_cat'> <i></i> Health</label></div>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Education' name='prob_cat'> <i></i> Education</label></div>
+        <div class='i-checks col-sm-6'><label> <input type='radio' value='Infrastructure' name='prob_cat'> <i></i> Infrastructure </label></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
-            <div class="col-lg-9">
-                <div class="ibox collapsed">
-                    <div class="ibox-title">
+  <div class="col-lg-9">
+  <div class="ibox collapsed">
+  <div class="ibox-title">
 <?php
 echo "<h4>Tags: ".$doc['Tags']."</h4>";
 ?>
 
-<div class="ibox-tools">
-                            <a class="collapse-link">
-                                Edit<i class="fa fa-pencil"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ibox-content">
-
-
-
-                  <div class='form-group'>
-                      <label class='col-sm-2 control-label'>Tags</label>
-                      <div class='col-sm-10'>
-                                    <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> 
-                                    <!--<span class='help-block m-b-none'>Separate by commas.</span>-->
-                                         </div>
-                      </div>
-
-
-
- </div>
-                </div>
-            </div>
-        </div> 
+    <div class="ibox-tools">
+      <a class="collapse-link">
+        Edit<i class="fa fa-pencil"></i>
+      </a>
+    </div>
+  </div>
+  
+  <div class="ibox-content">
+    <div class='form-group'>
+      <label class='col-sm-2 control-label'>Tags</label>
+      <div class='col-sm-10'>
+        <input type='text' id='tags' name='tags' placeholder='e.g., schools, mathematics, algebra' maxlength='500' class='form-control'> 
+          <!--<span class='help-block m-b-none'>Separate by commas.</span>-->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div> 
                     <div class="form-group">
                                      <label class="col-sm-2 control-label">Perspective</label>
                                         <div class="col-sm-10">
@@ -538,7 +532,7 @@ else {echo "<h4>Impact Type: </h4>";};
                   </div>
                 </div>
 
-     <!--       <div class="col-lg-9"> -->
+            <div class="col-lg-9">
                 <div class="row">
 
                  <h1>Where</h1>    
@@ -809,7 +803,7 @@ else {echo "<h4>Impact Type: </h4>";};
       </div>
     </div>
   </div>
-  
+  </div>
 
   <div class="hr-line-dashed"></div>
     <h1>Why</h1>                   
