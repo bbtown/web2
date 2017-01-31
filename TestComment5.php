@@ -125,11 +125,13 @@
                               <!--  <form method="get" class="form-horizontal"> -->
 
                                           <!--<div class="row"> -->
-                                          <div class="col-sm-12 col-md-9 col-lg-9">
-                                              <div class="ibox-content"><div id="page-wrapper" class="gray-bg col-lg-9 ">
-        <div class="row border-bottom">
+                                       <!--   <div class="col-sm-12 col-md-9 col-lg-9">
+                                              <div class="ibox-content">-->
+
+    <div id="page-wrapper" class="gray-bg col-lg-9 ">
+      <!--  <div class="row border-bottom">
       
-        </div>
+        </div> -->
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-7">
                     <h2>Panels</h2>
@@ -767,7 +769,7 @@ else {echo "<h4>Impact Type: </h4>";};
 
 
 
-                                  
+
                                 <!--BEGIN COMMENTS -->
 
     <div class="col-sm-12 col-md-3 col-lg-3">
