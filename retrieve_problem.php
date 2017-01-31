@@ -119,7 +119,7 @@
   <div id="wrapper" class="col-sm-12 col-md-12 col-lg-12">
   <div class="ibox-content">
     <div class="row"> -->
-
+<div class="row">
   <div class="col-sm-12 col-md-12 col-lg-12">
 
                               <!--  <form method="get" class="form-horizontal"> -->
@@ -134,16 +134,18 @@
         </div> -->
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-7">
-                    <h2>Panels</h2>
+                  <h4>Category</h4>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html">
+                              <?php echo "<strong>".$doc['ProblemCategory']."</strong>"; ?>
+                               </a>
                         </li>
                         <li>
-                            <a>UI Elements</a>
+                            ...
                         </li>
                         <li class="active">
-                            <strong>Panels</strong>
+                            <strong>...</strong>
                         </li>
                     </ol>
                 </div>
@@ -356,6 +358,7 @@ echo "<h4>Tags: ".$doc['Tags']."</h4>";
                              </div>
                              </div>
                          </div>
+                       </div>
 
       <!-- Mainly scripts -->
       <script src="js/jquery-2.1.1.js"></script>
