@@ -111,7 +111,14 @@ $.ajax({
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
                     echo "<td>Coming soon</td>";
+
+
+
+echo "<tr><td><a href=retrieve_problem.php?id=$doc[id]>$doc['ProblemDescription']</a></td><td>$doc[id]</td></tr>";
+}
 			echo "</td></tr>";
+
+
        }            
 }
 ?>
