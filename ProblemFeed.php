@@ -114,7 +114,7 @@ $.ajax({
 
 
 
-echo "<tr><td><a href=\"retrieve_problem.php?id=$doc[id]\">".$doc['ProblemDescription']."</a></td><td>".$doc[id]."</td></tr>";
+echo "<td><a href=\"retrieve_problem.php?id=".$doc[id]."\">".$doc[id]."</a></td>";
 }
 			echo "</td></tr>";
 
