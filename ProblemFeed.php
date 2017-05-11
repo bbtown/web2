@@ -110,7 +110,7 @@ $.ajax({
                     echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
-                    echo "<td>Coming soon<a href=\"retrieve_problem.php?id=".$doc[id]."\">".$doc[id]."</a></td>";
+                    echo "<td>Coming soon<a href=\"\\retrieve_problem.php?id=".$doc[id]."\">".$doc[id]."</a></td>";
 }
 			echo "</td></tr>";
 
