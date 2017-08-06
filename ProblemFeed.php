@@ -114,11 +114,11 @@ function retrieve_id() {
                     echo "<td>".$doc['Factors']."</td>";
 
 
-//     $time = new \Moment\Moment('@'.$doc['ProblemTS'], 'UTC');
-//     $time = $time->format('l, dS F Y h:i');
-//     echo "<small class=\"text-muted\">".$time."</small>";
+     $time = new \Moment\Moment('@'.$doc['ProblemTS'], 'UTC');
+     $time = $time->format('l, dS F Y h:i');
+     echo "<td><small class=\"text-muted\">".$time."</small></td>";
 
-                    echo "<td>".$doc['ProblemTS']."</td>";
+                    //echo "<td>".$doc['ProblemTS']."</td>";
 			echo "</td></tr>";
        }            
 }
