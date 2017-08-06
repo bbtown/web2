@@ -17,26 +17,25 @@
     <link href="css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style3.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- FooTable -->
     <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
 
 <script>
-function retrieve_id() {
-   var retrieve_id = $('#retrieve').val();
-   var serialData = $('#retrieve').serialize();
+    function retrieve_id() {
+var retrieve_id = $('#retrieve').val();
+var serialData = $('#retrieve').serialize();
 
-   $.ajax({
-      url:'./retrieve_problem.php',
-      type: 'POST',
-      data: serialData,
-      success: function(data) {
-        alert(data);
-       }
-   });
+$.ajax({
+    url:'./retrieve_problem.php',
+    type: 'POST',
+    data: serialData,
+    success: function(data) {
+      alert(data);
 }
+});
+
 </script>
 
 </head>
@@ -79,7 +78,7 @@ function retrieve_id() {
                         <th>Description</th>
                         <th>Category</th>
                         <th>Tags</th>
-                        <th data-hide="phone,tablet">Article</th>
+                        <th data-hide="phone,tablet">URL</th>
                         <th data-hide="phone,tablet">Affected group</th>
                         <th># Affected</th>
                         <th>Location</th>
@@ -101,18 +100,21 @@ function retrieve_id() {
 			  echo 
 			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 			      <br/><br/><br/>
-			        <button input type=\"submit\" class=\"btn btn-sm btn-green m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" type=\"button\"><strong>View/Edit</strong></button>
+			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 				  </form>
 			  ";
                     echo "<td>".$doc['ProblemCategory']."</td>";
                     echo "<td>".$doc['Tags']."</td>";
-                    echo "<td><a href=\"".$doc['URL']."\">".$doc['URL']."</a></td>";
+                    echo "<td>".$doc['URL']."</td>";
                     echo "<td>".$doc['AffectedDescription']."</td>";
                     echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
-                    echo "<td>Coming soon</td>";
+                    echo "<td>Coming soon<a href=\".\\retrieve_problem.php?id=".$doc[id]."\">".$doc[id]."</a></td>";
+}
 			echo "</td></tr>";
+
+
        }            
 }
 ?>
@@ -175,7 +177,7 @@ function retrieve_id() {
     </script>
 
     <!-- Custom and plugin javascript -->
-    <!-- script src="js/inspinia.js"></script> -->
+    <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
     <!-- Page-Level Scripts -->
