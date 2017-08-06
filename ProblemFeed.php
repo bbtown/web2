@@ -84,7 +84,7 @@ function retrieve_id() {
                         <th># Affected</th>
                         <th>Location</th>
                         <th data-hide="phone,tablet">Factors</th>
-                        <th>Awareness</th>
+                        <th>Submitted</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -110,7 +110,7 @@ function retrieve_id() {
                     echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
-                    echo "<td>Coming soon</td>";
+                    echo "<td>".$doc['ProblemTS']."</td>";
 			echo "</td></tr>";
        }            
 }
