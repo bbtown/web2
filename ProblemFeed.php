@@ -101,7 +101,6 @@ function retrieve_id() {
 			  echo 
 			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_problem.php\">
 			      <br/><br/><br/>
-			        <button input type=\"submit\" class=\"btn btn-sm btn-green m-t-n-xs\" name='problem_identifier' value=\"$retrieve_id\" type=\"button\"><strong>View/Edit</strong></button>
 				  </form>
 			  ";
                     echo "<td>".$doc['ProblemCategory']."</td>";
