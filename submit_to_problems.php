@@ -20,6 +20,7 @@
   $geo_loc = $_POST['geo_loc'];
   $spec_loc = $_POST['spec_loc'];
   $factors= $_POST['factors'];
+//  $problem_ts= 1;
   $problem_ts = time();//Use UTC time for easier parsing
 //  $prob_cat2 = $_POST['prob_cat2'];
 //  $problemID = $_['id'];
