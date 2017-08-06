@@ -80,7 +80,7 @@ $.ajax({
                         <th>Tags</th>
                         <th data-hide="phone,tablet">URL</th>
                         <th>Location</th>
-                        <th>Awareness</th>
+                        <th>Submitted</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -88,8 +88,9 @@ $.ajax({
                          <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('ideas')->run($conn);
-                             foreach ($result as $doc) {
+                             //$result = r\db("web")->table('ideas')->run($conn);
+$result = r\db("web")->table('ideas')->orderBy(r\desc('IdeaTS'))->run($conn);                             
+			foreach ($result as $doc) {
                                if(isset($doc['IdeaDescription'])) {
 			  $retrieve_id = $doc[id];
                     echo "<tr class=\"gradeX\">";
@@ -97,14 +98,16 @@ $.ajax({
 			  echo 
 			  "<form class=\"form-horizontal\" method=\"post\" id=\"retrieve\" action=\"retrieve_idea.php\">
 			      <br/><br/><br/>
-			        <button input type=\"submit\" class=\"btn btn-sm btn-primary m-t-n-xs\" name='idea_identifier' value=\"$retrieve_id\" style=\"width:40%\" type=\"button\"><strong>View/Edit Details</strong></button>
 				  </form>
 			  ";
                     echo "<td>".$doc['IdeaCategory']."</td>";
                     echo "<td>".$doc['Tags']."</td>";
                     echo "<td>".$doc['URL']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
-                    echo "<td>Coming soon</td>";
+
+     $time = new \Moment\Moment('@'.$doc['TimeTS'], 'UTC');
+     $time = $time->format('l, dS F Y h:i');
+     echo "<td><small class=\"text-muted\">".$time."</small></td>";
 			echo "</td></tr>";
        }            
 }
