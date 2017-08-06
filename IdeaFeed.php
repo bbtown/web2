@@ -105,10 +105,9 @@ $result = r\db("web")->table('ideas')->orderBy(r\desc('IdeaTS'))->run($conn);
                     echo "<td>".$doc['URL']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
 
-echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
-//     $time = new \Moment\Moment('@'.$doc['TimeTS'], 'UTC');
-//     $time = $time->format('l, dS F Y h:i');
-//     echo "<td><small class=\"text-muted\">".$time."</small></td>";
+     $time = new \Moment\Moment('@'.$doc['IdeaTS'], 'UTC');
+     $time = $time->format('l, dS F Y h:i');
+     echo "<td><small class=\"text-muted\">".$time."</small></td>";
 			echo "</td></tr>";
        }            
 }
