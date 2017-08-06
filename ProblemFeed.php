@@ -92,7 +92,9 @@ function retrieve_id() {
                          <?php
                              require_once __DIR__.'/vendor/autoload.php';
                              $conn = r\connect('52.20.101.105');
-                             $result = r\db("web")->table('problems')->orderBy(['ProblemTS'].desc)->run($conn);
+
+ $result = r\db("web")->table('problems')->orderBy(array('index' => r\desc('ProblemTS')))->run($conn);
+                            // $result = r\db("web")->table('problems')->orderBy(['ProblemTS'].desc)->run($conn);
                              foreach ($result as $doc) {
                                if(isset($doc['ProblemDescription'])) {
 			  $retrieve_id = $doc[id];
@@ -110,6 +112,12 @@ function retrieve_id() {
                     echo "<td>".$doc['AffectedNumber']."</td>";
                     echo "<td>".$doc['GeographicLocation']." ".$doc['SpecificLocation']."</td>";
                     echo "<td>".$doc['Factors']."</td>";
+
+
+     $time = new \Moment\Moment('@'.$doc['ProblemTS'], 'UTC');
+     $time = $time->format('l, dS F Y h:i');
+     echo "<small class=\"text-muted\">".$time."</small>";
+
                     echo "<td>".$doc['ProblemTS']."</td>";
 			echo "</td></tr>";
        }            
