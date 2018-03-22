@@ -374,7 +374,7 @@
 <?php
   // load rethinkdb php library
   require_once __DIR__.'/vendor/autoload.php';
-  $conn = r\connect('52.20.101.105');
+  $conn = r\connect('34.239.185.58');
   $retrieve_id = $_POST['petition_identifier'];
 $result = r\db("test")->table('petitions')->getAll($retrieve_id, array("index" => "id"))->run($conn);
     //$result = r\db("web")->table('ideas')->map(function($x) {

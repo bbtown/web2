@@ -48,7 +48,7 @@ else
 
   // load rethinkdb php library
   require_once __DIR__.'/vendor/autoload.php';
-  $conn = r\connect('52.20.101.105');
+  $conn = r\connect('34.239.185.58');
   
 
     $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
