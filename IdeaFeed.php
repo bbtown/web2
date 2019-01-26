@@ -87,7 +87,7 @@ $.ajax({
 
                          <?php
                              require_once __DIR__.'/vendor/autoload.php';
-                             $conn = r\connect('54.144.38.70');
+                             $conn = r\connect('18.209.35.238');
                              //$result = r\db("web")->table('ideas')->run($conn);
 $result = r\db("web")->table('ideas')->orderBy(r\desc('IdeaTS'))->run($conn);                             
 			foreach ($result as $doc) {
